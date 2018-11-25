@@ -1,0 +1,111 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Layout Component should render correctly 1`] = `
+<ThemeProvider
+  theme={
+    Object {
+      "deviceType": "desktop",
+      "hasRightGutter": 1100,
+      "theme": Object {
+        "primaryColor": "whitesmoke",
+      },
+      "zIndex": Object {
+        "zFilter": 100,
+        "zFilterActions": 400,
+        "zFilterList": 150,
+        "zFlyout": 200,
+        "zLoader": 1000,
+        "zMenu": 800,
+        "zNativeTickSelectIcon": 50,
+        "zOverlay": 900,
+        "zPlacesAutocomplete": 1100,
+        "zSticky": 700,
+      },
+    }
+  }
+>
+  <main>
+    <SideEffect(Head)>
+      <meta
+        content="width=1100"
+        name="viewport"
+      />
+    </SideEffect(Head)>
+    <Header />
+    <div>
+      HELLO
+    </div>
+    <Footer />
+  </main>
+</ThemeProvider>
+`;
+
+exports[`Layout Component should render the styled component appropriately 1`] = `
+.c0 {
+  width: 100%;
+  padding: 0;
+  -webkit-transition: -webkit-transform 0.1s ease-in-out;
+  -webkit-transition: transform 0.1s ease-in-out;
+  transition: transform 0.1s ease-in-out;
+  height: 100vh;
+  -webkit-transform: translate3d(calc(85% + 6px),0,0);
+  -ms-transform: translate3d(calc(85% + 6px),0,0);
+  transform: translate3d(calc(85% + 6px),0,0);
+  position: fixed;
+  overflow-x: visible;
+}
+
+@media (max-width:1200px) and (min-width:768px) {
+  .c0 {
+    margin-left: auto;
+  }
+}
+
+<div
+  className="c0"
+>
+  <div>
+    HELLO
+  </div>
+</div>
+`;
+
+exports[`Layout Component should render when deviceType is Mobile 1`] = `
+<ThemeProvider
+  theme={
+    Object {
+      "deviceType": "mobile",
+      "hasRightGutter": false,
+      "theme": Object {
+        "primaryColor": "whitesmoke",
+      },
+      "zIndex": Object {
+        "zFilter": 100,
+        "zFilterActions": 400,
+        "zFilterList": 150,
+        "zFlyout": 200,
+        "zLoader": 1000,
+        "zMenu": 800,
+        "zNativeTickSelectIcon": 50,
+        "zOverlay": 900,
+        "zPlacesAutocomplete": 1100,
+        "zSticky": 700,
+      },
+    }
+  }
+>
+  <main>
+    <SideEffect(Head)>
+      <meta
+        content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width, shrink-to-fit=no"
+        name="viewport"
+      />
+    </SideEffect(Head)>
+    <Header />
+    <div>
+      HELLO
+    </div>
+    <Footer />
+  </main>
+</ThemeProvider>
+`;

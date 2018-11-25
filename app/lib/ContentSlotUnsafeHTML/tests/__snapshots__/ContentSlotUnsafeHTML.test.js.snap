@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ContentSlotUnsafeHTML Component should render correclty with Wrapper 1`] = `
+<div>
+  <div
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "<div>HTML</div>",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`ContentSlotUnsafeHTML Component should render correclty without Wrapper 1`] = `
+<div
+  dangerouslySetInnerHTML={
+    Object {
+      "__html": "<div>HTML</div>",
+    }
+  }
+/>
+`;
+
+exports[`ContentSlotUnsafeHTML Component should render correctly 1`] = `
+<div
+  dangerouslySetInnerHTML={
+    Object {
+      "__html": "<div>HTML</div>",
+    }
+  }
+/>
+`;

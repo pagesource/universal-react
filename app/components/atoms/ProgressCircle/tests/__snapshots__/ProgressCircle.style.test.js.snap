@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProgressCircle Component should match snapshot  1`] = `
+.c0 {
+  display: inline-block;
+  margin-left: -3px;
+}
+
+.c0 circle.progress {
+  -webkit-transition: stroke-dashoffset 0.35s;
+  transition: stroke-dashoffset 0.35s;
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  stroke: #cccccc;
+}
+
+.c0 circle.underlay {
+  -webkit-transition: stroke-dashoffset 0.35s;
+  transition: stroke-dashoffset 0.35s;
+  stroke: #eeeeee;
+}
+
+.c0 text {
+  font-size: 1rem;
+}
+
+<ProgressRing
+  className="c0"
+  theme={
+    Object {
+      "deviceType": "desktop",
+      "theme": Object {
+        "primaryColor": "whitesmoke",
+      },
+      "zIndex": Object {
+        "zFilter": 100,
+        "zFilterActions": 400,
+        "zFilterList": 150,
+        "zFlyout": 200,
+        "zLoader": 1000,
+        "zMenu": 800,
+        "zNativeTickSelectIcon": 50,
+        "zOverlay": 900,
+        "zPlacesAutocomplete": 1100,
+        "zSticky": 700,
+      },
+    }
+  }
+/>
+`;

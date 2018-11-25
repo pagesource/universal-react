@@ -1,0 +1,71 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button should render correctly 1`] = `
+<Button
+  ariaLabel=""
+  className=""
+  disabled={false}
+  inheritedStyles=""
+  loader={false}
+  loaderPositionCenter={false}
+  primary={false}
+  secondary={false}
+  tabIndex=""
+  theme={
+    Object {
+      "deviceType": "desktop",
+      "theme": Object {
+        "primaryColor": "whitesmoke",
+      },
+      "zIndex": Object {
+        "zFilter": 100,
+        "zFilterActions": 400,
+        "zFilterList": 150,
+        "zFlyout": 200,
+        "zLoader": 1000,
+        "zMenu": 800,
+        "zNativeTickSelectIcon": 50,
+        "zOverlay": 900,
+        "zPlacesAutocomplete": 1100,
+        "zSticky": 700,
+      },
+    }
+  }
+  type="button"
+/>
+`;
+
+exports[`Button should render correctly for mobile 1`] = `
+<Button
+  ariaLabel=""
+  className=""
+  disabled={false}
+  inheritedStyles=""
+  loader={false}
+  loaderPositionCenter={false}
+  primary={false}
+  secondary={false}
+  tabIndex=""
+  theme={
+    Object {
+      "deviceType": "mobile",
+      "theme": Object {
+        "primaryColor": "whitesmoke",
+      },
+      "zIndex": Object {
+        "zFilter": 100,
+        "zFilterActions": 400,
+        "zFilterList": 150,
+        "zFlyout": 200,
+        "zLoader": 1000,
+        "zMenu": 800,
+        "zNativeTickSelectIcon": 50,
+        "zOverlay": 900,
+        "zPlacesAutocomplete": 1100,
+        "zSticky": 700,
+      },
+    }
+  }
+  type="button"
+/>
+`;

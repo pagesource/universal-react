@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Spinner Component overlayEnabled is necessary to render child 1`] = `
+<div>
+  <div
+    className="rclDefaultSpinner"
+    others={null}
+  />
+</div>
+`;
+
+exports[`Spinner Component should render correctly 1`] = `""`;
+
+exports[`Spinner Component should render renderDotSpinner 1`] = `
+<div>
+  <div
+    className="renderDotSpinner"
+    others={null}
+  >
+    <div
+      className="renderDotSpinner--dot"
+    />
+    <div
+      className="renderDotSpinner--dot"
+    />
+    <div
+      className="renderDotSpinner--dot"
+    />
+  </div>
+</div>
+`;

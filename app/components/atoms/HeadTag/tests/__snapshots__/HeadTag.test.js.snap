@@ -1,0 +1,221 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HeadTag Component should render correctly and match snapshot 1`] = `
+<SideEffect(Head)>
+  <title>
+    title
+  </title>
+  <MetaTag
+    content="author"
+    key="meta-1"
+    meta={
+      Object {
+        "id": 1,
+        "key": "author",
+      }
+    }
+  />
+  <MetaTag
+    content="description"
+    key="meta-2"
+    meta={
+      Object {
+        "id": 2,
+        "key": "description",
+      }
+    }
+  />
+  <MetaTag
+    content="title"
+    key="meta-twitter-3"
+    meta={
+      Object {
+        "id": 3,
+        "key": "title",
+        "prefix": Array [
+          "twitter",
+          "og",
+        ],
+      }
+    }
+    prefix="twitter"
+  />
+  <MetaTag
+    content="title"
+    key="meta-og-3"
+    meta={
+      Object {
+        "id": 3,
+        "key": "title",
+        "prefix": Array [
+          "twitter",
+          "og",
+        ],
+      }
+    }
+    prefix="og"
+  />
+  <MetaTag
+    content="description"
+    key="meta-twitter-4"
+    meta={
+      Object {
+        "id": 4,
+        "key": "description",
+        "prefix": Array [
+          "twitter",
+          "og",
+        ],
+      }
+    }
+    prefix="twitter"
+  />
+  <MetaTag
+    content="description"
+    key="meta-og-4"
+    meta={
+      Object {
+        "id": 4,
+        "key": "description",
+        "prefix": Array [
+          "twitter",
+          "og",
+        ],
+      }
+    }
+    prefix="og"
+  />
+  <MetaTag
+    content="url"
+    key="meta-twitter-5"
+    meta={
+      Object {
+        "id": 5,
+        "key": "url",
+        "prefix": Array [
+          "twitter",
+          "og",
+        ],
+      }
+    }
+    prefix="twitter"
+  />
+  <MetaTag
+    content="url"
+    key="meta-og-5"
+    meta={
+      Object {
+        "id": 5,
+        "key": "url",
+        "prefix": Array [
+          "twitter",
+          "og",
+        ],
+      }
+    }
+    prefix="og"
+  />
+  <MetaTag
+    content="image"
+    key="meta-twitter-6"
+    meta={
+      Object {
+        "id": 6,
+        "key": "image",
+        "prefix": Array [
+          "twitter",
+          "og",
+        ],
+      }
+    }
+    prefix="twitter"
+  />
+  <MetaTag
+    content="image"
+    key="meta-og-6"
+    meta={
+      Object {
+        "id": 6,
+        "key": "image",
+        "prefix": Array [
+          "twitter",
+          "og",
+        ],
+      }
+    }
+    prefix="og"
+  />
+  <MetaTag
+    content="sample_description"
+    key="meta-twitter-7"
+    meta={
+      Object {
+        "id": 7,
+        "key": "card",
+        "prefix": Array [
+          "twitter",
+        ],
+      }
+    }
+    prefix="twitter"
+  />
+  <MetaTag
+    content="type"
+    key="meta-twitter-8"
+    meta={
+      Object {
+        "id": 8,
+        "key": "type",
+        "prefix": Array [
+          "twitter",
+          "og",
+        ],
+      }
+    }
+    prefix="twitter"
+  />
+  <MetaTag
+    content="type"
+    key="meta-og-8"
+    meta={
+      Object {
+        "id": 8,
+        "key": "type",
+        "prefix": Array [
+          "twitter",
+          "og",
+        ],
+      }
+    }
+    prefix="og"
+  />
+  <MetaTag
+    content="siteName"
+    key="meta-og-9"
+    meta={
+      Object {
+        "id": 9,
+        "key": "site_name",
+        "prefix": Array [
+          "og",
+        ],
+        "serverKey": "siteName",
+      }
+    }
+    prefix="og"
+  />
+</SideEffect(Head)>
+`;
+
+exports[`HeadTag Component should render correctly when no props passed 1`] = `
+<SideEffect(Head)>
+  <title />
+</SideEffect(Head)>
+`;
+
+exports[`HeadTag Component should render meta tags properly 1`] = `
+<meta
+  content="content"
+  name="prefix:meta key"
+/>
+`;

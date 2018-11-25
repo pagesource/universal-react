@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Iframe should call onLoad Method 1`] = `
+<iframe
+  frameBorder="0"
+  height="20px"
+  name="testIframe"
+  onLoad={[Function]}
+  src="http://www.google.com"
+  title="Hello iframe"
+  width="100%"
+/>
+`;
+
+exports[`Iframe should render correctly 1`] = `""`;
+
+exports[`Iframe should take ContentHeight 1`] = `
+<iframe
+  frameBorder="0"
+  height="100%"
+  name="testIframe"
+  onLoad={[Function]}
+  src="http://www.google.com"
+  title="Hello iframe"
+  width="100%"
+/>
+`;

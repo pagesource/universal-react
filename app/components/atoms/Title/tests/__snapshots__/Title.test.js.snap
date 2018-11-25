@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Anchor Component should render correctly and match snapshot 1`] = `
+<Title
+  className=""
+  inheritedStyles=""
+>
+  Sample
+</Title>
+`;
+
+exports[`Anchor Component should render with styles correctly and match snapshot 1`] = `
+<h1
+  className=""
+>
+  Sample
+</h1>
+`;

@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProgressCircle Component should match snapshot  1`] = `
+<svg
+  height={NaN}
+  width={NaN}
+>
+  <circle
+    className="underlay"
+    fill="transparent"
+    r={NaN}
+  />
+  <circle
+    className="progress"
+    fill="transparent"
+    r={NaN}
+    strokeDasharray="NaN NaN"
+    style={
+      Object {
+        "strokeDashoffset": NaN,
+      }
+    }
+  />
+  <text
+    alignmentBaseline="middle"
+    data-slnm-id="undefinedProgressText"
+    dy=".1em"
+    textAnchor="middle"
+    x="50%"
+    y="50%"
+  />
+</svg>
+`;
