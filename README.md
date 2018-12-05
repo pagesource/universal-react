@@ -2,7 +2,7 @@
 
 To assemble a reliable and community accepted XT Dev Ecosystem, that can be utilized as baseline for development of each project with dependable quality standards. This "Universal React" boilerplate will not limit/restrict any team on further improving it, but ensure that projects are meeting minimum quality and best practices with this ecosystem. This ecosystem doesn't intend to provide a lot of out of the box code/components or features but a well configured development environment and delivery pipeline, having balanced focus to Static Code Quality, Performance, Processes, Security, Testability, Documentation and Best Practices.  
 
-## Ecosystem of this component library 🎉
+## Ecosystem of this refrence architecture   🎉
 
 - **Development Environment:** Storybook integrated for developing and showcasing components.
 - **Flow typed:** All components are FlowTyped and Flow Type checked.
