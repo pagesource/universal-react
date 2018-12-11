@@ -14,3 +14,7 @@ flow-typed
 
 # ES Docs
 docs
+
+# next.js build output
+.next
+app/.next

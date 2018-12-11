@@ -103,12 +103,14 @@ if (process.browser) {
             json: false,
             compress: false,
             tailable: true,
-            formatter: self.getFormatterString.bind(Object.assign(self, {
-              loggerName,
-              timestampFormat: self.getTimeStampFormat.bind(self),
-              level: process.env.LOG_LEVEL || 'error',
-              sessionId,
-            })),
+            formatter: self.getFormatterString.bind(
+              Object.assign(self, {
+                loggerName,
+                timestampFormat: self.getTimeStampFormat.bind(self),
+                level: process.env.LOG_LEVEL || 'error',
+                sessionId,
+              })
+            ),
           }),
         ],
       });

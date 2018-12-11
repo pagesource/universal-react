@@ -112,7 +112,7 @@ module.exports = __webpack_require__(/*! next/app */ "next/app")
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/vinkumar2/Documents/Projects/code-commons/atomic-react-universal-next/node_modules/next/dist/pages/_app.js */"../node_modules/next/dist/pages/_app.js");
+module.exports = __webpack_require__(/*! /Users/amrmishr/Projects/Sapient/universal-react/node_modules/next/dist/pages/_app.js */"../node_modules/next/dist/pages/_app.js");
 
 
 /***/ }),

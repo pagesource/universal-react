@@ -24,13 +24,7 @@ import Router from 'next/router';
 import initRedux from './configureStore';
 import monitorSagas from './monitorSagas';
 import loggerFactory from '../../utils/logger';
-import {
-  DESKTOP,
-  MOBILE,
-  PHONE,
-  API_ERROR_HANDLER_PAGE,
-  TABLET,
-} from '../../constants';
+import { DESKTOP, MOBILE, PHONE, API_ERROR_HANDLER_PAGE, TABLET } from '../../constants';
 import globalActions, { serverActions, pageActions } from '../../global/actions';
 
 import { globalDataStructure } from '../../global/reducer';
@@ -55,12 +49,12 @@ const headerExclusionList = [
  *
  * @param {Object} requestHeaders Headers object received from the request
  */
-const cleanupRequestHeaders = (requestHeaders) => {
+const cleanupRequestHeaders = requestHeaders => {
   if (!requestHeaders) {
     return null;
   }
   const requestHeadersCopy = Object.assign({}, requestHeaders);
-  headerExclusionList.forEach((header) => {
+  headerExclusionList.forEach(header => {
     delete requestHeadersCopy[header];
   });
 
@@ -71,9 +65,7 @@ const cleanupRequestHeaders = (requestHeaders) => {
 
 export const getWrapperComponent = (
   WrappedComponent,
-  {
-    key, reducer, saga, initialActions, useQuery, criticalState, preExecuteGetInitialProps,
-  },
+  { key, reducer, saga, initialActions, useQuery, criticalState, preExecuteGetInitialProps }
 ) =>
   class WrapperComponent extends Component {
     /**
@@ -100,7 +92,7 @@ export const getWrapperComponent = (
         const currentState = store.getState();
         const missingDataList = [];
 
-        [...storeStruct, ...globalDataStructure].forEach((requiredDataPath) => {
+        [...storeStruct, ...globalDataStructure].forEach(requiredDataPath => {
           try {
             if (!currentState.getIn(requiredDataPath)) {
               missingDataList.push(requiredDataPath);
@@ -113,7 +105,7 @@ export const getWrapperComponent = (
         if (missingDataList.length > 0) {
           logger.error(
             `${WrapperComponent.displayName} - Component failed to recieve critical data`,
-            JSON.stringify(missingDataList),
+            JSON.stringify(missingDataList)
           );
           if (isServer) {
             res.redirect(API_ERROR_HANDLER_PAGE);
@@ -133,27 +125,26 @@ export const getWrapperComponent = (
      * @param {Object} param.query Query params of the incoming request
      * @param {Object} param.requestDetails Object containing details of incoming request
      */
-    static dispatchActions({
-      actions, store, needQuery, query, requestDetails,
-    }) {
+    static dispatchActions({ actions, store, needQuery, query, requestDetails }) {
       actions.map(action =>
-        store.dispatch(typeof action === 'function'
-          ? WrapperComponent.addRequestDetails(
-            action(needQuery ? query : undefined),
-            requestDetails,
-          )
-          : WrapperComponent.addRequestDetails(
-            { type: action, query: needQuery ? query : undefined },
-            requestDetails,
-          )));
+        store.dispatch(
+          typeof action === 'function'
+            ? WrapperComponent.addRequestDetails(
+                action(needQuery ? query : undefined),
+                requestDetails
+              )
+            : WrapperComponent.addRequestDetails(
+                { type: action, query: needQuery ? query : undefined },
+                requestDetails
+              )
+        )
+      );
     }
 
     static async getInitialProps(...params) {
       const initialParams = params[0];
 
-      const {
-        store, isServer, req, query, res, pathname, asPath,
-      } = initialParams;
+      const { store, isServer, req, query, res, pathname, asPath } = initialParams;
 
       injectSagaAndReducer(key, store, saga, reducer);
       store.dispatch(serverActions.setCurrentRoute(pathname));
@@ -251,7 +242,7 @@ export default (
     initialActions,
     useQuery,
     criticalState,
-  },
+  }
 ) => {
   const WrapperComponent = getWrapperComponent(WrappedComponent, {
     key,
@@ -274,7 +265,7 @@ export default (
 
   const withConnect = connect(
     mapStateToProps,
-    mapDispatchToProps,
+    mapDispatchToProps
   );
   const withRedux = initRedux({
     key,
@@ -284,6 +275,6 @@ export default (
 
   return compose(
     withRedux,
-    withConnect,
+    withConnect
   )(WrapperComponent);
 };
