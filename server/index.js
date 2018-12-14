@@ -51,17 +51,17 @@ const app = next({
   dir: './app',
 });
 
-process.on('unhandledRejection', (err) => {
+process.on('unhandledRejection', err => {
   /* eslint-disable-next-line no-console */
   console.log('Unhandled rejection:', err);
 });
 
-const cleanupPerfLogger = (req) => {
+const cleanupPerfLogger = req => {
   if (req.perfLoggerEnabled) {
     req.perfLogger.log(
       'error',
       `[PERFLOG] [PAGE] Method: ${req.method} URL: ${req.url} Elapsed Time: ${Date.now() -
-        req.startTime}ms`,
+        req.startTime}ms`
     );
 
     req.perfLoggerEnabled = false;
@@ -73,15 +73,13 @@ const cleanupPerfLogger = (req) => {
 
 // Code for making the synchronous call to the session API to make
 // sure there is no duplication for session IDs at the ATG layer
-const handler = routes.getRequestHandler(app, async ({
-  req, res, route, query,
-}) => {
+const handler = routes.getRequestHandler(app, async ({ req, res, route, query }) => {
   app
     .render(req, res, route.page, query)
     .then(() => {
       cleanupPerfLogger(req);
     })
-    .catch((err) => {
+    .catch(err => {
       /* eslint-disable-next-line no-console */
       console.log(err);
       cleanupPerfLogger(req);
@@ -118,7 +116,7 @@ app.prepare().then(() => {
     .use((req, res, nextMiddleware) => {
       let isStaticPath = false;
 
-      blackListUrls.forEach((path) => {
+      blackListUrls.forEach(path => {
         if (req.url.indexOf(path) !== -1) {
           isStaticPath = true;
         }
@@ -143,9 +141,11 @@ app.prepare().then(() => {
     .use(helmet(helmetConfig))
 
     // Capture the device type
-    .use(device.capture({
-      unknownUserAgentDeviceType: 'desktop', // default to DESKTOP when user agent is unrecognized
-    }));
+    .use(
+      device.capture({
+        unknownUserAgentDeviceType: 'desktop', // default to DESKTOP when user agent is unrecognized
+      })
+    );
 
   // Health check route for load balanacer
   server.get(HEALTH_CHECK, (req, res) => {
@@ -193,7 +193,7 @@ app.prepare().then(() => {
   });
 
   /* eslint-disable no-console */
-  const serve = server.listen(PORT, (err) => {
+  const serve = server.listen(PORT, err => {
     if (err) throw err;
     console.log(`> Ready on http://${MACHINE_IP}:${PORT}`);
 
@@ -207,8 +207,8 @@ app.prepare().then(() => {
           `http://${MACHINE_IP}:${PORT}`,
           '--output-path=reports/lighthouse/report.html',
         ],
-        { stdio: 'inherit' },
-      ).on('exit', (code) => {
+        { stdio: 'inherit' }
+      ).on('exit', code => {
         console.log(`Lighthouse exited with code ${code.toString()}`);
         console.log(`Closing down app server on port ${PORT}`);
         serve.close('SIGTERM');

@@ -1,5 +1,5 @@
 // @flow
-import { Fragment } from 'react';
+import React, { Fragment } from 'react';
 import Document, { Head, Main, NextScript } from 'next/document';
 import { ServerStyleSheet } from 'styled-components';
 

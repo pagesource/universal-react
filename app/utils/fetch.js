@@ -3,7 +3,7 @@ import axios from 'axios';
 import es6promise from 'es6-promise';
 import getConfig from 'next/config';
 import agent from '../../server/utils/proxyAgent';
-import loggerFactory from '../utils/logger';
+import loggerFactory from './logger';
 import { DESKTOP, ENV_DEVELOPMENT, RESPONSE_OK, RESPONSE_SERVER_ERROR } from '../constants';
 import { CACHEABLE_SERVICES_LIST } from './cacheableServices';
 
@@ -17,9 +17,13 @@ es6promise.polyfill();
 
 class ServiceUtils {
   currentDevice: string;
+
   environment: string;
+
   clientPathPrefix: string;
+
   serverPathPrefix: string;
+
   envApiKey: string;
 
   constructor() {
@@ -79,7 +83,9 @@ class ServiceUtils {
       fetchUrl = ServiceUtils.appendParams(`${this.clientPathPrefix}${url}`);
     } else if (!(actionObject && actionObject.type)) {
       // Server-side call from initial actions (with no action object)
-      throw new Error(`Oh oh, maybe you forgot adding your action object to your fetch in your saga with url ${url}?`);
+      throw new Error(
+        `Oh oh, maybe you forgot adding your action object to your fetch in your saga with url ${url}?`
+      );
     } else {
       // Server-side call with proper action object from initial actions
       headers = {
@@ -90,7 +96,7 @@ class ServiceUtils {
       perfLogger = actionObject.requestDetails.logger;
       fetchUrl = ServiceUtils.appendParams(
         `${this.serverPathPrefix}${url}`,
-        actionObject.requestDetails,
+        actionObject.requestDetails
       );
 
       try {
@@ -99,7 +105,7 @@ class ServiceUtils {
           if (cachedResponse !== null) {
             perfLogger.log(
               'error',
-              `[PERFLOG] [CACHE: HIT] URL: ${fetchUrl} Elapsed Time: ${Date.now() - start}ms`,
+              `[PERFLOG] [CACHE: HIT] URL: ${fetchUrl} Elapsed Time: ${Date.now() - start}ms`
             );
             return cachedResponse;
           }
@@ -140,7 +146,7 @@ class ServiceUtils {
           `${fetchUrl}`,
 
           // Cacheable response data
-          responseData,
+          responseData
         );
       }
     } catch (err) {
@@ -153,7 +159,7 @@ class ServiceUtils {
         `[PERFLOG] [SERVICE] ${isCacheableService ? '[CACHE: MISS]' : ''} Status: ${
           response.status
         } Method: ${reqOptions.method || 'GET'} URL: ${fetchUrl} Elapsed Time: ${Date.now() -
-          start}ms`,
+          start}ms`
       );
     }
 

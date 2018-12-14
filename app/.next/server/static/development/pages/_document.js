@@ -93,41 +93,6 @@ module.exports =
 /************************************************************************/
 /******/ ({
 
-/***/ "../node_modules/next/node_modules/webpack/buildin/harmony-module.js":
-/*!***************************************************************************!*\
-  !*** ../node_modules/next/node_modules/webpack/buildin/harmony-module.js ***!
-  \***************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = function(originalModule) {
-	if (!originalModule.webpackPolyfill) {
-		var module = Object.create(originalModule);
-		// module.parent = undefined by default
-		if (!module.children) module.children = [];
-		Object.defineProperty(module, "loaded", {
-			enumerable: true,
-			get: function() {
-				return module.l;
-			}
-		});
-		Object.defineProperty(module, "id", {
-			enumerable: true,
-			get: function() {
-				return module.i;
-			}
-		});
-		Object.defineProperty(module, "exports", {
-			enumerable: true
-		});
-		module.webpackPolyfill = 1;
-	}
-	return module;
-};
-
-
-/***/ }),
-
 /***/ "./constants/index.js":
 /*!****************************!*\
   !*** ./constants/index.js ***!
@@ -221,7 +186,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _utils_errorBoundary__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../utils/errorBoundary */ "./utils/errorBoundary.js");
 /* harmony import */ var _styles_cssIncludes__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../styles/cssIncludes */ "./styles/cssIncludes.js");
 /* harmony import */ var _constants__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../constants */ "./constants/index.js");
-
 
 
 
@@ -583,17 +547,12 @@ module.exports = new LoggerClass();
 /*!********************************!*\
   !*** ./utils/loggerFactory.js ***!
   \********************************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
 
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var _babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/classCallCheck */ "@babel/runtime/helpers/classCallCheck");
-/* harmony import */ var _babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/createClass */ "@babel/runtime/helpers/createClass");
-/* harmony import */ var _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_1__);
+var _classCallCheck = __webpack_require__(/*! @babel/runtime/helpers/classCallCheck */ "@babel/runtime/helpers/classCallCheck");
 
-
+var _createClass = __webpack_require__(/*! @babel/runtime/helpers/createClass */ "@babel/runtime/helpers/createClass");
 
 /* eslint-disable import/no-mutable-exports, class-methods-use-this */
 var LoggerClass;
@@ -616,12 +575,14 @@ if (false) {} else {
   LoggerClass =
   /*#__PURE__*/
   function () {
+    "use strict";
+
     function Logger() {
       var _ref = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {},
           _ref$fileName = _ref.fileName,
           fileName = _ref$fileName === void 0 ? 'logs/error.log' : _ref$fileName;
 
-      _babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_0___default()(this, Logger);
+      _classCallCheck(this, Logger);
 
       this.fileName = fileName;
       this.logPrefix = this.getLogPrefix();
@@ -634,7 +595,7 @@ if (false) {} else {
      */
 
 
-    _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_1___default()(Logger, [{
+    _createClass(Logger, [{
       key: "getLogPrefix",
       value: function getLogPrefix() {
         var hostName = os.hostname().toUpperCase();
@@ -732,7 +693,6 @@ if (false) {} else {
 }
 
 module.exports = LoggerClass;
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../node_modules/next/node_modules/webpack/buildin/harmony-module.js */ "../node_modules/next/node_modules/webpack/buildin/harmony-module.js")(module)))
 
 /***/ }),
 
