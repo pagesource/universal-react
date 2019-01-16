@@ -39,9 +39,11 @@ describe('reducer injectors', () => {
   });
   describe('getInjectors', () => {
     test('should return injectors', () => {
-      expect(getInjectors(store)).toEqual(expect.objectContaining({
-        injectReducer: expect.any(Function),
-      }));
+      expect(getInjectors(store)).toEqual(
+        expect.objectContaining({
+          injectReducer: expect.any(Function),
+        })
+      );
     });
 
     test('should throw if passed invalid store shape', () => {

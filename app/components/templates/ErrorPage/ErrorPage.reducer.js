@@ -2,7 +2,8 @@
 import { fromJS, Map } from 'immutable';
 import { LOAD_ERROR_PAGE_SUCCESS, LOAD_ERROR_PAGE_FAILURE } from './ErrorPage.constants';
 
-export const setErrorPageData = (state: Map, data: any): Map => state.set('errorPageData', fromJS(data));
+export const setErrorPageData = (state: Map, data: any): Map =>
+  state.set('errorPageData', fromJS(data));
 
 export const layout = (state: Object = fromJS({}), action: any = 'default'): Map => {
   switch (action.type) {

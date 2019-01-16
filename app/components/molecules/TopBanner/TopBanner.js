@@ -12,15 +12,14 @@ import type { Props } from './types';
 
 class TopBanner extends PureComponent<Props> {
   static defaultProps = {};
+
   render() {
     const { className } = this.props;
     return (
       <section className={className} id="banner">
         <div className="inner">
           <h1>{this.props.title || 'Not available'}</h1>
-          <p>
-            {this.props.banner}
-          </p>
+          <p>{this.props.banner}</p>
         </div>
       </section>
     );

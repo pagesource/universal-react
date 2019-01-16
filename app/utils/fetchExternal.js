@@ -16,6 +16,7 @@ class ServiceUtils {
   setSessionID(sessionName: string, sessionId: string | number) {
     this.sessions[sessionName] = sessionId;
   }
+
   // corss check from reviewer
   fetch = (url: string, props: Object) => {
     let fetchUrl: string;

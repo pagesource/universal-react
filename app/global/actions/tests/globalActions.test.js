@@ -1,4 +1,4 @@
-import { serverActions } from '../';
+import { serverActions } from '..';
 import { DEVICE_TYPE, CURRENT_ROUTE, IS_TABLET } from '../../constants';
 import { MOBILE } from '../../../constants';
 

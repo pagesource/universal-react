@@ -1,5 +1,5 @@
 import { shallow } from 'enzyme';
-import HeadTag from '../';
+import HeadTag from '..';
 import { MetaTag } from '../HeadTag';
 
 const sampleSiteData = {

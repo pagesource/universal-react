@@ -1,6 +1,6 @@
 import renderer from 'react-test-renderer';
 import 'jest-styled-components';
-import Spinner from '../';
+import Spinner from '..';
 import Theme from '../../../../styles/theme';
 import { DESKTOP } from '../../../../constants';
 

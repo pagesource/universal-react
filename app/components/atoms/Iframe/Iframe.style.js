@@ -1,5 +1,3 @@
 import { css } from 'styled-components';
 
-export default css`
-  
-`;
+export default css``;

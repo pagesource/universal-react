@@ -3,7 +3,7 @@ import he from 'he';
 /*
 * Converts html escaped strings to json
 */
-export const stringToArray = (stringData) => {
+export const stringToArray = stringData => {
   if (stringData) {
     try {
       const stringDecoded = he.decode(stringData);
@@ -21,7 +21,7 @@ export const stringToArray = (stringData) => {
 /*
 * Converts html escaped strings to object
 */
-export const stringToObject = (stringData) => {
+export const stringToObject = stringData => {
   if (stringData) {
     try {
       const stringDecoded = he.decode(stringData);

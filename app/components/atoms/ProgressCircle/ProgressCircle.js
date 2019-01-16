@@ -27,7 +27,7 @@ const ProgressRing = ({
   /* eslint-disable no-mixed-operators */
   const normalizedRadius = radius - circleStrokeWidth * 2;
   const circumference = normalizedRadius * 2 * Math.PI;
-  const strokeDashoffset = circumference - progress / 100 * circumference;
+  const strokeDashoffset = circumference - (progress / 100) * circumference;
 
   return (
     <svg

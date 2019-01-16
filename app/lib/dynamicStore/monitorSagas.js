@@ -10,7 +10,7 @@ import getSagaInjectors from './sagaInjectors';
 export default function monitorSagas(store, isServer, shouldDispatchEnd = true) {
   const allTasks = [store.globalSaga.task];
   if (shouldDispatchEnd) store.dispatch(END);
-  each(store.injectedSagas, (saga) => {
+  each(store.injectedSagas, saga => {
     allTasks.push(saga.task);
   });
   return Promise.all(allTasks.map(t => t.done)).then(() => {

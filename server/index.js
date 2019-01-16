@@ -179,13 +179,13 @@ app.prepare().then(() => {
     // remove build if static
     if (isStaticUrl(req.url) && process.env.NODE_ENV === ENV_PRODUCTION) {
       [req.url] = parseStaticUrl(req.url).split('?');
-      const filePath = join(__dirname, '../app/.next/dist', req.url);
+      const filePath = join(__dirname, '../.next/dist', req.url);
       res.sendFile(filePath);
       return;
     }
 
     if (pathname === SERVICE_WORKER_FILE) {
-      const filePath = join(__dirname, '../app/.next', pathname);
+      const filePath = join(__dirname, '../.next', pathname);
       app.serveStatic(req, res, filePath);
     } else {
       handler(req, res, parsedUrl);

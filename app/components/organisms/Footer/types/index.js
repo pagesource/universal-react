@@ -1,4 +1,4 @@
 // @flow
 
-export type Props = { };
-export type State = { };
+export type Props = {};
+export type State = {};

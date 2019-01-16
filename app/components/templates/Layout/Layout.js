@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 import Head from 'next/head';
 import type { Map } from 'immutable';
 
-import Theme from '../../../styles/theme/';
+import Theme from '../../../styles/theme';
 import Header from '../../organisms/Header';
 import Footer from '../../organisms/Footer';
 import { MOBILE } from '../../../constants';
@@ -71,6 +71,6 @@ const mapStateToProps /* istanbul ignore next */ = (state: Map): { deviceType: s
 });
 export default connect(
   mapStateToProps,
-  mapDispatchToProps,
+  mapDispatchToProps
 )(Layout);
 export { Layout };

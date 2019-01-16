@@ -24,12 +24,12 @@ class ContentSlotUnsafeHTML extends PureComponent<Props> {
 
   // Regex to replace HTML ASCII code &#034 (coming as escaped HTML from server code) to `"`
   static htmlDecode = (input: string = '') =>
-    (input && input.replace ? unescape(input.replace(/&#034;/gi, '"')) : '');
+    input && input.replace ? unescape(input.replace(/&#034;/gi, '"')) : '';
 
   static createMarkupForBody = memoizeLast(contentSlotUnsafeHTML => ({
     __html: ContentSlotUnsafeHTML.htmlDecode(contentSlotUnsafeHTML).replace(
       ContentSlotUnsafeHTML.scriptRegEx,
-      '',
+      ''
     ),
   }));
 
@@ -52,10 +52,9 @@ class ContentSlotUnsafeHTML extends PureComponent<Props> {
       document.body.appendChild(range.createContextualFragment(scriptList.join('')));
     }
   };
+
   render(): Node {
-    const {
-      content, wrapper, hasScript, ...other
-    } = this.props;
+    const { content, wrapper, hasScript, ...other } = this.props;
     /* eslint-disable react/no-danger */
     const Wrapper = wrapper;
     return wrapper ? (

@@ -9,9 +9,7 @@ type Props = {
   inheritedStyles?: string,
 };
 
-const Title = ({
-  children, className, inheritedStyles, ...others
-}: Props): Node => (
+const Title = ({ children, className, inheritedStyles, ...others }: Props): Node => (
   <h1 className={className} {...others}>
     {children}
   </h1>

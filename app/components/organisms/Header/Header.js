@@ -3,8 +3,8 @@
  * Header
  */
 import type { Node } from 'react';
-import type { Props } from './types';
 import Link from 'next/link';
+import type { Props } from './types';
 import NavBar from '../../molecules/NavBar';
 
 const Header = ({ className }: Props): Node => (

@@ -25,7 +25,7 @@ const composeEnhancers =
  * @param {Object} options.reducer - Reducers associated with the page commponent
  * @param {Object} options.saga - Sagas associated with the page commponent
  */
-export default options => (BaseComponent) => {
+export default options => BaseComponent => {
   const hasKey = !!options.key;
   if (!hasKey) throw new Error(`${BaseComponent.displayName} needs to be passed with a key`);
   const hasReducer = !!options.reducer;
@@ -36,7 +36,7 @@ export default options => (BaseComponent) => {
     const store = createStore(
       createReducer(reducer),
       fromJS(initialState),
-      composeEnhancers(...enhancers),
+      composeEnhancers(...enhancers)
     );
 
     // Keep access to 'run' method of saga task in store so thats its available globally with store

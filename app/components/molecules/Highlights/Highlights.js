@@ -8,6 +8,7 @@ import type { Props } from './types';
 
 class Highlights extends PureComponent<Props> {
   static defaultProps = {};
+
   render() {
     const { className } = this.props;
     return (

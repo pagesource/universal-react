@@ -3,7 +3,7 @@ import { shallow } from 'enzyme';
 import 'jest-styled-components';
 
 import { TextAreaComponent } from '../TextArea';
-import TextAreaStyle from '../';
+import TextAreaStyle from '..';
 
 import Theme from '../../../../styles/theme';
 import { DESKTOP } from '../../../../constants';

@@ -15,7 +15,7 @@ describe('enhance', () => {
   let getIn;
 
   beforeEach(() => {
-    getIn = jest.fn((val) => {
+    getIn = jest.fn(val => {
       if (!(val instanceof Array)) throw Error();
     });
     mockStore = {
