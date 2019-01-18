@@ -1,7 +1,8 @@
 const webpack = require('webpack');
 const dotenv = require('dotenv');
 const StringReplacePlugin = require('string-replace-webpack-plugin');
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+const TerserPlugin = require('terser-webpack-plugin');
+const Terser = require('terser');
 const minify = require('harp-minify');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const Buildify = require('buildify');
@@ -80,7 +81,7 @@ module.exports = withPlugins([withBundleAnalyzer, withTM], {
                 if (filePath.endsWith('.js') && filePath.indexOf('polyfills') === -1) {
                   /* exclude any file that has es6 code as the plugin cannot uglifiy it
                ref:https://github.com/webpack-contrib/uglifyjs-webpack-plugin/issues/7 */
-                  return minify.js(content.toString());
+                  return Terser.minify(content.toString()).code;
                 }
                 return content;
               },
@@ -139,9 +140,9 @@ module.exports = withPlugins([withBundleAnalyzer, withTM], {
       };
 
       config.plugins.push(
-        new UglifyJsPlugin({
+        new TerserPlugin({
           parallel: true,
-          uglifyOptions: {
+          terserOptions: {
             compress: true,
             mangle: true,
           },
