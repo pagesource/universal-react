@@ -54,7 +54,8 @@ module.exports = withPlugins([withBundleAnalyzer, withTM], {
         const foundation = {
           destPath: '/app/.next/dist/static/styles/vendor/',
           files: [
-            path.resolve(__dirname, '/app/static/styles/vendor/normalize.css'),
+            path.resolve(__dirname, '/node_modules/normalize.css/normalize.css'),
+            path.resolve(__dirname, '/node_modules/flexboxgrid/css/flexboxgrid.css'),
             path.resolve(__dirname, '/app/static/styles/icons/icomoon.css'),
           ],
           fileName: 'foundation',
