@@ -1,9 +1,10 @@
 // @flow
 import type { Node } from 'react';
-import { Component } from 'react';
+import React, { Component } from 'react';
+
 import logger from './logger';
 
-export default function (WrappedComponent: any) {
+export default function(WrappedComponent: any) {
   return class errorBoundaryComponent extends Component<any> {
     /* eslint-disable class-methods-use-this */
     // cors check from reviewer

@@ -1,3 +1,3 @@
 // @flow
 
-export type Props = { };
+export type Props = { className: string, title: string, banner: string };

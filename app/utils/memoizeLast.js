@@ -1,8 +1,7 @@
 // @flow
 
 const eqArray = (left: Array<mixed>, right: Array<mixed>): boolean =>
-  left.length === right.length &&
-  left.every((value, index) => right[index] === value);
+  left.length === right.length && left.every((value, index) => right[index] === value);
 
 const memoizeLast = (fn: Function) => {
   let lastMemoized;

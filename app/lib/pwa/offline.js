@@ -17,7 +17,7 @@ if (
     .then(() => {
       console.log('Service worker registered');
     })
-    .catch((e) => {
+    .catch(e => {
       console.error('Error during service worker registration:', e);
     });
 }

@@ -36,9 +36,7 @@ const Spinner = (props: Props): Node => {
   const renderDotSpinner = (spinnerClassName, { ...others }) =>
     renderCustomSpinner(spinnerClassName, { ...others });
 
-  const {
-    spinnerClassName, className, spinner, overlayEnabled, ...others
-  } = props;
+  const { spinnerClassName, className, spinner, overlayEnabled, ...others } = props;
   if (overlayEnabled) {
     return (
       <div className={className}>

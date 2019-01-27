@@ -7,18 +7,18 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 const Buildify = require('buildify');
 const path = require('path');
 const withBundleAnalyzer = require('@zeit/next-bundle-analyzer');
+const withPlugins = require('next-compose-plugins');
+const withTM = require('next-plugin-transpile-modules');
 const {
   ENV_DEVELOPMENT,
   STATIC_FOLDER_PREFIX,
   ENV_PRODUCTION,
 } = require('../isomorphic/constants');
-const withPlugins = require('next-compose-plugins');
-const withTM = require('next-plugin-transpile-modules');
 
 const { parsed: envVars } = dotenv.config({
   path: path.resolve(
     __dirname,
-    `..${path.sep}env${path.sep}${process.env.NODE_ENV || ENV_DEVELOPMENT}.env`,
+    `..${path.sep}env${path.sep}${process.env.NODE_ENV || ENV_DEVELOPMENT}.env`
   ),
 });
 
@@ -42,7 +42,9 @@ module.exports = withPlugins([withBundleAnalyzer, withTM], {
     config.entry = async () => {
       const entries = await originalEntry();
       if (entries['main.js']) {
-        entries['main.js'].unshift(path.resolve(__dirname, `.${path.sep}static${path.sep}libs${path.sep}polyfills.js`));
+        entries['main.js'].unshift(
+          path.resolve(__dirname, `.${path.sep}static${path.sep}libs${path.sep}polyfills.js`)
+        );
       }
       return entries;
     };
@@ -59,30 +61,37 @@ module.exports = withPlugins([withBundleAnalyzer, withTM], {
         };
 
         Buildify()
-          .concat(foundation.files.concat(path.resolve(__dirname, '/app/static/styles/vendor/flexboxgrid.css')))
+          .concat(
+            foundation.files.concat(
+              path.resolve(__dirname, '/app/static/styles/vendor/flexboxgrid.css')
+            )
+          )
           .cssmin()
           .save(path.resolve(__dirname, `${foundation.destPath}${foundation.fileName}.css`));
       }
       config.plugins.push(new StringReplacePlugin());
-      config.plugins.push(new CopyWebpackPlugin(
-        [
-          {
-            from: path.join(__dirname, '/static/**/*'),
-            to: path.join(__dirname, '/.next/dist'),
-            transform(content, filePath) {
-              if (filePath.endsWith('.css')) {
-                return minify.css(content.toString());
-              } else if (filePath.endsWith('.js') && filePath.indexOf('polyfills') === -1) {
-                /* exclude any file that has es6 code as the plugin cannot uglifiy it
+      config.plugins.push(
+        new CopyWebpackPlugin(
+          [
+            {
+              from: path.join(__dirname, '/static/**/*'),
+              to: path.join(__dirname, '/.next/dist'),
+              transform(content, filePath) {
+                if (filePath.endsWith('.css')) {
+                  return minify.css(content.toString());
+                }
+                if (filePath.endsWith('.js') && filePath.indexOf('polyfills') === -1) {
+                  /* exclude any file that has es6 code as the plugin cannot uglifiy it
                ref:https://github.com/webpack-contrib/uglifyjs-webpack-plugin/issues/7 */
-                return minify.js(content.toString());
-              }
-              return content;
+                  return minify.js(content.toString());
+                }
+                return content;
+              },
             },
-          },
-        ],
-        {},
-      ));
+          ],
+          {}
+        )
+      );
 
       // add build id before static resources for cache busting
       config.module.rules.push({
@@ -132,14 +141,16 @@ module.exports = withPlugins([withBundleAnalyzer, withTM], {
         },
       };
 
-      config.plugins.push(new UglifyJsPlugin({
-        parallel: true,
-        uglifyOptions: {
-          compress: true,
-          mangle: true,
-        },
-        sourceMap: false,
-      }));
+      config.plugins.push(
+        new UglifyJsPlugin({
+          parallel: true,
+          uglifyOptions: {
+            compress: true,
+            mangle: true,
+          },
+          sourceMap: false,
+        })
+      );
     }
 
     config.resolve.alias.fs = path.resolve(__dirname, 'lib/fake/fs.js');

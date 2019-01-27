@@ -16,7 +16,7 @@ const allowedModes = [RESTART_ON_REMOUNT, DAEMON, ONCE_TILL_UNMOUNT];
 const checkKey = key =>
   invariant(
     isString(key) && !isEmpty(key),
-    'sagaInjector.js : Expected `key` to be a non empty string',
+    'sagaInjector.js : Expected `key` to be a non empty string'
   );
 
 /**
@@ -25,7 +25,7 @@ const checkKey = key =>
  * @param {function} descriptor.saga - The saga to be verified
  * @param {string} descriptor.mode - The mode passed for the given saga
  */
-const checkDescriptor = (descriptor) => {
+const checkDescriptor = descriptor => {
   const shape = {
     saga: isFunction,
     mode: mode => isString(mode) && allowedModes.indexOf(mode) > -1,

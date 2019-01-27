@@ -1,4 +1,5 @@
 // @flow
+import React from 'react';
 import type { Node } from 'react';
 
 import withStyles from '../../../lib/withStyles';
@@ -13,7 +14,13 @@ type Props = {
 };
 
 const Image = ({
-  className, src, placeholderSrc, alt, inheritedStyles, ref, ...other
+  className,
+  src,
+  placeholderSrc,
+  alt,
+  inheritedStyles,
+  ref,
+  ...other
 }: Props): Node => (
   <img
     className={className}
@@ -21,7 +28,7 @@ const Image = ({
     alt={alt}
     ref={ref}
     {...other}
-    onError={(event) => {
+    onError={event => {
       // eslint-disable-next-line no-param-reassign
       event.target.src = placeholderSrc;
     }}

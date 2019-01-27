@@ -26,7 +26,7 @@ if (typeof Object.assign !== 'function') {
         const nextSource = arguments[index];
 
         if (nextSource != null) {
-          for (var nextKey in nextSource) {
+          for (const nextKey in nextSource) {
             if (Object.prototype.hasOwnProperty.call(nextSource, nextKey)) {
               to[nextKey] = nextSource[nextKey];
             }
@@ -112,9 +112,7 @@ if (!Object.compareShallow) {
       return false;
     }
 
-    return obj1Keys.every(function(key) {
-      return obj1[key] === obj2[key];
-    });
+    return obj1Keys.every(key => obj1[key] === obj2[key]);
   };
 }
 
@@ -130,38 +128,33 @@ if (typeof window.CustomEvent !== 'function') {
 
 if (!String.prototype.padStart) {
   String.prototype.padStart = function padStart(targetLength, padString) {
-    targetLength = targetLength >> 0; //truncate if number or convert non-number to 0;
+    targetLength >>= 0; // truncate if number or convert non-number to 0;
     padString = String(typeof padString !== 'undefined' ? padString : ' ');
     if (this.length > targetLength) {
       return String(this);
-    } else {
-      targetLength = targetLength - this.length;
-      if (targetLength > padString.length) {
-        padString += padString.repeat(targetLength / padString.length); //append to original to ensure we are longer than needed
-      }
-      return padString.slice(0, targetLength) + String(this);
     }
+    targetLength -= this.length;
+    if (targetLength > padString.length) {
+      padString += padString.repeat(targetLength / padString.length); // append to original to ensure we are longer than needed
+    }
+    return padString.slice(0, targetLength) + String(this);
   };
 }
 
 if (!Object.entries) {
   Object.entries = function(obj) {
-    return Object.keys(obj).map(function(key) {
-      return [key, obj[key]];
-    });
+    return Object.keys(obj).map(key => [key, obj[key]]);
   };
 }
 
 if (!Object.values) {
   Object.values = function(obj) {
-    return Object.keys(obj).map(function(key) {
-      return obj[key];
-    });
+    return Object.keys(obj).map(key => obj[key]);
   };
 }
 
-(function (arr) {
-  arr.forEach(function (item) {
+(function(arr) {
+  arr.forEach(item => {
     if (item.hasOwnProperty('remove')) {
       return;
     }
@@ -170,9 +163,8 @@ if (!Object.values) {
       enumerable: true,
       writable: true,
       value: function remove() {
-        if (this.parentNode !== null)
-          this.parentNode.removeChild(this);
-      }
+        if (this.parentNode !== null) this.parentNode.removeChild(this);
+      },
     });
   });
 })([Element.prototype, CharacterData.prototype, DocumentType.prototype]);

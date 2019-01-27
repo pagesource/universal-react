@@ -1,13 +1,14 @@
 /** * * Testimonials * */
 
 // @flow
-import { PureComponent } from 'react';
+import React, { PureComponent } from 'react';
 import styles from './Testimonials.style';
 import withStyles from '../../../lib/withStyles';
 import type { Props } from './types';
 
 class Testimonials extends PureComponent<Props> {
   static defaultProps = {};
+
   render() {
     const { className } = this.props;
 
@@ -35,7 +36,9 @@ class Testimonials extends PureComponent<Props> {
                     <img src="/static/images/pic01.jpg" alt="" />
                   </div>
                   <p className="credit">
-                    - <strong>Jane Doe</strong> <span>CEO - ABC Inc.</span>
+                    <span>-</span>
+                    <strong>Jane Doe</strong>
+                    <span>CEO - ABC Inc.</span>
                   </p>
                 </div>
               </div>
@@ -53,7 +56,9 @@ class Testimonials extends PureComponent<Props> {
                     <img src="/static/images/pic03.jpg" alt="" />
                   </div>
                   <p className="credit">
-                    - <strong>John Doe</strong> <span>CEO - ABC Inc.</span>
+                    <span>-</span>
+                    <strong>John Doe</strong>
+                    <span>CEO - ABC Inc.</span>
                   </p>
                 </div>
               </div>
@@ -71,7 +76,9 @@ class Testimonials extends PureComponent<Props> {
                     <img src="/static/images/pic02.jpg" alt="" />
                   </div>
                   <p className="credit">
-                    - <strong>Janet Smith</strong> <span>CEO - ABC Inc.</span>
+                    <span>-</span>
+                    <strong>Janet Smith</strong>
+                    <span>CEO - ABC Inc.</span>
                   </p>
                 </div>
               </div>

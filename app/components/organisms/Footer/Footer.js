@@ -4,6 +4,7 @@
  *
  */
 // @flow
+import React from 'react';
 import type { Node } from 'react';
 import type { Props } from './types';
 
@@ -41,8 +42,11 @@ const Footer = ({ className }: Props): Node => (
         </section>
       </div>
       <div className="copyright">
-        &copy; Untitled. Photos <a href="https://unsplash.co">Unsplash</a>, Video{' '}
-        <a href="https://coverr.co">Coverr</a>.
+        <span>&copy; Untitled. Photos</span>
+        <a href="https://unsplash.co">Unsplash</a>
+        <span>, Video</span>
+        <a href="https://coverr.co">Coverr</a>
+        <span>.</span>
       </div>
     </div>
   </footer>

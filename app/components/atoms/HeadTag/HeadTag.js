@@ -1,33 +1,23 @@
 // @flow
-
 import Head from 'next/head';
-import { PureComponent } from 'react';
+import React, { PureComponent } from 'react';
 
 import config from './HeadTag.config';
 
-type Props = {
-  title?: string,
-  schema?: any,
-};
-
-type MetaProps = {
-  prefix?: string,
-  meta: {
-    id: number,
-    key: string,
-    content: string,
-  },
-  content: string,
-};
+import type { Props, MetaProps } from './types';
 
 export const MetaTag = (props: MetaProps) => {
   const attrs = {
-    content: props.content,
+    content: { ...props }.content,
   };
-  // eslint-disable-next-line
-  attrs[props.prefix && props.prefix === 'og' ? 'property' : 'name'] = props.prefix
-    ? `${props.prefix}:${props.meta.key}`
-    : props.meta.key;
+
+  /* eslint-disable */
+  // $flow-disable-line
+  attrs[{ ...props }.prefix && { ...props }.prefix === 'og' ? 'property' : 'name'] = { ...props }
+    .prefix
+    ? `${{ ...props }.prefix}:${{ ...props }.meta.key}`
+    : { ...props }.meta.key;
+  /* eslint-enable */
 
   return <meta {...attrs} />;
 };
@@ -45,8 +35,8 @@ class HeadTag extends PureComponent<Props> {
       <Head>
         {/* eslint-disable react/no-danger */}
         <title>{title}</title>
-        {META_KEYS.map((meta) => {
-          const content = this.props[meta.serverKey || meta.key];
+        {META_KEYS.map(meta => {
+          const content = { ...this.props }[meta.serverKey] || { ...this.props }[meta.key];
           if (!content) {
             return null;
           }
@@ -63,9 +53,12 @@ class HeadTag extends PureComponent<Props> {
             <MetaTag key={`meta-${meta.id}`} meta={meta} content={content} />
           );
         })}
-        {LINK.map(key => (this.props[key]
-          ? <link rel={key} href={this.props[key]} key={key} />
-          : null))}
+        {LINK.map(
+          key =>
+            ({ ...this.props }[key] ? (
+              <link rel={key} href={{ ...this.props }[key]} key={key} />
+            ) : null)
+        )}
 
         {/* eslint-disable react/no-danger */}
         {schema ? (

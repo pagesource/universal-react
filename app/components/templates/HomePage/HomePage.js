@@ -1,5 +1,5 @@
 // @flow
-import { PureComponent } from 'react';
+import React, { PureComponent } from 'react';
 import get from 'lodash/get';
 import Layout from '../Layout';
 import enhance from '../../../lib/dynamicStore';
@@ -11,9 +11,9 @@ import Highlight from '../../molecules/Highlights';
 import Testimonials from '../../molecules/Testimonials';
 import TopBanner from '../../molecules/TopBanner';
 
-type Props = {};
+import type { PropsTypes } from './types';
 
-class HomePage extends PureComponent<Props> {
+class HomePage extends PureComponent<PropsTypes> {
   static defaultProps = {
     seoData: {
       homePageMetaDesc: '',
@@ -43,7 +43,7 @@ const mapStateToProps = state => ({
   editorialData: get(state, ['homePage', 'layout', 'editorialData']),
 });
 
-const mapDispatchToProps = (dispatch: Object) => ({});
+const mapDispatchToProps = () => ({});
 
 export default enhance(HomePage, {
   mapStateToProps,

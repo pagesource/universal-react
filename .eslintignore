@@ -12,3 +12,4 @@ stories
 # Make sure to INCLUDE the following,
 # because eslint ignores hidden/dotfiles by default.
 .storybook
+/app/static/libs/

@@ -6,6 +6,7 @@ import { HEARTBEAT_SESSION_NAME } from '../constants';
 
 es6promise.polyfill();
 
+/* eslint-disable */
 class ServiceUtils {
   sessions: Object;
 
@@ -16,11 +17,16 @@ class ServiceUtils {
   setSessionID(sessionName: string, sessionId: string | number) {
     this.sessions[sessionName] = sessionId;
   }
+
   // corss check from reviewer
   fetch = (url: string, props: Object) => {
     let fetchUrl: string;
     let headers = {};
-    if (process.browser) {
+
+    // $flow-disable-line
+    const { browser } = process || null;
+
+    if (browser) {
       // TODO: Needs review
       // fetchUrl = url.replace(CLIENT_URL_PREFIX, '');
       fetchUrl = url;
@@ -31,11 +37,13 @@ class ServiceUtils {
       };
       headers[HEARTBEAT_SESSION_NAME] = this.sessions[HEARTBEAT_SESSION_NAME];
     }
+
     return fetch(fetchUrl, {
       headers,
       ...props,
     });
   };
 }
+/* eslint-enable */
 
 export default new ServiceUtils();

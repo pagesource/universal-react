@@ -1,7 +1,7 @@
 import { shallow } from 'enzyme';
 import 'jest-styled-components';
 
-import Button from '../';
+import Button from '..';
 import Theme from '../../../../styles/theme';
 import { DESKTOP, MOBILE } from '../../../../constants';
 

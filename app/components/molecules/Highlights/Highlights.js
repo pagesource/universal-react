@@ -1,13 +1,14 @@
 /** * * Highlights * */
 
 // @flow
-import { PureComponent } from 'react';
+import React, { PureComponent } from 'react';
 import styles from './Highlights.style';
 import withStyles from '../../../lib/withStyles';
 import type { Props } from './types';
 
 class Highlights extends PureComponent<Props> {
   static defaultProps = {};
+
   render() {
     const { className } = this.props;
     return (

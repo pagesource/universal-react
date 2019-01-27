@@ -1,11 +1,12 @@
 // @flow
+import React from 'react';
 import { ThemeProvider } from 'styled-components';
 import type { Node } from 'react';
 import { connect } from 'react-redux';
 import Head from 'next/head';
 import get from 'lodash/get';
 
-import Theme from '../../../styles/theme/';
+import Theme from '../../../styles/theme';
 import Header from '../../organisms/Header';
 import Footer from '../../organisms/Footer';
 import { MOBILE } from '../../../constants';

@@ -1,5 +1,5 @@
 import { shallow } from 'enzyme';
-import ContentSlotUnsafeHTML from '../';
+import ContentSlotUnsafeHTML from '..';
 
 /* eslint-disable import/prefer-default-export */
 export const props = {

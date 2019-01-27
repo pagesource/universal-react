@@ -17,14 +17,14 @@ export const pushQueryToHistory = ({
   const pathname = window.location.href.split('?')[0];
   const queryString = Object.keys(query).reduce(
     (accumulator, currentValue) =>
-      (query[currentValue]
+      query[currentValue]
         ? `${accumulator}${currentValue}=${
-          query[currentValue] !== decodeURIComponent(query[currentValue])
-            ? query[currentValue]
-            : encodeURIComponent(query[currentValue])
-        }&`
-        : accumulator),
-    '?',
+            query[currentValue] !== decodeURIComponent(query[currentValue])
+              ? query[currentValue]
+              : encodeURIComponent(query[currentValue])
+          }&`
+        : accumulator,
+    '?'
   );
 
   let search = queryString.substr(0, queryString.length - 1);
@@ -33,11 +33,11 @@ export const pushQueryToHistory = ({
 
   const promise = replace
     ? Router.replace({ pathname: route, query: routeQuery }, url, {
-      shallow: !!shallow,
-    })
+        shallow: !!shallow,
+      })
     : Router.push({ pathname: route, query: routeQuery }, url, {
-      shallow: !!shallow,
-    });
+        shallow: !!shallow,
+      });
   return {
     newPageUrl: url,
     newPageQuery: query,
@@ -45,7 +45,7 @@ export const pushQueryToHistory = ({
   };
 };
 
-export const parseQueryParams = (pathname) => {
+export const parseQueryParams = pathname => {
   const search = pathname.split('?')[1];
   if (search) {
     const queryList = search.split('&');
@@ -57,9 +57,9 @@ export const parseQueryParams = (pathname) => {
   return {};
 };
 
-export const cleanObject = (obj) => {
+export const cleanObject = obj => {
   const newObj = {};
-  Object.keys(obj).forEach((key) => {
+  Object.keys(obj).forEach(key => {
     if (obj[key]) newObj[key] = obj[key];
   });
   return newObj;
@@ -76,11 +76,11 @@ export const setCookie = (cookieName, cookieValue, expiryDays) => {
   document.cookie = `${cookieName}=${cookieValue};${expires}path=/`;
 };
 
-export const getCookie = (key) => {
+export const getCookie = key => {
   if (typeof window === 'undefined') return '';
   return document.cookie.replace(
     new RegExp(`(?:(?:^|.*;\\s*)${key}\\s*\\=\\s*([^;]*).*$)|^.*$`),
-    '$1',
+    '$1'
   );
 };
 
@@ -93,7 +93,7 @@ export const createUrlSearchParams = (query = {}) => {
   return queryParams.join('&');
 };
 
-export const buildUrl = (options) => {
+export const buildUrl = options => {
   if (typeof options === 'object') {
     const { pathname, query } = options;
     let url = pathname;
@@ -111,16 +111,14 @@ export const removeChar = (str, ch) => {
   return str.replace(reg, x => (x === ch ? ' ' : ` ${ch} `));
 };
 
-export const elementOffset = (el) => {
+export const elementOffset = el => {
   const rect = el.getBoundingClientRect();
   const scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
   const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
   return { top: rect.top + scrollTop, left: rect.left + scrollLeft };
 };
 
-export const redirectInactiveUser = ({
-  pathname, shallow, isUserLoggedIn, signOutUser,
-}) => {
+export const redirectInactiveUser = ({ pathname, shallow, isUserLoggedIn, signOutUser }) => {
   if (typeof window !== 'undefined') {
     const IDLE_TIMEOUT = process.env.INACTIVE_USER_TIMEOUT_MINUTES;
     let idleSecondsCounter = 0;
@@ -148,7 +146,7 @@ export const redirectInactiveUser = ({
 
     idealTime = window.setInterval(checkIdleTime, checkIdleTimeMiliseconds);
 
-    eventTypes.forEach((event) => {
+    eventTypes.forEach(event => {
       window.addEventListener(event, resetTimer);
     });
   }
@@ -158,7 +156,7 @@ export const stopTrackingInactiveUser = () => {
   if (typeof window !== 'undefined') {
     const eventTypes = ['mousemove', 'mousedown', 'keydown', 'touchstart', 'scroll'];
     clearInterval(window.idealTime);
-    eventTypes.forEach((event) => {
+    eventTypes.forEach(event => {
       window.removeEventListener(event, null, true);
     });
   }
@@ -173,7 +171,7 @@ export const isIOS = () => {
 
 export const escapeHtml = (text = '') => text.replace(/&#039;/g, "'").replace(/%2C;/g, ',');
 
-export const addDecimal = (value) => {
+export const addDecimal = value => {
   let price = value;
   if (typeof price === 'string') {
     price = parseFloat(value);
