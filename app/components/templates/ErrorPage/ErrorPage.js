@@ -6,6 +6,7 @@ import initialActions from './ErrorPage.actions';
 import HeadTag from '../../atoms/HeadTag';
 import saga from './ErrorPage.saga';
 import reducer from './ErrorPage.reducer';
+import get from 'lodash/get';
 
 class ErrorPage extends Component<any> {
   static getInitialProps({ res }: any) {
@@ -16,8 +17,8 @@ class ErrorPage extends Component<any> {
   }
 
   render() {
-    const { errorData } = this.props;
-    const errorMessage = errorData.get('message');
+    const { errorData, state } = this.props;
+    const errorMessage = get(errorData, 'message');
     return (
       <Layout title="error" className="row" id="content-wrapper" tabindex="-1">
         <HeadTag description="error page" title="error page" />
@@ -31,10 +32,11 @@ class ErrorPage extends Component<any> {
 
 /* istanbul ignore next */
 const mapStateToProps = state => ({
-  errorData: state.getIn(['errorPage', 'errorPageData']),
+  state,
+  errorData: get(state, ['errorPage', 'errorPageData']),
 });
 
-const mapDispatchToProps = (dispatch: Map) => ({});
+const mapDispatchToProps = dispatch => ({});
 
 export default enhance(ErrorPage, {
   mapStateToProps,

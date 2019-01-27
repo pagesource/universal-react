@@ -1,6 +1,6 @@
 // @flow
 import { PureComponent } from 'react';
-import { toJS } from 'immutable';
+import get from 'lodash/get';
 import Layout from '../Layout';
 import enhance from '../../../lib/dynamicStore';
 import initialActions from './HomePage.actions';
@@ -26,8 +26,7 @@ class HomePage extends PureComponent<Props> {
   render() {
     const { editorialData } = this.props;
 
-    const title = editorialData.get('title');
-    const banner = editorialData.get('banner');
+    const { title, banner } = editorialData;
 
     return (
       <Layout title="home" className="row" id="content-wrapper">
@@ -41,10 +40,10 @@ class HomePage extends PureComponent<Props> {
 }
 /* istanbul ignore next */
 const mapStateToProps = state => ({
-  editorialData: state.getIn(['homePage', 'layout', 'editorialData']),
+  editorialData: get(state, ['homePage', 'layout', 'editorialData']),
 });
 
-const mapDispatchToProps = (dispatch: Map) => ({});
+const mapDispatchToProps = (dispatch: Object) => ({});
 
 export default enhance(HomePage, {
   mapStateToProps,

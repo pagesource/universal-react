@@ -1,6 +1,7 @@
 // @flow
-import { fromJS, Map } from 'immutable';
-import { combineReducers } from 'redux-immutable';
+import { combineReducers } from 'redux';
+import set from 'lodash/set';
+
 import type {
   LoadHomeFailureAction,
   LoadSeoDataSuccessAction,
@@ -13,16 +14,18 @@ import {
   LOAD_HOME_EDITORIAL_DATA_SUCCESS,
 } from './HomePage.constants';
 
-export const getFailure = (state: Map, action: LoadHomeFailureAction): Map =>
-  state.set('error', action.error);
+export const getFailure = (state: Object, action: LoadHomeFailureAction): Object =>
+  set(state, 'error', action.error);
 
-export const addLayoutData = (state: Map, data: LoadSeoDataSuccessAction): Map =>
-  state.set('seoData', data);
+export const addLayoutData = (state: Object, data: LoadSeoDataSuccessAction): Object =>
+  set(state, 'seoData', data);
 
-export const addHomeEditorialData = (state: Map, data: LoadHomeEditorialDataSuccessAction): Map =>
-  state.set('editorialData', fromJS(data));
+export const addHomeEditorialData = (
+  state: Object,
+  data: LoadHomeEditorialDataSuccessAction
+): Object => set(state, 'editorialData', data);
 
-export const layout = (state = fromJS({}), action: HomePageActions): Map => {
+export const layout = (state = {}, action: HomePageActions): Object => {
   switch (action.type) {
     case LOAD_HOME_FAILURE:
       return getFailure(state, action);

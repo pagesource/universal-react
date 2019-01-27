@@ -11,7 +11,7 @@ If the component doesn't want to send 2 styles, it can send styles directly and 
 */
 export default (WrappedComponent, styles) => styled(WrappedComponent)`
   ${props => (styles ? styles[props.theme.deviceType] || styles : '')};
-  ${(props) => {
+  ${props => {
     if (!props.inheritedStyles) return '';
     if (props.inheritedStyles instanceof Array) return props.inheritedStyles;
     return props.inheritedStyles[props.theme.deviceType] || props.inheritedStyles || '';

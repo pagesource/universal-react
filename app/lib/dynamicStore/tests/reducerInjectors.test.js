@@ -2,7 +2,6 @@
  * Test injectors
  */
 
-import { fromJS } from 'immutable';
 import identity from 'lodash/identity';
 import configureMockStore from 'redux-mock-store';
 
@@ -10,7 +9,7 @@ import getInjectors, { injectReducerFactory } from '../reducerInjectors';
 
 // Fixtures
 
-const initialState = fromJS({ reduced: 'soon' });
+const initialState = { reduced: 'soon' };
 
 const reducer = (state = initialState, action) => {
   switch (action.type) {
@@ -39,9 +38,11 @@ describe('reducer injectors', () => {
   });
   describe('getInjectors', () => {
     test('should return injectors', () => {
-      expect(getInjectors(store)).toEqual(expect.objectContaining({
-        injectReducer: expect.any(Function),
-      }));
+      expect(getInjectors(store)).toEqual(
+        expect.objectContaining({
+          injectReducer: expect.any(Function),
+        })
+      );
     });
 
     test('should throw if passed invalid store shape', () => {

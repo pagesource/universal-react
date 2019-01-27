@@ -1,11 +1,10 @@
 import { shallow } from 'enzyme';
-import { fromJS } from 'immutable';
 import { ErrorPageDisconnected as ErrorPage } from '../ErrorPage';
 
 const props = {
-  errorData: fromJS({
+  errorData: {
     message: 'Test Message',
-  }),
+  },
 };
 
 describe('ErrorPage Component', () => {

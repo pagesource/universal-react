@@ -1,9 +1,10 @@
 // @flow
+import React from 'react';
 import type { Node } from 'react';
 
 import styles from './Button.style';
 import withStyles from '../../../lib/withStyles';
-import Spinner from '../../atoms/Spinner';
+import Spinner from '../Spinner';
 
 type Props = {
   className: string,
@@ -45,10 +46,10 @@ const Button = ({
     tabIndex={tabIndex || null}
   >
     {loader && (
-    <div className={`spinner ${loaderPositionCenter ? 'center-spinner' : ''}`}>
-      <Spinner overlayEnabled spinner />
-    </div>
-      )}
+      <div className={`spinner ${loaderPositionCenter ? 'center-spinner' : ''}`}>
+        <Spinner overlayEnabled spinner />
+      </div>
+    )}
     {children}
   </button>
 );

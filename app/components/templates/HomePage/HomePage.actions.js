@@ -1,5 +1,4 @@
 // @flow
-import type { Map } from 'immutable';
 import {
   LOAD_HOME_FAILURE,
   LOAD_HOME_SEO,
@@ -22,7 +21,7 @@ export const loadHomeFailure = (error: Error): LoadHomeFailureAction => ({
 
 export const loadHomeSeo = (): LoadSeoDataAction => ({ type: LOAD_HOME_SEO });
 
-export const loadHomeSeoSuccess = (data: Map): LoadSeoDataSuccessAction => ({
+export const loadHomeSeoSuccess = (data: Object): LoadSeoDataSuccessAction => ({
   type: LOAD_HOME_SEO_SUCCESS,
   data,
 });
@@ -32,7 +31,7 @@ export const loadHomePageEditorial = (): LoadHomeEditorialDataAction => ({
   slotId: 'homePageSlot',
 });
 
-export const loadHomePageEditorialSuccess = (data: Map): LoadHomeEditorialDataSuccessAction => ({
+export const loadHomePageEditorialSuccess = (data: Object): LoadHomeEditorialDataSuccessAction => ({
   type: LOAD_HOME_EDITORIAL_DATA_SUCCESS,
   data,
 });

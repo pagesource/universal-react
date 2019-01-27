@@ -1,6 +1,5 @@
 import { createStore, applyMiddleware, compose } from 'redux';
 import { composeWithDevTools } from 'redux-devtools-extension';
-import { fromJS } from 'immutable';
 import createSagaMiddleware from 'redux-saga';
 import nextReduxWrapper from 'next-redux-wrapper';
 
@@ -25,7 +24,7 @@ const composeEnhancers =
  * @param {Object} options.reducer - Reducers associated with the page commponent
  * @param {Object} options.saga - Sagas associated with the page commponent
  */
-export default options => (BaseComponent) => {
+export default options => BaseComponent => {
   const hasKey = !!options.key;
   if (!hasKey) throw new Error(`${BaseComponent.displayName} needs to be passed with a key`);
   const hasReducer = !!options.reducer;
@@ -33,11 +32,7 @@ export default options => (BaseComponent) => {
   const reducer = hasKey && hasReducer ? { [options.key]: options.reducer } : {};
 
   const configureStore = (initialState = {}) => {
-    const store = createStore(
-      createReducer(reducer),
-      fromJS(initialState),
-      composeEnhancers(...enhancers),
-    );
+    const store = createStore(createReducer(reducer), initialState, composeEnhancers(...enhancers));
 
     // Keep access to 'run' method of saga task in store so thats its available globally with store
     store.runSaga = sagaMiddleware.run;

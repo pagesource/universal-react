@@ -1,5 +1,4 @@
 // @flow
-import type { Map } from 'immutable';
 import {
   LOAD_HOME_FAILURE,
   LOAD_HOME_SEO,
@@ -31,11 +30,12 @@ export type LoadHomeEditorialDataSuccessAction = {
 };
 
 export type PropsTypes = {
-  seoData: Map,
+  seoData: Object,
+  editorialData: Object,
 };
 
-export type MapState = {
-  seoData: Map,
+export type ObjectState = {
+  seoData: Object,
 };
 
 export type HomePageActions =
