@@ -1,6 +1,6 @@
 const cssIncludes = [];
 
-if (process.env.NODE_ENV === 'development') {
+if (process.env.NODE_ENV === 'development' || true) {
   cssIncludes.push('/static/styles/font-awesome.min.css', '/static/styles/main.css');
 }
 
