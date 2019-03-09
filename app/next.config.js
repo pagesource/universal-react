@@ -1,7 +1,7 @@
 const webpack = require('webpack');
 const dotenv = require('dotenv');
-const StringReplacePlugin = require('string-replace-webpack-plugin');
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+const TerserPlugin = require('terser-webpack-plugin');
+const Terser = require('terser');
 const minify = require('harp-minify');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const Buildify = require('buildify');
@@ -9,11 +9,7 @@ const path = require('path');
 const withBundleAnalyzer = require('@zeit/next-bundle-analyzer');
 const withPlugins = require('next-compose-plugins');
 const withTM = require('next-plugin-transpile-modules');
-const {
-  ENV_DEVELOPMENT,
-  STATIC_FOLDER_PREFIX,
-  ENV_PRODUCTION,
-} = require('../isomorphic/constants');
+const { ENV_DEVELOPMENT, ENV_PRODUCTION } = require('../isomorphic/constants');
 
 const { parsed: envVars } = dotenv.config({
   path: path.resolve(
@@ -22,14 +18,11 @@ const { parsed: envVars } = dotenv.config({
   ),
 });
 
-const getRegExp = () => {
-  const regex = `${STATIC_FOLDER_PREFIX}`;
-  return new RegExp(regex, 'ig');
-};
 const metricsKey = process.env.ENV_API_KEY === process.env.PROD_KEY ? 'prod' : 'dev';
 
 module.exports = withPlugins([withBundleAnalyzer, withTM], {
   transpileModules: ['atomic-react-pattern-lib'],
+  distDir: '../.next',
   webpack: (config, { dev, buildId, isServer }) => {
     config.plugins.push(new webpack.EnvironmentPlugin(envVars));
 
@@ -49,10 +42,11 @@ module.exports = withPlugins([withBundleAnalyzer, withTM], {
       return entries;
     };
 
-    if (process.env.NODE_ENV === ENV_PRODUCTION) {
+    // TODO: Check why these css files were added only in production build
+    if (process.env.NODE_ENV === ENV_PRODUCTION || true) {
       if (isServer) {
         const foundation = {
-          destPath: '/app/.next/dist/static/styles/vendor/',
+          destPath: '.next/static/styles/vendor/',
           files: [
             path.resolve(__dirname, '/node_modules/normalize.css/normalize.css'),
             path.resolve(__dirname, '/node_modules/flexboxgrid/css/flexboxgrid.css'),
@@ -70,21 +64,21 @@ module.exports = withPlugins([withBundleAnalyzer, withTM], {
           .cssmin()
           .save(path.resolve(__dirname, `${foundation.destPath}${foundation.fileName}.css`));
       }
-      config.plugins.push(new StringReplacePlugin());
       config.plugins.push(
         new CopyWebpackPlugin(
           [
             {
               from: path.join(__dirname, '/static/**/*'),
-              to: path.join(__dirname, '/.next/dist'),
+              to: path.join(__dirname, '../.next'),
+              transformPath(targePath) {
+                return targePath.replace(/(\/static\/)/, (match, p1) => `${p1}${buildId}/`);
+              },
               transform(content, filePath) {
                 if (filePath.endsWith('.css')) {
                   return minify.css(content.toString());
                 }
                 if (filePath.endsWith('.js') && filePath.indexOf('polyfills') === -1) {
-                  /* exclude any file that has es6 code as the plugin cannot uglifiy it
-               ref:https://github.com/webpack-contrib/uglifyjs-webpack-plugin/issues/7 */
-                  return minify.js(content.toString());
+                  return Terser.minify(content.toString()).code;
                 }
                 return content;
               },
@@ -93,21 +87,6 @@ module.exports = withPlugins([withBundleAnalyzer, withTM], {
           {}
         )
       );
-
-      // add build id before static resources for cache busting
-      config.module.rules.push({
-        test: [/\.css$/, /\.js$/],
-        loader: StringReplacePlugin.replace({
-          replacements: [
-            {
-              pattern: getRegExp(),
-              replacement(match) {
-                return `${match}${buildId}/`;
-              },
-            },
-          ],
-        }),
-      });
     }
 
     // Following check is for prod builds and client only
@@ -143,9 +122,9 @@ module.exports = withPlugins([withBundleAnalyzer, withTM], {
       };
 
       config.plugins.push(
-        new UglifyJsPlugin({
+        new TerserPlugin({
           parallel: true,
-          uglifyOptions: {
+          terserOptions: {
             compress: true,
             mangle: true,
           },
