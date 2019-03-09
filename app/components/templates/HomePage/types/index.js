@@ -29,7 +29,7 @@ export type LoadHomeEditorialDataSuccessAction = {
   data: any,
 };
 
-export type PropsTypes = {
+export type Props = {
   seoData: Object,
   editorialData: Object,
 };

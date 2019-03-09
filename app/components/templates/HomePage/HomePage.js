@@ -11,9 +11,9 @@ import Highlight from '../../molecules/Highlights';
 import Testimonials from '../../molecules/Testimonials';
 import TopBanner from '../../molecules/TopBanner';
 
-import type { PropsTypes } from './types';
+import type { Props } from './types';
 
-class HomePage extends PureComponent<PropsTypes> {
+class HomePage extends PureComponent<Props> {
   static defaultProps = {
     seoData: {
       homePageMetaDesc: '',

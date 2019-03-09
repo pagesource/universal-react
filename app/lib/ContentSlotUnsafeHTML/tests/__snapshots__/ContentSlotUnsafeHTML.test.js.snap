@@ -23,11 +23,13 @@ exports[`ContentSlotUnsafeHTML Component should render correclty without Wrapper
 `;
 
 exports[`ContentSlotUnsafeHTML Component should render correctly 1`] = `
-<div
-  dangerouslySetInnerHTML={
-    Object {
-      "__html": "<div>HTML</div>",
+<Fragment>
+  <div
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "<div>HTML</div>",
+      }
     }
-  }
-/>
+  />
+</Fragment>
 `;

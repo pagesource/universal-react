@@ -19,8 +19,12 @@ exports[`PaymentMethod component should render correctly 1`] = `
 `;
 
 exports[`PaymentMethodStyle component should render correctly 1`] = `
+.c0 {
+  opacity: 1;
+}
+
 <TextArea
-  className=""
+  className="c0"
   deviceType="desktop"
   errorMessage="error"
   hideLabel={false}

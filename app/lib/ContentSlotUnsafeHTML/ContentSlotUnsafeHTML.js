@@ -44,7 +44,7 @@ class ContentSlotUnsafeHTML extends PureComponent<Props> {
   };
 
   componentDidMount = () => {
-    const { hasScript } = this.props || undefined;
+    const { hasScript } = this.props;
     const { body, createRange } = window && window.document;
 
     if (hasScript && document && document.createRange) {
@@ -62,7 +62,7 @@ class ContentSlotUnsafeHTML extends PureComponent<Props> {
     /* eslint-disable */
     const Wrapper = wrapper;
     return wrapper ? (
-      // $flow-disable-line
+      // $FlowFixMe
       <Wrapper>
         <div
           dangerouslySetInnerHTML={ContentSlotUnsafeHTML.createMarkupForBody(content)}

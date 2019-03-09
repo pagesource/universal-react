@@ -37,11 +37,8 @@ const mapStateToProps = state => ({
   errorData: get(state, ['errorPage', 'errorPageData']),
 });
 
-const mapDispatchToProps = () => ({});
-
 export default enhance(ErrorPage, {
   mapStateToProps,
-  mapDispatchToProps,
   saga,
   reducer,
   key: 'errorPage',

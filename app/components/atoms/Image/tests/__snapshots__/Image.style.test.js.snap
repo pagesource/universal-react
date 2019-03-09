@@ -3,7 +3,7 @@
 exports[`Image Component with styles should render correctly and match snapshots 1`] = `
 <Image
   alt="ABC"
-  className="sc-bdVaJa llwvHO"
+  className="withStyles-sc-4wveuc-0 iRTnBY"
   placeholderSrc="http://xyz.com"
   src="http://abc.com"
 />

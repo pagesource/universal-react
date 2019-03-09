@@ -51,10 +51,12 @@ class Iframe extends PureComponent<Props, State> {
 
     const { frameHeight } = this.state;
 
-    /* eslint-disable */
-    // $flow-disable-line
-    const { contentWindow } = this.iframe || {};
-    /* eslint-enabled */
+    let contentWindow;
+    if (this.iframe && this.iframe.contentWindow) {
+      contentWindow = { ...this.iframe }.contentWindow; // eslint-disable-line
+    } else if (this.iframe && this.iframe.contentDocument) {
+      contentWindow = { ...this.iframe }.contentDocument;
+    }
 
     return (
       <iframe
@@ -69,8 +71,10 @@ class Iframe extends PureComponent<Props, State> {
         frameBorder={frameBorder}
         onLoad={event => {
           if (takeContentHeight) {
+            // $FlowFixMe eslint-disable-line
+            const { document } = contentWindow;
             this.setState({
-              frameHeight: `${contentWindow.document.body.scrollHeight}px`,
+              frameHeight: `${document ? document.body.scrollHeight : 0}px`,
             });
           }
           if (typeof onLoad === 'function') {

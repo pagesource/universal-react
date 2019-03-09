@@ -1,9 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Button should render correctly 1`] = `
+.c0 {
+  opacity: 1;
+}
+
 <Button
   ariaLabel=""
-  className=""
+  className="c0"
   disabled={false}
   inheritedStyles=""
   loader={false}
@@ -36,9 +40,13 @@ exports[`Button should render correctly 1`] = `
 `;
 
 exports[`Button should render correctly for mobile 1`] = `
+.c0 {
+  opacity: 1;
+}
+
 <Button
   ariaLabel=""
-  className=""
+  className="c0"
   disabled={false}
   inheritedStyles=""
   loader={false}

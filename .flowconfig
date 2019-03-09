@@ -15,6 +15,5 @@ flow-typed
 node_modules/styled-components/flow-typed/danger_v0.x.x.js
 node_modules/styled-components/flow-typed/react-native.js
 [options]
-suppress_comment= \\(.\\|\n\\)*\\$flow-disable-line
 
 [strict]

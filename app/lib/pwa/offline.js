@@ -10,9 +10,9 @@
 if (
   process.env.NODE_ENV === 'production' &&
   typeof window !== 'undefined' &&
-  'serviceWorker' in navigator
+  'serviceWorker' in window.navigator
 ) {
-  navigator.serviceWorker
+  window.navigator.serviceWorker
     .register('service-worker.js')
     .then(() => {
       console.log('Service worker registered');

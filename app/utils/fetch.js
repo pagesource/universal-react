@@ -65,6 +65,7 @@ class ServiceUtils {
     return appendedURL;
   }
 
+  /* eslint-disable */
   fetch = async (url: string, actionObject?: Object, additionalFetchOptions?: Object) => {
     let headers = {};
     let fetchUrl: string;
@@ -165,6 +166,7 @@ class ServiceUtils {
 
     return responseData;
   };
+  /* eslint-enable */
 }
 
 export default new ServiceUtils();

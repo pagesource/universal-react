@@ -12,11 +12,10 @@ export const MetaTag = (props: MetaProps) => {
   };
 
   /* eslint-disable */
-  // $flow-disable-line
-  attrs[{ ...props }.prefix && { ...props }.prefix === 'og' ? 'property' : 'name'] = { ...props }
-    .prefix
-    ? `${{ ...props }.prefix}:${{ ...props }.meta.key}`
-    : { ...props }.meta.key;
+  // $FlowFixMe
+  attrs[props.prefix && props.prefix === 'og' ? 'property' : 'name'] = props.prefix
+    ? `${props.prefix}:${props.meta.key}`
+    : props.meta.key;
   /* eslint-enable */
 
   return <meta {...attrs} />;
@@ -75,8 +74,6 @@ class HeadTag extends PureComponent<Props> {
   }
 }
 
-MetaTag.defaultProps = {
-  prefix: undefined,
-};
+MetaTag.defaultProps = {};
 
 export default HeadTag;

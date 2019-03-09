@@ -1,8 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Anchor Component should render correctly and match snapshot 1`] = `
+.c0 {
+  opacity: 1;
+}
+
 <Title
-  className=""
+  className="c0"
   inheritedStyles=""
 >
   Sample
@@ -10,8 +14,12 @@ exports[`Anchor Component should render correctly and match snapshot 1`] = `
 `;
 
 exports[`Anchor Component should render with styles correctly and match snapshot 1`] = `
+.c0 {
+  opacity: 1;
+}
+
 <h1
-  className=""
+  className="c0"
 >
   Sample
 </h1>

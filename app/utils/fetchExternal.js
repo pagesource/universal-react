@@ -23,7 +23,7 @@ class ServiceUtils {
     let fetchUrl: string;
     let headers = {};
 
-    // $flow-disable-line
+    // $FlowFixMe
     const { browser } = process || null;
 
     if (browser) {

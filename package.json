@@ -110,6 +110,7 @@
     "@zeit/next-bundle-analyzer": "^0.1.2",
     "agentkeepalive": "^4.0.0",
     "axios": "^0.18.0",
+    "babel-core": "7.0.0-bridge.0",
     "buildify": "^0.4.0",
     "classnames": "^2.2.6",
     "compression": "^1.7.3",

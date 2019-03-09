@@ -11,7 +11,6 @@ export const stringToArray = stringData => {
       return stringToJson.constructor === Array ? stringToJson : [];
     } catch (err) {
       // Consider returning a message here that something went wrong
-      // throw err
       return false;
     }
   }
@@ -29,7 +28,6 @@ export const stringToObject = stringData => {
       return stringToJson !== null && typeof stringToJson === 'object' ? stringToJson : {};
     } catch (err) {
       // Consider returning a message here that something went wrong
-      // throw err
       return false;
     }
   }
