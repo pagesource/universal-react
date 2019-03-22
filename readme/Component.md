@@ -4,7 +4,7 @@ You can use our in-built genrators to scaffold your components be it atoms, mole
 
 ```shell
 $ yarn run generate
-atomic-react-pattern-lib@0.1.0 generate
+universal-react@0.1.0 generate
 $ plop --plopfile generators/index.js
 ? [PLOP] Please choose a generator. container - Add a container component (organisms, templates)
 ? Select the base component type: React.Component
