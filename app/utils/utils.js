@@ -2,7 +2,7 @@ import getConfig from 'next/config';
 import Router from 'next/router';
 
 export const convertObjectToArray = (obj, takeKeys) =>
-  Array.prototype.concat.apply([], takeKeys ? Object.keys(obj) : Object.values(obj));
+  Array.prototype.concat.apply([], takeKeys ? Object.keys(obj) : Object.values(obj)); // eslint-disable-line
 
 export const pushQueryToHistory = ({
   route,

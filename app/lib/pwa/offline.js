@@ -5,7 +5,6 @@
  */
 
 /* eslint no-console:0 */
-/* globals navigator */
 
 if (
   process.env.NODE_ENV === 'production' &&
