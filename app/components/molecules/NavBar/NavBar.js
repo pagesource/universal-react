@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
+
 // @flow
 import React from 'react';
 import type { Node } from 'react';
@@ -9,7 +11,7 @@ import type { Props } from './types';
 const NavBar = ({ className }: Props): Node => (
   <nav className={className}>
     <Link href="/error">
-      <a href="/error">Hello</a>
+      <a>Hello</a>
     </Link>
   </nav>
 );
