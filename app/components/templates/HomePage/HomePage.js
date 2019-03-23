@@ -52,7 +52,6 @@ export default enhance(HomePage, {
   reducer,
   key: 'homePage',
   initialActions,
-  criticalState: [['homePage', 'layout', 'editorialData']],
 });
 
 export { HomePage as HomePageDisconnected };

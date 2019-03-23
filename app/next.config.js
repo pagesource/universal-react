@@ -56,13 +56,9 @@ module.exports = withPlugins([withBundleAnalyzer, withTM], {
         };
 
         Buildify()
-          .concat(
-            foundation.files.concat(
-              path.resolve(__dirname, '/app/static/styles/vendor/flexboxgrid.css')
-            )
-          )
+          .concat(foundation.files)
           .cssmin()
-          .save(path.resolve(__dirname, `${foundation.destPath}${foundation.fileName}.css`));
+          .save(`${foundation.destPath}${foundation.fileName}.css`);
       }
       config.plugins.push(
         new CopyWebpackPlugin(
