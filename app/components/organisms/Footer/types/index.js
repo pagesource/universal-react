@@ -1,5 +1,3 @@
 // @flow
-
-export type Props = { className: string };
-
-export type State = {};
+export type NavItems = { label: string, href: string };
+export type Props = { className: string, nav: Array<NavItems> };

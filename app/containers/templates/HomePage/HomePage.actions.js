@@ -14,7 +14,7 @@ import type {
   LoadHomeEditorialDataSuccessAction,
 } from './types';
 
-export const loadHomeFailure = (error: Error): LoadHomeFailureAction => ({
+export const loadHomeFailure = (error: any): LoadHomeFailureAction => ({
   type: LOAD_HOME_FAILURE,
   error,
 });

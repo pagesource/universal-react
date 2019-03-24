@@ -1,3 +1,4 @@
 export default {
-  testimonials: '/b/5b613c757b2129536787da96/1',
+  labels: '/b/5c96243c2d33133c401ba348',
+  homePage: '/b/5c977bb79c83133c027c7fcf',
 };

@@ -3,20 +3,36 @@
 // @flow
 import React from 'react';
 import type { Node } from 'react';
+import { AnchorVanilla as Anchor } from '@xt-pagesource/atomic-react-pattern-lib';
 import Link from 'next/link';
 import styles from './NavBar.style';
 import withStyles from '../../../lib/withStyles';
 import type { Props } from './types';
+import { isApplicationLink } from '../../../utils/isApplicationLink';
 
-const NavBar = ({ className }: Props): Node => (
+const NavBar = ({ className, items }: Props): Node => (
   <nav className={className}>
-    <Link href="/error">
-      <a>Hello</a>
-    </Link>
+    <ul>
+      {items.map(({ label, href }, key) => (
+        <li role="none" key={key.toString()}>
+          {isApplicationLink(href) ? (
+            <Link href={href} role="menuitem">
+              <a>{label}</a>
+            </Link>
+          ) : (
+            <Anchor to={href} role="menuitem">
+              {label}
+            </Anchor>
+          )}
+        </li>
+      ))}
+    </ul>
   </nav>
 );
 
-NavBar.defaultProps = {};
+NavBar.defaultProps = {
+  items: [],
+};
 
 export default withStyles(NavBar, styles);
 

@@ -7,46 +7,20 @@
 import React from 'react';
 import type { Node } from 'react';
 import type { Props } from './types';
+import withStyles from '../../../lib/withStyles';
+import NavBar from '../../molecules/NavBar';
+import styles from './Footer.style';
 
-const Footer = ({ className }: Props): Node => (
+const Footer = ({ className, nav }: Props): Node => (
   <footer className={className} id="footer">
     <div className="inner">
-      <div className="content">
-        <section>
-          <h3>Accumsan montes viverra</h3>
-          <p>
-            Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non
-            mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante
-            lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing. Lorem ipsum
-            dolor vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis
-            iaculis volutpat ac adipiscing sed feugiat eu faucibus. Integer ac sed amet praesent.
-            Nunc lacinia ante nunc ac gravida.
-          </p>
-        </section>
-        <section>
-          <h4>Sem turpis amet semper</h4>
-          <ul className="alt">
-            <li>
-              <a href="/link1">Dolor pulvinar sed etiam.</a>
-            </li>
-            <li>
-              <a href="/link2">Etiam vel lorem sed amet.</a>
-            </li>
-            <li>
-              <a href="/link3">Felis enim feugiat viverra.</a>
-            </li>
-            <li>
-              <a href="/link4">Dolor pulvinar magna etiam.</a>
-            </li>
-          </ul>
-        </section>
+      <div className="footer-links">
+        <h3>Footer Links</h3>
+        {nav && <NavBar vertical items={nav} />}
       </div>
       <div className="copyright">
-        <span>&copy; Untitled. Photos</span>
-        <a href="https://unsplash.co">Unsplash</a>
-        <span>, Video</span>
-        <a href="https://coverr.co">Coverr</a>
-        <span>.</span>
+        <span>&copy; PageSource | </span>
+        <span>{new Date().getFullYear()}</span>
       </div>
     </div>
   </footer>
@@ -54,4 +28,4 @@ const Footer = ({ className }: Props): Node => (
 
 Footer.defaultProps = {};
 
-export default Footer;
+export default withStyles(Footer, styles);

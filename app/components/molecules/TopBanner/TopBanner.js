@@ -14,12 +14,12 @@ class TopBanner extends PureComponent<Props> {
   static defaultProps = {};
 
   render() {
-    const { className, title, banner } = this.props;
+    const { className, title, subTitle } = this.props;
     return (
       <section className={className} id="banner">
         <div className="inner">
           <h1>{title || 'Not available'}</h1>
-          <p>{banner}</p>
+          <p>{subTitle}</p>
         </div>
       </section>
     );

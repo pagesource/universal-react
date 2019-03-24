@@ -15,6 +15,7 @@ import {
   USER_STATE_LOGGED_IN,
   UPDATE_SESSION_EMAIL,
   PAGE_ORIGIN,
+  GET_APPLICATION_LABELS_SUCCESS,
 } from '../constants';
 import type {
   DeviceTypeAction,
@@ -62,6 +63,8 @@ const setUserState = (state, userState) => {
 
 const setPageOrigin = (state, origin) => set(state, 'pageOrigin', origin);
 
+const setApplicationLabels = (state, labels) => set(state, 'labels', labels);
+
 /* eslint-disable */
 export default (state: Object = initState, action: GlobalActions) => {
   switch (action.type) {
@@ -87,6 +90,8 @@ export default (state: Object = initState, action: GlobalActions) => {
       return setUserState(state, get(action, 'userState'));
     case PAGE_ORIGIN:
       return setPageOrigin(state, get(action, 'origin'));
+    case GET_APPLICATION_LABELS_SUCCESS:
+      return setApplicationLabels(state, get(action, 'data'));
     default:
       return state;
   }

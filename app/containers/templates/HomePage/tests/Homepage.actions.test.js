@@ -40,7 +40,7 @@ describe('HomePage Actions', () => {
   });
 
   test('calls HomePageLayoutSuccess', () => {
-    const data = Map;
+    const data = {};
     const expectedAction = {
       type: LOAD_HOME_SEO_SUCCESS,
       data,
@@ -58,7 +58,7 @@ describe('HomePage Actions', () => {
   });
 
   test('calls HomePageLayoutSuccess', () => {
-    const data = Map;
+    const data = {};
     const expectedAction = {
       type: LOAD_HOME_EDITORIAL_DATA_SUCCESS,
       data,

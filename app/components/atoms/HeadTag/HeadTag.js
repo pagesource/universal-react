@@ -32,7 +32,6 @@ class HeadTag extends PureComponent<Props> {
     const { META_KEYS, LINK } = config;
     return (
       <Head>
-        {/* eslint-disable react/no-danger */}
         <title>{title}</title>
         {META_KEYS.map(meta => {
           const content = { ...this.props }[meta.serverKey] || { ...this.props }[meta.key];
@@ -68,7 +67,6 @@ class HeadTag extends PureComponent<Props> {
             type="application/ld+json"
           />
         ) : null}
-        {/* eslint-enable react/no-danger */}
       </Head>
     );
   }

@@ -7,8 +7,8 @@ import Head from 'next/head';
 import get from 'lodash/get';
 
 import Theme from '../../../styles/theme';
-import Header from '../../organisms/Header';
-import Footer from '../../organisms/Footer';
+import Header from '../../../containers/organisms/Header';
+import Footer from '../../../containers/organisms/Footer';
 import { MOBILE } from '../../../constants';
 import API from '../../../utils/fetch';
 
