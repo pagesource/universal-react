@@ -1,0 +1,75 @@
+/**
+*
+* {{properCase name}}
+*
+*/
+// @flow
+
+// Node_Modules imports
+import React, { PureComponent} from 'react';
+import type { Node } from 'react';
+import styled from 'styled-components';
+{{#if wantPage}}
+
+// Relative imports
+import enhance from '../../../lib/dynamicStore';
+{{else}}
+import { connect } from 'react-redux';
+
+// Relative imports
+{{/if}}
+{{#if wantActionsAndReducer}}
+import initialActions from './{{properCase name}}.actions';
+import reducer from './{{properCase name}}.reducer';
+import constants from '../../../constants';
+{{/if}}
+{{#if wantSaga}}
+import saga from './{{properCase name}}.saga';
+{{/if}}
+import type { State, Props } from './types';
+import styles from './{{properCase name}}.style';
+
+class {{ properCase name }} extends PureComponent<Props, State> {
+  // static async getInitialProps({ store, isServer }) { // }
+  state = {}
+
+  static defaultProps = {};
+
+  render(): Node {
+  return <div>{{ properCase name }}Component</div>;
+  }
+  }
+  {{#if wantActionsAndReducer}}
+
+  export const mapStateToProps = (static) => ({});
+
+  export const mapDispatchToProps = (dispatch) => ({});
+  {{#if wantPage}}
+
+  const {{ properCase name }}Component = enhance(styled({{properCase name}}, styles), {
+  mapStateToProps,
+  mapDispatchToProps,
+  key: '{{ camelCase name }}',
+  {{#if wantActionsAndReducer}}
+  reducer,
+  initialActions,
+  {{/if}}
+  {{#if wantSaga}}
+  saga,
+  {{/if}}
+  });
+
+  export default {{ properCase name }}Component;
+  {{else}}
+  const {{ properCase name }}Component = connect(
+  mapStateToProps,
+  mapDispatchToProps
+  );
+
+  const {{ properCase name }}ComponentStyle = {{ properCase name }}Component(styled({{properCase name}}, styles));
+
+  export default {{ properCase name }}ComponentStyle;
+
+  export { {{ properCase name }}Component};
+  {{/if}}
+  {{/if}}

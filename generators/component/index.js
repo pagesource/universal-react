@@ -2,14 +2,14 @@
  * Component Generator
  */
 
-/* eslint strict: ['off'] */
+/* eslint strict: ["off"] */
 
 'use strict';
 
 const componentExists = require('../utils/componentExists');
 
 module.exports = {
-  description: 'Add an unconnected component (atoms, molecules)',
+  description: 'Add an unconnected component (atoms, molecules, organisms, templates)',
   prompts: [
     {
       type: 'list',
@@ -25,8 +25,8 @@ module.exports = {
       default: 'Button',
       validate: value => {
         if (/.+/.test(value)) {
-          return componentExists(value)
-            ? 'A component or container with this name already exists'
+          return componentExists(value, 'components')
+            ? 'A component with this name already exists '
             : true;
         }
 
@@ -38,7 +38,7 @@ module.exports = {
       name: 'folder',
       message: 'Where do you want to keep this component?',
       default: 'atoms',
-      choices: () => ['atoms', 'molecules'],
+      choices: () => ['atoms', 'molecules', 'organisms', 'templates'],
     },
   ],
   actions: data => {
@@ -79,12 +79,6 @@ module.exports = {
         type: 'add',
         path: '../app/components/{{ folder }}/{{properCase name}}/{{properCase name}}.story.js',
         templateFile: './component/story.js.hbs',
-        abortOnFail: true,
-      },
-      {
-        type: 'add',
-        path: '../app/components/{{ folder }}/{{properCase name}}/{{properCase name}}.mock.js',
-        templateFile: './component/mock.js.hbs',
         abortOnFail: true,
       },
       {
