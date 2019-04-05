@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`HeadTag Component should render correctly and match snapshot 1`] = `
-<SideEffect(Head)>
+<Head>
   <title>
     title
   </title>
@@ -204,13 +204,13 @@ exports[`HeadTag Component should render correctly and match snapshot 1`] = `
     }
     prefix="og"
   />
-</SideEffect(Head)>
+</Head>
 `;
 
 exports[`HeadTag Component should render correctly when no props passed 1`] = `
-<SideEffect(Head)>
+<Head>
   <title />
-</SideEffect(Head)>
+</Head>
 `;
 
 exports[`HeadTag Component should render meta tags properly 1`] = `

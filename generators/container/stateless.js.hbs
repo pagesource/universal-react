@@ -1,0 +1,61 @@
+/**
+ *
+ * {{properCase name}}
+ */
+// @flow
+
+// Node_Module imports
+import React from 'react';
+import type { Node } from 'react';
+{{#if wantPage}}
+
+// Relative imports
+import enhance from '../../../lib/dynamicStore';
+{{else}}
+import { connect } from 'react-redux';
+
+// Relative imports
+{{/if}}
+{{#if wantActionsAndReducer}}
+import initialActions from './{{properCase name}}.actions';
+import reducer from './{{properCase name}}.reducer';
+import constants from '../../../constants';
+{{/if}}
+{{#if wantSaga}}
+import saga from './{{properCase name}}.saga';
+{{/if}}
+import type { State, Props } from './types';
+
+const {{ properCase name }} = ({ children }: Props): Node => <div>{{properCase name}} Component {children}</div>;
+
+{{ properCase name }}.defaultProps = {};
+{{#if wantActionsAndReducer}}
+
+export const mapStateToProps = (state) => ({});
+
+export const mapDispatchToProps = (dispatch) => ({});
+{{#if wantPage}}
+
+const {{ properCase name }}Component = enhance({{properCase name}}, {
+  mapStateToProps,
+  mapDispatchToProps,
+  key: '{{ camelCase name }}',
+  {{#if wantActionsAndReducer}}
+  reducer,
+  initialActions,
+  {{/if}}
+  {{#if wantSaga}}
+  saga,
+  {{/if}}
+});
+
+export default {{ properCase name }}Component;
+{{else}}
+const {{ properCase name }}Component = connect(
+  mapStateToProps,
+  mapDispatchToProps
+);
+
+export default {{ properCase name }}Component;
+{{/if}}
+{{/if}}

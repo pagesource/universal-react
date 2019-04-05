@@ -1,27 +1,27 @@
-// @flow
 /**
  *
  * {{ properCase name }}
- *
  */
-import { PureComponent } from 'react';
+// @flow
+
+// Node_Module imports
+import React, { PureComponent } from 'react';
 import styled from 'styled-components';
 
+// Relative imports
 import styles from './{{ properCase name}}.style';
 import type { Props } from './types';
 
-class {{ properCase name}} extends PureComponent<Props> {
+class {{ properCase name }} extends PureComponent<Props> {
   static defaultProps = {};
-
   render() {
-    return (
-      <div className={styles.default}></div>
-    );
+    const {className} = this.props;
+    return <div className={className}/>;
   }
 }
 
 export default styled({{ properCase name }})`
-  ${styles};
+  ${styles}
 `;
 
-export { {{ properCase name }} as {{ properCase name }}Vanilla };
+export { {{ properCase name }} };

@@ -14,7 +14,7 @@ const initialState = { reduced: 'soon' };
 const reducer = (state = initialState, action) => {
   switch (action.type) {
     case 'TEST':
-      return state.set('reduced', action.payload);
+      return { ...state, reduced: action.payload };
     default:
       return state;
   }
@@ -80,7 +80,7 @@ describe('reducer injectors', () => {
 
       const actual = store.getState();
       const expected = initialState;
-      expect(actual.toJS()).toEqual(expected.toJS());
+      expect(actual).toEqual(expected);
     });
 
     test('should not assign reducer if already existing', () => {

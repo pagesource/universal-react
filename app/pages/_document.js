@@ -13,7 +13,10 @@ export default class MyDocument extends Document {
   static getInitialProps({ renderPage, req }: any) {
     const deviceType = req.device.type === PHONE ? MOBILE : DESKTOP;
     const sheet = new ServerStyleSheet();
-    const page = renderPage(App => props => sheet.collectStyles(<App {...props} />));
+    const page = () =>
+      renderPage({
+        enhanceApp: App => props => sheet.collectStyles(<App {...props} />),
+      });
     const styleTags = sheet.getStyleElement();
     return { ...page, styleTags, deviceType };
   }
