@@ -1,35 +1,32 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ProgressCircle Component should match snapshot  1`] = `
-.c0 {
-  display: inline-block;
-  margin-left: -3px;
-}
-
-.c0 circle.progress {
-  -webkit-transition: stroke-dashoffset 0.35s;
-  transition: stroke-dashoffset 0.35s;
-  -webkit-transform: rotate(-90deg);
-  -ms-transform: rotate(-90deg);
-  transform: rotate(-90deg);
-  -webkit-transform-origin: 50% 50%;
-  -ms-transform-origin: 50% 50%;
-  transform-origin: 50% 50%;
-  stroke: #cccccc;
-}
-
-.c0 circle.underlay {
-  -webkit-transition: stroke-dashoffset 0.35s;
-  transition: stroke-dashoffset 0.35s;
-  stroke: #eeeeee;
-}
-
-.c0 text {
-  font-size: 1rem;
-}
-
-<ProgressRing
-  className="c0"
+<StyledComponent
+  forwardedComponent={
+    Object {
+      "$$typeof": Symbol(react.forward_ref),
+      "attrs": Array [],
+      "componentStyle": ComponentStyle {
+        "componentId": "withStyles-sc-4wveuc-0",
+        "isStatic": false,
+        "rules": Array [
+          [Function],
+          ";",
+          [Function],
+          ";",
+        ],
+      },
+      "displayName": "withStyles",
+      "foldedComponentIds": Array [],
+      "render": [Function],
+      "styledComponentId": "withStyles-sc-4wveuc-0",
+      "target": [Function],
+      "toString": [Function],
+      "warnTooManyClasses": [Function],
+      "withComponent": [Function],
+    }
+  }
+  forwardedRef={null}
   theme={
     Object {
       "deviceType": "desktop",

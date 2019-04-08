@@ -19,10 +19,35 @@ exports[`PaymentMethod component should render correctly 1`] = `
 `;
 
 exports[`PaymentMethodStyle component should render correctly 1`] = `
-<TextArea
+<StyledComponent
   className=""
   deviceType="desktop"
   errorMessage="error"
+  forwardedComponent={
+    Object {
+      "$$typeof": Symbol(react.forward_ref),
+      "attrs": Array [],
+      "componentStyle": ComponentStyle {
+        "componentId": "withStyles-sc-4wveuc-0",
+        "isStatic": false,
+        "rules": Array [
+          [Function],
+          ";",
+          [Function],
+          ";",
+        ],
+      },
+      "displayName": "withStyles",
+      "foldedComponentIds": Array [],
+      "render": [Function],
+      "styledComponentId": "withStyles-sc-4wveuc-0",
+      "target": [Function],
+      "toString": [Function],
+      "warnTooManyClasses": [Function],
+      "withComponent": [Function],
+    }
+  }
+  forwardedRef={null}
   hideLabel={false}
   iconClass=""
   id="1"

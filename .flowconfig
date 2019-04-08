@@ -13,6 +13,7 @@ yup
 [libs]
 node_modules/styled-components/flow-typed/danger_v0.x.x.js
 node_modules/styled-components/flow-typed/react-native.js
+flow-typed/
 [options]
 
 [strict]
