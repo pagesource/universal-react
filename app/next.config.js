@@ -21,7 +21,6 @@ const { parsed: envVars } = dotenv.config({
 const metricsKey = process.env.ENV_API_KEY === process.env.PROD_KEY ? 'prod' : 'dev';
 
 module.exports = withPlugins([withBundleAnalyzer, withTM], {
-  transpileModules: ['@xt-pagesource/atomic-react-pattern-lib'],
   distDir: '../.next',
   webpack: (config, { dev, buildId, isServer }) => {
     config.plugins.push(new webpack.EnvironmentPlugin(envVars));
