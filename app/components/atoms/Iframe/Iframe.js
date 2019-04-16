@@ -72,7 +72,7 @@ class Iframe extends PureComponent<Props, State> {
         onLoad={event => {
           if (takeContentHeight) {
             // $FlowFixMe eslint-disable-line
-            const { document } = contentWindow;
+            const { document } = this.iframe.contentWindow;
             this.setState({
               frameHeight: `${document ? document.body.scrollHeight : 0}px`,
             });
