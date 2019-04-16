@@ -1,0 +1,59 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProgressCircle Component should match snapshot  1`] = `
+<nav
+  className="bRgQpT"
+>
+  <ul>
+    <li
+      role="none"
+    >
+      <a
+        href="/1"
+        onClick={[Function]}
+      >
+        Link 1
+      </a>
+    </li>
+    <li
+      role="none"
+    >
+      <a
+        href="/2"
+        onClick={[Function]}
+      >
+        Link 2
+      </a>
+    </li>
+  </ul>
+</nav>
+`;
+
+exports[`ProgressCircle Component should match snapshot with vertical view  1`] = `
+<nav
+  className="cGGiQb"
+>
+  <ul>
+    <li
+      role="none"
+    >
+      <a
+        href="/1"
+        onClick={[Function]}
+      >
+        Link 1
+      </a>
+    </li>
+    <li
+      role="none"
+    >
+      <a
+        href="/2"
+        onClick={[Function]}
+      >
+        Link 2
+      </a>
+    </li>
+  </ul>
+</nav>
+`;

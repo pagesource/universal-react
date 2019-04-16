@@ -1,4 +1,3 @@
-import get from 'lodash/get';
 import { layout, getFailure, addLayoutData, addHomeEditorialData } from '../HomePage.reducer';
 import {
   LOAD_HOME_FAILURE,

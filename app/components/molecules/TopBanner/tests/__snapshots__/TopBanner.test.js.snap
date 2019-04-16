@@ -1,33 +1,32 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<TopBanner /> should render correctly 1`] = `
-<StyledComponent
-  forwardedComponent={
-    Object {
-      "$$typeof": Symbol(react.forward_ref),
-      "attrs": Array [],
-      "componentStyle": ComponentStyle {
-        "componentId": "withStyles-sc-4wveuc-0",
-        "isStatic": false,
-        "rules": Array [
-          [Function],
-          ";",
-          [Function],
-          ";",
-        ],
-      },
-      "displayName": "withStyles",
-      "foldedComponentIds": Array [],
-      "render": [Function],
-      "styledComponentId": "withStyles-sc-4wveuc-0",
-      "target": [Function],
-      "toString": [Function],
-      "warnTooManyClasses": [Function],
-      "withComponent": [Function],
-    }
-  }
-  forwardedRef={null}
+<section
+  id="banner"
 >
-  Test
-</StyledComponent>
+  <div
+    className="inner"
+  >
+    <h1>
+      Banner Title
+    </h1>
+    <p>
+      Banner subtitle
+    </p>
+  </div>
+</section>
+`;
+
+exports[`<TopBanner /> should render correctly without subtitle 1`] = `
+<section
+  id="banner"
+>
+  <div
+    className="inner"
+  >
+    <h1>
+      Banner Title
+    </h1>
+  </div>
+</section>
 `;

@@ -1,5 +1,5 @@
 // @flow
-import React, { memo } from 'react';
+import React from 'react';
 import type { Node } from 'react';
 import { AnchorVanilla as Anchor } from '@xt-pagesource/atomic-react-pattern-lib';
 import Layout from '../Layout';
@@ -19,11 +19,11 @@ const HomePage = ({ editorialData }: Props): Node => {
           <p>
             To assemble a reliable and community accepted XT Dev Ecosystem, that can be utilized as
             baseline for development of each project with dependable quality standards. This
-            "Universal React" boilerplate will not limit/restrict any team on further improving it,
-            but ensure that projects are meeting minimum quality and best practices with this
-            ecosystem. This ecosystem doesn't intend to provide a lot of out of the box
-            code/components or features but a well configured development environment and delivery
-            pipeline, having balanced focus to Static Code Quality, Performance, Processes,
+            &quot;Universal React&quot; boilerplate will not limit/restrict any team on further
+            improving it, but ensure that projects are meeting minimum quality and best practices
+            with this ecosystem. This ecosystem doesn&apos;t intend to provide a lot of out of the
+            box code/components or features but a well configured development environment and
+            delivery pipeline, having balanced focus to Static Code Quality, Performance, Processes,
             Security, Testability, Documentation and Best Practices.
           </p>
           <h2>Ecosystem of this refrence architecture</h2>
@@ -147,4 +147,4 @@ HomePage.defaultProps = {
   editorialData: {},
 };
 
-export default memo(HomePage);
+export default HomePage;

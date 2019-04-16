@@ -5,7 +5,7 @@ import {
   LOAD_HOME_SEO_SUCCESS,
   LOAD_HOME_EDITORIAL_DATA,
   LOAD_HOME_EDITORIAL_DATA_SUCCESS,
-} from '../HomePage.constants';
+} from '../../../templates/HomePage/HomePage.constants';
 
 export type LoadHomeFailureAction = {
   type: typeof LOAD_HOME_FAILURE,

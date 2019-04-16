@@ -10,23 +10,26 @@ import withStyles from '../../../lib/withStyles';
 import type { Props } from './types';
 import { isApplicationLink } from '../../../utils/isApplicationLink';
 
-const NavBar = ({ className, items }: Props): Node => (
+const NavBar = ({ className, items, children }: Props): Node => (
   <nav className={className}>
-    <ul>
-      {items.map(({ label, href }, key) => (
-        <li role="none" key={key.toString()}>
-          {isApplicationLink(href) ? (
-            <Link href={href} role="menuitem">
-              <a>{label}</a>
-            </Link>
-          ) : (
-            <Anchor to={href} role="menuitem">
-              {label}
-            </Anchor>
-          )}
-        </li>
-      ))}
-    </ul>
+    {children || (
+      <ul>
+        {Array.isArray(items) &&
+          items.map(({ label, href }, key) => (
+            <li role="none" key={key.toString()}>
+              {isApplicationLink(href) ? (
+                <Link href={href} role="menuitem">
+                  <a>{label}</a>
+                </Link>
+              ) : (
+                <Anchor to={href} role="menuitem">
+                  {label}
+                </Anchor>
+              )}
+            </li>
+          ))}
+      </ul>
+    )}
   </nav>
 );
 

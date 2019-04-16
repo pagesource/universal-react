@@ -51,11 +51,10 @@ class HeadTag extends PureComponent<Props> {
             <MetaTag key={`meta-${meta.id}`} meta={meta} content={content} />
           );
         })}
-        {LINK.map(
-          key =>
-            ({ ...this.props }[key] ? (
-              <link rel={key} href={{ ...this.props }[key]} key={key} />
-            ) : null)
+        {LINK.map(key =>
+          ({ ...this.props }[key] ? (
+            <link rel={key} href={{ ...this.props }[key]} key={key} />
+          ) : null)
         )}
 
         {/* eslint-disable react/no-danger */}

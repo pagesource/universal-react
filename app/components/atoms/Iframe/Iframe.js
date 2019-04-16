@@ -51,13 +51,6 @@ class Iframe extends PureComponent<Props, State> {
 
     const { frameHeight } = this.state;
 
-    let contentWindow;
-    if (this.iframe && this.iframe.contentWindow) {
-      contentWindow = { ...this.iframe }.contentWindow; // eslint-disable-line
-    } else if (this.iframe && this.iframe.contentDocument) {
-      contentWindow = { ...this.iframe }.contentDocument;
-    }
-
     return (
       <iframe
         ref={iframe => {

@@ -134,6 +134,7 @@
     "http-proxy-middleware": "^0.19.0",
     "immutable": "^4.0.0-rc.12",
     "invariant": "^2.2.4",
+    "isomorphic-unfetch": "^3.0.0",
     "lodash": "^4.17.11",
     "memory-cache": "^0.2.0",
     "next": "^8.0.3",

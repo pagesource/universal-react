@@ -1,8 +1,8 @@
 import he from 'he';
 
 /*
-* Converts html escaped strings to json
-*/
+ * Converts html escaped strings to json
+ */
 export const stringToArray = stringData => {
   if (stringData) {
     try {
@@ -18,8 +18,8 @@ export const stringToArray = stringData => {
 };
 
 /*
-* Converts html escaped strings to object
-*/
+ * Converts html escaped strings to object
+ */
 export const stringToObject = stringData => {
   if (stringData) {
     try {

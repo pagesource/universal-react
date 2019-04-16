@@ -1,7 +1,10 @@
 // @flow
+import type { Node } from 'react';
+
 export type NavItem = { label: string, href: string };
 
 export type Props = {
   className: string,
-  items: Array<NavItem>,
+  children?: Node,
+  items?: Array<NavItem>,
 };

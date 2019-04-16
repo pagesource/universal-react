@@ -18,8 +18,8 @@ class TopBanner extends PureComponent<Props> {
     return (
       <section className={className} id="banner">
         <div className="inner">
-          <h1>{title || 'Not available'}</h1>
-          <p>{subTitle}</p>
+          <h1>{title}</h1>
+          {subTitle && <p>{subTitle}</p>}
         </div>
       </section>
     );
