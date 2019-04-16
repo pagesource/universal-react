@@ -1,11 +1,14 @@
 // @flow
 import React, { memo } from 'react';
 import type { Node } from 'react';
-import { AnchorVanilla as Anchor } from '@xt-pagesource/atomic-react-pattern-lib';
+import { AnchorVanilla as Anchor, sumTest } from '@xt-pagesource/atomic-react-pattern-lib';
 import Layout from '../Layout';
 import HeadTag from '../../atoms/HeadTag';
 import TopBanner from '../../molecules/TopBanner';
 import type { Props } from './types';
+
+const asd = sumTest(1, 2, 3);
+console.log('asd', asd); // eslint-disable-line
 
 const HomePage = ({ editorialData }: Props): Node => {
   const { title, subTitle } = editorialData;

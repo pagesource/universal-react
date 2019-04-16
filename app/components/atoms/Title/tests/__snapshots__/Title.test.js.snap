@@ -1,41 +1,16 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Anchor Component should render correctly and match snapshot 1`] = `
-<StyledComponent
+<h1
   className=""
-  forwardedComponent={
-    Object {
-      "$$typeof": Symbol(react.forward_ref),
-      "attrs": Array [],
-      "componentStyle": ComponentStyle {
-        "componentId": "withStyles-sc-4wveuc-0",
-        "isStatic": false,
-        "rules": Array [
-          [Function],
-          ";",
-          [Function],
-          ";",
-        ],
-      },
-      "displayName": "withStyles",
-      "foldedComponentIds": Array [],
-      "render": [Function],
-      "styledComponentId": "withStyles-sc-4wveuc-0",
-      "target": [Function],
-      "toString": [Function],
-      "warnTooManyClasses": [Function],
-      "withComponent": [Function],
-    }
-  }
-  forwardedRef={null}
 >
   Sample
-</StyledComponent>
+</h1>
 `;
 
 exports[`Anchor Component should render with styles correctly and match snapshot 1`] = `
 <h1
-  className="kVagrY"
+  className=""
 >
   Sample
 </h1>

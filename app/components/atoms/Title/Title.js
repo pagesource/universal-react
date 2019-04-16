@@ -21,3 +21,4 @@ Title.defaultProps = {
 };
 
 export default withStyles(Title, styles);
+export { Title as TitleVanilla };
