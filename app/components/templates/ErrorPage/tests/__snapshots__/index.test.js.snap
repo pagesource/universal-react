@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ErrorPage Component should render correctly 1`] = `
+<Connect(Layout)
+  className="row"
+  id="content-wrapper"
+  tabindex="-1"
+  title="error"
+>
+  <HeadTag
+    description="error page"
+    title="error page"
+  />
+  <section
+    id="notFoundContent"
+    style={
+      Object {
+        "width": "100%",
+      }
+    }
+  >
+    Test Message
+  </section>
+</Connect(Layout)>
+`;
