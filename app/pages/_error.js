@@ -1,5 +1,6 @@
 import React from 'react';
 
+/* eslint-disable */
 export default class CustomError extends React.Component {
   static getInitialProps({ res, pathname, err }) {
     try {

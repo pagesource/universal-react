@@ -1,6 +1,7 @@
 // @flow
 import type { Node } from 'react';
-import { Component } from 'react';
+import React, { Component } from 'react';
+
 import logger from './logger';
 
 export default function(WrappedComponent: any) {

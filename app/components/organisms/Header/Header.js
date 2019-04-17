@@ -2,18 +2,21 @@
 /**
  * Header
  */
+import React from 'react';
 import type { Node } from 'react';
 import Link from 'next/link';
 import type { Props } from './types';
 import NavBar from '../../molecules/NavBar';
 
-const Header = ({ className }: Props): Node => (
+const Header = ({ nav, className }: Props): Node => (
   <div className={className}>
     <header id="header">
       <Link href="/">
-        <a className="logo">Sample Logo</a>
+        <a href="/" className="logo">
+          Sample Logo
+        </a>
       </Link>
-      <NavBar />
+      {nav && <NavBar items={nav} />}
     </header>
   </div>
 );

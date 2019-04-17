@@ -1,4 +1,5 @@
 // @flow
+import React from 'react';
 import type { Node } from 'react';
 import styles from './Title.style';
 import withStyles from '../../../lib/withStyles';
@@ -20,3 +21,4 @@ Title.defaultProps = {
 };
 
 export default withStyles(Title, styles);
+export { Title as TitleVanilla };

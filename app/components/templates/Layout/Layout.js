@@ -1,13 +1,14 @@
 // @flow
+import React from 'react';
 import { ThemeProvider } from 'styled-components';
 import type { Node } from 'react';
 import { connect } from 'react-redux';
 import Head from 'next/head';
-import type { Map } from 'immutable';
+import get from 'lodash/get';
 
 import Theme from '../../../styles/theme';
-import Header from '../../organisms/Header';
-import Footer from '../../organisms/Footer';
+import Header from '../../../containers/organisms/Header';
+import Footer from '../../../containers/organisms/Footer';
 import { MOBILE } from '../../../constants';
 import API from '../../../utils/fetch';
 
@@ -62,12 +63,12 @@ Layout.defaultProps = {
 /* istanbul ignore next */
 const mapDispatchToProps = () => ({});
 
-const mapStateToProps /* istanbul ignore next */ = (state: Map): { deviceType: string } => ({
-  deviceType: state.getIn(['global', 'globalData', 'deviceType']),
-  isNavigationDrawerOpen: state.getIn(['global', 'header', 'isNavigationDrawerOpen']),
-  topBanner: state.getIn(['global', 'header', 'topBanner']),
-  isTablet: state.getIn(['global', 'globalData', 'isTablet']),
-  topBannerModalContent: state.getIn(['global', 'header', 'topBannerModalContent']),
+const mapStateToProps /* istanbul ignore next */ = (state: Object): { deviceType: string } => ({
+  deviceType: get(state, ['global', 'globalData', 'deviceType', '']),
+  isNavigationDrawerOpen: get(state, ['global', 'header', 'isNavigationDrawerOpen', '']),
+  topBanner: get(state, ['global', 'header', 'topBanner', '']),
+  isTablet: get(state, ['global', 'globalData', 'isTablet', '']),
+  topBannerModalContent: get(state, ['global', 'header', 'topBannerModalContent', '']),
 });
 export default connect(
   mapStateToProps,

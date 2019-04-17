@@ -1,7 +1,7 @@
 import { shallow } from 'enzyme';
 import renderer from 'react-test-renderer';
 import 'jest-styled-components';
-import Title from '..';
+import { TitleVanilla as Title } from '../Title';
 
 const props = {
   children: 'Sample',

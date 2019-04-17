@@ -1,5 +1,5 @@
 // @flow
-import { PureComponent } from 'react';
+import React, { PureComponent } from 'react';
 import styles from './Iframe.style';
 import withStyles from '../../../lib/withStyles';
 
@@ -48,6 +48,9 @@ class Iframe extends PureComponent<Props, State> {
       frameBorder,
       ...others
     }: Props = this.props;
+
+    const { frameHeight } = this.state;
+
     return (
       <iframe
         ref={iframe => {
@@ -57,12 +60,14 @@ class Iframe extends PureComponent<Props, State> {
         title={iframeTitle}
         src={sourceUrl}
         width={width}
-        height={this.props.takeContentHeight ? this.state.frameHeight : height}
+        height={takeContentHeight ? frameHeight : height}
         frameBorder={frameBorder}
         onLoad={event => {
           if (takeContentHeight) {
+            // $FlowFixMe eslint-disable-line
+            const { document } = this.iframe.contentWindow;
             this.setState({
-              frameHeight: `${this.iframe.contentWindow.document.body.scrollHeight}px`,
+              frameHeight: `${document ? document.body.scrollHeight : 0}px`,
             });
           }
           if (typeof onLoad === 'function') {

@@ -1,33 +1,40 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<NavBar /> should render correctly 1`] = `
-<StyledComponent
-  forwardedComponent={
-    Object {
-      "$$typeof": Symbol(react.forward_ref),
-      "attrs": Array [],
-      "componentStyle": ComponentStyle {
-        "componentId": "withStyles-sc-4wveuc-0",
-        "isStatic": false,
-        "rules": Array [
-          [Function],
-          ";",
-          [Function],
-          ";",
-        ],
-      },
-      "displayName": "withStyles",
-      "foldedComponentIds": Array [],
-      "render": [Function],
-      "styledComponentId": "withStyles-sc-4wveuc-0",
-      "target": [Function],
-      "toString": [Function],
-      "warnTooManyClasses": [Function],
-      "withComponent": [Function],
-    }
-  }
-  forwardedRef={null}
->
+<nav>
   Test
-</StyledComponent>
+</nav>
+`;
+
+exports[`<NavBar /> should render correctly 2`] = `
+<nav>
+  <ul>
+    <li
+      key="0"
+      role="none"
+    >
+      <Link
+        href="/1"
+        role="menuitem"
+      >
+        <a>
+          Link 1
+        </a>
+      </Link>
+    </li>
+    <li
+      key="1"
+      role="none"
+    >
+      <Link
+        href="/2"
+        role="menuitem"
+      >
+        <a>
+          Link 2
+        </a>
+      </Link>
+    </li>
+  </ul>
+</nav>
 `;

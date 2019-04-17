@@ -1,5 +1,5 @@
 // @flow
-import { combineReducers } from 'redux-immutable';
+import { combineReducers } from 'redux';
 import globalData from './globalData';
 
 export default combineReducers({

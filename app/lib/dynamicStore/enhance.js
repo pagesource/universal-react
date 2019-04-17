@@ -20,6 +20,7 @@ import { connect } from 'react-redux';
 import { compose } from 'redux';
 import hoistNonReactStatic from 'hoist-non-react-statics';
 import Router from 'next/router';
+import get from 'lodash/get';
 
 import initRedux from './configureStore';
 import monitorSagas from './monitorSagas';
@@ -94,7 +95,7 @@ export const getWrapperComponent = (
 
         [...storeStruct, ...globalDataStructure].forEach(requiredDataPath => {
           try {
-            if (!currentState.getIn(requiredDataPath)) {
+            if (!get(currentState, 'requiredDataPath')) {
               missingDataList.push(requiredDataPath);
             }
           } catch (e) {
@@ -170,7 +171,7 @@ export const getWrapperComponent = (
         clientParams = parseQueryParams(asPath);
         store.dispatch(serverActions.setPageQuery(clientParams));
         requestDetails = {
-          deviceType: store.getState().getIn(['global', 'globalData', 'deviceType']),
+          deviceType: get(store.getState(), ['global', 'globalData', 'deviceType']),
         };
       }
 

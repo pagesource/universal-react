@@ -22,7 +22,7 @@ const apiProxy = proxy({
   logLevel: 'debug',
   changeOrigin: true, // for vhosted sites
   headers: {
-    'secret-key': '$2a$10$f43a7fmsIv/2DNbFTzfiyeGv1mORmjYNbTqqCM.BJ/JuaIxFHZ.Ou',
+    'secret-key': process.env.API_SECRET_KEY,
   },
   onError: (err, req, res) => {
     res.status(500).send({

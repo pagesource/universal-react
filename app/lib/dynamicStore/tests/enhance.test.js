@@ -3,10 +3,14 @@ import { shallow } from 'enzyme';
 import enhance, { getWrapperComponent } from '../enhance';
 import { serverActions } from '../../../global/actions';
 import { DESKTOP, PHONE } from '../../../constants';
+import loggerFactory from '../../../utils/logger';
 
 jest.mock('next/router', () => ({ push: () => {} }));
 jest.mock('../injectSagaAndReducer');
 jest.mock('../monitorSagas', () => () => new Promise(resolve => resolve()));
+jest.mock('../../../utils/logger', () => ({ getLogger: () => ({ error: jest.fn() }) }));
+
+const logger = loggerFactory.getLogger();
 
 describe('enhance', () => {
   const WrappedComponent = () => <div />;
@@ -64,25 +68,9 @@ describe('enhance', () => {
         expect(mockStore.getState).toHaveBeenCalled();
       });
 
-      test('should iterate if storeStruct has values', () => {
+      test('should not log errors if storeStruct has values', () => {
         WrapperComponent.validatePageData(['global'], {}, mockStore);
-        expect(getIn).toHaveBeenCalled();
-      });
-
-      test('should got to catch if criticalPath not array', () => {
-        WrapperComponent.validatePageData('global', {}, mockStore);
-        expect(getIn).toHaveBeenCalled();
-      });
-
-      test('should iterate even if storeStruct has values and value is present in store', () => {
-        getIn = jest.fn().mockReturnValue(true);
-        mockStore = {
-          getState: jest.fn().mockReturnValue({
-            getIn,
-          }),
-        };
-        WrapperComponent.validatePageData(['global'], {}, mockStore);
-        expect(getIn).toHaveBeenCalled();
+        expect(logger.error).not.toHaveBeenCalled();
       });
 
       test('should call redirect on res object when on server', () => {

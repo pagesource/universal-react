@@ -29,3 +29,6 @@ export const STATUS_ERROR = 'ERROR';
 export const STATUS_SUCCESS = 'SUCCESS';
 export const RESPONSE_OK = 200;
 export const RESPONSE_SERVER_ERROR = 500;
+
+// Session Codes
+export const HEARTBEAT_SESSION_NAME = 'HEARTBEAT_SESSION_NAME';

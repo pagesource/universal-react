@@ -10,22 +10,22 @@ describe('GlobalReducer', () => {
 
   test('should return success state and set in devicetype ', () => {
     const newState = globalReducer(initState, { type: DEVICE_TYPE, deviceType: MOBILE });
-    expect(newState).toEqual(initState.set('deviceType', MOBILE));
+    expect(newState).toEqual({ ...initState, deviceType: MOBILE });
   });
 
   test('should return success state and set if Device is Tablet ', () => {
     const newState = globalReducer(initState, { type: IS_TABLET, isTablet: true });
-    expect(newState).toEqual(initState.set('isTablet', true));
+    expect(newState).toEqual({ ...initState, isTablet: true });
   });
 
   test('should return success state and setRoute ', () => {
     const newState = globalReducer(initState, { type: CURRENT_ROUTE, pathname: '/cart' });
-    expect(newState).toEqual(initState.set('route', '/cart'));
+    expect(newState).toEqual({ ...initState, route: '/cart' });
   });
 
   test('should return success state and setConfigKeys ', () => {
     const configKeys = { key: 'value' };
     const newState = globalReducer(initState, { type: CONFIG_KEYS, configKeys });
-    expect(newState).toEqual(initState.set('configKeys', configKeys));
+    expect(newState).toEqual({ ...initState, configKeys });
   });
 });

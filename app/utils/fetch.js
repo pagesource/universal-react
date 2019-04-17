@@ -9,6 +9,8 @@ import { CACHEABLE_SERVICES_LIST } from './cacheableServices';
 
 const { publicRuntimeConfig } = getConfig();
 
+console.log(publicRuntimeConfig);
+
 const API_HOSTS = require('../../API_HOST').environment;
 
 const logger = loggerFactory.getLogger();
@@ -65,6 +67,7 @@ class ServiceUtils {
     return appendedURL;
   }
 
+  /* eslint-disable */
   fetch = async (url: string, actionObject?: Object, additionalFetchOptions?: Object) => {
     let headers = {};
     let fetchUrl: string;
@@ -90,7 +93,7 @@ class ServiceUtils {
       // Server-side call with proper action object from initial actions
       headers = {
         // Cookie: actionObject.requestDetails.cookies || '',
-        'secret-key': '$2a$10$f43a7fmsIv/2DNbFTzfiyeGv1mORmjYNbTqqCM.BJ/JuaIxFHZ.Ou',
+        'secret-key': process.env.API_SECRET_KEY,
         // ...actionObject.requestDetails.whitelistedHeaders,
       };
       perfLogger = actionObject.requestDetails.logger;
@@ -130,6 +133,7 @@ class ServiceUtils {
     }
 
     try {
+      console.log(reqOptions);
       response = await axios(reqOptions);
       responseData = response.data;
     } catch (err) {
@@ -165,6 +169,7 @@ class ServiceUtils {
 
     return responseData;
   };
+  /* eslint-enable */
 }
 
 export default new ServiceUtils();

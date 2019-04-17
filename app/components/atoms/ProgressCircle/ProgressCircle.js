@@ -1,4 +1,5 @@
 // @flow
+import React from 'react';
 import withStyles from '../../../lib/withStyles';
 import styles from './ProgressCircle.style';
 

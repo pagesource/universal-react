@@ -41,7 +41,8 @@ describe('Iframe', () => {
         onLoad={() => {}}
       />
     );
-    iframe.instance().iframe = { contentWindow: { document: { body: { scrollHeight: 20 } } } };
+    const instance = iframe.instance();
+    instance.iframe = { contentWindow: { document: { body: { scrollHeight: 20 } } } };
     iframe.find('iframe').simulate('load');
     expect(iframe).toMatchSnapshot();
   });

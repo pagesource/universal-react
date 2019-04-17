@@ -2,7 +2,9 @@ import { css } from 'styled-components';
 
 import { DESKTOP, MOBILE } from '../../../constants';
 
-const commonStyles = css``;
+const commonStyles = css`
+  opacity: 1;
+`;
 
 export default {
   [DESKTOP]: css`

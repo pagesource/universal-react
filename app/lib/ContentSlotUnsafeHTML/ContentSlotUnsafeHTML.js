@@ -1,6 +1,6 @@
 // @flow
 import type { Node } from 'react';
-import { PureComponent } from 'react';
+import React, { PureComponent } from 'react';
 import unescape from 'lodash/unescape';
 import memoizeLast from '../../utils/memoizeLast';
 
@@ -17,7 +17,7 @@ type Props = {
 class ContentSlotUnsafeHTML extends PureComponent<Props> {
   static defaultProps = {
     hasScript: true,
-    wrapper: null,
+    wrapper: React.Fragment,
   };
 
   static scriptRegEx = /(<script\b[^>]*>[\s\S]*?<\/script>)/gm;
@@ -44,20 +44,25 @@ class ContentSlotUnsafeHTML extends PureComponent<Props> {
   };
 
   componentDidMount = () => {
-    if (this.props.hasScript && document && document.createRange) {
+    const { hasScript } = this.props;
+    const { body, createRange } = window && window.document;
+
+    if (hasScript && document && document.createRange) {
       const { content } = this.props;
       const scriptList = ContentSlotUnsafeHTML.extractScripts(content);
-      const range = document.createRange();
-      range.setStart(document.body, 0);
-      document.body.appendChild(range.createContextualFragment(scriptList.join('')));
+      const range = createRange();
+      range.setStart(body, 0);
+      body.appendChild(range.createContextualFragment(scriptList.join('')));
     }
   };
 
   render(): Node {
     const { content, wrapper, hasScript, ...other } = this.props;
-    /* eslint-disable react/no-danger */
+
+    /* eslint-disable */
     const Wrapper = wrapper;
     return wrapper ? (
+      // $FlowFixMe
       <Wrapper>
         <div
           dangerouslySetInnerHTML={ContentSlotUnsafeHTML.createMarkupForBody(content)}
@@ -70,7 +75,7 @@ class ContentSlotUnsafeHTML extends PureComponent<Props> {
         {...other}
       />
     );
-    /* eslint-enable react/no-danger */
+    /* eslint-enable */
   }
 }
 

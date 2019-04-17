@@ -1,13 +1,14 @@
 import { shallow } from 'enzyme';
-import { fromJS } from 'immutable';
-// import { ErrorPageDisconnected as ErrorPage } from '../ErrorPage';
+import { ErrorPageDisconnected as ErrorPage } from '../ErrorPage';
 
 const props = {
-  errorData: fromJS({}),
+  errorData: {
+    message: 'Test Message',
+  },
 };
 
-xdescribe('ErrorPage Component', () => {
-  test.skip('should render correctly', () => {
+describe('ErrorPage Component', () => {
+  test('should render correctly', () => {
     const errorPage = shallow(<ErrorPage {...props} />);
     expect(errorPage).toMatchSnapshot();
   });

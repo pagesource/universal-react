@@ -2,7 +2,6 @@
  * Test injectors
  */
 
-import { fromJS } from 'immutable';
 import identity from 'lodash/identity';
 import configureMockStore from 'redux-mock-store';
 
@@ -10,12 +9,12 @@ import getInjectors, { injectReducerFactory } from '../reducerInjectors';
 
 // Fixtures
 
-const initialState = fromJS({ reduced: 'soon' });
+const initialState = { reduced: 'soon' };
 
 const reducer = (state = initialState, action) => {
   switch (action.type) {
     case 'TEST':
-      return state.set('reduced', action.payload);
+      return { ...state, reduced: action.payload };
     default:
       return state;
   }
@@ -81,7 +80,7 @@ describe('reducer injectors', () => {
 
       const actual = store.getState();
       const expected = initialState;
-      expect(actual.toJS()).toEqual(expected.toJS());
+      expect(actual).toEqual(expected);
     });
 
     test('should not assign reducer if already existing', () => {

@@ -1,5 +1,7 @@
 // @flow
-import { Component } from 'react';
+import React, { Component } from 'react';
+import get from 'lodash/get';
+
 import Layout from '../Layout';
 import enhance from '../../../lib/dynamicStore';
 import initialActions from './ErrorPage.actions';
@@ -17,7 +19,7 @@ class ErrorPage extends Component<any> {
 
   render() {
     const { errorData } = this.props;
-    const errorMessage = errorData.get('message');
+    const errorMessage = get(errorData, 'message');
     return (
       <Layout title="error" className="row" id="content-wrapper" tabindex="-1">
         <HeadTag description="error page" title="error page" />
@@ -31,14 +33,12 @@ class ErrorPage extends Component<any> {
 
 /* istanbul ignore next */
 const mapStateToProps = state => ({
-  errorData: state.getIn(['errorPage', 'errorPageData']),
+  state,
+  errorData: get(state, ['errorPage', 'errorPageData']),
 });
-
-const mapDispatchToProps = (dispatch: Map) => ({});
 
 export default enhance(ErrorPage, {
   mapStateToProps,
-  mapDispatchToProps,
   saga,
   reducer,
   key: 'errorPage',
