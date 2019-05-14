@@ -6,8 +6,13 @@ import nextReduxWrapper from 'next-redux-wrapper';
 import createReducer from './reducers';
 import globalSaga from '../../global/saga';
 
+import { trackingMiddleware } from '../../utils/analytics/trackingMiddleware';
+import { getTracker } from '../../utils/analytics/helpers/initTracker';
+
+const tracker = getTracker();
+
 const sagaMiddleware = createSagaMiddleware();
-const middlewares = [sagaMiddleware];
+const middlewares = [sagaMiddleware, trackingMiddleware(tracker)];
 const enhancers = [applyMiddleware(...middlewares)];
 
 // Choose compose method depending upon environment and platform
