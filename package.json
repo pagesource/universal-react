@@ -30,7 +30,8 @@
     "flow:install": "flow-typed install",
     "flow:coverage": "flow-coverage-report -i 'app/**/*.js' -x 'app/**/*.spec.js' -t html -t json -t text -o reports/flow/ --threshold 70",
     "esdoc": "esdoc -c .esdoc.json",
-    "pretty": "prettier --write **/*.{js,json,css}"
+    "pretty": "prettier --write **/*.{js,json,css}",
+    "validate": "yarn run lint && yarn run test && yarn run build"
   },
   "repository": {
     "type": "git",
@@ -121,7 +122,6 @@
     "cookie-parser": "^1.4.3",
     "copy-webpack-plugin": "^4.6.0",
     "cron": "^1.5.0",
-    "datatables.net": "^1.10.15",
     "dotenv": "^6.1.0",
     "es6-promise": "^4.2.5",
     "express": "^4.16.4",
