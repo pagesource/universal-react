@@ -121,7 +121,6 @@
     "cookie-parser": "^1.4.3",
     "copy-webpack-plugin": "^4.6.0",
     "cron": "^1.5.0",
-    "datatables.net": "^1.10.15",
     "dotenv": "^6.1.0",
     "es6-promise": "^4.2.5",
     "express": "^4.16.4",
