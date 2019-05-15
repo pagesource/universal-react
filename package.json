@@ -30,7 +30,8 @@
     "flow:install": "flow-typed install",
     "flow:coverage": "flow-coverage-report -i 'app/**/*.js' -x 'app/**/*.spec.js' -t html -t json -t text -o reports/flow/ --threshold 70",
     "esdoc": "esdoc -c .esdoc.json",
-    "pretty": "prettier --write **/*.{js,json,css}"
+    "pretty": "prettier --write **/*.{js,json,css}",
+    "validate": "yarn run lint && yarn run test && yarn run build"
   },
   "repository": {
     "type": "git",
