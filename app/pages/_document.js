@@ -29,6 +29,7 @@ export default class MyDocument extends Document {
       <html lang="en">
         <Head>
           <meta httpEquiv="X-UA-Compatible" content="IE=Edge" />
+          <link rel="manifest" href="/static/manifest.json" />
           {cssIncludes.map(css => (
             <Fragment key={`fragment-${css.id}`}>
               <link type="text/css" rel="stylesheet" href={css.src} />

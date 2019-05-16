@@ -6,6 +6,7 @@ const minify = require('harp-minify');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const Buildify = require('buildify');
 const path = require('path');
+const withOffline = require('next-offline');
 const withBundleAnalyzer = require('@zeit/next-bundle-analyzer');
 const withPlugins = require('next-compose-plugins');
 const withTM = require('next-plugin-transpile-modules');
@@ -20,7 +21,7 @@ const { parsed: envVars } = dotenv.config({
 
 const metricsKey = process.env.ENV_API_KEY === process.env.PROD_KEY ? 'prod' : 'dev';
 
-module.exports = withPlugins([withBundleAnalyzer, withTM], {
+module.exports = withPlugins([withBundleAnalyzer, withTM, withOffline], {
   distDir: '../.next',
   webpack: (config, { dev, buildId, isServer }) => {
     config.plugins.push(new webpack.EnvironmentPlugin(envVars));
@@ -149,5 +150,23 @@ module.exports = withPlugins([withBundleAnalyzer, withTM], {
     metricsKey,
     isCachingEnabled: process.env.CACHE_ENABLED !== 'false',
     isProd: process.env.PROD_ENV === 'true',
+  },
+  workboxOpts: {
+    clientsClaim: true,
+    skipWaiting: true,
+    runtimeCaching: [
+      {
+        urlPattern: '/',
+        handler: 'networkFirst',
+      },
+      {
+        urlPattern: /.*\.(?:png|jpg|jpeg|svg|gif|woff2|woff|ttf)/,
+        handler: 'cacheFirst',
+      },
+      {
+        urlPattern: /.*\.(?:css)/,
+        handler: 'cacheFirst',
+      },
+    ],
   },
 });
