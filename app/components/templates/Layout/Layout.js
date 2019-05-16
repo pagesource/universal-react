@@ -9,7 +9,7 @@ import get from 'lodash/get';
 import Theme from '../../../styles/theme';
 import Header from '../../../containers/organisms/Header';
 import Footer from '../../../containers/organisms/Footer';
-import { MOBILE } from '../../../constants';
+import { DESKTOP } from '../../../constants';
 import API from '../../../utils/fetch';
 
 type Props = {
@@ -20,7 +20,7 @@ type Props = {
 
 const Layout = ({ children, deviceType, hasRightGutter }: Props): Node => {
   // `deviceType` is now accessible to all component styles using `props.theme.deviceType`
-  Theme.deviceType = deviceType;
+  Theme.deviceType = deviceType || DESKTOP;
   /**
    * isTabletCheckout Setting for theming at component level
    * for all checkout pages loading on tablet device.
@@ -28,25 +28,14 @@ const Layout = ({ children, deviceType, hasRightGutter }: Props): Node => {
   Theme.hasRightGutter = hasRightGutter;
   API.setDeviceType(deviceType);
 
-  const isMobile = deviceType === MOBILE;
-  /**
-   * check whether on checkout pages to have right Space/gutter in the window,
-   * for chat Icon overlaping issue in Ipad.
-   */
-  const width = hasRightGutter ? 1100 : 1000;
-
   return (
     <ThemeProvider theme={Theme}>
       <main>
         <Head>
-          {isMobile ? (
-            <meta
-              name="viewport"
-              content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width, shrink-to-fit=no"
-            />
-          ) : (
-            <meta name="viewport" content={`width=${width}`} />
-          )}
+          <meta
+            name="viewport"
+            content="initial-scale=1.0, minimum-scale=1.0, width=device-width, shrink-to-fit=no"
+          />
         </Head>
         <Header />
         {children}

@@ -1,4 +1,8 @@
-## Folder Structure
+# Application Directory Structure
+
+## Default applications directory structure
+
+Suitable for small scale applications:
 
 - **app**
   - **components**
@@ -6,7 +10,13 @@
     - molecules
     - organisms
     - templates
+  - **containers**
+    - molecules
+    - organisms
+    - templates
   - **core**
+  - **HOC**
+  - pages
 
 Our app structure follows `atomic` design principles. More can be read [here](http://bradfrost.com/blog/post/atomic-web-design/)
 
@@ -26,4 +36,35 @@ We follow atomic design of components and they are structured in this fashion.
     Building up to molecules from atoms encourages a “do one thing and do it well” mentality. While molecules can be complex, as a rule of thumb they are relatively simple combinations of atoms built for reuse.
     In code setup e.g. are Editor, Filtergrid, Flyout menu, navigation-bar etc.
   - **Organisms**: <br> Molecules give us some building blocks to work with, and we can now combine them together to form organisms. Organisms are groups of molecules joined together to form a relatively complex, distinct section of an interface. In code setup e.g. Footer which have their own components PromotionText, NavigationBar, FlyoutMenu
-  - **Templates**: <br>At the template stage, we break our chemistry analogy to get into language that makes more sense to our clients and our final output. Templates consist mostly of groups of organisms stitched together to form pages. It’s here where we start to see the design coming together and start seeing things like layout in action.<br>Templates are very concrete and provide context to all these relatively abstract molecules and organisms. Templates are also where clients start seeing the final design in place. In my experience working with this methodology, templates begin their life as HTML wireframes, but over time increase fidelity to ultimately become the final deliverable. Bearded Studio in Pittsburgh follow a similar process, where designs start grayscale and layout-less but slowly increase fidelity until the final design is in place.
+  - **Templates**: <br>At the template stage, we break our chemistry analogy to get into language that makes more sense to our clients and our final output. Templates consist mostly of groups of organisms stitched together to form pages. It’s here where we start to see the design coming together and start seeing things like layout in action.<br>Templates are very concrete and provide context to all these relatively abstract molecules and organisms. Templates are also where clients start seeing the final design in place. In my experience working with this methodology, templates begin their life as HTML wire-frames, but over time increase fidelity to ultimately become the final deliverable. Bearded Studio in Pittsburgh follow a similar process, where designs start gray-scale and layout-less but slowly increase fidelity until the final design is in place.
+
+## Business Context Driven Directory structure
+
+In large and complex applications, for better maintainability it much more important to maintain independent business modules than reusability. If you wish to support a more application contextual directory structure than just atomic, you should consider configuring plop generator configurations at `./generators` accordingly.
+
+An example of large applications directory structure looks like below:
+
+- **app**
+  - **shared**
+    - atoms
+    - molecules
+    - organisms
+    - templates
+    - HOCs
+  - **browse**
+    - atoms
+    - molecules
+    - organisms
+    - templates
+  - **checkout**
+    - atoms
+    - molecules
+    - organisms
+    - templates
+  - **profile**
+    - atoms
+    - molecules
+    - organisms
+    - templates
+  - **core**
+  - pages

@@ -151,21 +151,26 @@ export const getWrapperComponent = (
       store.dispatch(serverActions.setCurrentRoute(pathname));
       let requestDetails;
       let clientParams = {};
+      const { device = {} } = req;
+      const { headers = {} } = req;
+      const { host = '' } = headers;
+      const { cookies = {} } = req;
+      const { perfLogger = {} } = req;
 
       if (isServer) {
-        const deviceType = req.device.type === PHONE ? MOBILE : DESKTOP;
-        const isTablet = req.device.type === TABLET;
+        const deviceType = device.type === PHONE ? MOBILE : DESKTOP;
+        const isTablet = device.type === TABLET;
         store.dispatch(serverActions.addIsTablet(isTablet));
         store.dispatch(serverActions.addDeviceType(deviceType));
         store.dispatch(serverActions.setPageUrl(req.url));
         store.dispatch(serverActions.setPageQuery({ ...req.query, ...query }));
-        store.dispatch(serverActions.setPageOrigin(`${req.protocol}://${req.headers.host}`));
+        store.dispatch(serverActions.setPageOrigin(`${req.protocol}://${host}`));
 
         requestDetails = {
           deviceType,
-          cookies: req.cookies.cookieList,
-          logger: req.perfLogger,
-          whitelistedHeaders: cleanupRequestHeaders(req.headers),
+          cookies: cookies.cookieList,
+          logger: perfLogger,
+          whitelistedHeaders: cleanupRequestHeaders(headers),
         };
       } else {
         clientParams = parseQueryParams(asPath);

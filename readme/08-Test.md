@@ -1,4 +1,6 @@
-## Running the tests
+# Testing
+
+## Testing React Components
 
 We are using Jest with Enzyme for running our tests.
 
@@ -14,3 +16,12 @@ We can use the below yarn command to execute unit test cases in jest
 ```sh
 yarn run test
 ```
+
+Learn more about our testing tools from below location:
+
+- [Jest](https://jestjs.io/)
+- [Jest Dev Hints](https://devhints.io/jest)
+- [Enzyme](https://airbnb.io/enzyme/)
+- [Enzyme Dev Hints](https://devhints.io/enzyme)
+
+## E2E Application Testing

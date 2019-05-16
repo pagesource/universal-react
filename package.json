@@ -9,6 +9,7 @@
     "test:watch": "yarn run test --watch",
     "test:debug": "cross-env NODE_ENV=test node --inspect-brk ./node_modules/jest/bin/jest.js --runInBand --config ./config/jest.config.js",
     "build": "rimraf .next && next build app",
+    "export": "next export app",
     "dev": "rimraf .next && yarn install && yarn run dev:serve",
     "dev:serve": "node server",
     "prod": "yarn install && yarn run build && yarn run prod:serve",

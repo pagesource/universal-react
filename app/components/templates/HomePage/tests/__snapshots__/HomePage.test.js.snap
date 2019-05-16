@@ -135,7 +135,7 @@ exports[`HomePage component should render correctly 1`] = `
             inheritedStyles=""
             scroll={false}
             shallow={false}
-            to="https://github.com/pagesource/universal-react/blob/master/readme/DevelopmentTools.md"
+            to="https://github.com/pagesource/universal-react/blob/master/readme/02-DevelopmentTools.md"
           >
             Development Tools
           </Anchor>
@@ -149,7 +149,7 @@ exports[`HomePage component should render correctly 1`] = `
             inheritedStyles=""
             scroll={false}
             shallow={false}
-            to="https://github.com/pagesource/universal-react/blob/master/readme/StaticCodeLinters.md"
+            to="https://github.com/pagesource/universal-react/blob/master/readme/07-QualityControl.md"
           >
             Static Code Linters and Code Formatter
           </Anchor>
@@ -178,7 +178,7 @@ exports[`HomePage component should render correctly 1`] = `
             inheritedStyles=""
             scroll={false}
             shallow={false}
-            to="https://github.com/pagesource/universal-react/blob/master/readme/FolderStructure.md"
+            to="https://github.com/pagesource/universal-react/blob/master/readme/04-FolderStructure.md"
           >
             Folder Structure
           </Anchor>
@@ -192,7 +192,7 @@ exports[`HomePage component should render correctly 1`] = `
             inheritedStyles=""
             scroll={false}
             shallow={false}
-            to="https://github.com/pagesource/universal-react/blob/master/readme/Component.md"
+            to="https://github.com/pagesource/universal-react/blob/master/readme/03-Generators.md"
           >
             Component Scaffolding
           </Anchor>
@@ -206,7 +206,7 @@ exports[`HomePage component should render correctly 1`] = `
             inheritedStyles=""
             scroll={false}
             shallow={false}
-            to="https://github.com/pagesource/universal-react/blob/master/readme/FlowType.md"
+            to="https://github.com/pagesource/universal-react/blob/master/readme/05-FlowType.md"
           >
             Flow Type
           </Anchor>
@@ -220,7 +220,7 @@ exports[`HomePage component should render correctly 1`] = `
             inheritedStyles=""
             scroll={false}
             shallow={false}
-            to="https://github.com/pagesource/universal-react/blob/master/readme/Husky.md"
+            to="https://github.com/pagesource/universal-react/blob/master/readme/07-QualityControl.md#husky"
           >
             Husky
           </Anchor>
@@ -248,7 +248,7 @@ exports[`HomePage component should render correctly 1`] = `
             inheritedStyles=""
             scroll={false}
             shallow={false}
-            to="https://github.com/pagesource/universal-react/blob/master/readme/Storybook.md"
+            to="https://github.com/pagesource/universal-react/blob/master/readme/06-Storybook.md"
           >
             Storybook
           </Anchor>
@@ -262,7 +262,7 @@ exports[`HomePage component should render correctly 1`] = `
             inheritedStyles=""
             scroll={false}
             shallow={false}
-            to="https://github.com/pagesource/universal-react/blob/master/readme/Test.md"
+            to="https://github.com/pagesource/universal-react/blob/master/readme/08-Test.md"
           >
             Running The Tests
           </Anchor>

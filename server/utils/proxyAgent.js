@@ -6,7 +6,7 @@ const keepAliveSettings = {
   maxFreeSockets: +process.env.MAX_FREE_SOCKETS,
   keepAliveMsecs: +process.env.KEEP_ALIVE_MSECS,
   timeout: +process.env.API_TIMEOUT,
-  keepAliveTimeout: +process.env.KEEP_ALIVE_TIMEOUT,
+  freeSocketTimeout: +process.env.KEEP_ALIVE_TIMEOUT,
 };
 
 module.exports = {
