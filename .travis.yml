@@ -15,7 +15,7 @@ deploy:
   github-token: $GITHUB_TOKEN
   local_dir: 'out'
   on:
-    branch: develop
+    branch: master
 env:
   matrix:
     secure: $GITHUB_TOKEN

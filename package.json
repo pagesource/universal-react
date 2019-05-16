@@ -171,8 +171,5 @@
     "reportPath": "reports/tests",
     "reportFile": "test-reporter.xml",
     "indent": 2
-  },
-  "resolutions": {
-    "eslint-scope": "3.7.1"
   }
 }
