@@ -44,11 +44,6 @@ export default {
       serverKey: 'siteName',
       prefix: ['og'],
     },
-    {
-      id: 10,
-      key: 'theme-color',
-      prefix: ['#000'],
-    },
   ],
   LINK: ['canonical'],
 };

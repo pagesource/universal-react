@@ -157,15 +157,45 @@ module.exports = withPlugins([withBundleAnalyzer, withTM, withOffline], {
     runtimeCaching: [
       {
         urlPattern: '/',
-        handler: 'networkFirst',
+        handler: 'NetworkFirst',
       },
       {
-        urlPattern: /.*\.(?:png|jpg|jpeg|svg|gif|woff2|woff|ttf)/,
-        handler: 'cacheFirst',
+        urlPattern: /.*\.(?:png|jpg|jpeg|svg|gif)/,
+        handler: 'CacheFirst',
+        options: {
+          cacheName: 'image-cache',
+          expiration: {
+            maxAgeSeconds: 60 * 60 * 30,
+          },
+        },
       },
       {
-        urlPattern: /.*\.(?:css)/,
-        handler: 'cacheFirst',
+        urlPattern: /.*\.(?:|woff2|woff|ttf)/,
+        handler: 'CacheFirst',
+        options: {
+          cacheName: 'font-cache',
+          expiration: {
+            maxAgeSeconds: 60 * 60 * 24 * 365,
+          },
+        },
+      },
+      {
+        urlPattern: /\/api\/b/,
+        handler: 'NetworkFirst',
+        options: {
+          cacheableResponse: {
+            statuses: [0, 200],
+          },
+        },
+      },
+      {
+        urlPattern: /^https:\/\/fonts\.googleapis\.com/,
+        handler: 'StaleWhileRevalidate',
+        options: {
+          cacheableResponse: {
+            statuses: [0, 200],
+          },
+        },
       },
     ],
   },

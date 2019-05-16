@@ -38,6 +38,7 @@ export default class MyDocument extends Document {
           {styleTags}
         </Head>
         <body className="app">
+          <noscript>Javascript is required for this page</noscript>
           <Content />
           <NextScript />
         </body>
