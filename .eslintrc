@@ -66,5 +66,8 @@
         "flowtype/no-types-missing-file-annotation": "off"
       }
     }
-  ]
+  ],
+  "settings": {
+    "polyfills": ["promises"]
+  }
 }

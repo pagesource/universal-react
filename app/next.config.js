@@ -8,7 +8,6 @@ const Buildify = require('buildify');
 const path = require('path');
 const withBundleAnalyzer = require('@zeit/next-bundle-analyzer');
 const withPlugins = require('next-compose-plugins');
-const withTM = require('next-plugin-transpile-modules');
 const { ENV_DEVELOPMENT, ENV_PRODUCTION } = require('../isomorphic/constants');
 
 const { parsed: envVars } = dotenv.config({
@@ -20,7 +19,7 @@ const { parsed: envVars } = dotenv.config({
 
 const metricsKey = process.env.ENV_API_KEY === process.env.PROD_KEY ? 'prod' : 'dev';
 
-module.exports = withPlugins([withBundleAnalyzer, withTM], {
+module.exports = withPlugins([withBundleAnalyzer], {
   distDir: '../.next',
   webpack: (config, { dev, buildId, isServer }) => {
     config.plugins.push(new webpack.EnvironmentPlugin(envVars));
