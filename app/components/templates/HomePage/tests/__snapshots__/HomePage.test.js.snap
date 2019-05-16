@@ -108,7 +108,9 @@ exports[`HomePage component should render correctly 1`] = `
         flow:install will search the
         <Anchor
           as=""
+          className=""
           forceClick={false}
+          handleLinkClick={[Function]}
           href="https://github.com/flow-typed/flow-typed/blob/master/README.md"
           inheritedStyles=""
           scroll={false}
@@ -127,7 +129,9 @@ exports[`HomePage component should render correctly 1`] = `
         <li>
           <Anchor
             as=""
+            className=""
             forceClick={false}
+            handleLinkClick={[Function]}
             inheritedStyles=""
             scroll={false}
             shallow={false}
@@ -139,7 +143,9 @@ exports[`HomePage component should render correctly 1`] = `
         <li>
           <Anchor
             as=""
+            className=""
             forceClick={false}
+            handleLinkClick={[Function]}
             inheritedStyles=""
             scroll={false}
             shallow={false}
@@ -151,7 +157,9 @@ exports[`HomePage component should render correctly 1`] = `
         <li>
           <Anchor
             as=""
+            className=""
             forceClick={false}
+            handleLinkClick={[Function]}
             href="http://bradfrost.com/blog/post/atomic-web-design/"
             inheritedStyles=""
             rel="nofollow"
@@ -164,7 +172,9 @@ exports[`HomePage component should render correctly 1`] = `
         <li>
           <Anchor
             as=""
+            className=""
             forceClick={false}
+            handleLinkClick={[Function]}
             inheritedStyles=""
             scroll={false}
             shallow={false}
@@ -176,7 +186,9 @@ exports[`HomePage component should render correctly 1`] = `
         <li>
           <Anchor
             as=""
+            className=""
             forceClick={false}
+            handleLinkClick={[Function]}
             inheritedStyles=""
             scroll={false}
             shallow={false}
@@ -188,7 +200,9 @@ exports[`HomePage component should render correctly 1`] = `
         <li>
           <Anchor
             as=""
+            className=""
             forceClick={false}
+            handleLinkClick={[Function]}
             inheritedStyles=""
             scroll={false}
             shallow={false}
@@ -200,7 +214,9 @@ exports[`HomePage component should render correctly 1`] = `
         <li>
           <Anchor
             as=""
+            className=""
             forceClick={false}
+            handleLinkClick={[Function]}
             inheritedStyles=""
             scroll={false}
             shallow={false}
@@ -212,7 +228,9 @@ exports[`HomePage component should render correctly 1`] = `
         <li>
           <Anchor
             as=""
+            className=""
             forceClick={false}
+            handleLinkClick={[Function]}
             inheritedStyles=""
             scroll={false}
             shallow={false}
@@ -224,7 +242,9 @@ exports[`HomePage component should render correctly 1`] = `
         <li>
           <Anchor
             as=""
+            className=""
             forceClick={false}
+            handleLinkClick={[Function]}
             inheritedStyles=""
             scroll={false}
             shallow={false}
@@ -236,7 +256,9 @@ exports[`HomePage component should render correctly 1`] = `
         <li>
           <Anchor
             as=""
+            className=""
             forceClick={false}
+            handleLinkClick={[Function]}
             inheritedStyles=""
             scroll={false}
             shallow={false}

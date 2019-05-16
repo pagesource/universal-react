@@ -9,7 +9,6 @@ const path = require('path');
 const withOffline = require('next-offline');
 const withBundleAnalyzer = require('@zeit/next-bundle-analyzer');
 const withPlugins = require('next-compose-plugins');
-const withTM = require('next-plugin-transpile-modules');
 const { ENV_DEVELOPMENT, ENV_PRODUCTION } = require('../isomorphic/constants');
 
 const { parsed: envVars } = dotenv.config({
@@ -21,7 +20,7 @@ const { parsed: envVars } = dotenv.config({
 
 const metricsKey = process.env.ENV_API_KEY === process.env.PROD_KEY ? 'prod' : 'dev';
 
-module.exports = withPlugins([withBundleAnalyzer, withTM, withOffline], {
+module.exports = withPlugins([withBundleAnalyzer, withOffline], {
   distDir: '../.next',
   webpack: (config, { dev, buildId, isServer }) => {
     config.plugins.push(new webpack.EnvironmentPlugin(envVars));
