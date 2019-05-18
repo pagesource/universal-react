@@ -9,6 +9,9 @@ out
 # Reports
 reports
 
+#logs
+logs/
+
 # Flow
 flow-typed/npm
 

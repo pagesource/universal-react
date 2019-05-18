@@ -9,8 +9,6 @@ import { CACHEABLE_SERVICES_LIST } from './cacheableServices';
 
 const { publicRuntimeConfig } = getConfig();
 
-console.log(publicRuntimeConfig);
-
 const API_HOSTS = require('../../API_HOST').environment;
 
 const logger = loggerFactory.getLogger();
@@ -133,7 +131,6 @@ class ServiceUtils {
     }
 
     try {
-      console.log(reqOptions);
       response = await axios(reqOptions);
       responseData = response.data;
     } catch (err) {
