@@ -18,15 +18,15 @@ const HomePage = ({ editorialData }: Props): Node => {
       <TopBanner title={title} subTitle={subTitle} />
       <section className="wrapper">
         <div className="inner">
-          <h2>Universal React</h2>
+          <h2>Why Universal React?</h2>
           <p>
             A community accepted and reliable XT Dev Ecosystem, that can be utilized as baseline for
             development of all types of projects, to achieve dependable delivery standards. This
             ecosystem doesn&apos;t intend to provide lot of out of the box code/components but a
             well configured development environment and delivery pipeline, having balanced focus to
             Static Code Quality, Performance, Processes, Security, Testability and Best Practices.
-            This boilerplate will ensure that projects are meeting minimum quality and best
-            practices through this ecosystem.
+            This boilerplate will help project teams in building applications with great quality, by
+            giving them more time to focus on business problems rather than web development chores.
           </p>
           <h2>Entities of this Ecosystem</h2>
           <ul>
