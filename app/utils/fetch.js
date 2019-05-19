@@ -131,7 +131,6 @@ class ServiceUtils {
     }
 
     try {
-      console.log(reqOptions);
       response = await axios(reqOptions);
       responseData = response.data;
     } catch (err) {
