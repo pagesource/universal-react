@@ -97,12 +97,12 @@ const HomePage = ({ editorialData }: Props): Node => {
           <h2>Topics to ramp-up</h2>
           <ul>
             <li>
-              <Anchor to="https://github.com/pagesource/universal-react/blob/master/readme/DevelopmentTools.md">
+              <Anchor to="https://github.com/pagesource/universal-react/blob/master/readme/02-DevelopmentTools.md">
                 Development Tools
               </Anchor>
             </li>
             <li>
-              <Anchor to="https://github.com/pagesource/universal-react/blob/master/readme/StaticCodeLinters.md">
+              <Anchor to="https://github.com/pagesource/universal-react/blob/master/readme/07-QualityControl.md">
                 Static Code Linters and Code Formatter
               </Anchor>
             </li>
@@ -112,22 +112,22 @@ const HomePage = ({ editorialData }: Props): Node => {
               </Anchor>
             </li>
             <li>
-              <Anchor to="https://github.com/pagesource/universal-react/blob/master/readme/FolderStructure.md">
+              <Anchor to="https://github.com/pagesource/universal-react/blob/master/readme/04-FolderStructure.md">
                 Folder Structure
               </Anchor>
             </li>
             <li>
-              <Anchor to="https://github.com/pagesource/universal-react/blob/master/readme/Component.md">
+              <Anchor to="https://github.com/pagesource/universal-react/blob/master/readme/03-Generators.md">
                 Component Scaffolding
               </Anchor>
             </li>
             <li>
-              <Anchor to="https://github.com/pagesource/universal-react/blob/master/readme/FlowType.md">
+              <Anchor to="https://github.com/pagesource/universal-react/blob/master/readme/05-FlowType.md">
                 Flow Type
               </Anchor>
             </li>
             <li>
-              <Anchor to="https://github.com/pagesource/universal-react/blob/master/readme/Husky.md">
+              <Anchor to="https://github.com/pagesource/universal-react/blob/master/readme/07-QualityControl.md#husky">
                 Husky
               </Anchor>
             </li>
@@ -137,12 +137,12 @@ const HomePage = ({ editorialData }: Props): Node => {
               </Anchor>
             </li>
             <li>
-              <Anchor to="https://github.com/pagesource/universal-react/blob/master/readme/Storybook.md">
+              <Anchor to="https://github.com/pagesource/universal-react/blob/master/readme/06-Storybook.md">
                 Storybook
               </Anchor>
             </li>
             <li>
-              <Anchor to="https://github.com/pagesource/universal-react/blob/master/readme/Test.md">
+              <Anchor to="https://github.com/pagesource/universal-react/blob/master/readme/08-Test.md">
                 Running The Tests
               </Anchor>
             </li>

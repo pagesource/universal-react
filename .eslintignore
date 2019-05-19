@@ -13,3 +13,4 @@ stories
 # because eslint ignores hidden/dotfiles by default.
 .storybook
 /app/static/libs/
+out

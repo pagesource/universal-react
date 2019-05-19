@@ -12,7 +12,7 @@ giving them more time to focus on business problems rather than web development 
 
 - **Development Environment:** Storybook integrated for developing and showcasing components.
 - **Flow typed:** All components are FlowTyped and Flow Type checked.
-- **Static Code Quality checks and formatting:** Javascript and CSS linting using Eslint, Stylelint and Prettier.
+- **Static Code Quality checks and formatting:** Javascript and CSS linting using Eslint, StyleLint and Prettier.
 - **Component scaffolding:** Consistently generate components using Plop.
 - **Documentation:** Generates code documentation with ESDocs.
 - **Git Hooks:** Pre-commit, Pre-push and pre-publish using Husky.
@@ -40,15 +40,6 @@ yarn run flow:install
 
 flow:install will search the [`libdef`](https://github.com/flow-typed/flow-typed/blob/master/README.md) repo and download all the libdefs that are relevant for our project and install them for us.
 
-## Topics to refer
+## How to ramp-up?
 
-- [Development Tools](readme/DevelopmentTools.md)
-- [Static Code Linters and Code Formatter](readme/StaticCodeLinters.md)
-- [Atomic Design](http://bradfrost.com/blog/post/atomic-web-design/)
-- [Folder Structure](readme/FolderStructure.md)
-- [Component Scaffolding](readme/Component.md)
-- [Flow Type](readme/FlowType.md)
-- [Husky](readme/Husky.md)
-- [ES Docs](readme/ESDocs.md)
-- [Storybook](readme/Storybook.md)
-- [Running The Tests](readme/Test.md)
+Follow this ramp-up [guide](readme/01-GettingStarted.md)

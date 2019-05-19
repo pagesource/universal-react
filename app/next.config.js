@@ -8,7 +8,7 @@ const Buildify = require('buildify');
 const path = require('path');
 const withBundleAnalyzer = require('@zeit/next-bundle-analyzer');
 const withPlugins = require('next-compose-plugins');
-const { ENV_DEVELOPMENT, ENV_PRODUCTION } = require('../isomorphic/constants');
+const { ENV_DEVELOPMENT } = require('../isomorphic/constants');
 
 const { parsed: envVars } = dotenv.config({
   path: path.resolve(
@@ -40,48 +40,45 @@ module.exports = withPlugins([withBundleAnalyzer], {
       return entries;
     };
 
-    // TODO: Check why these css files were added only in production build
-    if (process.env.NODE_ENV === ENV_PRODUCTION || true) {
-      if (isServer) {
-        const foundation = {
-          destPath: '.next/static/styles/vendor/',
-          files: [
-            path.resolve(__dirname, '/node_modules/normalize.css/normalize.css'),
-            path.resolve(__dirname, '/node_modules/flexboxgrid/css/flexboxgrid.css'),
-            path.resolve(__dirname, '/app/static/styles/icons/icomoon.css'),
-          ],
-          fileName: 'foundation',
-        };
+    if (isServer) {
+      const foundation = {
+        destPath: '.next/static/styles/vendor/',
+        files: [
+          path.resolve(__dirname, '/node_modules/normalize.css/normalize.css'),
+          path.resolve(__dirname, '/node_modules/flexboxgrid/css/flexboxgrid.css'),
+          path.resolve(__dirname, '/app/static/styles/icons/icomoon.css'),
+        ],
+        fileName: 'foundation',
+      };
 
-        Buildify()
-          .concat(foundation.files)
-          .cssmin()
-          .save(`${foundation.destPath}${foundation.fileName}.css`);
-      }
-      config.plugins.push(
-        new CopyWebpackPlugin(
-          [
-            {
-              from: path.join(__dirname, '/static/**/*'),
-              to: path.join(__dirname, '../.next'),
-              transformPath(targePath) {
-                return targePath.replace(/(\/static\/)/, (match, p1) => `${p1}${buildId}/`);
-              },
-              transform(content, filePath) {
-                if (filePath.endsWith('.css')) {
-                  return minify.css(content.toString());
-                }
-                if (filePath.endsWith('.js') && filePath.indexOf('polyfills') === -1) {
-                  return Terser.minify(content.toString()).code;
-                }
-                return content;
-              },
-            },
-          ],
-          {}
-        )
-      );
+      Buildify()
+        .concat(foundation.files)
+        .cssmin()
+        .save(`${foundation.destPath}${foundation.fileName}.css`);
     }
+    config.plugins.push(
+      new CopyWebpackPlugin(
+        [
+          {
+            from: path.join(__dirname, '/static/**/*'),
+            to: path.join(__dirname, '../.next'),
+            transformPath(targePath) {
+              return targePath.replace(/(\/static\/)/, (match, p1) => `${p1}${buildId}/`);
+            },
+            transform(content, filePath) {
+              if (filePath.endsWith('.css')) {
+                return minify.css(content.toString());
+              }
+              if (filePath.endsWith('.js') && filePath.indexOf('polyfills') === -1) {
+                return Terser.minify(content.toString()).code;
+              }
+              return content;
+            },
+          },
+        ],
+        {}
+      )
+    );
 
     // Following check is for prod builds and client only
     if (!dev && !isServer) {
@@ -148,5 +145,10 @@ module.exports = withPlugins([withBundleAnalyzer], {
     metricsKey,
     isCachingEnabled: process.env.CACHE_ENABLED !== 'false',
     isProd: process.env.PROD_ENV === 'true',
+  },
+  exportPathMap: async () => {
+    return {
+      '/': { page: '/' },
+    };
   },
 });

@@ -1,4 +1,4 @@
-## Strorybook
+# Storybook
 
 Storybook is a development environment for UI components. It allows you to browse a component library, view the different states of each component, and interactively develop and test components.
 
@@ -9,3 +9,5 @@ To view, edit and build components with Storybook executing the below command:
 ```sh
 yarn run storybook
 ```
+
+Learn more about using and configuring it [here](https://storybook.js.org/docs/basics/introduction/)
