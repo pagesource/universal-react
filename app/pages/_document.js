@@ -1,6 +1,7 @@
 // @flow
 import React, { Fragment } from 'react';
 import Document, { Head, Main, NextScript } from 'next/document';
+// $FlowFixMe eslint-disable-next-line extra-rules/no-commented-out-code
 import { ServerStyleSheet } from 'styled-components';
 
 import styles from '../styles'; // eslint-disable-line no-unused-vars
@@ -11,7 +12,8 @@ import { PHONE, MOBILE, DESKTOP } from '../constants';
 
 export default class MyDocument extends Document {
   static getInitialProps({ renderPage, req }: any) {
-    const deviceType = req.device.type === PHONE ? MOBILE : DESKTOP;
+    const { device = {} } = req;
+    const deviceType = device.type === PHONE ? MOBILE : DESKTOP;
     const sheet = new ServerStyleSheet();
     const page = () =>
       renderPage({

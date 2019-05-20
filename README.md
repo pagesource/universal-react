@@ -1,29 +1,37 @@
-# Universal React <Project Name>
+# Universal React
 
-To assemble a reliable and community accepted XT Dev Ecosystem, that can be utilized as baseline for development of each project with dependable quality standards. This "Universal React" boilerplate will not limit/restrict any team on further improving it, but ensure that projects are meeting minimum quality and best practices with this ecosystem. This ecosystem doesn't intend to provide a lot of out of the box code/components or features but a well configured development environment and delivery pipeline, having balanced focus to Static Code Quality, Performance, Processes, Security, Testability, Documentation and Best Practices.  
+A community accepted and reliable XT Dev Ecosystem, that can be utilized as baseline for
+development of all types of projects, to achieve dependable delivery standards. This
+ecosystem doesn&apos;t intend to provide lot of out of the box code/components but a
+well configured development environment and delivery pipeline, having balanced focus to
+Static Code Quality, Performance, Processes, Security, Testability and Best Practices.
+This boilerplate will help project teams in building applications with great quality, by
+giving them more time to focus on business problems rather than web development chores.
 
-## Ecosystem of this refrence architecture   🎉
+## Ecosystem of this reference architecture 🎉
 
 - **Development Environment:** Storybook integrated for developing and showcasing components.
 - **Flow typed:** All components are FlowTyped and Flow Type checked.
-- **Static Code Quality checks and formatting:** Javascript and CSS linting using Eslint, Stylelint and Prettier.
+- **Static Code Quality checks and formatting:** Javascript and CSS linting using Eslint, StyleLint and Prettier.
 - **Component scaffolding:** Consistently generate components using Plop.
 - **Documentation:** Generates code documentation with ESDocs.
 - **Git Hooks:** Pre-commit, Pre-push and pre-publish using Husky.
 - **Unit testing framework:** with Jest and Enzyme.
-- Babel 7 to transpiling javascript and releasing them as ESModules.
 - **Theme and Styling:** with Styled Components.
+- **Next.js:** to render react application server side and more.
+- **PWA:** application.
+- **Dynamic Authoring:** of pages with headless CMS.
 
-## Dependencies
+## Main Technology Dependencies
 
-1. react
-2. next.js
-3. redux
+1. React
+2. Next.js
+3. Redux
+4. Node.js
 
 ## Installation
 
-Dependencies should be installed using the yarn
-command line tools.
+Fork the repository & install dependencies using the yarn/npm command line tools.
 
 ```sh
 yarn install
@@ -32,15 +40,6 @@ yarn run flow:install
 
 flow:install will search the [`libdef`](https://github.com/flow-typed/flow-typed/blob/master/README.md) repo and download all the libdefs that are relevant for our project and install them for us.
 
-## Topics to refer
+## How to ramp-up?
 
-- [Development Tools](readme/DevelopmentTools.md)
-- [Static Code Linters and Code Formatter](readme/StaticCodeLinters.md)
-- [Atomic Design](http://bradfrost.com/blog/post/atomic-web-design/)
-- [Folder Structure](readme/FolderStructure.md)
-- [Component Scaffolding](readme/Component.md)
-- [Flow Type](readme/FlowType.md)
-- [Husky](readme/Husky.md)
-- [ES Docs](readme/ESDocs.md)
-- [Storybook](readme/Storybook.md)
-- [Running The Tests](readme/Test.md)
+Follow this ramp-up [guide](readme/01-GettingStarted.md)
