@@ -11,3 +11,4 @@
 9. [Dynamic Store Injection](09-DynamicStore.md)
 10. [Routes](10-Routes.md)
 11. [AnalyticsTracking](11-AnalyticsTracking.md)
+12. [Offline Support - PWA](12-PWASupport.md)
