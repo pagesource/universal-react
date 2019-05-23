@@ -36,6 +36,7 @@ const Layout = ({ children, deviceType, hasRightGutter }: Props): Node => {
             name="viewport"
             content="initial-scale=1.0, minimum-scale=1.0, width=device-width, shrink-to-fit=no"
           />
+          <meta name="theme-color" content="#000" />
         </Head>
         <Header />
         {children}

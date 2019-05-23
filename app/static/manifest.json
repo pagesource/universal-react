@@ -1,0 +1,21 @@
+{
+  "short_name": "UR",
+  "name": "Universal React",
+  "icons": [
+    {
+      "src": "/static/images/icon_192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/static/images/icon_512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#fff",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#000"
+}

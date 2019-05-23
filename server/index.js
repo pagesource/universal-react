@@ -34,6 +34,7 @@ const blackListUrls = [
   'favicon.ico',
   'robots.txt',
   'sitemap.xml',
+  '/service-worker.js',
 ];
 
 // Security level configurations using the helmet module
