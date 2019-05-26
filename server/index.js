@@ -7,11 +7,10 @@ const { spawn } = require('child_process');
 const device = require('express-device');
 const cookieParser = require('cookie-parser');
 const helmet = require('helmet');
-const cache = require('memory-cache');
-const cron = require('cron');
 
-const { MACHINE_IP, PORT, CONFIG_CRON_SCHEDULE } = require('./config/appConfig');
+const { MACHINE_IP, PORT, IS_CACHE_ENABLED, NODE_ENV } = require('./config/appConfig');
 const { isStaticUrl, parseStaticUrl } = require('./utils/staticVersioning');
+const apiCacheMiddlewareObj = require('./middlewares/pageCache');
 
 const {
   ENV_PRODUCTION,
@@ -19,6 +18,7 @@ const {
   API_PROXY_PATH,
   CLEAR_SERVICES_CACHE,
   HEALTH_CHECK,
+  GET_CACHE_INDEX,
 } = require('../isomorphic/constants');
 
 const routes = require('./routes');
@@ -86,23 +86,6 @@ const handler = routes.getRequestHandler(app, async ({ req, res, route, query })
     });
 });
 
-if (process.env.CACHE_ENABLED !== 'false') {
-  global.servicesCache = new cache.Cache();
-}
-
-if (process.env.CACHE_FLUSH_ENABLED !== 'false' && typeof global.servicesCache !== 'undefined') {
-  const servicesCacheCronJob = new cron.CronJob({
-    cronTime: CONFIG_CRON_SCHEDULE,
-    onTick() {
-      global.servicesCache.clear();
-    },
-    start: false,
-  });
-
-  // start cron job with first call
-  servicesCacheCronJob.start();
-}
-
 app.prepare().then(() => {
   const server = express();
   server
@@ -154,11 +137,15 @@ app.prepare().then(() => {
     });
   });
 
+  server.get(GET_CACHE_INDEX, (req, res) => {
+    res.json(apiCacheMiddlewareObj.getCacheIndex());
+  });
+
   // Expose API to clear the cache for services configured
-  server.get(CLEAR_SERVICES_CACHE, (req, res) => {
+  server.get(`${CLEAR_SERVICES_CACHE}:target?`, (req, res) => {
     try {
-      if (global.servicesCache) {
-        global.servicesCache.clear();
+      if (IS_CACHE_ENABLED) {
+        apiCacheMiddlewareObj.bustPageCache(req.params.target);
       }
     } catch (err) {
       res.send({
@@ -169,6 +156,14 @@ app.prepare().then(() => {
     }
     res.send({ success: true });
   });
+
+  /**
+   * Cache pages as per AppConfig
+   */
+  if (IS_CACHE_ENABLED && NODE_ENV === 'production') {
+    apiCacheMiddlewareObj.excludeRequestsFromNodeCache(server);
+    apiCacheMiddlewareObj.cachePages(server, handler);
+  }
 
   // Handle all other requests as page / static requests
   server.get('*', (req, res) => {
