@@ -145,7 +145,7 @@ export const getWrapperComponent = (
     static async getInitialProps(...params) {
       const initialParams = params[0];
 
-      const { store, isServer, req, query, res, pathname, asPath } = initialParams;
+      const { store, isServer, req = {}, query, res = {}, pathname, asPath } = initialParams;
 
       injectSagaAndReducer(key, store, saga, reducer);
       store.dispatch(serverActions.setCurrentRoute(pathname));
