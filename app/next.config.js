@@ -45,14 +45,15 @@ module.exports = withPlugins([withBundleAnalyzer, withOffline], {
       const foundation = {
         destPath: '.next/static/styles/vendor/',
         files: [
-          path.resolve(__dirname, '/node_modules/normalize.css/normalize.css'),
-          path.resolve(__dirname, '/node_modules/flexboxgrid/css/flexboxgrid.css'),
-          path.resolve(__dirname, '/app/static/styles/icons/icomoon.css'),
+          'node_modules/normalize.css/normalize.css',
+          'node_modules/flexboxgrid/css/flexboxgrid.css',
+          'app/static/styles/icons/icomoon.css',
         ],
         fileName: 'foundation',
       };
 
       Buildify()
+        .setDir(path.resolve(__dirname, '../'))
         .concat(foundation.files)
         .cssmin()
         .save(`${foundation.destPath}${foundation.fileName}.css`);
