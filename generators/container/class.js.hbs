@@ -41,7 +41,7 @@ class {{ properCase name }} extends PureComponent<Props, State> {
   }
   {{#if wantActionsAndReducer}}
 
-  export const mapStateToProps = (static) => ({});
+  export const mapStateToProps = (state) => ({});
 
   export const mapDispatchToProps = (dispatch) => ({});
   {{#if wantPage}}
