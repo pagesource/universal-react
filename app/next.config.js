@@ -6,6 +6,7 @@ const minify = require('harp-minify');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const Buildify = require('buildify');
 const path = require('path');
+const withOffline = require('next-offline');
 const withBundleAnalyzer = require('@zeit/next-bundle-analyzer');
 const withPlugins = require('next-compose-plugins');
 const { ENV_DEVELOPMENT } = require('../isomorphic/constants');
@@ -19,7 +20,7 @@ const { parsed: envVars } = dotenv.config({
 
 const metricsKey = process.env.ENV_API_KEY === process.env.PROD_KEY ? 'prod' : 'dev';
 
-module.exports = withPlugins([withBundleAnalyzer], {
+module.exports = withPlugins([withBundleAnalyzer, withOffline], {
   distDir: '../.next',
   webpack: (config, { dev, buildId, isServer }) => {
     config.plugins.push(new webpack.EnvironmentPlugin(envVars));
@@ -44,14 +45,15 @@ module.exports = withPlugins([withBundleAnalyzer], {
       const foundation = {
         destPath: '.next/static/styles/vendor/',
         files: [
-          path.resolve(__dirname, '/node_modules/normalize.css/normalize.css'),
-          path.resolve(__dirname, '/node_modules/flexboxgrid/css/flexboxgrid.css'),
-          path.resolve(__dirname, '/app/static/styles/icons/icomoon.css'),
+          'node_modules/normalize.css/normalize.css',
+          'node_modules/flexboxgrid/css/flexboxgrid.css',
+          'app/static/styles/icons/icomoon.css',
         ],
         fileName: 'foundation',
       };
 
       Buildify()
+        .setDir(path.resolve(__dirname, '../'))
         .concat(foundation.files)
         .cssmin()
         .save(`${foundation.destPath}${foundation.fileName}.css`);
@@ -145,6 +147,54 @@ module.exports = withPlugins([withBundleAnalyzer], {
     metricsKey,
     isCachingEnabled: process.env.CACHE_ENABLED !== 'false',
     isProd: process.env.PROD_ENV === 'true',
+  },
+  workboxOpts: {
+    clientsClaim: true,
+    skipWaiting: true,
+    runtimeCaching: [
+      {
+        urlPattern: '/',
+        handler: 'NetworkFirst',
+      },
+      {
+        urlPattern: /.*\.(?:png|jpg|jpeg|svg|gif)/,
+        handler: 'CacheFirst',
+        options: {
+          cacheName: 'image-cache',
+          expiration: {
+            maxAgeSeconds: 60 * 60 * 30,
+          },
+        },
+      },
+      {
+        urlPattern: /.*\.(?:|woff2|woff|ttf)/,
+        handler: 'CacheFirst',
+        options: {
+          cacheName: 'font-cache',
+          expiration: {
+            maxAgeSeconds: 60 * 60 * 24 * 365,
+          },
+        },
+      },
+      {
+        urlPattern: /\/api\/b/,
+        handler: 'NetworkFirst',
+        options: {
+          cacheableResponse: {
+            statuses: [0, 200],
+          },
+        },
+      },
+      {
+        urlPattern: /^https:\/\/fonts\.googleapis\.com/,
+        handler: 'StaleWhileRevalidate',
+        options: {
+          cacheableResponse: {
+            statuses: [0, 200],
+          },
+        },
+      },
+    ],
   },
   exportPathMap: async () => {
     return {

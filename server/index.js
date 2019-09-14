@@ -9,7 +9,7 @@ const cookieParser = require('cookie-parser');
 const helmet = require('helmet');
 
 const { MACHINE_IP, PORT, IS_CACHE_ENABLED, NODE_ENV } = require('./config/appConfig');
-const { isStaticUrl, parseStaticUrl } = require('./utils/staticVersioning');
+// const { isStaticUrl, parseStaticUrl } = require('./utils/staticVersioning'); eslint-disable-line
 const apiCacheMiddlewareObj = require('./middlewares/pageCache');
 
 const {
@@ -34,6 +34,7 @@ const blackListUrls = [
   'favicon.ico',
   'robots.txt',
   'sitemap.xml',
+  '/service-worker.js',
 ];
 
 // Security level configurations using the helmet module
@@ -175,6 +176,7 @@ app.prepare().then(() => {
     // if (isStaticUrl(req.url) && process.env.NODE_ENV === ENV_PRODUCTION) {
     //   [req.url] = parseStaticUrl(req.url).split('?');
     //   const filePath = join(__dirname, '../.next/dist', req.url);
+    // eslint-disable-next-line
     //   res.sendFile(filePath);
     //   return;
     // }
