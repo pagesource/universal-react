@@ -139,7 +139,7 @@ app.prepare().then(() => {
   });
 
   server.get(GET_CACHE_INDEX, (req, res) => {
-    res.json(apiCacheMiddlewareObj.getCacheIndex());
+    apiCacheMiddlewareObj.getCacheIndex(res);
   });
 
   // Expose API to clear the cache for services configured

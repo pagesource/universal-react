@@ -2,25 +2,16 @@ const apiCache = require('apicache');
 const redis = require('redis');
 
 const redisFragmentCacheConfig = require('../config/appConfig').REDIS_FRAGMENT_CACHE_CONFIG;
+const pageCacheList = require('../config/pageCacheConfig');
 
 const siteIdHeader = 'x-site-id';
 const byPassPageCache = 'x-apicache-bypass';
-
-/**
- * Page Cache Config
- */
-const cacheConfig = [
-  {
-    route: '/',
-    ttl: 900000,
-  },
-];
 
 // List of routes which implicitly signifies No-Caching
 const excludeCacheList = [];
 
 // Function to have custom cache key
-const appendKey = (req, res) => req.method + siteIdHeader;
+const appendKey = req => req.method + siteIdHeader;
 
 // An HOC which takes in req and res params and returns boolean signifying whether to cache or not
 const shouldCache = (req, res) => res.statusCode === 200;
@@ -41,7 +32,7 @@ const cache = apiCache.options({
 }).middleware;
 
 const cachePages = (app, callback) => {
-  cacheConfig.forEach(cacheObj => {
+  pageCacheList.forEach(cacheObj => {
     const cacheSuccess = cache(cacheObj.ttl, shouldCache);
     app.get(cacheObj.route, cacheSuccess, callback);
   });
@@ -54,10 +45,25 @@ const addNoCacheHeader = (req, res, next) => {
 };
 
 const bustPageCache = target => {
+  if (redisClient) {
+    redisClient.flushdb();
+  }
   apiCache.clear(target || '');
 };
 
-const getCacheIndex = () => apiCache.getIndex();
+const getCacheIndex = res => {
+  const cacheIndex = {};
+  if (redisClient) {
+    redisClient.keys('*', (err, keys) => {
+      cacheIndex.memCacheIndex = apiCache.getIndex();
+      cacheIndex.redisIndex = keys;
+      res.json(cacheIndex);
+    });
+  } else {
+    cacheIndex.memCacheIndex = apiCache.getIndex();
+    res.json(cacheIndex);
+  }
+};
 
 const excludeRequestsFromNodeCache = app => {
   excludeCacheList.forEach(route => {
@@ -66,7 +72,7 @@ const excludeRequestsFromNodeCache = app => {
 };
 
 if (redisClient) {
-  redisClient.on('error', function(err) {
+  redisClient.on('error', err => {
     console.log(`Redis-Error ${err}`);
   });
 }
