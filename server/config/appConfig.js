@@ -14,15 +14,12 @@ const envApiKey = process.env.ENV_API_KEY || '';
 
 const MACHINE_IP = '127.0.0.1';
 
-// Default: At minute 15 past every hour from 0 through 23
-const CONFIG_CRON_SCHEDULE = process.env.CACHE_FLUSH_CRON_TIMER || '15 0-23 * * *';
-
 // Environment configurations with defaults from respective .env file
 // <ROOT>/<environment>.env
 dotenv.config({
   path: path.resolve(
     __dirname,
-    `..${path.sep}..${path.sep}env${path.sep}${process.env.NODE_ENV || ENV_DEVELOPMENT}.env`,
+    `..${path.sep}..${path.sep}env${path.sep}${process.env.NODE_ENV || ENV_DEVELOPMENT}.env`
   ),
 });
 
@@ -45,6 +42,15 @@ const APP_ENV = process && process.env ? process.env.ENV : 'DEV_ENV';
 
 const API_PROXY_URL = process.env.API_DOMAIN;
 
+const REDIS_FRAGMENT_CACHE_CONFIG = {
+  ip: process.env.REDIS_IP || '',
+  port: process.env.REDIS_PORT || '',
+  enabled: process.env.CACHE_ENABLED === 'true',
+  debug: process.env.REDIS_DEBUG === 'true',
+};
+
+const IS_CACHE_ENABLED = process.env.CACHE_ENABLED === 'true';
+
 module.exports = {
   APP_ENV,
   NODE_ENV,
@@ -52,5 +58,6 @@ module.exports = {
   API_PROXY_URL,
   MACHINE_IP,
   PORT,
-  CONFIG_CRON_SCHEDULE,
+  REDIS_FRAGMENT_CACHE_CONFIG,
+  IS_CACHE_ENABLED,
 };

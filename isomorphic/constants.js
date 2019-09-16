@@ -9,6 +9,7 @@ const PROTOCOL_HTTPS = 'https';
 const RESPONSE_OK = 200;
 const RESPONSE_INTERNAL_SERVER_ERROR = 500;
 const STATIC_FOLDER_PREFIX = '/static/';
+const GET_CACHE_INDEX = '/get-cache-index';
 
 module.exports = {
   HEARTBEAT_SESSION_NAME,
@@ -22,4 +23,5 @@ module.exports = {
   RESPONSE_INTERNAL_SERVER_ERROR,
   STATIC_FOLDER_PREFIX,
   HEALTH_CHECK,
+  GET_CACHE_INDEX,
 };
