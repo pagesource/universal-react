@@ -11,6 +11,7 @@ exports[`ProgressCircle Component should match snapshot  1`] = `
       <a
         href="/1"
         onClick={[Function]}
+        onMouseEnter={[Function]}
       >
         Link 1
       </a>
@@ -21,6 +22,7 @@ exports[`ProgressCircle Component should match snapshot  1`] = `
       <a
         href="/2"
         onClick={[Function]}
+        onMouseEnter={[Function]}
       >
         Link 2
       </a>
@@ -40,6 +42,7 @@ exports[`ProgressCircle Component should match snapshot with vertical view  1`] 
       <a
         href="/1"
         onClick={[Function]}
+        onMouseEnter={[Function]}
       >
         Link 1
       </a>
@@ -50,6 +53,7 @@ exports[`ProgressCircle Component should match snapshot with vertical view  1`] 
       <a
         href="/2"
         onClick={[Function]}
+        onMouseEnter={[Function]}
       >
         Link 2
       </a>

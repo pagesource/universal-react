@@ -144,7 +144,7 @@
     "invariant": "^2.2.4",
     "isomorphic-unfetch": "^3.0.0",
     "lodash": "^4.17.11",
-    "next": "^8.0.3",
+    "next": "^9.1.1",
     "next-compose-plugins": "^2.1.1",
     "next-offline": "^4.0.0",
     "next-redux-saga": "1.0.1",
