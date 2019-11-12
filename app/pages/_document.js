@@ -8,19 +8,35 @@ import styles from '../styles'; // eslint-disable-line no-unused-vars
 import catchErrors from '../utils/errorBoundary';
 
 import cssIncludes from '../styles/cssIncludes';
-import { PHONE, MOBILE, DESKTOP } from '../constants';
+import { MOBILE, DESKTOP } from '../constants';
 
 export default class MyDocument extends Document {
-  static getInitialProps({ renderPage, req }: any) {
-    const { device = {} } = req;
-    const deviceType = device.type === PHONE ? MOBILE : DESKTOP;
+  static async getInitialProps(ctx: any) {
+    const { device = {} } = ctx.req || {};
+    const deviceType = device.type === DESKTOP ? DESKTOP : MOBILE;
     const sheet = new ServerStyleSheet();
-    const page = () =>
-      renderPage({
-        enhanceApp: App => props => sheet.collectStyles(<App {...props} />),
-      });
-    const styleTags = sheet.getStyleElement();
-    return { ...page, styleTags, deviceType };
+    const originalRenderPage = ctx.renderPage;
+
+    try {
+      ctx.renderPage = () =>
+        originalRenderPage({
+          enhanceApp: App => props => sheet.collectStyles(<App {...props} />),
+        });
+
+      const initialProps = await Document.getInitialProps(ctx);
+      return {
+        ...initialProps,
+        styles: (
+          <>
+            {initialProps.styles}
+            {sheet.getStyleElement()}
+          </>
+        ),
+        deviceType,
+      };
+    } finally {
+      sheet.seal();
+    }
   }
 
   render() {

@@ -1,6 +1,14 @@
 {
   "ignore": ["node_modules/**/*"],
-  "presets": ["next", "@babel/flow"],
+  "presets": [
+    [
+      "next/babel",
+      {
+        "preset-env": { "targets": { "node": "current" } }
+      }
+    ],
+    ["@babel/flow"]
+  ],
   "plugins": [
     [
       "babel-plugin-styled-components",
@@ -18,7 +26,7 @@
     "test": {
       "presets": [
         [
-          "next",
+          "next/babel",
           {
             "modules": "commonjs"
           }
