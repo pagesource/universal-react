@@ -7,6 +7,7 @@ import loggerFactory from '../../../utils/logger';
 
 jest.mock('next/router', () => ({ push: () => {} }));
 jest.mock('../injectSagaAndReducer');
+// eslint-disable-next-line compat/compat
 jest.mock('../monitorSagas', () => () => new Promise(resolve => resolve()));
 jest.mock('../../../utils/logger', () => ({ getLogger: () => ({ error: jest.fn() }) }));
 

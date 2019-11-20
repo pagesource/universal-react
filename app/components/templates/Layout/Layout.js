@@ -60,8 +60,5 @@ const mapStateToProps /* istanbul ignore next */ = (state: Object): { deviceType
   isTablet: get(state, ['global', 'globalData', 'isTablet', '']),
   topBannerModalContent: get(state, ['global', 'header', 'topBannerModalContent', '']),
 });
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(Layout);
+export default connect(mapStateToProps, mapDispatchToProps)(Layout);
 export { Layout };

@@ -1,3 +1,4 @@
+/* eslint-disable compat/compat */
 import { END } from 'redux-saga';
 
 import monitorSagas from '../monitorSagas';

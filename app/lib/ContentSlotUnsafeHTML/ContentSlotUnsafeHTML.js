@@ -15,24 +15,6 @@ type Props = {
  * which is authorable by the content authors (product team)
  */
 class ContentSlotUnsafeHTML extends PureComponent<Props> {
-  static defaultProps = {
-    hasScript: true,
-    wrapper: React.Fragment,
-  };
-
-  static scriptRegEx = /(<script\b[^>]*>[\s\S]*?<\/script>)/gm;
-
-  // Regex to replace HTML ASCII code &#034 (coming as escaped HTML from server code) to `"`
-  static htmlDecode = (input: string = '') =>
-    input && input.replace ? unescape(input.replace(/&#034;/gi, '"')) : '';
-
-  static createMarkupForBody = memoizeLast(contentSlotUnsafeHTML => ({
-    __html: ContentSlotUnsafeHTML.htmlDecode(contentSlotUnsafeHTML).replace(
-      ContentSlotUnsafeHTML.scriptRegEx,
-      ''
-    ),
-  }));
-
   static extractScripts = (input: string) => {
     let match = ContentSlotUnsafeHTML.scriptRegEx.exec(input);
     const scriptList: Array<string> = [];
@@ -43,9 +25,14 @@ class ContentSlotUnsafeHTML extends PureComponent<Props> {
     return scriptList;
   };
 
+  // Regex to replace HTML ASCII code &#034 (coming as escaped HTML from server code) to `"`
+  static htmlDecode = (input: string = '') =>
+    input && input.replace ? unescape(input.replace(/&#034;/gi, '"')) : '';
+
+  // eslint-disable-next-line react/sort-comp
   componentDidMount = () => {
-    const { hasScript } = this.props;
     const { body, createRange } = window && window.document;
+    const { hasScript } = this.props;
 
     if (hasScript && document && document.createRange) {
       const { content } = this.props;
@@ -55,6 +42,15 @@ class ContentSlotUnsafeHTML extends PureComponent<Props> {
       body.appendChild(range.createContextualFragment(scriptList.join('')));
     }
   };
+
+  static createMarkupForBody = memoizeLast(contentSlotUnsafeHTML => ({
+    __html: ContentSlotUnsafeHTML.htmlDecode(contentSlotUnsafeHTML).replace(
+      ContentSlotUnsafeHTML.scriptRegEx,
+      ''
+    ),
+  }));
+
+  static scriptRegEx = /(<script\b[^>]*>[\s\S]*?<\/script>)/gm;
 
   render(): Node {
     const { content, wrapper, hasScript, ...other } = this.props;
@@ -78,5 +74,10 @@ class ContentSlotUnsafeHTML extends PureComponent<Props> {
     /* eslint-enable */
   }
 }
+
+ContentSlotUnsafeHTML.defaultProps = {
+  hasScript: true,
+  wrapper: React.Fragment,
+};
 
 export default ContentSlotUnsafeHTML;

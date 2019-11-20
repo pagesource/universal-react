@@ -54,7 +54,7 @@ const cleanupRequestHeaders = requestHeaders => {
   if (!requestHeaders) {
     return null;
   }
-  const requestHeadersCopy = Object.assign({}, requestHeaders);
+  const requestHeadersCopy = { ...requestHeaders };
   headerExclusionList.forEach(header => {
     delete requestHeadersCopy[header];
   });
@@ -269,18 +269,12 @@ export default (
     WrappedComponent.name ||
     'Component'})`;
 
-  const withConnect = connect(
-    mapStateToProps,
-    mapDispatchToProps
-  );
+  const withConnect = connect(mapStateToProps, mapDispatchToProps);
   const withRedux = initRedux({
     key,
     reducer,
     saga,
   });
 
-  return compose(
-    withRedux,
-    withConnect
-  )(WrapperComponent);
+  return compose(withRedux, withConnect)(WrapperComponent);
 };
