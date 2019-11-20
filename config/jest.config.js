@@ -11,10 +11,15 @@ module.exports = {
     '**app/core/**/*.js',
     '!**app/components/**/*.mock.js',
     '!**app/components/**/*.story.js',
+    '!**lib/components/**/*.styles.js',
     '!**app/styles/**/*.js',
     '!**/node_modules/**',
   ],
-  coverageReporters: ['lcov', 'json'],
+  coveragePathIgnorePatterns: [
+    // exceptions.
+    '/node_modules/',
+  ],
+  coverageReporters: ['lcov', 'json', 'text-summary'],
   snapshotSerializers: ['enzyme-to-json/serializer'],
   verbose: true,
 };

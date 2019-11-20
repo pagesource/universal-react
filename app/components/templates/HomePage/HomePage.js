@@ -47,10 +47,6 @@ const HomePage = ({ editorialData }: Props): Node => {
               Consistently generate components using Plop.
             </li>
             <li>
-              <strong>Documentation:</strong>
-              Generates code documentation with ESDocs.
-            </li>
-            <li>
               <strong>Git Hooks:</strong>
               Pre-commit, Pre-push and pre-publish using Husky.
             </li>
@@ -129,11 +125,6 @@ const HomePage = ({ editorialData }: Props): Node => {
             <li>
               <Anchor to="https://github.com/pagesource/universal-react/blob/master/readme/07-QualityControl.md#husky">
                 Husky
-              </Anchor>
-            </li>
-            <li>
-              <Anchor to="https://github.com/pagesource/universal-react/blob/master/readme/ESDocs.md">
-                ES Docs
               </Anchor>
             </li>
             <li>

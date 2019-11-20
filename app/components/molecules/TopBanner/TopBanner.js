@@ -11,8 +11,6 @@ import withStyles from '../../../lib/withStyles';
 import type { Props } from './types';
 
 class TopBanner extends PureComponent<Props> {
-  static defaultProps = {};
-
   render() {
     const { className, title, subTitle } = this.props;
     return (
@@ -25,5 +23,7 @@ class TopBanner extends PureComponent<Props> {
     );
   }
 }
+
+TopBanner.defaultProps = {};
 export default withStyles(TopBanner, styles);
 export { TopBanner };

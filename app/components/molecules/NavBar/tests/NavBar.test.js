@@ -4,7 +4,10 @@ import 'jest-styled-components';
 
 import { NavBar } from '../NavBar';
 
-const items = [{ href: '/1', label: 'Link 1' }, { href: '/2', label: 'Link 2' }];
+const items = [
+  { href: '/1', label: 'Link 1' },
+  { href: '/2', label: 'Link 2' },
+];
 
 describe('<NavBar />', () => {
   test('should render correctly', () => {

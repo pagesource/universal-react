@@ -19,6 +19,11 @@ module.exports = {
           },
         ],
       },
+      {
+        test: /\.story.js?$/,
+        loaders: [require.resolve('@storybook/source-loader')],
+        enforce: 'pre',
+      },
     ],
   },
 };

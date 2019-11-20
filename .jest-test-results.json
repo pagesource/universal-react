@@ -1,0 +1,2768 @@
+{
+  "numFailedTestSuites": 0,
+  "numFailedTests": 0,
+  "numPassedTestSuites": 32,
+  "numPassedTests": 123,
+  "numPendingTestSuites": 1,
+  "numPendingTests": 3,
+  "numRuntimeErrorTestSuites": 0,
+  "numTodoTests": 0,
+  "numTotalTestSuites": 33,
+  "numTotalTests": 126,
+  "openHandles": [],
+  "snapshot": {
+    "added": 0,
+    "didUpdate": false,
+    "failure": false,
+    "filesAdded": 0,
+    "filesRemoved": 0,
+    "filesRemovedList": [],
+    "filesUnmatched": 0,
+    "filesUpdated": 0,
+    "matched": 28,
+    "total": 28,
+    "unchecked": 0,
+    "uncheckedKeysByFile": [],
+    "unmatched": 0,
+    "updated": 0
+  },
+  "startTime": 1574227551460,
+  "success": true,
+  "testResults": [
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": ["reducer injectors", "getInjectors"],
+          "failureMessages": [],
+          "fullName": "reducer injectors getInjectors should return injectors",
+          "location": null,
+          "status": "passed",
+          "title": "should return injectors"
+        },
+        {
+          "ancestorTitles": ["reducer injectors", "getInjectors"],
+          "failureMessages": [],
+          "fullName": "reducer injectors getInjectors should throw if passed invalid store shape",
+          "location": null,
+          "status": "passed",
+          "title": "should throw if passed invalid store shape"
+        },
+        {
+          "ancestorTitles": ["reducer injectors", "injectReducer helper"],
+          "failureMessages": [],
+          "fullName": "reducer injectors injectReducer helper should check a store if the second argument is falsy",
+          "location": null,
+          "status": "passed",
+          "title": "should check a store if the second argument is falsy"
+        },
+        {
+          "ancestorTitles": ["reducer injectors", "injectReducer helper"],
+          "failureMessages": [],
+          "fullName": "reducer injectors injectReducer helper it should not check a store if the second argument is true",
+          "location": null,
+          "status": "passed",
+          "title": "it should not check a store if the second argument is true"
+        },
+        {
+          "ancestorTitles": ["reducer injectors", "injectReducer helper"],
+          "failureMessages": [],
+          "fullName": "reducer injectors injectReducer helper should validate a reducer and reducer's key",
+          "location": null,
+          "status": "passed",
+          "title": "should validate a reducer and reducer's key"
+        },
+        {
+          "ancestorTitles": ["reducer injectors", "injectReducer helper"],
+          "failureMessages": [],
+          "fullName": "reducer injectors injectReducer helper given a store, it should provide a function to inject a reducer",
+          "location": null,
+          "status": "passed",
+          "title": "given a store, it should provide a function to inject a reducer"
+        },
+        {
+          "ancestorTitles": ["reducer injectors", "injectReducer helper"],
+          "failureMessages": [],
+          "fullName": "reducer injectors injectReducer helper should not assign reducer if already existing",
+          "location": null,
+          "status": "passed",
+          "title": "should not assign reducer if already existing"
+        },
+        {
+          "ancestorTitles": ["reducer injectors", "injectReducer helper"],
+          "failureMessages": [],
+          "fullName": "reducer injectors injectReducer helper should assign reducer if different implementation for hot reloading",
+          "location": null,
+          "status": "passed",
+          "title": "should assign reducer if different implementation for hot reloading"
+        }
+      ],
+      "endTime": 1574227557746,
+      "message": "",
+      "name": "/Users/vinkumar2/Documents/Projects/PageSource/universal-react/app/lib/dynamicStore/tests/reducerInjectors.test.js",
+      "startTime": 1574227554528,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": ["injectors", "getInjectors"],
+          "failureMessages": [],
+          "fullName": "injectors getInjectors should return injectors",
+          "location": null,
+          "status": "passed",
+          "title": "should return injectors"
+        },
+        {
+          "ancestorTitles": ["injectors", "getInjectors"],
+          "failureMessages": [],
+          "fullName": "injectors getInjectors should throw if passed invalid store shape",
+          "location": null,
+          "status": "passed",
+          "title": "should throw if passed invalid store shape"
+        },
+        {
+          "ancestorTitles": ["injectors", "ejectSaga helper"],
+          "failureMessages": [],
+          "fullName": "injectors ejectSaga helper should check a store if the second argument is falsy",
+          "location": null,
+          "status": "passed",
+          "title": "should check a store if the second argument is falsy"
+        },
+        {
+          "ancestorTitles": ["injectors", "ejectSaga helper"],
+          "failureMessages": [],
+          "fullName": "injectors ejectSaga helper should not check a store if the second argument is true",
+          "location": null,
+          "status": "passed",
+          "title": "should not check a store if the second argument is true"
+        },
+        {
+          "ancestorTitles": ["injectors", "ejectSaga helper"],
+          "failureMessages": [],
+          "fullName": "injectors ejectSaga helper should validate saga's key",
+          "location": null,
+          "status": "passed",
+          "title": "should validate saga's key"
+        },
+        {
+          "ancestorTitles": ["injectors", "ejectSaga helper"],
+          "failureMessages": [],
+          "fullName": "injectors ejectSaga helper should cancel a saga in a default mode",
+          "location": null,
+          "status": "passed",
+          "title": "should cancel a saga in a default mode"
+        },
+        {
+          "ancestorTitles": ["injectors", "ejectSaga helper"],
+          "failureMessages": [],
+          "fullName": "injectors ejectSaga helper should not cancel a daemon saga",
+          "location": null,
+          "status": "passed",
+          "title": "should not cancel a daemon saga"
+        },
+        {
+          "ancestorTitles": ["injectors", "ejectSaga helper"],
+          "failureMessages": [],
+          "fullName": "injectors ejectSaga helper should ignore saga that was not previously injected",
+          "location": null,
+          "status": "passed",
+          "title": "should ignore saga that was not previously injected"
+        },
+        {
+          "ancestorTitles": ["injectors", "ejectSaga helper"],
+          "failureMessages": [],
+          "fullName": "injectors ejectSaga helper should remove non daemon saga's descriptor in production",
+          "location": null,
+          "status": "passed",
+          "title": "should remove non daemon saga's descriptor in production"
+        },
+        {
+          "ancestorTitles": ["injectors", "ejectSaga helper"],
+          "failureMessages": [],
+          "fullName": "injectors ejectSaga helper should not remove daemon saga's descriptor in production",
+          "location": null,
+          "status": "passed",
+          "title": "should not remove daemon saga's descriptor in production"
+        },
+        {
+          "ancestorTitles": ["injectors", "ejectSaga helper"],
+          "failureMessages": [],
+          "fullName": "injectors ejectSaga helper should not remove daemon saga's descriptor in development",
+          "location": null,
+          "status": "passed",
+          "title": "should not remove daemon saga's descriptor in development"
+        },
+        {
+          "ancestorTitles": ["injectors", "injectSaga helper"],
+          "failureMessages": [],
+          "fullName": "injectors injectSaga helper should check a store if the second argument is falsy",
+          "location": null,
+          "status": "passed",
+          "title": "should check a store if the second argument is falsy"
+        },
+        {
+          "ancestorTitles": ["injectors", "injectSaga helper"],
+          "failureMessages": [],
+          "fullName": "injectors injectSaga helper it should not check a store if the second argument is true",
+          "location": null,
+          "status": "passed",
+          "title": "it should not check a store if the second argument is true"
+        },
+        {
+          "ancestorTitles": ["injectors", "injectSaga helper"],
+          "failureMessages": [],
+          "fullName": "injectors injectSaga helper should validate saga's key",
+          "location": null,
+          "status": "passed",
+          "title": "should validate saga's key"
+        },
+        {
+          "ancestorTitles": ["injectors", "injectSaga helper"],
+          "failureMessages": [],
+          "fullName": "injectors injectSaga helper should validate saga's descriptor",
+          "location": null,
+          "status": "passed",
+          "title": "should validate saga's descriptor"
+        },
+        {
+          "ancestorTitles": ["injectors", "injectSaga helper"],
+          "failureMessages": [],
+          "fullName": "injectors injectSaga helper should pass args to saga.run",
+          "location": null,
+          "status": "passed",
+          "title": "should pass args to saga.run"
+        },
+        {
+          "ancestorTitles": ["injectors", "injectSaga helper"],
+          "failureMessages": [],
+          "fullName": "injectors injectSaga helper should not start daemon and once-till-unmount sagas if were started before",
+          "location": null,
+          "status": "passed",
+          "title": "should not start daemon and once-till-unmount sagas if were started before"
+        },
+        {
+          "ancestorTitles": ["injectors", "injectSaga helper"],
+          "failureMessages": [],
+          "fullName": "injectors injectSaga helper should start any saga that was not started before",
+          "location": null,
+          "status": "passed",
+          "title": "should start any saga that was not started before"
+        },
+        {
+          "ancestorTitles": ["injectors", "injectSaga helper"],
+          "failureMessages": [],
+          "fullName": "injectors injectSaga helper should restart a saga if different implementation for hot reloading",
+          "location": null,
+          "status": "passed",
+          "title": "should restart a saga if different implementation for hot reloading"
+        },
+        {
+          "ancestorTitles": ["injectors", "injectSaga helper"],
+          "failureMessages": [],
+          "fullName": "injectors injectSaga helper should not cancel saga if different implementation in production",
+          "location": null,
+          "status": "passed",
+          "title": "should not cancel saga if different implementation in production"
+        },
+        {
+          "ancestorTitles": ["injectors", "injectSaga helper"],
+          "failureMessages": [],
+          "fullName": "injectors injectSaga helper should save an entire descriptor in the saga registry",
+          "location": null,
+          "status": "passed",
+          "title": "should save an entire descriptor in the saga registry"
+        }
+      ],
+      "endTime": 1574227558206,
+      "message": "",
+      "name": "/Users/vinkumar2/Documents/Projects/PageSource/universal-react/app/lib/dynamicStore/tests/sagaInjectors.test.js",
+      "startTime": 1574227554529,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": ["ProgressCircle Component"],
+          "failureMessages": [],
+          "fullName": "ProgressCircle Component should match snapshot ",
+          "location": null,
+          "status": "passed",
+          "title": "should match snapshot "
+        },
+        {
+          "ancestorTitles": ["ProgressCircle Component"],
+          "failureMessages": [],
+          "fullName": "ProgressCircle Component should match snapshot with vertical view ",
+          "location": null,
+          "status": "passed",
+          "title": "should match snapshot with vertical view "
+        }
+      ],
+      "endTime": 1574227558627,
+      "message": "",
+      "name": "/Users/vinkumar2/Documents/Projects/PageSource/universal-react/app/components/molecules/NavBar/tests/NavBar.style.test.js",
+      "startTime": 1574227554529,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": ["enhance"],
+          "failureMessages": [],
+          "fullName": "enhance should return a composed function",
+          "location": null,
+          "status": "passed",
+          "title": "should return a composed function"
+        },
+        {
+          "ancestorTitles": ["enhance", "has function getWrapperComponent which"],
+          "failureMessages": [],
+          "fullName": "enhance has function getWrapperComponent which should return WrapperComponent with WrappedComponent inside it",
+          "location": null,
+          "status": "passed",
+          "title": "should return WrapperComponent with WrappedComponent inside it"
+        },
+        {
+          "ancestorTitles": ["enhance", "has function getWrapperComponent which"],
+          "failureMessages": [],
+          "fullName": "enhance has function getWrapperComponent which has static method addRequestDetails which appends requestDetails to provided action",
+          "location": null,
+          "status": "passed",
+          "title": "has static method addRequestDetails which appends requestDetails to provided action"
+        },
+        {
+          "ancestorTitles": [
+            "enhance",
+            "has function getWrapperComponent which",
+            "has function called validatePageData which"
+          ],
+          "failureMessages": [],
+          "fullName": "enhance has function getWrapperComponent which has function called validatePageData which should not call getState method on store if params not adequate",
+          "location": null,
+          "status": "passed",
+          "title": "should not call getState method on store if params not adequate"
+        },
+        {
+          "ancestorTitles": [
+            "enhance",
+            "has function getWrapperComponent which",
+            "has function called validatePageData which"
+          ],
+          "failureMessages": [],
+          "fullName": "enhance has function getWrapperComponent which has function called validatePageData which should call getState method on store if params adequate",
+          "location": null,
+          "status": "passed",
+          "title": "should call getState method on store if params adequate"
+        },
+        {
+          "ancestorTitles": [
+            "enhance",
+            "has function getWrapperComponent which",
+            "has function called validatePageData which"
+          ],
+          "failureMessages": [],
+          "fullName": "enhance has function getWrapperComponent which has function called validatePageData which should not log errors if storeStruct has values",
+          "location": null,
+          "status": "passed",
+          "title": "should not log errors if storeStruct has values"
+        },
+        {
+          "ancestorTitles": [
+            "enhance",
+            "has function getWrapperComponent which",
+            "has function called validatePageData which"
+          ],
+          "failureMessages": [],
+          "fullName": "enhance has function getWrapperComponent which has function called validatePageData which should call redirect on res object when on server",
+          "location": null,
+          "status": "passed",
+          "title": "should call redirect on res object when on server"
+        },
+        {
+          "ancestorTitles": [
+            "enhance",
+            "has function getWrapperComponent which",
+            "has function called dispatchActions which"
+          ],
+          "failureMessages": [],
+          "fullName": "enhance has function getWrapperComponent which has function called dispatchActions which should dispatch all actions passed to it",
+          "location": null,
+          "status": "passed",
+          "title": "should dispatch all actions passed to it"
+        },
+        {
+          "ancestorTitles": [
+            "enhance",
+            "has function getWrapperComponent which",
+            "has function called dispatchActions which"
+          ],
+          "failureMessages": [],
+          "fullName": "enhance has function getWrapperComponent which has function called dispatchActions which should dispatch all actions passed to it even when needQuery is true",
+          "location": null,
+          "status": "passed",
+          "title": "should dispatch all actions passed to it even when needQuery is true"
+        },
+        {
+          "ancestorTitles": [
+            "enhance",
+            "has function getWrapperComponent which",
+            "has function called getInitialProps which"
+          ],
+          "failureMessages": [],
+          "fullName": "enhance has function getWrapperComponent which has function called getInitialProps which should call dispatch currentRoute server action",
+          "location": null,
+          "status": "passed",
+          "title": "should call dispatch currentRoute server action"
+        },
+        {
+          "ancestorTitles": [
+            "enhance",
+            "has function getWrapperComponent which",
+            "has function called getInitialProps which"
+          ],
+          "failureMessages": [],
+          "fullName": "enhance has function getWrapperComponent which has function called getInitialProps which should call dispatch server action when isServer",
+          "location": null,
+          "status": "passed",
+          "title": "should call dispatch server action when isServer"
+        },
+        {
+          "ancestorTitles": [
+            "enhance",
+            "has function getWrapperComponent which",
+            "has function called getInitialProps which"
+          ],
+          "failureMessages": [],
+          "fullName": "enhance has function getWrapperComponent which has function called getInitialProps which should call dispatch currentRoute server action even on Mobile",
+          "location": null,
+          "status": "passed",
+          "title": "should call dispatch currentRoute server action even on Mobile"
+        },
+        {
+          "ancestorTitles": [
+            "enhance",
+            "has function getWrapperComponent which",
+            "has function called getInitialProps which"
+          ],
+          "failureMessages": [],
+          "fullName": "enhance has function getWrapperComponent which has function called getInitialProps which should call dispatch when initialActions are passed",
+          "location": null,
+          "status": "passed",
+          "title": "should call dispatch when initialActions are passed"
+        },
+        {
+          "ancestorTitles": [
+            "enhance",
+            "has function getWrapperComponent which",
+            "has function called getInitialProps which"
+          ],
+          "failureMessages": [],
+          "fullName": "enhance has function getWrapperComponent which has function called getInitialProps which should call getInitialProps of WrappedComponent",
+          "location": null,
+          "status": "passed",
+          "title": "should call getInitialProps of WrappedComponent"
+        }
+      ],
+      "endTime": 1574227558673,
+      "message": "",
+      "name": "/Users/vinkumar2/Documents/Projects/PageSource/universal-react/app/lib/dynamicStore/tests/enhance.test.js",
+      "startTime": 1574227554529,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": ["Spinner"],
+          "failureMessages": [],
+          "fullName": "Spinner should render correctly",
+          "location": null,
+          "status": "passed",
+          "title": "should render correctly"
+        }
+      ],
+      "endTime": 1574227560015,
+      "message": "",
+      "name": "/Users/vinkumar2/Documents/Projects/PageSource/universal-react/app/components/atoms/Spinner/test/Spinner.style.test.js",
+      "startTime": 1574227559333,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": ["<NavBar />"],
+          "failureMessages": [],
+          "fullName": "<NavBar /> should render correctly",
+          "location": null,
+          "status": "passed",
+          "title": "should render correctly"
+        },
+        {
+          "ancestorTitles": ["<NavBar />"],
+          "failureMessages": [],
+          "fullName": "<NavBar /> should render correctly",
+          "location": null,
+          "status": "passed",
+          "title": "should render correctly"
+        }
+      ],
+      "endTime": 1574227560278,
+      "message": "",
+      "name": "/Users/vinkumar2/Documents/Projects/PageSource/universal-react/app/components/molecules/NavBar/tests/NavBar.test.js",
+      "startTime": 1574227558438,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": ["HomePage component"],
+          "failureMessages": [],
+          "fullName": "HomePage component should render correctly",
+          "location": null,
+          "status": "passed",
+          "title": "should render correctly"
+        }
+      ],
+      "endTime": 1574227560344,
+      "message": "",
+      "name": "/Users/vinkumar2/Documents/Projects/PageSource/universal-react/app/components/templates/HomePage/tests/HomePage.test.js",
+      "startTime": 1574227554529,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": ["HomePage component"],
+          "failureMessages": [],
+          "fullName": "HomePage component should render correctly",
+          "location": null,
+          "status": "passed",
+          "title": "should render correctly"
+        }
+      ],
+      "endTime": 1574227560470,
+      "message": "",
+      "name": "/Users/vinkumar2/Documents/Projects/PageSource/universal-react/app/containers/templates/HomePage/tests/HomePage.test.js",
+      "startTime": 1574227554529,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": ["ErrorPage Component"],
+          "failureMessages": [],
+          "fullName": "ErrorPage Component should render correctly",
+          "location": null,
+          "status": "passed",
+          "title": "should render correctly"
+        }
+      ],
+      "endTime": 1574227560521,
+      "message": "",
+      "name": "/Users/vinkumar2/Documents/Projects/PageSource/universal-react/app/components/templates/ErrorPage/tests/index.test.js",
+      "startTime": 1574227554528,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": ["Header component"],
+          "failureMessages": [],
+          "fullName": "Header component should render correctly",
+          "location": null,
+          "status": "passed",
+          "title": "should render correctly"
+        }
+      ],
+      "endTime": 1574227560576,
+      "message": "",
+      "name": "/Users/vinkumar2/Documents/Projects/PageSource/universal-react/app/containers/organisms/Header/tests/Header.test.js",
+      "startTime": 1574227558883,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": ["Footer component"],
+          "failureMessages": [],
+          "fullName": "Footer component should render correctly",
+          "location": null,
+          "status": "passed",
+          "title": "should render correctly"
+        }
+      ],
+      "endTime": 1574227560992,
+      "message": "",
+      "name": "/Users/vinkumar2/Documents/Projects/PageSource/universal-react/app/containers/organisms/Footer/tests/Footer.test.js",
+      "startTime": 1574227559408,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": ["Anchor Component"],
+          "failureMessages": [],
+          "fullName": "Anchor Component should render correctly and match snapshot",
+          "location": null,
+          "status": "passed",
+          "title": "should render correctly and match snapshot"
+        },
+        {
+          "ancestorTitles": ["Anchor Component"],
+          "failureMessages": [],
+          "fullName": "Anchor Component should render with styles correctly and match snapshot",
+          "location": null,
+          "status": "passed",
+          "title": "should render with styles correctly and match snapshot"
+        }
+      ],
+      "endTime": 1574227561029,
+      "message": "",
+      "name": "/Users/vinkumar2/Documents/Projects/PageSource/universal-react/app/components/atoms/Title/tests/Title.test.js",
+      "startTime": 1574227560488,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": ["GlobalReducer"],
+          "failureMessages": [],
+          "fullName": "GlobalReducer should return initial state",
+          "location": null,
+          "status": "passed",
+          "title": "should return initial state"
+        },
+        {
+          "ancestorTitles": ["GlobalReducer"],
+          "failureMessages": [],
+          "fullName": "GlobalReducer should return success state and set in devicetype ",
+          "location": null,
+          "status": "passed",
+          "title": "should return success state and set in devicetype "
+        },
+        {
+          "ancestorTitles": ["GlobalReducer"],
+          "failureMessages": [],
+          "fullName": "GlobalReducer should return success state and set if Device is Tablet ",
+          "location": null,
+          "status": "passed",
+          "title": "should return success state and set if Device is Tablet "
+        },
+        {
+          "ancestorTitles": ["GlobalReducer"],
+          "failureMessages": [],
+          "fullName": "GlobalReducer should return success state and setRoute ",
+          "location": null,
+          "status": "passed",
+          "title": "should return success state and setRoute "
+        },
+        {
+          "ancestorTitles": ["GlobalReducer"],
+          "failureMessages": [],
+          "fullName": "GlobalReducer should return success state and setConfigKeys ",
+          "location": null,
+          "status": "passed",
+          "title": "should return success state and setConfigKeys "
+        }
+      ],
+      "endTime": 1574227561362,
+      "message": "",
+      "name": "/Users/vinkumar2/Documents/Projects/PageSource/universal-react/app/global/reducer/tests/globalReducer.test.js",
+      "startTime": 1574227560836,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": ["HeadTag Component"],
+          "failureMessages": [],
+          "fullName": "HeadTag Component should render correctly and match snapshot",
+          "location": null,
+          "status": "passed",
+          "title": "should render correctly and match snapshot"
+        },
+        {
+          "ancestorTitles": ["HeadTag Component"],
+          "failureMessages": [],
+          "fullName": "HeadTag Component should render correctly when no props passed",
+          "location": null,
+          "status": "passed",
+          "title": "should render correctly when no props passed"
+        },
+        {
+          "ancestorTitles": ["HeadTag Component"],
+          "failureMessages": [],
+          "fullName": "HeadTag Component should render tags for only the props that were passed",
+          "location": null,
+          "status": "passed",
+          "title": "should render tags for only the props that were passed"
+        },
+        {
+          "ancestorTitles": ["HeadTag Component"],
+          "failureMessages": [],
+          "fullName": "HeadTag Component should render meta tags properly",
+          "location": null,
+          "status": "passed",
+          "title": "should render meta tags properly"
+        }
+      ],
+      "endTime": 1574227561574,
+      "message": "",
+      "name": "/Users/vinkumar2/Documents/Projects/PageSource/universal-react/app/components/atoms/HeadTag/tests/HeadTag.test.js",
+      "startTime": 1574227561060,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": ["injectSagaAndReducer"],
+          "failureMessages": [],
+          "fullName": "injectSagaAndReducer should fail if key is not passed",
+          "location": null,
+          "status": "passed",
+          "title": "should fail if key is not passed"
+        },
+        {
+          "ancestorTitles": ["injectSagaAndReducer"],
+          "failureMessages": [],
+          "fullName": "injectSagaAndReducer should remove old sagas from store.injectedSagas",
+          "location": null,
+          "status": "passed",
+          "title": "should remove old sagas from store.injectedSagas"
+        },
+        {
+          "ancestorTitles": ["injectSagaAndReducer"],
+          "failureMessages": [],
+          "fullName": "injectSagaAndReducer should inject saga",
+          "location": null,
+          "status": "passed",
+          "title": "should inject saga"
+        },
+        {
+          "ancestorTitles": ["injectSagaAndReducer"],
+          "failureMessages": [],
+          "fullName": "injectSagaAndReducer should inject reducer",
+          "location": null,
+          "status": "passed",
+          "title": "should inject reducer"
+        },
+        {
+          "ancestorTitles": ["injectSagaAndReducer"],
+          "failureMessages": [],
+          "fullName": "injectSagaAndReducer should inject saga and reducer",
+          "location": null,
+          "status": "passed",
+          "title": "should inject saga and reducer"
+        }
+      ],
+      "endTime": 1574227561628,
+      "message": "",
+      "name": "/Users/vinkumar2/Documents/Projects/PageSource/universal-react/app/lib/dynamicStore/tests/injectSagaAndReducer.test.js",
+      "startTime": 1574227561125,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": ["monitorSagas"],
+          "failureMessages": [],
+          "fullName": "monitorSagas should call dispatch with END param",
+          "location": null,
+          "status": "passed",
+          "title": "should call dispatch with END param"
+        },
+        {
+          "ancestorTitles": ["monitorSagas"],
+          "failureMessages": [],
+          "fullName": "monitorSagas should wait for all promises to complete when all resolve",
+          "location": null,
+          "status": "passed",
+          "title": "should wait for all promises to complete when all resolve"
+        },
+        {
+          "ancestorTitles": ["monitorSagas"],
+          "failureMessages": [],
+          "fullName": "monitorSagas should wait for all promises to complete when all reject",
+          "location": null,
+          "status": "passed",
+          "title": "should wait for all promises to complete when all reject"
+        }
+      ],
+      "endTime": 1574227561741,
+      "message": "",
+      "name": "/Users/vinkumar2/Documents/Projects/PageSource/universal-react/app/lib/dynamicStore/tests/monitorSagas.test.js",
+      "startTime": 1574227561119,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": ["Iframe"],
+          "failureMessages": [],
+          "fullName": "Iframe should render correctly",
+          "location": null,
+          "status": "passed",
+          "title": "should render correctly"
+        },
+        {
+          "ancestorTitles": ["Iframe"],
+          "failureMessages": [],
+          "fullName": "Iframe should render additional props",
+          "location": null,
+          "status": "passed",
+          "title": "should render additional props"
+        },
+        {
+          "ancestorTitles": ["Iframe"],
+          "failureMessages": [],
+          "fullName": "Iframe should take ContentHeight",
+          "location": null,
+          "status": "passed",
+          "title": "should take ContentHeight"
+        },
+        {
+          "ancestorTitles": ["Iframe"],
+          "failureMessages": [],
+          "fullName": "Iframe should call onLoad Method",
+          "location": null,
+          "status": "passed",
+          "title": "should call onLoad Method"
+        }
+      ],
+      "endTime": 1574227561751,
+      "message": "",
+      "name": "/Users/vinkumar2/Documents/Projects/PageSource/universal-react/app/components/atoms/Iframe/tests/Iframe.test.js",
+      "startTime": 1574227560723,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": ["ProgressCircle Component"],
+          "failureMessages": [],
+          "fullName": "ProgressCircle Component should match snapshot ",
+          "location": null,
+          "status": "passed",
+          "title": "should match snapshot "
+        }
+      ],
+      "endTime": 1574227562029,
+      "message": "",
+      "name": "/Users/vinkumar2/Documents/Projects/PageSource/universal-react/app/components/atoms/ProgressCircle/tests/ProgressCircle.style.test.js",
+      "startTime": 1574227561461,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": ["<TopBanner />"],
+          "failureMessages": [],
+          "fullName": "<TopBanner /> should render correctly",
+          "location": null,
+          "status": "passed",
+          "title": "should render correctly"
+        },
+        {
+          "ancestorTitles": ["<TopBanner />"],
+          "failureMessages": [],
+          "fullName": "<TopBanner /> should render correctly without subtitle",
+          "location": null,
+          "status": "passed",
+          "title": "should render correctly without subtitle"
+        }
+      ],
+      "endTime": 1574227562126,
+      "message": "",
+      "name": "/Users/vinkumar2/Documents/Projects/PageSource/universal-react/app/components/molecules/TopBanner/tests/TopBanner.test.js",
+      "startTime": 1574227561581,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": ["ErrorPage Reducer functions"],
+          "failureMessages": [],
+          "fullName": "ErrorPage Reducer functions set Data",
+          "location": null,
+          "status": "passed",
+          "title": "set Data"
+        },
+        {
+          "ancestorTitles": ["ErrorPage Reducer"],
+          "failureMessages": [],
+          "fullName": "ErrorPage Reducer dispatch Action LOAD_ERROR_PAGE_SUCCESS",
+          "location": null,
+          "status": "passed",
+          "title": "dispatch Action LOAD_ERROR_PAGE_SUCCESS"
+        },
+        {
+          "ancestorTitles": ["ErrorPage Reducer"],
+          "failureMessages": [],
+          "fullName": "ErrorPage Reducer dispatch Action LOAD_ERROR_PAGE_SUCCESS",
+          "location": null,
+          "status": "passed",
+          "title": "dispatch Action LOAD_ERROR_PAGE_SUCCESS"
+        },
+        {
+          "ancestorTitles": ["ErrorPage Reducer"],
+          "failureMessages": [],
+          "fullName": "ErrorPage Reducer dispatch Action DEFAULT",
+          "location": null,
+          "status": "passed",
+          "title": "dispatch Action DEFAULT"
+        }
+      ],
+      "endTime": 1574227562302,
+      "message": "",
+      "name": "/Users/vinkumar2/Documents/Projects/PageSource/universal-react/app/components/templates/ErrorPage/tests/reducer.test.js",
+      "startTime": 1574227561883,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": ["Spinner Component"],
+          "failureMessages": [],
+          "fullName": "Spinner Component should render correctly",
+          "location": null,
+          "status": "passed",
+          "title": "should render correctly"
+        },
+        {
+          "ancestorTitles": ["Spinner Component"],
+          "failureMessages": [],
+          "fullName": "Spinner Component overlayEnabled is necessary to render child",
+          "location": null,
+          "status": "passed",
+          "title": "overlayEnabled is necessary to render child"
+        },
+        {
+          "ancestorTitles": ["Spinner Component"],
+          "failureMessages": [],
+          "fullName": "Spinner Component should render renderDotSpinner",
+          "location": null,
+          "status": "passed",
+          "title": "should render renderDotSpinner"
+        }
+      ],
+      "endTime": 1574227562734,
+      "message": "",
+      "name": "/Users/vinkumar2/Documents/Projects/PageSource/universal-react/app/components/atoms/Spinner/test/Spinner.test.js",
+      "startTime": 1574227562279,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": ["Utils"],
+          "failureMessages": [],
+          "fullName": "Utils should throw error if configurations are not set",
+          "location": null,
+          "status": "passed",
+          "title": "should throw error if configurations are not set"
+        },
+        {
+          "ancestorTitles": ["Utils"],
+          "failureMessages": [],
+          "fullName": "Utils check if tracker is intialized",
+          "location": null,
+          "status": "passed",
+          "title": "check if tracker is intialized"
+        },
+        {
+          "ancestorTitles": ["Utils"],
+          "failureMessages": [],
+          "fullName": "Utils check if configurations are set to tracker",
+          "location": null,
+          "status": "passed",
+          "title": "check if configurations are set to tracker"
+        },
+        {
+          "ancestorTitles": ["Utils"],
+          "failureMessages": [],
+          "fullName": "Utils should throw error if configurations are not set to tracker",
+          "location": null,
+          "status": "passed",
+          "title": "should throw error if configurations are not set to tracker"
+        },
+        {
+          "ancestorTitles": ["Utils"],
+          "failureMessages": [],
+          "fullName": "Utils trackActions()",
+          "location": null,
+          "status": "passed",
+          "title": "trackActions()"
+        },
+        {
+          "ancestorTitles": ["Utils"],
+          "failureMessages": [],
+          "fullName": "Utils should throw error on trackActions() without type",
+          "location": null,
+          "status": "passed",
+          "title": "should throw error on trackActions() without type"
+        }
+      ],
+      "endTime": 1574227562756,
+      "message": "",
+      "name": "/Users/vinkumar2/Documents/Projects/PageSource/universal-react/app/utils/analytics/tests/helpers.test.js",
+      "startTime": 1574227562324,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": ["ContentSlotUnsafeHTML Component"],
+          "failureMessages": [],
+          "fullName": "ContentSlotUnsafeHTML Component should render correctly",
+          "location": null,
+          "status": "passed",
+          "title": "should render correctly"
+        },
+        {
+          "ancestorTitles": ["ContentSlotUnsafeHTML Component"],
+          "failureMessages": [],
+          "fullName": "ContentSlotUnsafeHTML Component should render correclty without Wrapper",
+          "location": null,
+          "status": "passed",
+          "title": "should render correclty without Wrapper"
+        },
+        {
+          "ancestorTitles": ["ContentSlotUnsafeHTML Component"],
+          "failureMessages": [],
+          "fullName": "ContentSlotUnsafeHTML Component should render correclty with Wrapper",
+          "location": null,
+          "status": "passed",
+          "title": "should render correclty with Wrapper"
+        }
+      ],
+      "endTime": 1574227562810,
+      "message": "",
+      "name": "/Users/vinkumar2/Documents/Projects/PageSource/universal-react/app/lib/ContentSlotUnsafeHTML/tests/ContentSlotUnsafeHTML.test.js",
+      "startTime": 1574227562124,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": ["HomePage Reducer functions"],
+          "failureMessages": [],
+          "fullName": "HomePage Reducer functions calls Failure",
+          "location": null,
+          "status": "passed",
+          "title": "calls Failure"
+        },
+        {
+          "ancestorTitles": ["HomePage Reducer functions"],
+          "failureMessages": [],
+          "fullName": "HomePage Reducer functions calls addLayoutData",
+          "location": null,
+          "status": "passed",
+          "title": "calls addLayoutData"
+        },
+        {
+          "ancestorTitles": ["HomePage Reducer functions"],
+          "failureMessages": [],
+          "fullName": "HomePage Reducer functions calls addHomeEditorialData",
+          "location": null,
+          "status": "passed",
+          "title": "calls addHomeEditorialData"
+        },
+        {
+          "ancestorTitles": ["HomePage Reducer"],
+          "failureMessages": [],
+          "fullName": "HomePage Reducer dispatch Action LOAD_HOME_SEO_SUCCESS",
+          "location": null,
+          "status": "passed",
+          "title": "dispatch Action LOAD_HOME_SEO_SUCCESS"
+        },
+        {
+          "ancestorTitles": ["HomePage Reducer"],
+          "failureMessages": [],
+          "fullName": "HomePage Reducer dispatch Action LOAD_HOME_EDITORIAL_DATA_SUCCESS",
+          "location": null,
+          "status": "passed",
+          "title": "dispatch Action LOAD_HOME_EDITORIAL_DATA_SUCCESS"
+        },
+        {
+          "ancestorTitles": ["HomePage Reducer"],
+          "failureMessages": [],
+          "fullName": "HomePage Reducer dispatch Action FAILURE",
+          "location": null,
+          "status": "passed",
+          "title": "dispatch Action FAILURE"
+        },
+        {
+          "ancestorTitles": ["HomePage Reducer"],
+          "failureMessages": [],
+          "fullName": "HomePage Reducer return default State",
+          "location": null,
+          "status": "passed",
+          "title": "return default State"
+        }
+      ],
+      "endTime": 1574227562958,
+      "message": "",
+      "name": "/Users/vinkumar2/Documents/Projects/PageSource/universal-react/app/containers/templates/HomePage/tests/HomePage.reducer.test.js",
+      "startTime": 1574227562569,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": ["checkStore"],
+          "failureMessages": [],
+          "fullName": "checkStore should not throw if passed valid store shape",
+          "location": null,
+          "status": "passed",
+          "title": "should not throw if passed valid store shape"
+        },
+        {
+          "ancestorTitles": ["checkStore"],
+          "failureMessages": [],
+          "fullName": "checkStore should throw if passed invalid store shape",
+          "location": null,
+          "status": "passed",
+          "title": "should throw if passed invalid store shape"
+        }
+      ],
+      "endTime": 1574227563042,
+      "message": "",
+      "name": "/Users/vinkumar2/Documents/Projects/PageSource/universal-react/app/lib/dynamicStore/tests/checkStore.test.js",
+      "startTime": 1574227562607,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": ["HomePage Actions"],
+          "failureMessages": [],
+          "fullName": "HomePage Actions calls Failure",
+          "location": null,
+          "status": "passed",
+          "title": "calls Failure"
+        },
+        {
+          "ancestorTitles": ["HomePage Actions"],
+          "failureMessages": [],
+          "fullName": "HomePage Actions calls LOAD_HOME_FAILURE Failure",
+          "location": null,
+          "status": "passed",
+          "title": "calls LOAD_HOME_FAILURE Failure"
+        },
+        {
+          "ancestorTitles": ["HomePage Actions"],
+          "failureMessages": [],
+          "fullName": "HomePage Actions calls HomePageLayout",
+          "location": null,
+          "status": "passed",
+          "title": "calls HomePageLayout"
+        },
+        {
+          "ancestorTitles": ["HomePage Actions"],
+          "failureMessages": [],
+          "fullName": "HomePage Actions calls HomePageLayoutSuccess",
+          "location": null,
+          "status": "passed",
+          "title": "calls HomePageLayoutSuccess"
+        },
+        {
+          "ancestorTitles": ["HomePage Actions"],
+          "failureMessages": [],
+          "fullName": "HomePage Actions calls HomePageLayout",
+          "location": null,
+          "status": "passed",
+          "title": "calls HomePageLayout"
+        },
+        {
+          "ancestorTitles": ["HomePage Actions"],
+          "failureMessages": [],
+          "fullName": "HomePage Actions calls HomePageLayoutSuccess",
+          "location": null,
+          "status": "passed",
+          "title": "calls HomePageLayoutSuccess"
+        }
+      ],
+      "endTime": 1574227563235,
+      "message": "",
+      "name": "/Users/vinkumar2/Documents/Projects/PageSource/universal-react/app/containers/templates/HomePage/tests/Homepage.actions.test.js",
+      "startTime": 1574227562796,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": ["ErrorPage actions"],
+          "failureMessages": [],
+          "fullName": "ErrorPage actions Should Load Error Page",
+          "location": null,
+          "status": "passed",
+          "title": "Should Load Error Page"
+        },
+        {
+          "ancestorTitles": ["ErrorPage actions"],
+          "failureMessages": [],
+          "fullName": "ErrorPage actions Should Trigger Error Page Success",
+          "location": null,
+          "status": "passed",
+          "title": "Should Trigger Error Page Success"
+        },
+        {
+          "ancestorTitles": ["ErrorPage actions"],
+          "failureMessages": [],
+          "fullName": "ErrorPage actions Should Trigger Error Page Failure",
+          "location": null,
+          "status": "passed",
+          "title": "Should Trigger Error Page Failure"
+        }
+      ],
+      "endTime": 1574227563595,
+      "message": "",
+      "name": "/Users/vinkumar2/Documents/Projects/PageSource/universal-react/app/components/templates/ErrorPage/tests/actions.test.js",
+      "startTime": 1574227563199,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": ["ProductListing Actions"],
+          "failureMessages": [],
+          "fullName": "ProductListing Actions should dispatch addDeviceType",
+          "location": null,
+          "status": "passed",
+          "title": "should dispatch addDeviceType"
+        },
+        {
+          "ancestorTitles": ["ProductListing Actions"],
+          "failureMessages": [],
+          "fullName": "ProductListing Actions should dispatch addIsTablet",
+          "location": null,
+          "status": "passed",
+          "title": "should dispatch addIsTablet"
+        },
+        {
+          "ancestorTitles": ["ProductListing Actions"],
+          "failureMessages": [],
+          "fullName": "ProductListing Actions should dispatch setCurrentRoute",
+          "location": null,
+          "status": "passed",
+          "title": "should dispatch setCurrentRoute"
+        }
+      ],
+      "endTime": 1574227563632,
+      "message": "",
+      "name": "/Users/vinkumar2/Documents/Projects/PageSource/universal-react/app/global/actions/tests/globalActions.test.js",
+      "startTime": 1574227563248,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": ["Tracker Middleware"],
+          "failureMessages": [],
+          "fullName": "Tracker Middleware trackingMiddleware",
+          "location": null,
+          "status": "passed",
+          "title": "trackingMiddleware"
+        }
+      ],
+      "endTime": 1574227563713,
+      "message": "",
+      "name": "/Users/vinkumar2/Documents/Projects/PageSource/universal-react/app/utils/analytics/tests/middleware.test.js",
+      "startTime": 1574227563436,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": ["Layout Component"],
+          "failureMessages": [],
+          "fullName": "Layout Component should render correctly",
+          "location": null,
+          "status": "pending",
+          "title": "should render correctly"
+        },
+        {
+          "ancestorTitles": ["Layout Component"],
+          "failureMessages": [],
+          "fullName": "Layout Component should render when deviceType is Mobile",
+          "location": null,
+          "status": "pending",
+          "title": "should render when deviceType is Mobile"
+        },
+        {
+          "ancestorTitles": ["Layout Component"],
+          "failureMessages": [],
+          "fullName": "Layout Component should render the styled component appropriately",
+          "location": null,
+          "status": "pending",
+          "title": "should render the styled component appropriately"
+        }
+      ],
+      "endTime": 1574227563727,
+      "message": "",
+      "name": "/Users/vinkumar2/Documents/Projects/PageSource/universal-react/app/components/templates/Layout/tests/Layout.test.js",
+      "startTime": 1574227562348,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": ["initializeTrackerConfig"],
+          "failureMessages": [],
+          "fullName": "initializeTrackerConfig should execute initializeTrackerConfig",
+          "location": null,
+          "status": "passed",
+          "title": "should execute initializeTrackerConfig"
+        },
+        {
+          "ancestorTitles": ["initializeTrackerConfig"],
+          "failureMessages": [],
+          "fullName": "initializeTrackerConfig should not set dataLayer in non browser mode",
+          "location": null,
+          "status": "passed",
+          "title": "should not set dataLayer in non browser mode"
+        },
+        {
+          "ancestorTitles": ["initializeTrackerConfig"],
+          "failureMessages": [],
+          "fullName": "initializeTrackerConfig should set dataLayer in browser mode",
+          "location": null,
+          "status": "passed",
+          "title": "should set dataLayer in browser mode"
+        }
+      ],
+      "endTime": 1574227563745,
+      "message": "",
+      "name": "/Users/vinkumar2/Documents/Projects/PageSource/universal-react/app/global/AnalyticsTracking/tests/AnalyticsTracking.test.js",
+      "startTime": 1574227563457,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": ["ProgressCircle Component"],
+          "failureMessages": [],
+          "fullName": "ProgressCircle Component should match snapshot ",
+          "location": null,
+          "status": "passed",
+          "title": "should match snapshot "
+        }
+      ],
+      "endTime": 1574227563773,
+      "message": "",
+      "name": "/Users/vinkumar2/Documents/Projects/PageSource/universal-react/app/components/atoms/ProgressCircle/tests/ProgressCircle.test.js",
+      "startTime": 1574227563522,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": ["trackingOptions"],
+          "failureMessages": [],
+          "fullName": "trackingOptions tracker config when not in browser",
+          "location": null,
+          "status": "passed",
+          "title": "tracker config when not in browser"
+        },
+        {
+          "ancestorTitles": ["trackingOptions"],
+          "failureMessages": [],
+          "fullName": "trackingOptions tracker config when in browser",
+          "location": null,
+          "status": "passed",
+          "title": "tracker config when in browser"
+        }
+      ],
+      "endTime": 1574227563799,
+      "message": "",
+      "name": "/Users/vinkumar2/Documents/Projects/PageSource/universal-react/app/global/AnalyticsTracking/tests/trackerConfig.test.js",
+      "startTime": 1574227563637,
+      "status": "passed",
+      "summary": ""
+    }
+  ],
+  "wasInterrupted": false,
+  "coverageMap": {
+    "/Users/vinkumar2/Documents/Projects/PageSource/universal-react/app/components/molecules/NavBar/index.js": {
+      "path": "/Users/vinkumar2/Documents/Projects/PageSource/universal-react/app/components/molecules/NavBar/index.js",
+      "statementMap": {},
+      "fnMap": {},
+      "branchMap": {},
+      "s": {},
+      "f": {},
+      "b": {},
+      "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
+      "hash": "f82a41ff5bc7058a019054ac9a39b1d73f995d36"
+    },
+    "/Users/vinkumar2/Documents/Projects/PageSource/universal-react/app/components/molecules/NavBar/NavBar.js": {
+      "path": "/Users/vinkumar2/Documents/Projects/PageSource/universal-react/app/components/molecules/NavBar/NavBar.js",
+      "statementMap": {
+        "0": { "start": { "line": 13, "column": 15 }, "end": { "line": 34, "column": 1 } },
+        "1": { "start": { "line": 14, "column": 2 }, "end": { "line": 33, "column": 8 } },
+        "2": { "start": { "line": 19, "column": 12 }, "end": { "line": 29, "column": 17 } },
+        "3": { "start": { "line": 36, "column": 0 }, "end": { "line": 38, "column": 2 } }
+      },
+      "fnMap": {
+        "0": {
+          "name": "(anonymous_0)",
+          "decl": { "start": { "line": 13, "column": 15 }, "end": { "line": 13, "column": 16 } },
+          "loc": { "start": { "line": 14, "column": 2 }, "end": { "line": 33, "column": 8 } },
+          "line": 14
+        },
+        "1": {
+          "name": "(anonymous_1)",
+          "decl": { "start": { "line": 18, "column": 20 }, "end": { "line": 18, "column": 21 } },
+          "loc": { "start": { "line": 19, "column": 12 }, "end": { "line": 29, "column": 17 } },
+          "line": 19
+        }
+      },
+      "branchMap": {
+        "0": {
+          "loc": { "start": { "line": 15, "column": 5 }, "end": { "line": 32, "column": 5 } },
+          "type": "binary-expr",
+          "locations": [
+            { "start": { "line": 15, "column": 5 }, "end": { "line": 15, "column": 13 } },
+            { "start": { "line": 16, "column": 6 }, "end": { "line": 31, "column": 11 } }
+          ],
+          "line": 15
+        },
+        "1": {
+          "loc": { "start": { "line": 17, "column": 9 }, "end": { "line": 30, "column": 12 } },
+          "type": "binary-expr",
+          "locations": [
+            { "start": { "line": 17, "column": 9 }, "end": { "line": 17, "column": 29 } },
+            { "start": { "line": 18, "column": 10 }, "end": { "line": 30, "column": 12 } }
+          ],
+          "line": 17
+        },
+        "2": {
+          "loc": { "start": { "line": 20, "column": 15 }, "end": { "line": 28, "column": 15 } },
+          "type": "cond-expr",
+          "locations": [
+            { "start": { "line": 21, "column": 16 }, "end": { "line": 23, "column": 23 } },
+            { "start": { "line": 25, "column": 16 }, "end": { "line": 27, "column": 25 } }
+          ],
+          "line": 20
+        }
+      },
+      "s": { "0": 8, "1": 4, "2": 6, "3": 8 },
+      "f": { "0": 4, "1": 6 },
+      "b": { "0": [4, 3], "1": [3, 3], "2": [6, 0] },
+      "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
+      "hash": "8d5437d48a5479fe2b2325d7a0a0e7d9c005727d"
+    },
+    "/Users/vinkumar2/Documents/Projects/PageSource/universal-react/app/components/molecules/NavBar/NavBar.style.js": {
+      "path": "/Users/vinkumar2/Documents/Projects/PageSource/universal-react/app/components/molecules/NavBar/NavBar.style.js",
+      "statementMap": {
+        "0": { "start": { "line": 25, "column": 4 }, "end": { "line": 36, "column": 5 } }
+      },
+      "fnMap": {
+        "0": {
+          "name": "(anonymous_0)",
+          "decl": { "start": { "line": 24, "column": 4 }, "end": { "line": 24, "column": 5 } },
+          "loc": { "start": { "line": 25, "column": 4 }, "end": { "line": 36, "column": 5 } },
+          "line": 25
+        }
+      },
+      "branchMap": {
+        "0": {
+          "loc": { "start": { "line": 25, "column": 4 }, "end": { "line": 36, "column": 5 } },
+          "type": "binary-expr",
+          "locations": [
+            { "start": { "line": 25, "column": 4 }, "end": { "line": 25, "column": 18 } },
+            { "start": { "line": 26, "column": 4 }, "end": { "line": 36, "column": 5 } }
+          ],
+          "line": 25
+        }
+      },
+      "s": { "0": 2 },
+      "f": { "0": 2 },
+      "b": { "0": [2, 1] },
+      "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
+      "hash": "fa8f6e5c2fb6bdd3c7c7cbd3098675c51dc22df1"
+    },
+    "/Users/vinkumar2/Documents/Projects/PageSource/universal-react/app/components/atoms/Spinner/index.js": {
+      "path": "/Users/vinkumar2/Documents/Projects/PageSource/universal-react/app/components/atoms/Spinner/index.js",
+      "statementMap": {},
+      "fnMap": {},
+      "branchMap": {},
+      "s": {},
+      "f": {},
+      "b": {},
+      "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
+      "hash": "0dc35a30422914f85322699e1b1e6e9b945211f9"
+    },
+    "/Users/vinkumar2/Documents/Projects/PageSource/universal-react/app/components/atoms/Spinner/Spinner.js": {
+      "path": "/Users/vinkumar2/Documents/Projects/PageSource/universal-react/app/components/atoms/Spinner/Spinner.js",
+      "statementMap": {
+        "0": { "start": { "line": 20, "column": 16 }, "end": { "line": 50, "column": 1 } },
+        "1": { "start": { "line": 21, "column": 31 }, "end": { "line": 23, "column": 3 } },
+        "2": { "start": { "line": 22, "column": 4 }, "end": { "line": 22, "column": 53 } },
+        "3": { "start": { "line": 25, "column": 30 }, "end": { "line": 31, "column": 3 } },
+        "4": { "start": { "line": 26, "column": 4 }, "end": { "line": 30, "column": 10 } },
+        "5": { "start": { "line": 33, "column": 24 }, "end": { "line": 34, "column": 57 } },
+        "6": { "start": { "line": 34, "column": 4 }, "end": { "line": 34, "column": 57 } },
+        "7": { "start": { "line": 36, "column": 27 }, "end": { "line": 37, "column": 56 } },
+        "8": { "start": { "line": 37, "column": 4 }, "end": { "line": 37, "column": 56 } },
+        "9": { "start": { "line": 39, "column": 78 }, "end": { "line": 39, "column": 83 } },
+        "10": { "start": { "line": 40, "column": 2 }, "end": { "line": 48, "column": 3 } },
+        "11": { "start": { "line": 41, "column": 4 }, "end": { "line": 47, "column": 6 } },
+        "12": { "start": { "line": 49, "column": 2 }, "end": { "line": 49, "column": 12 } },
+        "13": { "start": { "line": 52, "column": 0 }, "end": { "line": 57, "column": 2 } }
+      },
+      "fnMap": {
+        "0": {
+          "name": "(anonymous_0)",
+          "decl": { "start": { "line": 20, "column": 16 }, "end": { "line": 20, "column": 17 } },
+          "loc": { "start": { "line": 20, "column": 40 }, "end": { "line": 50, "column": 1 } },
+          "line": 20
+        },
+        "1": {
+          "name": "(anonymous_1)",
+          "decl": { "start": { "line": 21, "column": 31 }, "end": { "line": 21, "column": 32 } },
+          "loc": { "start": { "line": 22, "column": 4 }, "end": { "line": 22, "column": 53 } },
+          "line": 22
+        },
+        "2": {
+          "name": "(anonymous_2)",
+          "decl": { "start": { "line": 25, "column": 30 }, "end": { "line": 25, "column": 31 } },
+          "loc": { "start": { "line": 26, "column": 4 }, "end": { "line": 30, "column": 10 } },
+          "line": 26
+        },
+        "3": {
+          "name": "(anonymous_3)",
+          "decl": { "start": { "line": 33, "column": 24 }, "end": { "line": 33, "column": 25 } },
+          "loc": { "start": { "line": 34, "column": 4 }, "end": { "line": 34, "column": 57 } },
+          "line": 34
+        },
+        "4": {
+          "name": "(anonymous_4)",
+          "decl": { "start": { "line": 36, "column": 27 }, "end": { "line": 36, "column": 28 } },
+          "loc": { "start": { "line": 37, "column": 4 }, "end": { "line": 37, "column": 56 } },
+          "line": 37
+        }
+      },
+      "branchMap": {
+        "0": {
+          "loc": { "start": { "line": 40, "column": 2 }, "end": { "line": 48, "column": 3 } },
+          "type": "if",
+          "locations": [
+            { "start": { "line": 40, "column": 2 }, "end": { "line": 48, "column": 3 } },
+            { "start": { "line": 40, "column": 2 }, "end": { "line": 48, "column": 3 } }
+          ],
+          "line": 40
+        },
+        "1": {
+          "loc": { "start": { "line": 43, "column": 9 }, "end": { "line": 45, "column": 61 } },
+          "type": "cond-expr",
+          "locations": [
+            { "start": { "line": 44, "column": 12 }, "end": { "line": 44, "column": 58 } },
+            { "start": { "line": 45, "column": 12 }, "end": { "line": 45, "column": 61 } }
+          ],
+          "line": 43
+        }
+      },
+      "s": {
+        "0": 2,
+        "1": 6,
+        "2": 1,
+        "3": 6,
+        "4": 1,
+        "5": 6,
+        "6": 1,
+        "7": 6,
+        "8": 1,
+        "9": 6,
+        "10": 6,
+        "11": 2,
+        "12": 4,
+        "13": 2
+      },
+      "f": { "0": 6, "1": 1, "2": 1, "3": 1, "4": 1 },
+      "b": { "0": [2, 4], "1": [1, 1] },
+      "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
+      "hash": "4e4bab0b61fad2af97c14a4a2867c263c6b1eee9"
+    },
+    "/Users/vinkumar2/Documents/Projects/PageSource/universal-react/app/components/atoms/Spinner/Spinner.style.js": {
+      "path": "/Users/vinkumar2/Documents/Projects/PageSource/universal-react/app/components/atoms/Spinner/Spinner.style.js",
+      "statementMap": {
+        "0": { "start": { "line": 49, "column": 24 }, "end": { "line": 49, "column": 50 } },
+        "1": { "start": { "line": 78, "column": 33 }, "end": { "line": 78, "column": 57 } }
+      },
+      "fnMap": {
+        "0": {
+          "name": "(anonymous_0)",
+          "decl": { "start": { "line": 49, "column": 15 }, "end": { "line": 49, "column": 16 } },
+          "loc": { "start": { "line": 49, "column": 24 }, "end": { "line": 49, "column": 50 } },
+          "line": 49
+        },
+        "1": {
+          "name": "(anonymous_1)",
+          "decl": { "start": { "line": 78, "column": 24 }, "end": { "line": 78, "column": 25 } },
+          "loc": { "start": { "line": 78, "column": 33 }, "end": { "line": 78, "column": 57 } },
+          "line": 78
+        }
+      },
+      "branchMap": {},
+      "s": { "0": 1, "1": 1 },
+      "f": { "0": 1, "1": 1 },
+      "b": {},
+      "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
+      "hash": "86a553ffec280ce55e5ff59231b8a170e74b67d0"
+    },
+    "/Users/vinkumar2/Documents/Projects/PageSource/universal-react/app/components/templates/HomePage/index.js": {
+      "path": "/Users/vinkumar2/Documents/Projects/PageSource/universal-react/app/components/templates/HomePage/index.js",
+      "statementMap": {},
+      "fnMap": {},
+      "branchMap": {},
+      "s": {},
+      "f": {},
+      "b": {},
+      "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
+      "hash": "6c3247f28d3e83ec4f7887feeb389acd88ae47e4"
+    },
+    "/Users/vinkumar2/Documents/Projects/PageSource/universal-react/app/components/templates/HomePage/HomePage.js": {
+      "path": "/Users/vinkumar2/Documents/Projects/PageSource/universal-react/app/components/templates/HomePage/HomePage.js",
+      "statementMap": {
+        "0": { "start": { "line": 10, "column": 17 }, "end": { "line": 145, "column": 1 } },
+        "1": { "start": { "line": 11, "column": 30 }, "end": { "line": 11, "column": 43 } },
+        "2": { "start": { "line": 12, "column": 2 }, "end": { "line": 144, "column": 4 } },
+        "3": { "start": { "line": 147, "column": 0 }, "end": { "line": 153, "column": 2 } }
+      },
+      "fnMap": {
+        "0": {
+          "name": "(anonymous_0)",
+          "decl": { "start": { "line": 10, "column": 17 }, "end": { "line": 10, "column": 18 } },
+          "loc": { "start": { "line": 10, "column": 53 }, "end": { "line": 145, "column": 1 } },
+          "line": 10
+        }
+      },
+      "branchMap": {},
+      "s": { "0": 2, "1": 1, "2": 1, "3": 2 },
+      "f": { "0": 1 },
+      "b": {},
+      "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
+      "hash": "76d3616b72ea64b758f55b94f1b0fdab3d272a94"
+    },
+    "/Users/vinkumar2/Documents/Projects/PageSource/universal-react/app/components/templates/Layout/index.js": {
+      "path": "/Users/vinkumar2/Documents/Projects/PageSource/universal-react/app/components/templates/Layout/index.js",
+      "statementMap": {},
+      "fnMap": {},
+      "branchMap": {},
+      "s": {},
+      "f": {},
+      "b": {},
+      "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
+      "hash": "bebbf12bb1638b999c8f8799e8446f18cd25d4de"
+    },
+    "/Users/vinkumar2/Documents/Projects/PageSource/universal-react/app/components/templates/Layout/Layout.js": {
+      "path": "/Users/vinkumar2/Documents/Projects/PageSource/universal-react/app/components/templates/Layout/Layout.js",
+      "statementMap": {
+        "0": { "start": { "line": 21, "column": 15 }, "end": { "line": 47, "column": 1 } },
+        "1": { "start": { "line": 23, "column": 2 }, "end": { "line": 23, "column": 43 } },
+        "2": { "start": { "line": 28, "column": 2 }, "end": { "line": 28, "column": 40 } },
+        "3": { "start": { "line": 29, "column": 2 }, "end": { "line": 29, "column": 32 } },
+        "4": { "start": { "line": 31, "column": 2 }, "end": { "line": 46, "column": 4 } },
+        "5": { "start": { "line": 49, "column": 0 }, "end": { "line": 51, "column": 2 } },
+        "6": { "start": { "line": 56, "column": 51 }, "end": { "line": 62, "column": 2 } }
+      },
+      "fnMap": {
+        "0": {
+          "name": "(anonymous_0)",
+          "decl": { "start": { "line": 21, "column": 15 }, "end": { "line": 21, "column": 16 } },
+          "loc": { "start": { "line": 21, "column": 74 }, "end": { "line": 47, "column": 1 } },
+          "line": 21
+        }
+      },
+      "branchMap": {
+        "0": {
+          "loc": { "start": { "line": 23, "column": 21 }, "end": { "line": 23, "column": 42 } },
+          "type": "binary-expr",
+          "locations": [
+            { "start": { "line": 23, "column": 21 }, "end": { "line": 23, "column": 31 } },
+            { "start": { "line": 23, "column": 35 }, "end": { "line": 23, "column": 42 } }
+          ],
+          "line": 23
+        }
+      },
+      "s": { "0": 4, "1": 0, "2": 0, "3": 0, "4": 0, "5": 4, "6": 4 },
+      "f": { "0": 0 },
+      "b": { "0": [0, 0] },
+      "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
+      "hash": "f6fdce7ec78c8d5b9eaf50d1efa2e6f6d6a5f520"
+    },
+    "/Users/vinkumar2/Documents/Projects/PageSource/universal-react/app/components/organisms/Header/index.js": {
+      "path": "/Users/vinkumar2/Documents/Projects/PageSource/universal-react/app/components/organisms/Header/index.js",
+      "statementMap": {},
+      "fnMap": {},
+      "branchMap": {},
+      "s": {},
+      "f": {},
+      "b": {},
+      "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
+      "hash": "4b936bd3e8019998d66966e512dee1d8ce2b0126"
+    },
+    "/Users/vinkumar2/Documents/Projects/PageSource/universal-react/app/components/organisms/Header/Header.js": {
+      "path": "/Users/vinkumar2/Documents/Projects/PageSource/universal-react/app/components/organisms/Header/Header.js",
+      "statementMap": {
+        "0": { "start": { "line": 11, "column": 15 }, "end": { "line": 22, "column": 1 } },
+        "1": { "start": { "line": 12, "column": 2 }, "end": { "line": 21, "column": 8 } },
+        "2": { "start": { "line": 24, "column": 0 }, "end": { "line": 24, "column": 25 } }
+      },
+      "fnMap": {
+        "0": {
+          "name": "(anonymous_0)",
+          "decl": { "start": { "line": 11, "column": 15 }, "end": { "line": 11, "column": 16 } },
+          "loc": { "start": { "line": 12, "column": 2 }, "end": { "line": 21, "column": 8 } },
+          "line": 12
+        }
+      },
+      "branchMap": {
+        "0": {
+          "loc": { "start": { "line": 19, "column": 7 }, "end": { "line": 19, "column": 36 } },
+          "type": "binary-expr",
+          "locations": [
+            { "start": { "line": 19, "column": 7 }, "end": { "line": 19, "column": 10 } },
+            { "start": { "line": 19, "column": 14 }, "end": { "line": 19, "column": 36 } }
+          ],
+          "line": 19
+        }
+      },
+      "s": { "0": 5, "1": 0, "2": 5 },
+      "f": { "0": 0 },
+      "b": { "0": [0, 0] },
+      "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
+      "hash": "15524bf9635e7e6cdf86f5114e76a18b31c357be"
+    },
+    "/Users/vinkumar2/Documents/Projects/PageSource/universal-react/app/components/organisms/Footer/index.js": {
+      "path": "/Users/vinkumar2/Documents/Projects/PageSource/universal-react/app/components/organisms/Footer/index.js",
+      "statementMap": {},
+      "fnMap": {},
+      "branchMap": {},
+      "s": {},
+      "f": {},
+      "b": {},
+      "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
+      "hash": "0f7724d39c24792580ca754f1d11f85af87a1ef4"
+    },
+    "/Users/vinkumar2/Documents/Projects/PageSource/universal-react/app/components/organisms/Footer/Footer.js": {
+      "path": "/Users/vinkumar2/Documents/Projects/PageSource/universal-react/app/components/organisms/Footer/Footer.js",
+      "statementMap": {
+        "0": { "start": { "line": 14, "column": 15 }, "end": { "line": 27, "column": 1 } },
+        "1": { "start": { "line": 15, "column": 2 }, "end": { "line": 26, "column": 11 } },
+        "2": { "start": { "line": 29, "column": 0 }, "end": { "line": 29, "column": 25 } }
+      },
+      "fnMap": {
+        "0": {
+          "name": "(anonymous_0)",
+          "decl": { "start": { "line": 14, "column": 15 }, "end": { "line": 14, "column": 16 } },
+          "loc": { "start": { "line": 15, "column": 2 }, "end": { "line": 26, "column": 11 } },
+          "line": 15
+        }
+      },
+      "branchMap": {
+        "0": {
+          "loc": { "start": { "line": 19, "column": 9 }, "end": { "line": 19, "column": 47 } },
+          "type": "binary-expr",
+          "locations": [
+            { "start": { "line": 19, "column": 9 }, "end": { "line": 19, "column": 12 } },
+            { "start": { "line": 19, "column": 16 }, "end": { "line": 19, "column": 47 } }
+          ],
+          "line": 19
+        }
+      },
+      "s": { "0": 5, "1": 0, "2": 5 },
+      "f": { "0": 0 },
+      "b": { "0": [0, 0] },
+      "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
+      "hash": "8131fe4436be6cc1661a6d2358d8932aef4493be"
+    },
+    "/Users/vinkumar2/Documents/Projects/PageSource/universal-react/app/components/organisms/Footer/Footer.style.js": {
+      "path": "/Users/vinkumar2/Documents/Projects/PageSource/universal-react/app/components/organisms/Footer/Footer.style.js",
+      "statementMap": {
+        "0": { "start": { "line": 5, "column": 21 }, "end": { "line": 11, "column": 1 } }
+      },
+      "fnMap": {},
+      "branchMap": {},
+      "s": { "0": 5 },
+      "f": {},
+      "b": {},
+      "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
+      "hash": "8263266cd2c9472263bf4e1e66cb895c2494f73f"
+    },
+    "/Users/vinkumar2/Documents/Projects/PageSource/universal-react/app/components/atoms/HeadTag/index.js": {
+      "path": "/Users/vinkumar2/Documents/Projects/PageSource/universal-react/app/components/atoms/HeadTag/index.js",
+      "statementMap": {},
+      "fnMap": {},
+      "branchMap": {},
+      "s": {},
+      "f": {},
+      "b": {},
+      "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
+      "hash": "9434611467aa0da01edfeef182e7b92d37490014"
+    },
+    "/Users/vinkumar2/Documents/Projects/PageSource/universal-react/app/components/atoms/HeadTag/HeadTag.js": {
+      "path": "/Users/vinkumar2/Documents/Projects/PageSource/universal-react/app/components/atoms/HeadTag/HeadTag.js",
+      "statementMap": {
+        "0": { "start": { "line": 9, "column": 23 }, "end": { "line": 22, "column": 1 } },
+        "1": { "start": { "line": 10, "column": 16 }, "end": { "line": 12, "column": 3 } },
+        "2": { "start": { "line": 16, "column": 2 }, "end": { "line": 18, "column": 21 } },
+        "3": { "start": { "line": 21, "column": 2 }, "end": { "line": 21, "column": 29 } },
+        "4": { "start": { "line": 26, "column": 30 }, "end": { "line": 26, "column": 40 } },
+        "5": { "start": { "line": 27, "column": 32 }, "end": { "line": 27, "column": 38 } },
+        "6": { "start": { "line": 28, "column": 4 }, "end": { "line": 65, "column": 6 } },
+        "7": { "start": { "line": 32, "column": 26 }, "end": { "line": 32, "column": 90 } },
+        "8": { "start": { "line": 33, "column": 10 }, "end": { "line": 35, "column": 11 } },
+        "9": { "start": { "line": 34, "column": 12 }, "end": { "line": 34, "column": 24 } },
+        "10": { "start": { "line": 36, "column": 10 }, "end": { "line": 47, "column": 12 } },
+        "11": { "start": { "line": 38, "column": 14 }, "end": { "line": 43, "column": 16 } },
+        "12": { "start": { "line": 50, "column": 11 }, "end": { "line": 52, "column": 18 } },
+        "13": { "start": { "line": 69, "column": 0 }, "end": { "line": 72, "column": 2 } },
+        "14": { "start": { "line": 74, "column": 0 }, "end": { "line": 74, "column": 26 } }
+      },
+      "fnMap": {
+        "0": {
+          "name": "(anonymous_0)",
+          "decl": { "start": { "line": 9, "column": 23 }, "end": { "line": 9, "column": 24 } },
+          "loc": { "start": { "line": 9, "column": 45 }, "end": { "line": 22, "column": 1 } },
+          "line": 9
+        },
+        "1": {
+          "name": "(anonymous_1)",
+          "decl": { "start": { "line": 25, "column": 2 }, "end": { "line": 25, "column": 3 } },
+          "loc": { "start": { "line": 25, "column": 11 }, "end": { "line": 66, "column": 3 } },
+          "line": 25
+        },
+        "2": {
+          "name": "(anonymous_2)",
+          "decl": { "start": { "line": 31, "column": 23 }, "end": { "line": 31, "column": 24 } },
+          "loc": { "start": { "line": 31, "column": 31 }, "end": { "line": 48, "column": 9 } },
+          "line": 31
+        },
+        "3": {
+          "name": "(anonymous_3)",
+          "decl": { "start": { "line": 37, "column": 28 }, "end": { "line": 37, "column": 29 } },
+          "loc": { "start": { "line": 38, "column": 14 }, "end": { "line": 43, "column": 16 } },
+          "line": 38
+        },
+        "4": {
+          "name": "(anonymous_4)",
+          "decl": { "start": { "line": 49, "column": 18 }, "end": { "line": 49, "column": 19 } },
+          "loc": { "start": { "line": 50, "column": 11 }, "end": { "line": 52, "column": 18 } },
+          "line": 50
+        }
+      },
+      "branchMap": {
+        "0": {
+          "loc": { "start": { "line": 16, "column": 8 }, "end": { "line": 16, "column": 67 } },
+          "type": "cond-expr",
+          "locations": [
+            { "start": { "line": 16, "column": 48 }, "end": { "line": 16, "column": 58 } },
+            { "start": { "line": 16, "column": 61 }, "end": { "line": 16, "column": 67 } }
+          ],
+          "line": 16
+        },
+        "1": {
+          "loc": { "start": { "line": 16, "column": 8 }, "end": { "line": 16, "column": 45 } },
+          "type": "binary-expr",
+          "locations": [
+            { "start": { "line": 16, "column": 8 }, "end": { "line": 16, "column": 20 } },
+            { "start": { "line": 16, "column": 24 }, "end": { "line": 16, "column": 45 } }
+          ],
+          "line": 16
+        },
+        "2": {
+          "loc": { "start": { "line": 16, "column": 71 }, "end": { "line": 18, "column": 20 } },
+          "type": "cond-expr",
+          "locations": [
+            { "start": { "line": 17, "column": 6 }, "end": { "line": 17, "column": 41 } },
+            { "start": { "line": 18, "column": 6 }, "end": { "line": 18, "column": 20 } }
+          ],
+          "line": 16
+        },
+        "3": {
+          "loc": { "start": { "line": 32, "column": 26 }, "end": { "line": 32, "column": 90 } },
+          "type": "binary-expr",
+          "locations": [
+            { "start": { "line": 32, "column": 26 }, "end": { "line": 32, "column": 59 } },
+            { "start": { "line": 32, "column": 63 }, "end": { "line": 32, "column": 90 } }
+          ],
+          "line": 32
+        },
+        "4": {
+          "loc": { "start": { "line": 33, "column": 10 }, "end": { "line": 35, "column": 11 } },
+          "type": "if",
+          "locations": [
+            { "start": { "line": 33, "column": 10 }, "end": { "line": 35, "column": 11 } },
+            { "start": { "line": 33, "column": 10 }, "end": { "line": 35, "column": 11 } }
+          ],
+          "line": 33
+        },
+        "5": {
+          "loc": { "start": { "line": 36, "column": 17 }, "end": { "line": 47, "column": 11 } },
+          "type": "cond-expr",
+          "locations": [
+            { "start": { "line": 37, "column": 12 }, "end": { "line": 44, "column": 14 } },
+            { "start": { "line": 46, "column": 12 }, "end": { "line": 46, "column": 77 } }
+          ],
+          "line": 36
+        },
+        "6": {
+          "loc": { "start": { "line": 50, "column": 11 }, "end": { "line": 52, "column": 18 } },
+          "type": "cond-expr",
+          "locations": [
+            { "start": { "line": 51, "column": 12 }, "end": { "line": 51, "column": 70 } },
+            { "start": { "line": 52, "column": 14 }, "end": { "line": 52, "column": 18 } }
+          ],
+          "line": 50
+        },
+        "7": {
+          "loc": { "start": { "line": 56, "column": 9 }, "end": { "line": 63, "column": 16 } },
+          "type": "cond-expr",
+          "locations": [
+            { "start": { "line": 57, "column": 10 }, "end": { "line": 62, "column": 12 } },
+            { "start": { "line": 63, "column": 12 }, "end": { "line": 63, "column": 16 } }
+          ],
+          "line": 56
+        }
+      },
+      "s": {
+        "0": 4,
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": 3,
+        "5": 3,
+        "6": 3,
+        "7": 27,
+        "8": 27,
+        "9": 17,
+        "10": 10,
+        "11": 14,
+        "12": 3,
+        "13": 4,
+        "14": 4
+      },
+      "f": { "0": 1, "1": 3, "2": 27, "3": 14, "4": 3 },
+      "b": {
+        "0": [0, 1],
+        "1": [1, 1],
+        "2": [1, 0],
+        "3": [27, 26],
+        "4": [17, 10],
+        "5": [8, 2],
+        "6": [0, 3],
+        "7": [0, 3]
+      },
+      "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
+      "hash": "f45c738ec5aab0a658883c2011c1587a0e244444"
+    },
+    "/Users/vinkumar2/Documents/Projects/PageSource/universal-react/app/components/atoms/HeadTag/HeadTag.config.js": {
+      "path": "/Users/vinkumar2/Documents/Projects/PageSource/universal-react/app/components/atoms/HeadTag/HeadTag.config.js",
+      "statementMap": {},
+      "fnMap": {},
+      "branchMap": {},
+      "s": {},
+      "f": {},
+      "b": {},
+      "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
+      "hash": "d02162b81c6bc99ae06060a4c6749e692b94e3a5"
+    },
+    "/Users/vinkumar2/Documents/Projects/PageSource/universal-react/app/components/molecules/TopBanner/index.js": {
+      "path": "/Users/vinkumar2/Documents/Projects/PageSource/universal-react/app/components/molecules/TopBanner/index.js",
+      "statementMap": {},
+      "fnMap": {},
+      "branchMap": {},
+      "s": {},
+      "f": {},
+      "b": {},
+      "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
+      "hash": "5521011273717ad5448994585ddbedc473c71678"
+    },
+    "/Users/vinkumar2/Documents/Projects/PageSource/universal-react/app/components/molecules/TopBanner/TopBanner.js": {
+      "path": "/Users/vinkumar2/Documents/Projects/PageSource/universal-react/app/components/molecules/TopBanner/TopBanner.js",
+      "statementMap": {
+        "0": { "start": { "line": 15, "column": 43 }, "end": { "line": 15, "column": 53 } },
+        "1": { "start": { "line": 16, "column": 4 }, "end": { "line": 23, "column": 6 } },
+        "2": { "start": { "line": 27, "column": 0 }, "end": { "line": 27, "column": 28 } }
+      },
+      "fnMap": {
+        "0": {
+          "name": "(anonymous_0)",
+          "decl": { "start": { "line": 14, "column": 2 }, "end": { "line": 14, "column": 3 } },
+          "loc": { "start": { "line": 14, "column": 11 }, "end": { "line": 24, "column": 3 } },
+          "line": 14
+        }
+      },
+      "branchMap": {
+        "0": {
+          "loc": { "start": { "line": 20, "column": 11 }, "end": { "line": 20, "column": 40 } },
+          "type": "binary-expr",
+          "locations": [
+            { "start": { "line": 20, "column": 11 }, "end": { "line": 20, "column": 19 } },
+            { "start": { "line": 20, "column": 23 }, "end": { "line": 20, "column": 40 } }
+          ],
+          "line": 20
+        }
+      },
+      "s": { "0": 3, "1": 3, "2": 3 },
+      "f": { "0": 3 },
+      "b": { "0": [3, 2] },
+      "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
+      "hash": "8556dc4d8de46e4f7a6c6ff592d033b5c1754338"
+    },
+    "/Users/vinkumar2/Documents/Projects/PageSource/universal-react/app/components/molecules/TopBanner/TopBanner.style.js": {
+      "path": "/Users/vinkumar2/Documents/Projects/PageSource/universal-react/app/components/molecules/TopBanner/TopBanner.style.js",
+      "statementMap": {},
+      "fnMap": {},
+      "branchMap": {},
+      "s": {},
+      "f": {},
+      "b": {},
+      "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
+      "hash": "4b0c2a025560353b157903a421b8977512310a46"
+    },
+    "/Users/vinkumar2/Documents/Projects/PageSource/universal-react/app/components/templates/ErrorPage/ErrorPage.js": {
+      "path": "/Users/vinkumar2/Documents/Projects/PageSource/universal-react/app/components/templates/ErrorPage/ErrorPage.js",
+      "statementMap": {
+        "0": { "start": { "line": 14, "column": 4 }, "end": { "line": 16, "column": 5 } },
+        "1": { "start": { "line": 15, "column": 6 }, "end": { "line": 15, "column": 22 } },
+        "2": { "start": { "line": 17, "column": 4 }, "end": { "line": 17, "column": 14 } },
+        "3": { "start": { "line": 21, "column": 26 }, "end": { "line": 21, "column": 36 } },
+        "4": { "start": { "line": 22, "column": 25 }, "end": { "line": 22, "column": 50 } },
+        "5": { "start": { "line": 23, "column": 4 }, "end": { "line": 30, "column": 6 } }
+      },
+      "fnMap": {
+        "0": {
+          "name": "(anonymous_0)",
+          "decl": { "start": { "line": 13, "column": 2 }, "end": { "line": 13, "column": 3 } },
+          "loc": { "start": { "line": 13, "column": 39 }, "end": { "line": 18, "column": 3 } },
+          "line": 13
+        },
+        "1": {
+          "name": "(anonymous_1)",
+          "decl": { "start": { "line": 20, "column": 2 }, "end": { "line": 20, "column": 3 } },
+          "loc": { "start": { "line": 20, "column": 11 }, "end": { "line": 31, "column": 3 } },
+          "line": 20
+        }
+      },
+      "branchMap": {
+        "0": {
+          "loc": { "start": { "line": 14, "column": 4 }, "end": { "line": 16, "column": 5 } },
+          "type": "if",
+          "locations": [
+            { "start": { "line": 14, "column": 4 }, "end": { "line": 16, "column": 5 } },
+            { "start": { "line": 14, "column": 4 }, "end": { "line": 16, "column": 5 } }
+          ],
+          "line": 14
+        },
+        "1": {
+          "loc": { "start": { "line": 14, "column": 8 }, "end": { "line": 14, "column": 27 } },
+          "type": "binary-expr",
+          "locations": [
+            { "start": { "line": 14, "column": 8 }, "end": { "line": 14, "column": 11 } },
+            { "start": { "line": 14, "column": 15 }, "end": { "line": 14, "column": 27 } }
+          ],
+          "line": 14
+        }
+      },
+      "s": { "0": 0, "1": 0, "2": 0, "3": 1, "4": 1, "5": 1 },
+      "f": { "0": 0, "1": 1 },
+      "b": { "0": [0, 0], "1": [0, 0] },
+      "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
+      "hash": "c85cf10fc49372197ac2a8a23432c0ba3767df8b"
+    },
+    "/Users/vinkumar2/Documents/Projects/PageSource/universal-react/app/components/templates/ErrorPage/ErrorPage.actions.js": {
+      "path": "/Users/vinkumar2/Documents/Projects/PageSource/universal-react/app/components/templates/ErrorPage/ErrorPage.actions.js",
+      "statementMap": {
+        "0": { "start": { "line": 13, "column": 29 }, "end": { "line": 16, "column": 2 } },
+        "1": { "start": { "line": 13, "column": 36 }, "end": { "line": 16, "column": 1 } },
+        "2": { "start": { "line": 18, "column": 36 }, "end": { "line": 21, "column": 2 } },
+        "3": { "start": { "line": 18, "column": 52 }, "end": { "line": 21, "column": 1 } },
+        "4": { "start": { "line": 23, "column": 36 }, "end": { "line": 25, "column": 2 } },
+        "5": { "start": { "line": 23, "column": 43 }, "end": { "line": 25, "column": 1 } }
+      },
+      "fnMap": {
+        "0": {
+          "name": "(anonymous_0)",
+          "decl": { "start": { "line": 13, "column": 29 }, "end": { "line": 13, "column": 30 } },
+          "loc": { "start": { "line": 13, "column": 36 }, "end": { "line": 16, "column": 1 } },
+          "line": 13
+        },
+        "1": {
+          "name": "(anonymous_1)",
+          "decl": { "start": { "line": 18, "column": 36 }, "end": { "line": 18, "column": 37 } },
+          "loc": { "start": { "line": 18, "column": 52 }, "end": { "line": 21, "column": 1 } },
+          "line": 18
+        },
+        "2": {
+          "name": "(anonymous_2)",
+          "decl": { "start": { "line": 23, "column": 36 }, "end": { "line": 23, "column": 37 } },
+          "loc": { "start": { "line": 23, "column": 43 }, "end": { "line": 25, "column": 1 } },
+          "line": 23
+        }
+      },
+      "branchMap": {},
+      "s": { "0": 2, "1": 1, "2": 2, "3": 1, "4": 2, "5": 1 },
+      "f": { "0": 1, "1": 1, "2": 1 },
+      "b": {},
+      "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
+      "hash": "7bff4c7c7e7f9b215a6367432bdfba47aaf92c2b"
+    },
+    "/Users/vinkumar2/Documents/Projects/PageSource/universal-react/app/components/templates/ErrorPage/ErrorPage.constants.js": {
+      "path": "/Users/vinkumar2/Documents/Projects/PageSource/universal-react/app/components/templates/ErrorPage/ErrorPage.constants.js",
+      "statementMap": {
+        "0": { "start": { "line": 5, "column": 31 }, "end": { "line": 5, "column": 48 } },
+        "1": { "start": { "line": 6, "column": 39 }, "end": { "line": 6, "column": 64 } },
+        "2": { "start": { "line": 7, "column": 39 }, "end": { "line": 7, "column": 64 } }
+      },
+      "fnMap": {},
+      "branchMap": {},
+      "s": { "0": 3, "1": 3, "2": 3 },
+      "f": {},
+      "b": {},
+      "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
+      "hash": "7efad77305954d074aa6c92a02c32ee47b76140c"
+    },
+    "/Users/vinkumar2/Documents/Projects/PageSource/universal-react/app/components/templates/ErrorPage/ErrorPage.saga.js": {
+      "path": "/Users/vinkumar2/Documents/Projects/PageSource/universal-react/app/components/templates/ErrorPage/ErrorPage.saga.js",
+      "statementMap": {
+        "0": { "start": { "line": 7, "column": 2 }, "end": { "line": 13, "column": 3 } },
+        "1": { "start": { "line": 9, "column": 17 }, "end": { "line": 9, "column": 77 } },
+        "2": { "start": { "line": 10, "column": 4 }, "end": { "line": 10, "column": 42 } },
+        "3": { "start": { "line": 12, "column": 4 }, "end": { "line": 12, "column": 41 } },
+        "4": { "start": { "line": 17, "column": 2 }, "end": { "line": 21, "column": 3 } },
+        "5": { "start": { "line": 18, "column": 4 }, "end": { "line": 18, "column": 60 } },
+        "6": { "start": { "line": 20, "column": 4 }, "end": { "line": 20, "column": 41 } }
+      },
+      "fnMap": {
+        "0": {
+          "name": "loadErrorPageDataSaga",
+          "decl": { "start": { "line": 6, "column": 17 }, "end": { "line": 6, "column": 38 } },
+          "loc": { "start": { "line": 6, "column": 47 }, "end": { "line": 14, "column": 1 } },
+          "line": 6
+        },
+        "1": {
+          "name": "errorPageSaga",
+          "decl": { "start": { "line": 16, "column": 25 }, "end": { "line": 16, "column": 38 } },
+          "loc": { "start": { "line": 16, "column": 41 }, "end": { "line": 22, "column": 1 } },
+          "line": 16
+        }
+      },
+      "branchMap": {},
+      "s": { "0": 0, "1": 0, "2": 0, "3": 0, "4": 0, "5": 0, "6": 0 },
+      "f": { "0": 0, "1": 0 },
+      "b": {},
+      "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
+      "hash": "a828805d1686ead54b6e1f16e8a3a15712cbff0a"
+    },
+    "/Users/vinkumar2/Documents/Projects/PageSource/universal-react/app/components/templates/ErrorPage/ErrorPage.reducer.js": {
+      "path": "/Users/vinkumar2/Documents/Projects/PageSource/universal-react/app/components/templates/ErrorPage/ErrorPage.reducer.js",
+      "statementMap": {
+        "0": { "start": { "line": 6, "column": 32 }, "end": { "line": 7, "column": 35 } },
+        "1": { "start": { "line": 7, "column": 2 }, "end": { "line": 7, "column": 35 } },
+        "2": { "start": { "line": 9, "column": 22 }, "end": { "line": 18, "column": 1 } },
+        "3": { "start": { "line": 10, "column": 2 }, "end": { "line": 17, "column": 3 } },
+        "4": { "start": { "line": 12, "column": 6 }, "end": { "line": 12, "column": 50 } },
+        "5": { "start": { "line": 14, "column": 6 }, "end": { "line": 14, "column": 46 } },
+        "6": { "start": { "line": 16, "column": 6 }, "end": { "line": 16, "column": 19 } }
+      },
+      "fnMap": {
+        "0": {
+          "name": "(anonymous_0)",
+          "decl": { "start": { "line": 6, "column": 32 }, "end": { "line": 6, "column": 33 } },
+          "loc": { "start": { "line": 7, "column": 2 }, "end": { "line": 7, "column": 35 } },
+          "line": 7
+        },
+        "1": {
+          "name": "(anonymous_1)",
+          "decl": { "start": { "line": 9, "column": 22 }, "end": { "line": 9, "column": 23 } },
+          "loc": { "start": { "line": 9, "column": 79 }, "end": { "line": 18, "column": 1 } },
+          "line": 9
+        }
+      },
+      "branchMap": {
+        "0": {
+          "loc": { "start": { "line": 9, "column": 23 }, "end": { "line": 9, "column": 41 } },
+          "type": "default-arg",
+          "locations": [
+            { "start": { "line": 9, "column": 39 }, "end": { "line": 9, "column": 41 } }
+          ],
+          "line": 9
+        },
+        "1": {
+          "loc": { "start": { "line": 9, "column": 43 }, "end": { "line": 9, "column": 66 } },
+          "type": "default-arg",
+          "locations": [
+            { "start": { "line": 9, "column": 57 }, "end": { "line": 9, "column": 66 } }
+          ],
+          "line": 9
+        },
+        "2": {
+          "loc": { "start": { "line": 10, "column": 2 }, "end": { "line": 17, "column": 3 } },
+          "type": "switch",
+          "locations": [
+            { "start": { "line": 11, "column": 4 }, "end": { "line": 12, "column": 50 } },
+            { "start": { "line": 13, "column": 4 }, "end": { "line": 14, "column": 46 } },
+            { "start": { "line": 15, "column": 4 }, "end": { "line": 16, "column": 19 } }
+          ],
+          "line": 10
+        }
+      },
+      "s": { "0": 2, "1": 3, "2": 2, "3": 3, "4": 1, "5": 1, "6": 1 },
+      "f": { "0": 3, "1": 3 },
+      "b": { "0": [1], "1": [0], "2": [1, 1, 1] },
+      "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
+      "hash": "fd0f9855086378a53e9ac64e2ea7cc65d399543d"
+    },
+    "/Users/vinkumar2/Documents/Projects/PageSource/universal-react/app/components/atoms/Title/Title.js": {
+      "path": "/Users/vinkumar2/Documents/Projects/PageSource/universal-react/app/components/atoms/Title/Title.js",
+      "statementMap": {
+        "0": { "start": { "line": 13, "column": 14 }, "end": { "line": 17, "column": 1 } },
+        "1": { "start": { "line": 14, "column": 2 }, "end": { "line": 16, "column": 7 } },
+        "2": { "start": { "line": 19, "column": 0 }, "end": { "line": 21, "column": 2 } }
+      },
+      "fnMap": {
+        "0": {
+          "name": "(anonymous_0)",
+          "decl": { "start": { "line": 13, "column": 14 }, "end": { "line": 13, "column": 15 } },
+          "loc": { "start": { "line": 14, "column": 2 }, "end": { "line": 16, "column": 7 } },
+          "line": 14
+        }
+      },
+      "branchMap": {},
+      "s": { "0": 1, "1": 2, "2": 1 },
+      "f": { "0": 2 },
+      "b": {},
+      "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
+      "hash": "acb0b0ca3783b2170284ecf39a06ea5178f0e0b2"
+    },
+    "/Users/vinkumar2/Documents/Projects/PageSource/universal-react/app/components/atoms/Title/Title.style.js": {
+      "path": "/Users/vinkumar2/Documents/Projects/PageSource/universal-react/app/components/atoms/Title/Title.style.js",
+      "statementMap": {},
+      "fnMap": {},
+      "branchMap": {},
+      "s": {},
+      "f": {},
+      "b": {},
+      "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
+      "hash": "692f67aeaf72fd4a463b85de0e8e298eb0710ef9"
+    },
+    "/Users/vinkumar2/Documents/Projects/PageSource/universal-react/app/components/atoms/Iframe/Iframe.js": {
+      "path": "/Users/vinkumar2/Documents/Projects/PageSource/universal-react/app/components/atoms/Iframe/Iframe.js",
+      "statementMap": {
+        "0": { "start": { "line": 24, "column": 4 }, "end": { "line": 24, "column": 17 } },
+        "1": { "start": { "line": 25, "column": 4 }, "end": { "line": 27, "column": 6 } },
+        "2": { "start": { "line": 29, "column": 4 }, "end": { "line": 29, "column": 47 } },
+        "3": { "start": { "line": 44, "column": 15 }, "end": { "line": 44, "column": 25 } },
+        "4": { "start": { "line": 46, "column": 28 }, "end": { "line": 46, "column": 38 } },
+        "5": { "start": { "line": 48, "column": 4 }, "end": { "line": 73, "column": 6 } },
+        "6": { "start": { "line": 51, "column": 10 }, "end": { "line": 51, "column": 31 } },
+        "7": { "start": { "line": 60, "column": 10 }, "end": { "line": 66, "column": 11 } },
+        "8": { "start": { "line": 62, "column": 33 }, "end": { "line": 62, "column": 58 } },
+        "9": { "start": { "line": 63, "column": 12 }, "end": { "line": 65, "column": 15 } },
+        "10": { "start": { "line": 67, "column": 10 }, "end": { "line": 69, "column": 11 } },
+        "11": { "start": { "line": 68, "column": 12 }, "end": { "line": 68, "column": 26 } },
+        "12": { "start": { "line": 77, "column": 0 }, "end": { "line": 84, "column": 2 } }
+      },
+      "fnMap": {
+        "0": {
+          "name": "(anonymous_0)",
+          "decl": { "start": { "line": 23, "column": 2 }, "end": { "line": 23, "column": 3 } },
+          "loc": { "start": { "line": 23, "column": 28 }, "end": { "line": 30, "column": 3 } },
+          "line": 23
+        },
+        "1": {
+          "name": "(anonymous_1)",
+          "decl": { "start": { "line": 32, "column": 2 }, "end": { "line": 32, "column": 3 } },
+          "loc": { "start": { "line": 32, "column": 11 }, "end": { "line": 74, "column": 3 } },
+          "line": 32
+        },
+        "2": {
+          "name": "(anonymous_2)",
+          "decl": { "start": { "line": 50, "column": 13 }, "end": { "line": 50, "column": 14 } },
+          "loc": { "start": { "line": 50, "column": 23 }, "end": { "line": 52, "column": 9 } },
+          "line": 50
+        },
+        "3": {
+          "name": "(anonymous_3)",
+          "decl": { "start": { "line": 59, "column": 16 }, "end": { "line": 59, "column": 17 } },
+          "loc": { "start": { "line": 59, "column": 25 }, "end": { "line": 70, "column": 9 } },
+          "line": 59
+        },
+        "4": {
+          "name": "(anonymous_4)",
+          "decl": { "start": { "line": 83, "column": 10 }, "end": { "line": 83, "column": 11 } },
+          "loc": { "start": { "line": 83, "column": 16 }, "end": { "line": 83, "column": 18 } },
+          "line": 83
+        }
+      },
+      "branchMap": {
+        "0": {
+          "loc": { "start": { "line": 57, "column": 16 }, "end": { "line": 57, "column": 56 } },
+          "type": "cond-expr",
+          "locations": [
+            { "start": { "line": 57, "column": 36 }, "end": { "line": 57, "column": 47 } },
+            { "start": { "line": 57, "column": 50 }, "end": { "line": 57, "column": 56 } }
+          ],
+          "line": 57
+        },
+        "1": {
+          "loc": { "start": { "line": 60, "column": 10 }, "end": { "line": 66, "column": 11 } },
+          "type": "if",
+          "locations": [
+            { "start": { "line": 60, "column": 10 }, "end": { "line": 66, "column": 11 } },
+            { "start": { "line": 60, "column": 10 }, "end": { "line": 66, "column": 11 } }
+          ],
+          "line": 60
+        },
+        "2": {
+          "loc": { "start": { "line": 64, "column": 30 }, "end": { "line": 64, "column": 71 } },
+          "type": "cond-expr",
+          "locations": [
+            { "start": { "line": 64, "column": 41 }, "end": { "line": 64, "column": 67 } },
+            { "start": { "line": 64, "column": 70 }, "end": { "line": 64, "column": 71 } }
+          ],
+          "line": 64
+        },
+        "3": {
+          "loc": { "start": { "line": 67, "column": 10 }, "end": { "line": 69, "column": 11 } },
+          "type": "if",
+          "locations": [
+            { "start": { "line": 67, "column": 10 }, "end": { "line": 69, "column": 11 } },
+            { "start": { "line": 67, "column": 10 }, "end": { "line": 69, "column": 11 } }
+          ],
+          "line": 67
+        }
+      },
+      "s": {
+        "0": 3,
+        "1": 3,
+        "2": 3,
+        "3": 4,
+        "4": 4,
+        "5": 4,
+        "6": 0,
+        "7": 1,
+        "8": 1,
+        "9": 1,
+        "10": 1,
+        "11": 1,
+        "12": 1
+      },
+      "f": { "0": 3, "1": 4, "2": 0, "3": 1, "4": 0 },
+      "b": { "0": [3, 1], "1": [1, 0], "2": [1, 0], "3": [1, 0] },
+      "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
+      "hash": "06c8233b6ee1f483e4b3f8b58a17c85df0eb086c"
+    },
+    "/Users/vinkumar2/Documents/Projects/PageSource/universal-react/app/components/atoms/Iframe/Iframe.style.js": {
+      "path": "/Users/vinkumar2/Documents/Projects/PageSource/universal-react/app/components/atoms/Iframe/Iframe.style.js",
+      "statementMap": {},
+      "fnMap": {},
+      "branchMap": {},
+      "s": {},
+      "f": {},
+      "b": {},
+      "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
+      "hash": "e0fcb893b24a0a7b913ffa4ecd000e0f016a41e4"
+    },
+    "/Users/vinkumar2/Documents/Projects/PageSource/universal-react/app/components/atoms/ProgressCircle/ProgressCircle.js": {
+      "path": "/Users/vinkumar2/Documents/Projects/PageSource/universal-react/app/components/atoms/ProgressCircle/ProgressCircle.js",
+      "statementMap": {
+        "0": { "start": { "line": 17, "column": 21 }, "end": { "line": 71, "column": 1 } },
+        "1": { "start": { "line": 29, "column": 27 }, "end": { "line": 29, "column": 57 } },
+        "2": { "start": { "line": 30, "column": 24 }, "end": { "line": 30, "column": 54 } },
+        "3": { "start": { "line": 31, "column": 27 }, "end": { "line": 31, "column": 75 } },
+        "4": { "start": { "line": 33, "column": 2 }, "end": { "line": 70, "column": 4 } }
+      },
+      "fnMap": {
+        "0": {
+          "name": "(anonymous_0)",
+          "decl": { "start": { "line": 17, "column": 21 }, "end": { "line": 17, "column": 22 } },
+          "loc": { "start": { "line": 27, "column": 13 }, "end": { "line": 71, "column": 1 } },
+          "line": 27
+        }
+      },
+      "branchMap": {
+        "0": {
+          "loc": { "start": { "line": 67, "column": 9 }, "end": { "line": 67, "column": 30 } },
+          "type": "binary-expr",
+          "locations": [
+            { "start": { "line": 67, "column": 9 }, "end": { "line": 67, "column": 18 } },
+            { "start": { "line": 67, "column": 22 }, "end": { "line": 67, "column": 30 } }
+          ],
+          "line": 67
+        }
+      },
+      "s": { "0": 2, "1": 1, "2": 1, "3": 1, "4": 1 },
+      "f": { "0": 1 },
+      "b": { "0": [1, 1] },
+      "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
+      "hash": "9ef6228af7bd446e25bc05288aec2b35ff257867"
+    },
+    "/Users/vinkumar2/Documents/Projects/PageSource/universal-react/app/components/atoms/ProgressCircle/ProgressCircle.style.js": {
+      "path": "/Users/vinkumar2/Documents/Projects/PageSource/universal-react/app/components/atoms/ProgressCircle/ProgressCircle.style.js",
+      "statementMap": {},
+      "fnMap": {},
+      "branchMap": {},
+      "s": {},
+      "f": {},
+      "b": {},
+      "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
+      "hash": "f2b74c53e1f9d0502af25225c24b11e4e9c2fecc"
+    },
+    "/Users/vinkumar2/Documents/Projects/PageSource/universal-react/app/components/templates/Layout/Layout.style.js": {
+      "path": "/Users/vinkumar2/Documents/Projects/PageSource/universal-react/app/components/templates/Layout/Layout.style.js",
+      "statementMap": {
+        "0": { "start": { "line": 5, "column": 21 }, "end": { "line": 5, "column": 67 } },
+        "1": { "start": { "line": 6, "column": 23 }, "end": { "line": 6, "column": 69 } },
+        "2": { "start": { "line": 8, "column": 22 }, "end": { "line": 8, "column": 69 } },
+        "3": { "start": { "line": 10, "column": 4 }, "end": { "line": 10, "column": 80 } },
+        "4": { "start": { "line": 12, "column": 4 }, "end": { "line": 12, "column": 86 } },
+        "5": { "start": { "line": 15, "column": 29 }, "end": { "line": 15, "column": 67 } },
+        "6": { "start": { "line": 19, "column": 16 }, "end": { "line": 19, "column": 90 } },
+        "7": { "start": { "line": 21, "column": 6 }, "end": { "line": 23, "column": 12 } },
+        "8": { "start": { "line": 27, "column": 4 }, "end": { "line": 27, "column": 87 } },
+        "9": { "start": { "line": 29, "column": 40 }, "end": { "line": 34, "column": 1 } }
+      },
+      "fnMap": {
+        "0": {
+          "name": "(anonymous_0)",
+          "decl": { "start": { "line": 5, "column": 11 }, "end": { "line": 5, "column": 12 } },
+          "loc": { "start": { "line": 5, "column": 21 }, "end": { "line": 5, "column": 67 } },
+          "line": 5
+        },
+        "1": {
+          "name": "(anonymous_1)",
+          "decl": { "start": { "line": 6, "column": 13 }, "end": { "line": 6, "column": 14 } },
+          "loc": { "start": { "line": 6, "column": 23 }, "end": { "line": 6, "column": 69 } },
+          "line": 6
+        },
+        "2": {
+          "name": "(anonymous_2)",
+          "decl": { "start": { "line": 8, "column": 12 }, "end": { "line": 8, "column": 13 } },
+          "loc": { "start": { "line": 8, "column": 22 }, "end": { "line": 8, "column": 69 } },
+          "line": 8
+        },
+        "3": {
+          "name": "(anonymous_3)",
+          "decl": { "start": { "line": 9, "column": 15 }, "end": { "line": 9, "column": 16 } },
+          "loc": { "start": { "line": 10, "column": 4 }, "end": { "line": 10, "column": 80 } },
+          "line": 10
+        },
+        "4": {
+          "name": "(anonymous_4)",
+          "decl": { "start": { "line": 11, "column": 14 }, "end": { "line": 11, "column": 15 } },
+          "loc": { "start": { "line": 12, "column": 4 }, "end": { "line": 12, "column": 86 } },
+          "line": 12
+        },
+        "5": {
+          "name": "(anonymous_5)",
+          "decl": { "start": { "line": 15, "column": 19 }, "end": { "line": 15, "column": 20 } },
+          "loc": { "start": { "line": 15, "column": 29 }, "end": { "line": 15, "column": 67 } },
+          "line": 15
+        },
+        "6": {
+          "name": "(anonymous_6)",
+          "decl": { "start": { "line": 19, "column": 6 }, "end": { "line": 19, "column": 7 } },
+          "loc": { "start": { "line": 19, "column": 16 }, "end": { "line": 19, "column": 90 } },
+          "line": 19
+        },
+        "7": {
+          "name": "(anonymous_7)",
+          "decl": { "start": { "line": 20, "column": 6 }, "end": { "line": 20, "column": 7 } },
+          "loc": { "start": { "line": 21, "column": 6 }, "end": { "line": 23, "column": 12 } },
+          "line": 21
+        },
+        "8": {
+          "name": "(anonymous_8)",
+          "decl": { "start": { "line": 26, "column": 16 }, "end": { "line": 26, "column": 17 } },
+          "loc": { "start": { "line": 27, "column": 4 }, "end": { "line": 27, "column": 87 } },
+          "line": 27
+        }
+      },
+      "branchMap": {
+        "0": {
+          "loc": { "start": { "line": 5, "column": 21 }, "end": { "line": 5, "column": 67 } },
+          "type": "cond-expr",
+          "locations": [
+            { "start": { "line": 5, "column": 51 }, "end": { "line": 5, "column": 57 } },
+            { "start": { "line": 5, "column": 60 }, "end": { "line": 5, "column": 67 } }
+          ],
+          "line": 5
+        },
+        "1": {
+          "loc": { "start": { "line": 6, "column": 23 }, "end": { "line": 6, "column": 69 } },
+          "type": "cond-expr",
+          "locations": [
+            { "start": { "line": 6, "column": 53 }, "end": { "line": 6, "column": 56 } },
+            { "start": { "line": 6, "column": 59 }, "end": { "line": 6, "column": 69 } }
+          ],
+          "line": 6
+        },
+        "2": {
+          "loc": { "start": { "line": 8, "column": 22 }, "end": { "line": 8, "column": 69 } },
+          "type": "cond-expr",
+          "locations": [
+            { "start": { "line": 8, "column": 53 }, "end": { "line": 8, "column": 60 } },
+            { "start": { "line": 8, "column": 63 }, "end": { "line": 8, "column": 69 } }
+          ],
+          "line": 8
+        },
+        "3": {
+          "loc": { "start": { "line": 10, "column": 4 }, "end": { "line": 10, "column": 80 } },
+          "type": "cond-expr",
+          "locations": [
+            { "start": { "line": 10, "column": 35 }, "end": { "line": 10, "column": 71 } },
+            { "start": { "line": 10, "column": 74 }, "end": { "line": 10, "column": 80 } }
+          ],
+          "line": 10
+        },
+        "4": {
+          "loc": { "start": { "line": 12, "column": 4 }, "end": { "line": 12, "column": 86 } },
+          "type": "cond-expr",
+          "locations": [
+            { "start": { "line": 12, "column": 66 }, "end": { "line": 12, "column": 73 } },
+            { "start": { "line": 12, "column": 76 }, "end": { "line": 12, "column": 86 } }
+          ],
+          "line": 12
+        },
+        "5": {
+          "loc": { "start": { "line": 12, "column": 4 }, "end": { "line": 12, "column": 63 } },
+          "type": "binary-expr",
+          "locations": [
+            { "start": { "line": 12, "column": 4 }, "end": { "line": 12, "column": 31 } },
+            { "start": { "line": 12, "column": 35 }, "end": { "line": 12, "column": 63 } }
+          ],
+          "line": 12
+        },
+        "6": {
+          "loc": { "start": { "line": 15, "column": 29 }, "end": { "line": 15, "column": 67 } },
+          "type": "cond-expr",
+          "locations": [
+            { "start": { "line": 15, "column": 52 }, "end": { "line": 15, "column": 58 } },
+            { "start": { "line": 15, "column": 61 }, "end": { "line": 15, "column": 67 } }
+          ],
+          "line": 15
+        },
+        "7": {
+          "loc": { "start": { "line": 19, "column": 16 }, "end": { "line": 19, "column": 90 } },
+          "type": "cond-expr",
+          "locations": [
+            { "start": { "line": 19, "column": 66 }, "end": { "line": 19, "column": 85 } },
+            { "start": { "line": 19, "column": 88 }, "end": { "line": 19, "column": 90 } }
+          ],
+          "line": 19
+        },
+        "8": {
+          "loc": { "start": { "line": 19, "column": 16 }, "end": { "line": 19, "column": 63 } },
+          "type": "binary-expr",
+          "locations": [
+            { "start": { "line": 19, "column": 16 }, "end": { "line": 19, "column": 44 } },
+            { "start": { "line": 19, "column": 48 }, "end": { "line": 19, "column": 63 } }
+          ],
+          "line": 19
+        },
+        "9": {
+          "loc": { "start": { "line": 21, "column": 6 }, "end": { "line": 23, "column": 12 } },
+          "type": "cond-expr",
+          "locations": [
+            { "start": { "line": 22, "column": 10 }, "end": { "line": 22, "column": 46 } },
+            { "start": { "line": 23, "column": 10 }, "end": { "line": 23, "column": 12 } }
+          ],
+          "line": 21
+        },
+        "10": {
+          "loc": { "start": { "line": 21, "column": 6 }, "end": { "line": 21, "column": 77 } },
+          "type": "binary-expr",
+          "locations": [
+            { "start": { "line": 21, "column": 6 }, "end": { "line": 21, "column": 26 } },
+            { "start": { "line": 21, "column": 30 }, "end": { "line": 21, "column": 58 } },
+            { "start": { "line": 21, "column": 62 }, "end": { "line": 21, "column": 77 } }
+          ],
+          "line": 21
+        },
+        "11": {
+          "loc": { "start": { "line": 27, "column": 4 }, "end": { "line": 27, "column": 87 } },
+          "type": "cond-expr",
+          "locations": [
+            { "start": { "line": 27, "column": 67 }, "end": { "line": 27, "column": 75 } },
+            { "start": { "line": 27, "column": 78 }, "end": { "line": 27, "column": 87 } }
+          ],
+          "line": 27
+        },
+        "12": {
+          "loc": { "start": { "line": 27, "column": 4 }, "end": { "line": 27, "column": 64 } },
+          "type": "binary-expr",
+          "locations": [
+            { "start": { "line": 27, "column": 4 }, "end": { "line": 27, "column": 31 } },
+            { "start": { "line": 27, "column": 35 }, "end": { "line": 27, "column": 64 } }
+          ],
+          "line": 27
+        }
+      },
+      "s": { "0": 0, "1": 0, "2": 0, "3": 0, "4": 0, "5": 0, "6": 0, "7": 0, "8": 0, "9": 1 },
+      "f": { "0": 0, "1": 0, "2": 0, "3": 0, "4": 0, "5": 0, "6": 0, "7": 0, "8": 0 },
+      "b": {
+        "0": [0, 0],
+        "1": [0, 0],
+        "2": [0, 0],
+        "3": [0, 0],
+        "4": [0, 0],
+        "5": [0, 0],
+        "6": [0, 0],
+        "7": [0, 0],
+        "8": [0, 0],
+        "9": [0, 0],
+        "10": [0, 0, 0],
+        "11": [0, 0],
+        "12": [0, 0]
+      },
+      "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
+      "hash": "27e20b0bf961d3b9ee63179355fc10a6fb80a26b"
+    },
+    "/Users/vinkumar2/Documents/Projects/PageSource/universal-react/app/components/molecules/TopBanner/types/index.js": {
+      "path": "/Users/vinkumar2/Documents/Projects/PageSource/universal-react/app/components/molecules/TopBanner/types/index.js",
+      "statementMap": {},
+      "fnMap": {},
+      "branchMap": {},
+      "s": {},
+      "f": {},
+      "b": {},
+      "hash": "a71580eb0b2ffd9b511647c68e3d66bfc4232102"
+    },
+    "/Users/vinkumar2/Documents/Projects/PageSource/universal-react/app/components/atoms/Iframe/index.js": {
+      "path": "/Users/vinkumar2/Documents/Projects/PageSource/universal-react/app/components/atoms/Iframe/index.js",
+      "statementMap": {},
+      "fnMap": {},
+      "branchMap": {},
+      "s": {},
+      "f": {},
+      "b": {},
+      "hash": "f33f15193216473a79f2713fac6bfe6d8a64d5fe"
+    },
+    "/Users/vinkumar2/Documents/Projects/PageSource/universal-react/app/components/atoms/ProgressCircle/index.js": {
+      "path": "/Users/vinkumar2/Documents/Projects/PageSource/universal-react/app/components/atoms/ProgressCircle/index.js",
+      "statementMap": {},
+      "fnMap": {},
+      "branchMap": {},
+      "s": {},
+      "f": {},
+      "b": {},
+      "hash": "815439922ab0625c5ee65949b6ba5293e2218146"
+    },
+    "/Users/vinkumar2/Documents/Projects/PageSource/universal-react/app/components/templates/HomePage/types/index.js": {
+      "path": "/Users/vinkumar2/Documents/Projects/PageSource/universal-react/app/components/templates/HomePage/types/index.js",
+      "statementMap": {},
+      "fnMap": {},
+      "branchMap": {},
+      "s": {},
+      "f": {},
+      "b": {},
+      "hash": "169c3d1d5585dc1c333094db8dd4faa4bb1de410"
+    },
+    "/Users/vinkumar2/Documents/Projects/PageSource/universal-react/app/components/organisms/Footer/types/index.js": {
+      "path": "/Users/vinkumar2/Documents/Projects/PageSource/universal-react/app/components/organisms/Footer/types/index.js",
+      "statementMap": {},
+      "fnMap": {},
+      "branchMap": {},
+      "s": {},
+      "f": {},
+      "b": {},
+      "hash": "18944dd8a06b7d52a622676ea0ef86b79aa30f27"
+    },
+    "/Users/vinkumar2/Documents/Projects/PageSource/universal-react/app/components/atoms/HeadTag/types/index.js": {
+      "path": "/Users/vinkumar2/Documents/Projects/PageSource/universal-react/app/components/atoms/HeadTag/types/index.js",
+      "statementMap": {},
+      "fnMap": {},
+      "branchMap": {},
+      "s": {},
+      "f": {},
+      "b": {},
+      "hash": "96879ed9a99e384b691ba80bc6fce90a1844fcb1"
+    },
+    "/Users/vinkumar2/Documents/Projects/PageSource/universal-react/app/components/atoms/Title/index.js": {
+      "path": "/Users/vinkumar2/Documents/Projects/PageSource/universal-react/app/components/atoms/Title/index.js",
+      "statementMap": {},
+      "fnMap": {},
+      "branchMap": {},
+      "s": {},
+      "f": {},
+      "b": {},
+      "hash": "8f71620f63a1b0786e4f3faea4c34a3bdf417c79"
+    },
+    "/Users/vinkumar2/Documents/Projects/PageSource/universal-react/app/components/templates/ErrorPage/index.js": {
+      "path": "/Users/vinkumar2/Documents/Projects/PageSource/universal-react/app/components/templates/ErrorPage/index.js",
+      "statementMap": {},
+      "fnMap": {},
+      "branchMap": {},
+      "s": {},
+      "f": {},
+      "b": {},
+      "hash": "4e8d843d2b34dc7357418de047263a72a2b587c7"
+    },
+    "/Users/vinkumar2/Documents/Projects/PageSource/universal-react/app/components/organisms/Header/types/index.js": {
+      "path": "/Users/vinkumar2/Documents/Projects/PageSource/universal-react/app/components/organisms/Header/types/index.js",
+      "statementMap": {},
+      "fnMap": {},
+      "branchMap": {},
+      "s": {},
+      "f": {},
+      "b": {},
+      "hash": "634884734c73cf8178d1221c9604b00f42f4ca46"
+    },
+    "/Users/vinkumar2/Documents/Projects/PageSource/universal-react/app/components/organisms/Header/Header.style.js": {
+      "path": "/Users/vinkumar2/Documents/Projects/PageSource/universal-react/app/components/organisms/Header/Header.style.js",
+      "statementMap": {
+        "0": { "start": { "line": 5, "column": 21 }, "end": { "line": 7, "column": 1 } }
+      },
+      "fnMap": {},
+      "branchMap": {},
+      "s": { "0": 0 },
+      "f": {},
+      "b": {},
+      "hash": "9320678d3a4754519cb134f43335cff9eb6f7129"
+    },
+    "/Users/vinkumar2/Documents/Projects/PageSource/universal-react/app/components/molecules/NavBar/types/index.js": {
+      "path": "/Users/vinkumar2/Documents/Projects/PageSource/universal-react/app/components/molecules/NavBar/types/index.js",
+      "statementMap": {},
+      "fnMap": {},
+      "branchMap": {},
+      "s": {},
+      "f": {},
+      "b": {},
+      "hash": "07e7e5dd0b59a718a624ce1509ef60ba691c6cf1"
+    }
+  }
+}

@@ -55,12 +55,6 @@ exports[`HomePage component should render correctly 1`] = `
         </li>
         <li>
           <strong>
-            Documentation:
-          </strong>
-          Generates code documentation with ESDocs.
-        </li>
-        <li>
-          <strong>
             Git Hooks:
           </strong>
           Pre-commit, Pre-push and pre-publish using Husky.
@@ -250,21 +244,6 @@ exports[`HomePage component should render correctly 1`] = `
             to="https://github.com/pagesource/universal-react/blob/master/readme/07-QualityControl.md#husky"
           >
             Husky
-          </Anchor>
-        </li>
-        <li>
-          <Anchor
-            as=""
-            className=""
-            forceClick={false}
-            handleLinkClick={[Function]}
-            inheritedStyles=""
-            scroll={false}
-            shallow={false}
-            target=""
-            to="https://github.com/pagesource/universal-react/blob/master/readme/ESDocs.md"
-          >
-            ES Docs
           </Anchor>
         </li>
         <li>

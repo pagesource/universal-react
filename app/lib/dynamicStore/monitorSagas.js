@@ -13,6 +13,7 @@ export default function monitorSagas(store, isServer, shouldDispatchEnd = true) 
   each(store.injectedSagas, saga => {
     allTasks.push(saga.task);
   });
+  // eslint-disable-next-line compat/compat
   return Promise.all(allTasks.map(t => t.done)).then(() => {
     if (!isServer && shouldDispatchEnd) {
       const { injectSaga } = getSagaInjectors(store);

@@ -22,11 +22,6 @@ export const MetaTag = (props: MetaProps) => {
 };
 
 class HeadTag extends PureComponent<Props> {
-  static defaultProps = {
-    title: '',
-    schema: undefined,
-  };
-
   render() {
     const { title, schema } = this.props;
     const { META_KEYS, LINK } = config;
@@ -70,6 +65,11 @@ class HeadTag extends PureComponent<Props> {
     );
   }
 }
+
+HeadTag.defaultProps = {
+  title: '',
+  schema: undefined,
+};
 
 MetaTag.defaultProps = {};
 
