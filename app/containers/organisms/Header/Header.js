@@ -10,7 +10,7 @@ import HeaderComponent from '../../../components/organisms/Header';
 const Header = (props: Props): Node => <HeaderComponent {...props} />;
 
 const mapStateToProps = state => ({
-  nav: get(state, ['global', 'globalData', 'labels', 'header', 'nav']),
+  nav: get(state, ['homePage', 'layout', 'editorialData', 'header', 'nav']),
 });
 
 export default connect(mapStateToProps)(Header);

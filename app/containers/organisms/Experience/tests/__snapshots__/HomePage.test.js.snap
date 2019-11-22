@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HomePage component should render correctly 1`] = `
+<Provider
+  store={
+    Object {
+      "dispatch": [Function],
+      "getState": [Function],
+      "globalSaga": Object {
+        "globalSaga": [Function],
+        "task": Object {
+          "@@redux-saga/TASK": true,
+          "cancel": [Function],
+          "cont": undefined,
+          "done": Promise {},
+          "error": [Function],
+          "id": 1,
+          "isAborted": [Function],
+          "isCancelled": [Function],
+          "isRunning": [Function],
+          "joiners": Array [],
+          "name": "globalSaga",
+          "result": [Function],
+          "setContext": [Function],
+        },
+      },
+      "injectedReducers": Object {
+        "homePage": [Function],
+      },
+      "injectedSagas": Object {
+        "homePage": Object {
+          "task": Object {
+            "@@redux-saga/TASK": true,
+            "cancel": [Function],
+            "cont": undefined,
+            "done": Promise {},
+            "error": [Function],
+            "id": 5,
+            "isAborted": [Function],
+            "isCancelled": [Function],
+            "isRunning": [Function],
+            "joiners": Array [],
+            "name": "homeLayoutSaga",
+            "result": [Function],
+            "setContext": [Function],
+          },
+        },
+      },
+      "replaceReducer": [Function],
+      "runSaga": [Function],
+      "subscribe": [Function],
+      Symbol(observable): [Function],
+    }
+  }
+>
+  <Connect(Connect(enhanced(HomePage)))
+    editorialData={
+      Object {
+        "banner": "Test Banner",
+        "title": "Test Title",
+      }
+    }
+  />
+</Provider>
+`;

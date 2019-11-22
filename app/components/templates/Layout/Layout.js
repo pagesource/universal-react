@@ -11,6 +11,7 @@ import Header from '../../../containers/organisms/Header';
 import Footer from '../../../containers/organisms/Footer';
 import { DESKTOP } from '../../../constants';
 import API from '../../../utils/fetch';
+import Experience from '../../../containers/organisms/Experience';
 
 type Props = {
   children: Node,
@@ -60,8 +61,5 @@ const mapStateToProps /* istanbul ignore next */ = (state: Object): { deviceType
   isTablet: get(state, ['global', 'globalData', 'isTablet', '']),
   topBannerModalContent: get(state, ['global', 'header', 'topBannerModalContent', '']),
 });
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(Layout);
+export default connect(mapStateToProps, mapDispatchToProps)(Layout);
 export { Layout };
