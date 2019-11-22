@@ -122,7 +122,7 @@ module.exports = withPlugins([withBundleAnalyzer, withOffline], {
             compress: true,
             mangle: true,
           },
-          sourceMap: false,
+          sourceMap: true,
         })
       );
     }
@@ -199,6 +199,7 @@ module.exports = withPlugins([withBundleAnalyzer, withOffline], {
   exportPathMap: async () => {
     return {
       '/': { page: '/' },
+      '/experience': { page: '/experience' },
     };
   },
 });

@@ -116,7 +116,7 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.7.2",
-    "@xt-pagesource/atomic-react-pattern-lib": "^1.2.1",
+    "@xt-pagesource/atomic-react-pattern-lib": "^1.2.2",
     "@zeit/next-bundle-analyzer": "^0.1.2",
     "agentkeepalive": "^4.1.0",
     "apicache": "^1.5.2",

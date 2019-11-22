@@ -31,6 +31,7 @@ const composeEnhancers =
  */
 export default options => BaseComponent => {
   const hasKey = !!options.key;
+
   if (!hasKey) throw new Error(`${BaseComponent.displayName} needs to be passed with a key`);
   const hasReducer = !!options.reducer;
   const hasSaga = !!options.saga;

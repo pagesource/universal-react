@@ -145,7 +145,11 @@ const HomePage = ({ editorialData }: Props): Node => {
         description="Universal React - boilerplate for server side rendered react applications"
         title="Universal React - boilerplate"
       />
-      <TopBanner title={title} subTitle={subTitle} tickerPoints={tickerPoints} />
+      <TopBanner
+        title="Universal React - boilerplate"
+        subTitle={subTitle}
+        tickerPoints={tickerPoints}
+      />
       <section className="main-wrapper">
         <ArticleWrap title="Why Universal React?" className="why-universal">
           <Para>
