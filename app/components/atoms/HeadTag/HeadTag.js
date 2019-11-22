@@ -1,9 +1,7 @@
 // @flow
 import Head from 'next/head';
 import React, { PureComponent } from 'react';
-
 import config from './HeadTag.config';
-
 import type { Props, MetaProps } from './types';
 
 export const MetaTag = (props: MetaProps) => {
