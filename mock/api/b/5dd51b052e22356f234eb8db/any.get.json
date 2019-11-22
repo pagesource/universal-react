@@ -1,0 +1,6 @@
+{
+  "data": [
+    { "id": "TopBanner", "props": { "title": "Learn about Universal React", "subTitle": "" } },
+    { "id": "Learn" }
+  ]
+}
