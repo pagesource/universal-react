@@ -1,34 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ProgressCircle Component should match snapshot  1`] = `
-.c0 {
-  padding: 0 1.25rem;
-}
-
-.c0 ul {
-  padding: 0;
-  list-style: none;
-  margin: 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.c0 ul li {
-  padding: 0;
-}
-
-.c0 ul li a {
-  padding: 0 0.75rem;
-  color: #fff;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  display: block;
-}
-
 <nav
-  className="c0"
+  className="bRgQpT"
 >
   <ul>
     <li
@@ -58,42 +32,8 @@ exports[`ProgressCircle Component should match snapshot  1`] = `
 `;
 
 exports[`ProgressCircle Component should match snapshot with vertical view  1`] = `
-.c0 {
-  padding: 0 1.25rem;
-}
-
-.c0 ul {
-  padding: 0;
-  list-style: none;
-  margin: 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.c0 ul li {
-  padding: 0;
-}
-
-.c0 ul li a {
-  padding: 0 0.75rem;
-  color: #fff;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  display: block;
-}
-
-.c0 ul {
-  display: block;
-}
-
-.c0 ul li a {
-  padding: 0.5rem 0;
-}
-
 <nav
-  className="c0"
+  className="cGGiQb"
 >
   <ul>
     <li
