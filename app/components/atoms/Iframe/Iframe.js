@@ -20,20 +20,14 @@ type State = {
 };
 
 class Iframe extends PureComponent<Props, State> {
-  static defaultProps = {
-    inheritedStyles: '',
-    width: '100%',
-    height: '100%',
-    frameBorder: '0',
-    takeContentHeight: false,
-    onLoad: () => {},
-  };
+  constructor(props: Props) {
+    super(props);
+    this.state = {
+      frameHeight: '100%',
+    };
 
-  state = {
-    frameHeight: '100%',
-  };
-
-  iframe = <iframe title="no iframe" />;
+    this.iframe = <iframe title="no iframe" />;
+  }
 
   render() {
     const {
@@ -79,6 +73,15 @@ class Iframe extends PureComponent<Props, State> {
     );
   }
 }
+
+Iframe.defaultProps = {
+  inheritedStyles: '',
+  width: '100%',
+  height: '100%',
+  frameBorder: '0',
+  takeContentHeight: false,
+  onLoad: () => {},
+};
 
 export default withStyles(Iframe, styles);
 export { Iframe as IframeComponent };

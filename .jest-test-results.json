@@ -1,0 +1,3589 @@
+{
+  "numFailedTestSuites": 0,
+  "numFailedTests": 0,
+  "numPassedTestSuites": 32,
+  "numPassedTests": 123,
+  "numPendingTestSuites": 1,
+  "numPendingTests": 3,
+  "numRuntimeErrorTestSuites": 0,
+  "numTodoTests": 0,
+  "numTotalTestSuites": 33,
+  "numTotalTests": 126,
+  "openHandles": [],
+  "snapshot": {
+    "added": 0,
+    "didUpdate": true,
+    "failure": false,
+    "filesAdded": 0,
+    "filesRemoved": 0,
+    "filesRemovedList": [],
+    "filesUnmatched": 0,
+    "filesUpdated": 2,
+    "matched": 25,
+    "total": 28,
+    "unchecked": 0,
+    "uncheckedKeysByFile": [],
+    "unmatched": 0,
+    "updated": 3
+  },
+  "startTime": 1574414254507,
+  "success": true,
+  "testResults": [
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": ["HomePage Actions"],
+          "failureMessages": [],
+          "fullName": "HomePage Actions calls Failure",
+          "location": null,
+          "status": "passed",
+          "title": "calls Failure"
+        },
+        {
+          "ancestorTitles": ["HomePage Actions"],
+          "failureMessages": [],
+          "fullName": "HomePage Actions calls LOAD_HOME_FAILURE Failure",
+          "location": null,
+          "status": "passed",
+          "title": "calls LOAD_HOME_FAILURE Failure"
+        },
+        {
+          "ancestorTitles": ["HomePage Actions"],
+          "failureMessages": [],
+          "fullName": "HomePage Actions calls HomePageLayout",
+          "location": null,
+          "status": "passed",
+          "title": "calls HomePageLayout"
+        },
+        {
+          "ancestorTitles": ["HomePage Actions"],
+          "failureMessages": [],
+          "fullName": "HomePage Actions calls HomePageLayoutSuccess",
+          "location": null,
+          "status": "passed",
+          "title": "calls HomePageLayoutSuccess"
+        },
+        {
+          "ancestorTitles": ["HomePage Actions"],
+          "failureMessages": [],
+          "fullName": "HomePage Actions calls HomePageLayout",
+          "location": null,
+          "status": "passed",
+          "title": "calls HomePageLayout"
+        },
+        {
+          "ancestorTitles": ["HomePage Actions"],
+          "failureMessages": [],
+          "fullName": "HomePage Actions calls HomePageLayoutSuccess",
+          "location": null,
+          "status": "passed",
+          "title": "calls HomePageLayoutSuccess"
+        }
+      ],
+      "endTime": 1574414260018,
+      "message": "",
+      "name": "/Users/risagraw/Documents/code/universal-react/app/containers/templates/HomePage/tests/Homepage.actions.test.js",
+      "startTime": 1574414258703,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": ["HomePage Reducer functions"],
+          "failureMessages": [],
+          "fullName": "HomePage Reducer functions calls Failure",
+          "location": null,
+          "status": "passed",
+          "title": "calls Failure"
+        },
+        {
+          "ancestorTitles": ["HomePage Reducer functions"],
+          "failureMessages": [],
+          "fullName": "HomePage Reducer functions calls addLayoutData",
+          "location": null,
+          "status": "passed",
+          "title": "calls addLayoutData"
+        },
+        {
+          "ancestorTitles": ["HomePage Reducer functions"],
+          "failureMessages": [],
+          "fullName": "HomePage Reducer functions calls addHomeEditorialData",
+          "location": null,
+          "status": "passed",
+          "title": "calls addHomeEditorialData"
+        },
+        {
+          "ancestorTitles": ["HomePage Reducer"],
+          "failureMessages": [],
+          "fullName": "HomePage Reducer dispatch Action LOAD_HOME_SEO_SUCCESS",
+          "location": null,
+          "status": "passed",
+          "title": "dispatch Action LOAD_HOME_SEO_SUCCESS"
+        },
+        {
+          "ancestorTitles": ["HomePage Reducer"],
+          "failureMessages": [],
+          "fullName": "HomePage Reducer dispatch Action LOAD_HOME_EDITORIAL_DATA_SUCCESS",
+          "location": null,
+          "status": "passed",
+          "title": "dispatch Action LOAD_HOME_EDITORIAL_DATA_SUCCESS"
+        },
+        {
+          "ancestorTitles": ["HomePage Reducer"],
+          "failureMessages": [],
+          "fullName": "HomePage Reducer dispatch Action FAILURE",
+          "location": null,
+          "status": "passed",
+          "title": "dispatch Action FAILURE"
+        },
+        {
+          "ancestorTitles": ["HomePage Reducer"],
+          "failureMessages": [],
+          "fullName": "HomePage Reducer return default State",
+          "location": null,
+          "status": "passed",
+          "title": "return default State"
+        }
+      ],
+      "endTime": 1574414260095,
+      "message": "",
+      "name": "/Users/risagraw/Documents/code/universal-react/app/containers/templates/HomePage/tests/HomePage.reducer.test.js",
+      "startTime": 1574414258417,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": ["monitorSagas"],
+          "failureMessages": [],
+          "fullName": "monitorSagas should call dispatch with END param",
+          "location": null,
+          "status": "passed",
+          "title": "should call dispatch with END param"
+        },
+        {
+          "ancestorTitles": ["monitorSagas"],
+          "failureMessages": [],
+          "fullName": "monitorSagas should wait for all promises to complete when all resolve",
+          "location": null,
+          "status": "passed",
+          "title": "should wait for all promises to complete when all resolve"
+        },
+        {
+          "ancestorTitles": ["monitorSagas"],
+          "failureMessages": [],
+          "fullName": "monitorSagas should wait for all promises to complete when all reject",
+          "location": null,
+          "status": "passed",
+          "title": "should wait for all promises to complete when all reject"
+        }
+      ],
+      "endTime": 1574414260231,
+      "message": "",
+      "name": "/Users/risagraw/Documents/code/universal-react/app/lib/dynamicStore/tests/monitorSagas.test.js",
+      "startTime": 1574414258529,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": ["injectors", "getInjectors"],
+          "failureMessages": [],
+          "fullName": "injectors getInjectors should return injectors",
+          "location": null,
+          "status": "passed",
+          "title": "should return injectors"
+        },
+        {
+          "ancestorTitles": ["injectors", "getInjectors"],
+          "failureMessages": [],
+          "fullName": "injectors getInjectors should throw if passed invalid store shape",
+          "location": null,
+          "status": "passed",
+          "title": "should throw if passed invalid store shape"
+        },
+        {
+          "ancestorTitles": ["injectors", "ejectSaga helper"],
+          "failureMessages": [],
+          "fullName": "injectors ejectSaga helper should check a store if the second argument is falsy",
+          "location": null,
+          "status": "passed",
+          "title": "should check a store if the second argument is falsy"
+        },
+        {
+          "ancestorTitles": ["injectors", "ejectSaga helper"],
+          "failureMessages": [],
+          "fullName": "injectors ejectSaga helper should not check a store if the second argument is true",
+          "location": null,
+          "status": "passed",
+          "title": "should not check a store if the second argument is true"
+        },
+        {
+          "ancestorTitles": ["injectors", "ejectSaga helper"],
+          "failureMessages": [],
+          "fullName": "injectors ejectSaga helper should validate saga's key",
+          "location": null,
+          "status": "passed",
+          "title": "should validate saga's key"
+        },
+        {
+          "ancestorTitles": ["injectors", "ejectSaga helper"],
+          "failureMessages": [],
+          "fullName": "injectors ejectSaga helper should cancel a saga in a default mode",
+          "location": null,
+          "status": "passed",
+          "title": "should cancel a saga in a default mode"
+        },
+        {
+          "ancestorTitles": ["injectors", "ejectSaga helper"],
+          "failureMessages": [],
+          "fullName": "injectors ejectSaga helper should not cancel a daemon saga",
+          "location": null,
+          "status": "passed",
+          "title": "should not cancel a daemon saga"
+        },
+        {
+          "ancestorTitles": ["injectors", "ejectSaga helper"],
+          "failureMessages": [],
+          "fullName": "injectors ejectSaga helper should ignore saga that was not previously injected",
+          "location": null,
+          "status": "passed",
+          "title": "should ignore saga that was not previously injected"
+        },
+        {
+          "ancestorTitles": ["injectors", "ejectSaga helper"],
+          "failureMessages": [],
+          "fullName": "injectors ejectSaga helper should remove non daemon saga's descriptor in production",
+          "location": null,
+          "status": "passed",
+          "title": "should remove non daemon saga's descriptor in production"
+        },
+        {
+          "ancestorTitles": ["injectors", "ejectSaga helper"],
+          "failureMessages": [],
+          "fullName": "injectors ejectSaga helper should not remove daemon saga's descriptor in production",
+          "location": null,
+          "status": "passed",
+          "title": "should not remove daemon saga's descriptor in production"
+        },
+        {
+          "ancestorTitles": ["injectors", "ejectSaga helper"],
+          "failureMessages": [],
+          "fullName": "injectors ejectSaga helper should not remove daemon saga's descriptor in development",
+          "location": null,
+          "status": "passed",
+          "title": "should not remove daemon saga's descriptor in development"
+        },
+        {
+          "ancestorTitles": ["injectors", "injectSaga helper"],
+          "failureMessages": [],
+          "fullName": "injectors injectSaga helper should check a store if the second argument is falsy",
+          "location": null,
+          "status": "passed",
+          "title": "should check a store if the second argument is falsy"
+        },
+        {
+          "ancestorTitles": ["injectors", "injectSaga helper"],
+          "failureMessages": [],
+          "fullName": "injectors injectSaga helper it should not check a store if the second argument is true",
+          "location": null,
+          "status": "passed",
+          "title": "it should not check a store if the second argument is true"
+        },
+        {
+          "ancestorTitles": ["injectors", "injectSaga helper"],
+          "failureMessages": [],
+          "fullName": "injectors injectSaga helper should validate saga's key",
+          "location": null,
+          "status": "passed",
+          "title": "should validate saga's key"
+        },
+        {
+          "ancestorTitles": ["injectors", "injectSaga helper"],
+          "failureMessages": [],
+          "fullName": "injectors injectSaga helper should validate saga's descriptor",
+          "location": null,
+          "status": "passed",
+          "title": "should validate saga's descriptor"
+        },
+        {
+          "ancestorTitles": ["injectors", "injectSaga helper"],
+          "failureMessages": [],
+          "fullName": "injectors injectSaga helper should pass args to saga.run",
+          "location": null,
+          "status": "passed",
+          "title": "should pass args to saga.run"
+        },
+        {
+          "ancestorTitles": ["injectors", "injectSaga helper"],
+          "failureMessages": [],
+          "fullName": "injectors injectSaga helper should not start daemon and once-till-unmount sagas if were started before",
+          "location": null,
+          "status": "passed",
+          "title": "should not start daemon and once-till-unmount sagas if were started before"
+        },
+        {
+          "ancestorTitles": ["injectors", "injectSaga helper"],
+          "failureMessages": [],
+          "fullName": "injectors injectSaga helper should start any saga that was not started before",
+          "location": null,
+          "status": "passed",
+          "title": "should start any saga that was not started before"
+        },
+        {
+          "ancestorTitles": ["injectors", "injectSaga helper"],
+          "failureMessages": [],
+          "fullName": "injectors injectSaga helper should restart a saga if different implementation for hot reloading",
+          "location": null,
+          "status": "passed",
+          "title": "should restart a saga if different implementation for hot reloading"
+        },
+        {
+          "ancestorTitles": ["injectors", "injectSaga helper"],
+          "failureMessages": [],
+          "fullName": "injectors injectSaga helper should not cancel saga if different implementation in production",
+          "location": null,
+          "status": "passed",
+          "title": "should not cancel saga if different implementation in production"
+        },
+        {
+          "ancestorTitles": ["injectors", "injectSaga helper"],
+          "failureMessages": [],
+          "fullName": "injectors injectSaga helper should save an entire descriptor in the saga registry",
+          "location": null,
+          "status": "passed",
+          "title": "should save an entire descriptor in the saga registry"
+        }
+      ],
+      "endTime": 1574414260964,
+      "message": "",
+      "name": "/Users/risagraw/Documents/code/universal-react/app/lib/dynamicStore/tests/sagaInjectors.test.js",
+      "startTime": 1574414258600,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": ["reducer injectors", "getInjectors"],
+          "failureMessages": [],
+          "fullName": "reducer injectors getInjectors should return injectors",
+          "location": null,
+          "status": "passed",
+          "title": "should return injectors"
+        },
+        {
+          "ancestorTitles": ["reducer injectors", "getInjectors"],
+          "failureMessages": [],
+          "fullName": "reducer injectors getInjectors should throw if passed invalid store shape",
+          "location": null,
+          "status": "passed",
+          "title": "should throw if passed invalid store shape"
+        },
+        {
+          "ancestorTitles": ["reducer injectors", "injectReducer helper"],
+          "failureMessages": [],
+          "fullName": "reducer injectors injectReducer helper should check a store if the second argument is falsy",
+          "location": null,
+          "status": "passed",
+          "title": "should check a store if the second argument is falsy"
+        },
+        {
+          "ancestorTitles": ["reducer injectors", "injectReducer helper"],
+          "failureMessages": [],
+          "fullName": "reducer injectors injectReducer helper it should not check a store if the second argument is true",
+          "location": null,
+          "status": "passed",
+          "title": "it should not check a store if the second argument is true"
+        },
+        {
+          "ancestorTitles": ["reducer injectors", "injectReducer helper"],
+          "failureMessages": [],
+          "fullName": "reducer injectors injectReducer helper should validate a reducer and reducer's key",
+          "location": null,
+          "status": "passed",
+          "title": "should validate a reducer and reducer's key"
+        },
+        {
+          "ancestorTitles": ["reducer injectors", "injectReducer helper"],
+          "failureMessages": [],
+          "fullName": "reducer injectors injectReducer helper given a store, it should provide a function to inject a reducer",
+          "location": null,
+          "status": "passed",
+          "title": "given a store, it should provide a function to inject a reducer"
+        },
+        {
+          "ancestorTitles": ["reducer injectors", "injectReducer helper"],
+          "failureMessages": [],
+          "fullName": "reducer injectors injectReducer helper should not assign reducer if already existing",
+          "location": null,
+          "status": "passed",
+          "title": "should not assign reducer if already existing"
+        },
+        {
+          "ancestorTitles": ["reducer injectors", "injectReducer helper"],
+          "failureMessages": [],
+          "fullName": "reducer injectors injectReducer helper should assign reducer if different implementation for hot reloading",
+          "location": null,
+          "status": "passed",
+          "title": "should assign reducer if different implementation for hot reloading"
+        }
+      ],
+      "endTime": 1574414261555,
+      "message": "",
+      "name": "/Users/risagraw/Documents/code/universal-react/app/lib/dynamicStore/tests/reducerInjectors.test.js",
+      "startTime": 1574414258554,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": ["ErrorPage Reducer functions"],
+          "failureMessages": [],
+          "fullName": "ErrorPage Reducer functions set Data",
+          "location": null,
+          "status": "passed",
+          "title": "set Data"
+        },
+        {
+          "ancestorTitles": ["ErrorPage Reducer"],
+          "failureMessages": [],
+          "fullName": "ErrorPage Reducer dispatch Action LOAD_ERROR_PAGE_SUCCESS",
+          "location": null,
+          "status": "passed",
+          "title": "dispatch Action LOAD_ERROR_PAGE_SUCCESS"
+        },
+        {
+          "ancestorTitles": ["ErrorPage Reducer"],
+          "failureMessages": [],
+          "fullName": "ErrorPage Reducer dispatch Action LOAD_ERROR_PAGE_SUCCESS",
+          "location": null,
+          "status": "passed",
+          "title": "dispatch Action LOAD_ERROR_PAGE_SUCCESS"
+        },
+        {
+          "ancestorTitles": ["ErrorPage Reducer"],
+          "failureMessages": [],
+          "fullName": "ErrorPage Reducer dispatch Action DEFAULT",
+          "location": null,
+          "status": "passed",
+          "title": "dispatch Action DEFAULT"
+        }
+      ],
+      "endTime": 1574414262781,
+      "message": "",
+      "name": "/Users/risagraw/Documents/code/universal-react/app/components/templates/ErrorPage/tests/reducer.test.js",
+      "startTime": 1574414261988,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": ["enhance"],
+          "failureMessages": [],
+          "fullName": "enhance should return a composed function",
+          "location": null,
+          "status": "passed",
+          "title": "should return a composed function"
+        },
+        {
+          "ancestorTitles": ["enhance", "has function getWrapperComponent which"],
+          "failureMessages": [],
+          "fullName": "enhance has function getWrapperComponent which should return WrapperComponent with WrappedComponent inside it",
+          "location": null,
+          "status": "passed",
+          "title": "should return WrapperComponent with WrappedComponent inside it"
+        },
+        {
+          "ancestorTitles": ["enhance", "has function getWrapperComponent which"],
+          "failureMessages": [],
+          "fullName": "enhance has function getWrapperComponent which has static method addRequestDetails which appends requestDetails to provided action",
+          "location": null,
+          "status": "passed",
+          "title": "has static method addRequestDetails which appends requestDetails to provided action"
+        },
+        {
+          "ancestorTitles": [
+            "enhance",
+            "has function getWrapperComponent which",
+            "has function called validatePageData which"
+          ],
+          "failureMessages": [],
+          "fullName": "enhance has function getWrapperComponent which has function called validatePageData which should not call getState method on store if params not adequate",
+          "location": null,
+          "status": "passed",
+          "title": "should not call getState method on store if params not adequate"
+        },
+        {
+          "ancestorTitles": [
+            "enhance",
+            "has function getWrapperComponent which",
+            "has function called validatePageData which"
+          ],
+          "failureMessages": [],
+          "fullName": "enhance has function getWrapperComponent which has function called validatePageData which should call getState method on store if params adequate",
+          "location": null,
+          "status": "passed",
+          "title": "should call getState method on store if params adequate"
+        },
+        {
+          "ancestorTitles": [
+            "enhance",
+            "has function getWrapperComponent which",
+            "has function called validatePageData which"
+          ],
+          "failureMessages": [],
+          "fullName": "enhance has function getWrapperComponent which has function called validatePageData which should not log errors if storeStruct has values",
+          "location": null,
+          "status": "passed",
+          "title": "should not log errors if storeStruct has values"
+        },
+        {
+          "ancestorTitles": [
+            "enhance",
+            "has function getWrapperComponent which",
+            "has function called validatePageData which"
+          ],
+          "failureMessages": [],
+          "fullName": "enhance has function getWrapperComponent which has function called validatePageData which should call redirect on res object when on server",
+          "location": null,
+          "status": "passed",
+          "title": "should call redirect on res object when on server"
+        },
+        {
+          "ancestorTitles": [
+            "enhance",
+            "has function getWrapperComponent which",
+            "has function called dispatchActions which"
+          ],
+          "failureMessages": [],
+          "fullName": "enhance has function getWrapperComponent which has function called dispatchActions which should dispatch all actions passed to it",
+          "location": null,
+          "status": "passed",
+          "title": "should dispatch all actions passed to it"
+        },
+        {
+          "ancestorTitles": [
+            "enhance",
+            "has function getWrapperComponent which",
+            "has function called dispatchActions which"
+          ],
+          "failureMessages": [],
+          "fullName": "enhance has function getWrapperComponent which has function called dispatchActions which should dispatch all actions passed to it even when needQuery is true",
+          "location": null,
+          "status": "passed",
+          "title": "should dispatch all actions passed to it even when needQuery is true"
+        },
+        {
+          "ancestorTitles": [
+            "enhance",
+            "has function getWrapperComponent which",
+            "has function called getInitialProps which"
+          ],
+          "failureMessages": [],
+          "fullName": "enhance has function getWrapperComponent which has function called getInitialProps which should call dispatch currentRoute server action",
+          "location": null,
+          "status": "passed",
+          "title": "should call dispatch currentRoute server action"
+        },
+        {
+          "ancestorTitles": [
+            "enhance",
+            "has function getWrapperComponent which",
+            "has function called getInitialProps which"
+          ],
+          "failureMessages": [],
+          "fullName": "enhance has function getWrapperComponent which has function called getInitialProps which should call dispatch server action when isServer",
+          "location": null,
+          "status": "passed",
+          "title": "should call dispatch server action when isServer"
+        },
+        {
+          "ancestorTitles": [
+            "enhance",
+            "has function getWrapperComponent which",
+            "has function called getInitialProps which"
+          ],
+          "failureMessages": [],
+          "fullName": "enhance has function getWrapperComponent which has function called getInitialProps which should call dispatch currentRoute server action even on Mobile",
+          "location": null,
+          "status": "passed",
+          "title": "should call dispatch currentRoute server action even on Mobile"
+        },
+        {
+          "ancestorTitles": [
+            "enhance",
+            "has function getWrapperComponent which",
+            "has function called getInitialProps which"
+          ],
+          "failureMessages": [],
+          "fullName": "enhance has function getWrapperComponent which has function called getInitialProps which should call dispatch when initialActions are passed",
+          "location": null,
+          "status": "passed",
+          "title": "should call dispatch when initialActions are passed"
+        },
+        {
+          "ancestorTitles": [
+            "enhance",
+            "has function getWrapperComponent which",
+            "has function called getInitialProps which"
+          ],
+          "failureMessages": [],
+          "fullName": "enhance has function getWrapperComponent which has function called getInitialProps which should call getInitialProps of WrappedComponent",
+          "location": null,
+          "status": "passed",
+          "title": "should call getInitialProps of WrappedComponent"
+        }
+      ],
+      "endTime": 1574414262811,
+      "message": "",
+      "name": "/Users/risagraw/Documents/code/universal-react/app/lib/dynamicStore/tests/enhance.test.js",
+      "startTime": 1574414258576,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": ["<NavBar />"],
+          "failureMessages": [],
+          "fullName": "<NavBar /> should render correctly",
+          "location": null,
+          "status": "passed",
+          "title": "should render correctly"
+        },
+        {
+          "ancestorTitles": ["<NavBar />"],
+          "failureMessages": [],
+          "fullName": "<NavBar /> should render correctly",
+          "location": null,
+          "status": "passed",
+          "title": "should render correctly"
+        }
+      ],
+      "endTime": 1574414263578,
+      "message": "",
+      "name": "/Users/risagraw/Documents/code/universal-react/app/components/molecules/NavBar/tests/NavBar.test.js",
+      "startTime": 1574414261518,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": ["ProgressCircle Component"],
+          "failureMessages": [],
+          "fullName": "ProgressCircle Component should match snapshot ",
+          "location": null,
+          "status": "passed",
+          "title": "should match snapshot "
+        },
+        {
+          "ancestorTitles": ["ProgressCircle Component"],
+          "failureMessages": [],
+          "fullName": "ProgressCircle Component should match snapshot with vertical view ",
+          "location": null,
+          "status": "passed",
+          "title": "should match snapshot with vertical view "
+        }
+      ],
+      "endTime": 1574414263623,
+      "message": "",
+      "name": "/Users/risagraw/Documents/code/universal-react/app/components/molecules/NavBar/tests/NavBar.style.test.js",
+      "startTime": 1574414260917,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": ["HeadTag Component"],
+          "failureMessages": [],
+          "fullName": "HeadTag Component should render correctly and match snapshot",
+          "location": null,
+          "status": "passed",
+          "title": "should render correctly and match snapshot"
+        },
+        {
+          "ancestorTitles": ["HeadTag Component"],
+          "failureMessages": [],
+          "fullName": "HeadTag Component should render correctly when no props passed",
+          "location": null,
+          "status": "passed",
+          "title": "should render correctly when no props passed"
+        },
+        {
+          "ancestorTitles": ["HeadTag Component"],
+          "failureMessages": [],
+          "fullName": "HeadTag Component should render tags for only the props that were passed",
+          "location": null,
+          "status": "passed",
+          "title": "should render tags for only the props that were passed"
+        },
+        {
+          "ancestorTitles": ["HeadTag Component"],
+          "failureMessages": [],
+          "fullName": "HeadTag Component should render meta tags properly",
+          "location": null,
+          "status": "passed",
+          "title": "should render meta tags properly"
+        }
+      ],
+      "endTime": 1574414263958,
+      "message": "",
+      "name": "/Users/risagraw/Documents/code/universal-react/app/components/atoms/HeadTag/tests/HeadTag.test.js",
+      "startTime": 1574414263211,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": ["initializeTrackerConfig"],
+          "failureMessages": [],
+          "fullName": "initializeTrackerConfig should execute initializeTrackerConfig",
+          "location": null,
+          "status": "passed",
+          "title": "should execute initializeTrackerConfig"
+        },
+        {
+          "ancestorTitles": ["initializeTrackerConfig"],
+          "failureMessages": [],
+          "fullName": "initializeTrackerConfig should not set dataLayer in non browser mode",
+          "location": null,
+          "status": "passed",
+          "title": "should not set dataLayer in non browser mode"
+        },
+        {
+          "ancestorTitles": ["initializeTrackerConfig"],
+          "failureMessages": [],
+          "fullName": "initializeTrackerConfig should set dataLayer in browser mode",
+          "location": null,
+          "status": "passed",
+          "title": "should set dataLayer in browser mode"
+        }
+      ],
+      "endTime": 1574414264402,
+      "message": "",
+      "name": "/Users/risagraw/Documents/code/universal-react/app/global/AnalyticsTracking/tests/AnalyticsTracking.test.js",
+      "startTime": 1574414263941,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": ["Header component"],
+          "failureMessages": [],
+          "fullName": "Header component should render correctly",
+          "location": null,
+          "status": "passed",
+          "title": "should render correctly"
+        }
+      ],
+      "endTime": 1574414264593,
+      "message": "",
+      "name": "/Users/risagraw/Documents/code/universal-react/app/containers/organisms/Header/tests/Header.test.js",
+      "startTime": 1574414263117,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": ["<TopBanner />"],
+          "failureMessages": [],
+          "fullName": "<TopBanner /> should render correctly",
+          "location": null,
+          "status": "passed",
+          "title": "should render correctly"
+        },
+        {
+          "ancestorTitles": ["<TopBanner />"],
+          "failureMessages": [],
+          "fullName": "<TopBanner /> should render correctly without subtitle",
+          "location": null,
+          "status": "passed",
+          "title": "should render correctly without subtitle"
+        }
+      ],
+      "endTime": 1574414264673,
+      "message": "",
+      "name": "/Users/risagraw/Documents/code/universal-react/app/components/molecules/TopBanner/tests/TopBanner.test.js",
+      "startTime": 1574414263889,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": ["injectSagaAndReducer"],
+          "failureMessages": [],
+          "fullName": "injectSagaAndReducer should fail if key is not passed",
+          "location": null,
+          "status": "passed",
+          "title": "should fail if key is not passed"
+        },
+        {
+          "ancestorTitles": ["injectSagaAndReducer"],
+          "failureMessages": [],
+          "fullName": "injectSagaAndReducer should remove old sagas from store.injectedSagas",
+          "location": null,
+          "status": "passed",
+          "title": "should remove old sagas from store.injectedSagas"
+        },
+        {
+          "ancestorTitles": ["injectSagaAndReducer"],
+          "failureMessages": [],
+          "fullName": "injectSagaAndReducer should inject saga",
+          "location": null,
+          "status": "passed",
+          "title": "should inject saga"
+        },
+        {
+          "ancestorTitles": ["injectSagaAndReducer"],
+          "failureMessages": [],
+          "fullName": "injectSagaAndReducer should inject reducer",
+          "location": null,
+          "status": "passed",
+          "title": "should inject reducer"
+        },
+        {
+          "ancestorTitles": ["injectSagaAndReducer"],
+          "failureMessages": [],
+          "fullName": "injectSagaAndReducer should inject saga and reducer",
+          "location": null,
+          "status": "passed",
+          "title": "should inject saga and reducer"
+        }
+      ],
+      "endTime": 1574414264726,
+      "message": "",
+      "name": "/Users/risagraw/Documents/code/universal-react/app/lib/dynamicStore/tests/injectSagaAndReducer.test.js",
+      "startTime": 1574414264333,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": ["ErrorPage Component"],
+          "failureMessages": [],
+          "fullName": "ErrorPage Component should render correctly",
+          "location": null,
+          "status": "passed",
+          "title": "should render correctly"
+        }
+      ],
+      "endTime": 1574414264949,
+      "message": "",
+      "name": "/Users/risagraw/Documents/code/universal-react/app/components/templates/ErrorPage/tests/index.test.js",
+      "startTime": 1574414260671,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": ["HomePage component"],
+          "failureMessages": [],
+          "fullName": "HomePage component should render correctly",
+          "location": null,
+          "status": "passed",
+          "title": "should render correctly"
+        }
+      ],
+      "endTime": 1574414264987,
+      "message": "",
+      "name": "/Users/risagraw/Documents/code/universal-react/app/components/templates/HomePage/tests/HomePage.test.js",
+      "startTime": 1574414260799,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": ["HomePage component"],
+          "failureMessages": [],
+          "fullName": "HomePage component should render correctly",
+          "location": null,
+          "status": "passed",
+          "title": "should render correctly"
+        }
+      ],
+      "endTime": 1574414265027,
+      "message": "",
+      "name": "/Users/risagraw/Documents/code/universal-react/app/containers/templates/HomePage/tests/HomePage.test.js",
+      "startTime": 1574414258588,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": ["checkStore"],
+          "failureMessages": [],
+          "fullName": "checkStore should not throw if passed valid store shape",
+          "location": null,
+          "status": "passed",
+          "title": "should not throw if passed valid store shape"
+        },
+        {
+          "ancestorTitles": ["checkStore"],
+          "failureMessages": [],
+          "fullName": "checkStore should throw if passed invalid store shape",
+          "location": null,
+          "status": "passed",
+          "title": "should throw if passed invalid store shape"
+        }
+      ],
+      "endTime": 1574414265435,
+      "message": "",
+      "name": "/Users/risagraw/Documents/code/universal-react/app/lib/dynamicStore/tests/checkStore.test.js",
+      "startTime": 1574414265035,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": ["ProgressCircle Component"],
+          "failureMessages": [],
+          "fullName": "ProgressCircle Component should match snapshot ",
+          "location": null,
+          "status": "passed",
+          "title": "should match snapshot "
+        }
+      ],
+      "endTime": 1574414265657,
+      "message": "",
+      "name": "/Users/risagraw/Documents/code/universal-react/app/components/atoms/ProgressCircle/tests/ProgressCircle.style.test.js",
+      "startTime": 1574414265077,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": ["Footer component"],
+          "failureMessages": [],
+          "fullName": "Footer component should render correctly",
+          "location": null,
+          "status": "passed",
+          "title": "should render correctly"
+        }
+      ],
+      "endTime": 1574414265689,
+      "message": "",
+      "name": "/Users/risagraw/Documents/code/universal-react/app/containers/organisms/Footer/tests/Footer.test.js",
+      "startTime": 1574414264962,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": ["ContentSlotUnsafeHTML Component"],
+          "failureMessages": [],
+          "fullName": "ContentSlotUnsafeHTML Component should render correctly",
+          "location": null,
+          "status": "passed",
+          "title": "should render correctly"
+        },
+        {
+          "ancestorTitles": ["ContentSlotUnsafeHTML Component"],
+          "failureMessages": [],
+          "fullName": "ContentSlotUnsafeHTML Component should render correclty without Wrapper",
+          "location": null,
+          "status": "passed",
+          "title": "should render correclty without Wrapper"
+        },
+        {
+          "ancestorTitles": ["ContentSlotUnsafeHTML Component"],
+          "failureMessages": [],
+          "fullName": "ContentSlotUnsafeHTML Component should render correclty with Wrapper",
+          "location": null,
+          "status": "passed",
+          "title": "should render correclty with Wrapper"
+        }
+      ],
+      "endTime": 1574414265834,
+      "message": "",
+      "name": "/Users/risagraw/Documents/code/universal-react/app/lib/ContentSlotUnsafeHTML/tests/ContentSlotUnsafeHTML.test.js",
+      "startTime": 1574414264886,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": ["GlobalReducer"],
+          "failureMessages": [],
+          "fullName": "GlobalReducer should return initial state",
+          "location": null,
+          "status": "passed",
+          "title": "should return initial state"
+        },
+        {
+          "ancestorTitles": ["GlobalReducer"],
+          "failureMessages": [],
+          "fullName": "GlobalReducer should return success state and set in devicetype ",
+          "location": null,
+          "status": "passed",
+          "title": "should return success state and set in devicetype "
+        },
+        {
+          "ancestorTitles": ["GlobalReducer"],
+          "failureMessages": [],
+          "fullName": "GlobalReducer should return success state and set if Device is Tablet ",
+          "location": null,
+          "status": "passed",
+          "title": "should return success state and set if Device is Tablet "
+        },
+        {
+          "ancestorTitles": ["GlobalReducer"],
+          "failureMessages": [],
+          "fullName": "GlobalReducer should return success state and setRoute ",
+          "location": null,
+          "status": "passed",
+          "title": "should return success state and setRoute "
+        },
+        {
+          "ancestorTitles": ["GlobalReducer"],
+          "failureMessages": [],
+          "fullName": "GlobalReducer should return success state and setConfigKeys ",
+          "location": null,
+          "status": "passed",
+          "title": "should return success state and setConfigKeys "
+        }
+      ],
+      "endTime": 1574414265837,
+      "message": "",
+      "name": "/Users/risagraw/Documents/code/universal-react/app/global/reducer/tests/globalReducer.test.js",
+      "startTime": 1574414265228,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": ["Anchor Component"],
+          "failureMessages": [],
+          "fullName": "Anchor Component should render correctly and match snapshot",
+          "location": null,
+          "status": "passed",
+          "title": "should render correctly and match snapshot"
+        },
+        {
+          "ancestorTitles": ["Anchor Component"],
+          "failureMessages": [],
+          "fullName": "Anchor Component should render with styles correctly and match snapshot",
+          "location": null,
+          "status": "passed",
+          "title": "should render with styles correctly and match snapshot"
+        }
+      ],
+      "endTime": 1574414266267,
+      "message": "",
+      "name": "/Users/risagraw/Documents/code/universal-react/app/components/atoms/Title/tests/Title.test.js",
+      "startTime": 1574414265469,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": ["ErrorPage actions"],
+          "failureMessages": [],
+          "fullName": "ErrorPage actions Should Load Error Page",
+          "location": null,
+          "status": "passed",
+          "title": "Should Load Error Page"
+        },
+        {
+          "ancestorTitles": ["ErrorPage actions"],
+          "failureMessages": [],
+          "fullName": "ErrorPage actions Should Trigger Error Page Success",
+          "location": null,
+          "status": "passed",
+          "title": "Should Trigger Error Page Success"
+        },
+        {
+          "ancestorTitles": ["ErrorPage actions"],
+          "failureMessages": [],
+          "fullName": "ErrorPage actions Should Trigger Error Page Failure",
+          "location": null,
+          "status": "passed",
+          "title": "Should Trigger Error Page Failure"
+        }
+      ],
+      "endTime": 1574414266368,
+      "message": "",
+      "name": "/Users/risagraw/Documents/code/universal-react/app/components/templates/ErrorPage/tests/actions.test.js",
+      "startTime": 1574414266070,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": ["Utils"],
+          "failureMessages": [],
+          "fullName": "Utils should throw error if configurations are not set",
+          "location": null,
+          "status": "passed",
+          "title": "should throw error if configurations are not set"
+        },
+        {
+          "ancestorTitles": ["Utils"],
+          "failureMessages": [],
+          "fullName": "Utils check if tracker is intialized",
+          "location": null,
+          "status": "passed",
+          "title": "check if tracker is intialized"
+        },
+        {
+          "ancestorTitles": ["Utils"],
+          "failureMessages": [],
+          "fullName": "Utils check if configurations are set to tracker",
+          "location": null,
+          "status": "passed",
+          "title": "check if configurations are set to tracker"
+        },
+        {
+          "ancestorTitles": ["Utils"],
+          "failureMessages": [],
+          "fullName": "Utils should throw error if configurations are not set to tracker",
+          "location": null,
+          "status": "passed",
+          "title": "should throw error if configurations are not set to tracker"
+        },
+        {
+          "ancestorTitles": ["Utils"],
+          "failureMessages": [],
+          "fullName": "Utils trackActions()",
+          "location": null,
+          "status": "passed",
+          "title": "trackActions()"
+        },
+        {
+          "ancestorTitles": ["Utils"],
+          "failureMessages": [],
+          "fullName": "Utils should throw error on trackActions() without type",
+          "location": null,
+          "status": "passed",
+          "title": "should throw error on trackActions() without type"
+        }
+      ],
+      "endTime": 1574414266441,
+      "message": "",
+      "name": "/Users/risagraw/Documents/code/universal-react/app/utils/analytics/tests/helpers.test.js",
+      "startTime": 1574414266098,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": ["ProductListing Actions"],
+          "failureMessages": [],
+          "fullName": "ProductListing Actions should dispatch addDeviceType",
+          "location": null,
+          "status": "passed",
+          "title": "should dispatch addDeviceType"
+        },
+        {
+          "ancestorTitles": ["ProductListing Actions"],
+          "failureMessages": [],
+          "fullName": "ProductListing Actions should dispatch addIsTablet",
+          "location": null,
+          "status": "passed",
+          "title": "should dispatch addIsTablet"
+        },
+        {
+          "ancestorTitles": ["ProductListing Actions"],
+          "failureMessages": [],
+          "fullName": "ProductListing Actions should dispatch setCurrentRoute",
+          "location": null,
+          "status": "passed",
+          "title": "should dispatch setCurrentRoute"
+        }
+      ],
+      "endTime": 1574414266532,
+      "message": "",
+      "name": "/Users/risagraw/Documents/code/universal-react/app/global/actions/tests/globalActions.test.js",
+      "startTime": 1574414266210,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": ["Iframe"],
+          "failureMessages": [],
+          "fullName": "Iframe should render correctly",
+          "location": null,
+          "status": "passed",
+          "title": "should render correctly"
+        },
+        {
+          "ancestorTitles": ["Iframe"],
+          "failureMessages": [],
+          "fullName": "Iframe should render additional props",
+          "location": null,
+          "status": "passed",
+          "title": "should render additional props"
+        },
+        {
+          "ancestorTitles": ["Iframe"],
+          "failureMessages": [],
+          "fullName": "Iframe should take ContentHeight",
+          "location": null,
+          "status": "passed",
+          "title": "should take ContentHeight"
+        },
+        {
+          "ancestorTitles": ["Iframe"],
+          "failureMessages": [],
+          "fullName": "Iframe should call onLoad Method",
+          "location": null,
+          "status": "passed",
+          "title": "should call onLoad Method"
+        }
+      ],
+      "endTime": 1574414266683,
+      "message": "",
+      "name": "/Users/risagraw/Documents/code/universal-react/app/components/atoms/Iframe/tests/Iframe.test.js",
+      "startTime": 1574414265959,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": ["Spinner"],
+          "failureMessages": [],
+          "fullName": "Spinner should render correctly",
+          "location": null,
+          "status": "passed",
+          "title": "should render correctly"
+        }
+      ],
+      "endTime": 1574414266718,
+      "message": "",
+      "name": "/Users/risagraw/Documents/code/universal-react/app/components/atoms/Spinner/test/Spinner.style.test.js",
+      "startTime": 1574414265682,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": ["Spinner Component"],
+          "failureMessages": [],
+          "fullName": "Spinner Component should render correctly",
+          "location": null,
+          "status": "passed",
+          "title": "should render correctly"
+        },
+        {
+          "ancestorTitles": ["Spinner Component"],
+          "failureMessages": [],
+          "fullName": "Spinner Component overlayEnabled is necessary to render child",
+          "location": null,
+          "status": "passed",
+          "title": "overlayEnabled is necessary to render child"
+        },
+        {
+          "ancestorTitles": ["Spinner Component"],
+          "failureMessages": [],
+          "fullName": "Spinner Component should render renderDotSpinner",
+          "location": null,
+          "status": "passed",
+          "title": "should render renderDotSpinner"
+        }
+      ],
+      "endTime": 1574414266766,
+      "message": "",
+      "name": "/Users/risagraw/Documents/code/universal-react/app/components/atoms/Spinner/test/Spinner.test.js",
+      "startTime": 1574414266198,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": ["ProgressCircle Component"],
+          "failureMessages": [],
+          "fullName": "ProgressCircle Component should match snapshot ",
+          "location": null,
+          "status": "passed",
+          "title": "should match snapshot "
+        }
+      ],
+      "endTime": 1574414266826,
+      "message": "",
+      "name": "/Users/risagraw/Documents/code/universal-react/app/components/atoms/ProgressCircle/tests/ProgressCircle.test.js",
+      "startTime": 1574414266644,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": ["Tracker Middleware"],
+          "failureMessages": [],
+          "fullName": "Tracker Middleware trackingMiddleware",
+          "location": null,
+          "status": "passed",
+          "title": "trackingMiddleware"
+        }
+      ],
+      "endTime": 1574414266830,
+      "message": "",
+      "name": "/Users/risagraw/Documents/code/universal-react/app/utils/analytics/tests/middleware.test.js",
+      "startTime": 1574414266494,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": ["trackingOptions"],
+          "failureMessages": [],
+          "fullName": "trackingOptions tracker config when not in browser",
+          "location": null,
+          "status": "passed",
+          "title": "tracker config when not in browser"
+        },
+        {
+          "ancestorTitles": ["trackingOptions"],
+          "failureMessages": [],
+          "fullName": "trackingOptions tracker config when in browser",
+          "location": null,
+          "status": "passed",
+          "title": "tracker config when in browser"
+        }
+      ],
+      "endTime": 1574414266975,
+      "message": "",
+      "name": "/Users/risagraw/Documents/code/universal-react/app/global/AnalyticsTracking/tests/trackerConfig.test.js",
+      "startTime": 1574414266840,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": ["Layout Component"],
+          "failureMessages": [],
+          "fullName": "Layout Component should render correctly",
+          "location": null,
+          "status": "pending",
+          "title": "should render correctly"
+        },
+        {
+          "ancestorTitles": ["Layout Component"],
+          "failureMessages": [],
+          "fullName": "Layout Component should render when deviceType is Mobile",
+          "location": null,
+          "status": "pending",
+          "title": "should render when deviceType is Mobile"
+        },
+        {
+          "ancestorTitles": ["Layout Component"],
+          "failureMessages": [],
+          "fullName": "Layout Component should render the styled component appropriately",
+          "location": null,
+          "status": "pending",
+          "title": "should render the styled component appropriately"
+        }
+      ],
+      "endTime": 1574414267581,
+      "message": "",
+      "name": "/Users/risagraw/Documents/code/universal-react/app/components/templates/Layout/tests/Layout.test.js",
+      "startTime": 1574414266790,
+      "status": "passed",
+      "summary": ""
+    }
+  ],
+  "wasInterrupted": false,
+  "coverageMap": {
+    "/Users/risagraw/Documents/code/universal-react/app/components/templates/ErrorPage/ErrorPage.reducer.js": {
+      "path": "/Users/risagraw/Documents/code/universal-react/app/components/templates/ErrorPage/ErrorPage.reducer.js",
+      "statementMap": {
+        "0": { "start": { "line": 6, "column": 32 }, "end": { "line": 7, "column": 35 } },
+        "1": { "start": { "line": 7, "column": 2 }, "end": { "line": 7, "column": 35 } },
+        "2": { "start": { "line": 9, "column": 22 }, "end": { "line": 18, "column": 1 } },
+        "3": { "start": { "line": 10, "column": 2 }, "end": { "line": 17, "column": 3 } },
+        "4": { "start": { "line": 12, "column": 6 }, "end": { "line": 12, "column": 50 } },
+        "5": { "start": { "line": 14, "column": 6 }, "end": { "line": 14, "column": 46 } },
+        "6": { "start": { "line": 16, "column": 6 }, "end": { "line": 16, "column": 19 } }
+      },
+      "fnMap": {
+        "0": {
+          "name": "(anonymous_0)",
+          "decl": { "start": { "line": 6, "column": 32 }, "end": { "line": 6, "column": 33 } },
+          "loc": { "start": { "line": 7, "column": 2 }, "end": { "line": 7, "column": 35 } },
+          "line": 7
+        },
+        "1": {
+          "name": "(anonymous_1)",
+          "decl": { "start": { "line": 9, "column": 22 }, "end": { "line": 9, "column": 23 } },
+          "loc": { "start": { "line": 9, "column": 79 }, "end": { "line": 18, "column": 1 } },
+          "line": 9
+        }
+      },
+      "branchMap": {
+        "0": {
+          "loc": { "start": { "line": 9, "column": 23 }, "end": { "line": 9, "column": 41 } },
+          "type": "default-arg",
+          "locations": [
+            { "start": { "line": 9, "column": 39 }, "end": { "line": 9, "column": 41 } }
+          ],
+          "line": 9
+        },
+        "1": {
+          "loc": { "start": { "line": 9, "column": 43 }, "end": { "line": 9, "column": 66 } },
+          "type": "default-arg",
+          "locations": [
+            { "start": { "line": 9, "column": 57 }, "end": { "line": 9, "column": 66 } }
+          ],
+          "line": 9
+        },
+        "2": {
+          "loc": { "start": { "line": 10, "column": 2 }, "end": { "line": 17, "column": 3 } },
+          "type": "switch",
+          "locations": [
+            { "start": { "line": 11, "column": 4 }, "end": { "line": 12, "column": 50 } },
+            { "start": { "line": 13, "column": 4 }, "end": { "line": 14, "column": 46 } },
+            { "start": { "line": 15, "column": 4 }, "end": { "line": 16, "column": 19 } }
+          ],
+          "line": 10
+        }
+      },
+      "s": { "0": 2, "1": 3, "2": 2, "3": 3, "4": 1, "5": 1, "6": 1 },
+      "f": { "0": 3, "1": 3 },
+      "b": { "0": [1], "1": [0], "2": [1, 1, 1] },
+      "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
+      "hash": "d071ec9b959710ac25bafd4b015e6968f1c9cb3f"
+    },
+    "/Users/risagraw/Documents/code/universal-react/app/components/templates/ErrorPage/ErrorPage.constants.js": {
+      "path": "/Users/risagraw/Documents/code/universal-react/app/components/templates/ErrorPage/ErrorPage.constants.js",
+      "statementMap": {
+        "0": { "start": { "line": 5, "column": 31 }, "end": { "line": 5, "column": 48 } },
+        "1": { "start": { "line": 6, "column": 39 }, "end": { "line": 6, "column": 64 } },
+        "2": { "start": { "line": 7, "column": 39 }, "end": { "line": 7, "column": 64 } }
+      },
+      "fnMap": {},
+      "branchMap": {},
+      "s": { "0": 3, "1": 3, "2": 3 },
+      "f": {},
+      "b": {},
+      "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
+      "hash": "1ddb656ad2e0abac96bb350b2d0137fc3285feec"
+    },
+    "/Users/risagraw/Documents/code/universal-react/app/components/molecules/NavBar/NavBar.js": {
+      "path": "/Users/risagraw/Documents/code/universal-react/app/components/molecules/NavBar/NavBar.js",
+      "statementMap": {
+        "0": { "start": { "line": 13, "column": 15 }, "end": { "line": 34, "column": 1 } },
+        "1": { "start": { "line": 14, "column": 2 }, "end": { "line": 33, "column": 8 } },
+        "2": { "start": { "line": 19, "column": 12 }, "end": { "line": 29, "column": 17 } },
+        "3": { "start": { "line": 36, "column": 0 }, "end": { "line": 38, "column": 2 } }
+      },
+      "fnMap": {
+        "0": {
+          "name": "(anonymous_0)",
+          "decl": { "start": { "line": 13, "column": 15 }, "end": { "line": 13, "column": 16 } },
+          "loc": { "start": { "line": 14, "column": 2 }, "end": { "line": 33, "column": 8 } },
+          "line": 14
+        },
+        "1": {
+          "name": "(anonymous_1)",
+          "decl": { "start": { "line": 18, "column": 20 }, "end": { "line": 18, "column": 21 } },
+          "loc": { "start": { "line": 19, "column": 12 }, "end": { "line": 29, "column": 17 } },
+          "line": 19
+        }
+      },
+      "branchMap": {
+        "0": {
+          "loc": { "start": { "line": 15, "column": 5 }, "end": { "line": 32, "column": 5 } },
+          "type": "binary-expr",
+          "locations": [
+            { "start": { "line": 15, "column": 5 }, "end": { "line": 15, "column": 13 } },
+            { "start": { "line": 16, "column": 6 }, "end": { "line": 31, "column": 11 } }
+          ],
+          "line": 15
+        },
+        "1": {
+          "loc": { "start": { "line": 17, "column": 9 }, "end": { "line": 30, "column": 12 } },
+          "type": "binary-expr",
+          "locations": [
+            { "start": { "line": 17, "column": 9 }, "end": { "line": 17, "column": 29 } },
+            { "start": { "line": 18, "column": 10 }, "end": { "line": 30, "column": 12 } }
+          ],
+          "line": 17
+        },
+        "2": {
+          "loc": { "start": { "line": 20, "column": 15 }, "end": { "line": 28, "column": 15 } },
+          "type": "cond-expr",
+          "locations": [
+            { "start": { "line": 21, "column": 16 }, "end": { "line": 23, "column": 23 } },
+            { "start": { "line": 25, "column": 16 }, "end": { "line": 27, "column": 25 } }
+          ],
+          "line": 20
+        }
+      },
+      "s": { "0": 8, "1": 4, "2": 6, "3": 8 },
+      "f": { "0": 4, "1": 6 },
+      "b": { "0": [4, 3], "1": [3, 3], "2": [6, 0] },
+      "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
+      "hash": "41fd9dbee938ebeb320e26b7b3a87b754a977c72"
+    },
+    "/Users/risagraw/Documents/code/universal-react/app/components/molecules/NavBar/NavBar.style.js": {
+      "path": "/Users/risagraw/Documents/code/universal-react/app/components/molecules/NavBar/NavBar.style.js",
+      "statementMap": {
+        "0": { "start": { "line": 25, "column": 4 }, "end": { "line": 36, "column": 5 } }
+      },
+      "fnMap": {
+        "0": {
+          "name": "(anonymous_0)",
+          "decl": { "start": { "line": 24, "column": 4 }, "end": { "line": 24, "column": 5 } },
+          "loc": { "start": { "line": 25, "column": 4 }, "end": { "line": 36, "column": 5 } },
+          "line": 25
+        }
+      },
+      "branchMap": {
+        "0": {
+          "loc": { "start": { "line": 25, "column": 4 }, "end": { "line": 36, "column": 5 } },
+          "type": "binary-expr",
+          "locations": [
+            { "start": { "line": 25, "column": 4 }, "end": { "line": 25, "column": 18 } },
+            { "start": { "line": 26, "column": 4 }, "end": { "line": 36, "column": 5 } }
+          ],
+          "line": 25
+        }
+      },
+      "s": { "0": 2 },
+      "f": { "0": 2 },
+      "b": { "0": [2, 1] },
+      "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
+      "hash": "7f5b75d66fa0ef06bc7e7d46a3f0c38bf8b60611"
+    },
+    "/Users/risagraw/Documents/code/universal-react/app/components/molecules/NavBar/index.js": {
+      "path": "/Users/risagraw/Documents/code/universal-react/app/components/molecules/NavBar/index.js",
+      "statementMap": {},
+      "fnMap": {},
+      "branchMap": {},
+      "s": {},
+      "f": {},
+      "b": {},
+      "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
+      "hash": "d85891101ea92b974132b584e0f687b11f9ab63a"
+    },
+    "/Users/risagraw/Documents/code/universal-react/app/components/atoms/HeadTag/index.js": {
+      "path": "/Users/risagraw/Documents/code/universal-react/app/components/atoms/HeadTag/index.js",
+      "statementMap": {},
+      "fnMap": {},
+      "branchMap": {},
+      "s": {},
+      "f": {},
+      "b": {},
+      "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
+      "hash": "6c4facbb43395c540f88759bb1b7aed092aca75d"
+    },
+    "/Users/risagraw/Documents/code/universal-react/app/components/atoms/HeadTag/HeadTag.js": {
+      "path": "/Users/risagraw/Documents/code/universal-react/app/components/atoms/HeadTag/HeadTag.js",
+      "statementMap": {
+        "0": { "start": { "line": 7, "column": 23 }, "end": { "line": 20, "column": 1 } },
+        "1": { "start": { "line": 8, "column": 16 }, "end": { "line": 10, "column": 3 } },
+        "2": { "start": { "line": 14, "column": 2 }, "end": { "line": 16, "column": 21 } },
+        "3": { "start": { "line": 19, "column": 2 }, "end": { "line": 19, "column": 29 } },
+        "4": { "start": { "line": 24, "column": 30 }, "end": { "line": 24, "column": 40 } },
+        "5": { "start": { "line": 25, "column": 32 }, "end": { "line": 25, "column": 38 } },
+        "6": { "start": { "line": 26, "column": 4 }, "end": { "line": 63, "column": 6 } },
+        "7": { "start": { "line": 30, "column": 26 }, "end": { "line": 30, "column": 90 } },
+        "8": { "start": { "line": 31, "column": 10 }, "end": { "line": 33, "column": 11 } },
+        "9": { "start": { "line": 32, "column": 12 }, "end": { "line": 32, "column": 24 } },
+        "10": { "start": { "line": 34, "column": 10 }, "end": { "line": 45, "column": 12 } },
+        "11": { "start": { "line": 36, "column": 14 }, "end": { "line": 41, "column": 16 } },
+        "12": { "start": { "line": 48, "column": 11 }, "end": { "line": 50, "column": 18 } },
+        "13": { "start": { "line": 67, "column": 0 }, "end": { "line": 70, "column": 2 } },
+        "14": { "start": { "line": 72, "column": 0 }, "end": { "line": 72, "column": 26 } }
+      },
+      "fnMap": {
+        "0": {
+          "name": "(anonymous_0)",
+          "decl": { "start": { "line": 7, "column": 23 }, "end": { "line": 7, "column": 24 } },
+          "loc": { "start": { "line": 7, "column": 45 }, "end": { "line": 20, "column": 1 } },
+          "line": 7
+        },
+        "1": {
+          "name": "(anonymous_1)",
+          "decl": { "start": { "line": 23, "column": 2 }, "end": { "line": 23, "column": 3 } },
+          "loc": { "start": { "line": 23, "column": 11 }, "end": { "line": 64, "column": 3 } },
+          "line": 23
+        },
+        "2": {
+          "name": "(anonymous_2)",
+          "decl": { "start": { "line": 29, "column": 23 }, "end": { "line": 29, "column": 24 } },
+          "loc": { "start": { "line": 29, "column": 31 }, "end": { "line": 46, "column": 9 } },
+          "line": 29
+        },
+        "3": {
+          "name": "(anonymous_3)",
+          "decl": { "start": { "line": 35, "column": 28 }, "end": { "line": 35, "column": 29 } },
+          "loc": { "start": { "line": 36, "column": 14 }, "end": { "line": 41, "column": 16 } },
+          "line": 36
+        },
+        "4": {
+          "name": "(anonymous_4)",
+          "decl": { "start": { "line": 47, "column": 18 }, "end": { "line": 47, "column": 19 } },
+          "loc": { "start": { "line": 48, "column": 11 }, "end": { "line": 50, "column": 18 } },
+          "line": 48
+        }
+      },
+      "branchMap": {
+        "0": {
+          "loc": { "start": { "line": 14, "column": 8 }, "end": { "line": 14, "column": 67 } },
+          "type": "cond-expr",
+          "locations": [
+            { "start": { "line": 14, "column": 48 }, "end": { "line": 14, "column": 58 } },
+            { "start": { "line": 14, "column": 61 }, "end": { "line": 14, "column": 67 } }
+          ],
+          "line": 14
+        },
+        "1": {
+          "loc": { "start": { "line": 14, "column": 8 }, "end": { "line": 14, "column": 45 } },
+          "type": "binary-expr",
+          "locations": [
+            { "start": { "line": 14, "column": 8 }, "end": { "line": 14, "column": 20 } },
+            { "start": { "line": 14, "column": 24 }, "end": { "line": 14, "column": 45 } }
+          ],
+          "line": 14
+        },
+        "2": {
+          "loc": { "start": { "line": 14, "column": 71 }, "end": { "line": 16, "column": 20 } },
+          "type": "cond-expr",
+          "locations": [
+            { "start": { "line": 15, "column": 6 }, "end": { "line": 15, "column": 41 } },
+            { "start": { "line": 16, "column": 6 }, "end": { "line": 16, "column": 20 } }
+          ],
+          "line": 14
+        },
+        "3": {
+          "loc": { "start": { "line": 30, "column": 26 }, "end": { "line": 30, "column": 90 } },
+          "type": "binary-expr",
+          "locations": [
+            { "start": { "line": 30, "column": 26 }, "end": { "line": 30, "column": 59 } },
+            { "start": { "line": 30, "column": 63 }, "end": { "line": 30, "column": 90 } }
+          ],
+          "line": 30
+        },
+        "4": {
+          "loc": { "start": { "line": 31, "column": 10 }, "end": { "line": 33, "column": 11 } },
+          "type": "if",
+          "locations": [
+            { "start": { "line": 31, "column": 10 }, "end": { "line": 33, "column": 11 } },
+            { "start": { "line": 31, "column": 10 }, "end": { "line": 33, "column": 11 } }
+          ],
+          "line": 31
+        },
+        "5": {
+          "loc": { "start": { "line": 34, "column": 17 }, "end": { "line": 45, "column": 11 } },
+          "type": "cond-expr",
+          "locations": [
+            { "start": { "line": 35, "column": 12 }, "end": { "line": 42, "column": 14 } },
+            { "start": { "line": 44, "column": 12 }, "end": { "line": 44, "column": 77 } }
+          ],
+          "line": 34
+        },
+        "6": {
+          "loc": { "start": { "line": 48, "column": 11 }, "end": { "line": 50, "column": 18 } },
+          "type": "cond-expr",
+          "locations": [
+            { "start": { "line": 49, "column": 12 }, "end": { "line": 49, "column": 70 } },
+            { "start": { "line": 50, "column": 14 }, "end": { "line": 50, "column": 18 } }
+          ],
+          "line": 48
+        },
+        "7": {
+          "loc": { "start": { "line": 54, "column": 9 }, "end": { "line": 61, "column": 16 } },
+          "type": "cond-expr",
+          "locations": [
+            { "start": { "line": 55, "column": 10 }, "end": { "line": 60, "column": 12 } },
+            { "start": { "line": 61, "column": 12 }, "end": { "line": 61, "column": 16 } }
+          ],
+          "line": 54
+        }
+      },
+      "s": {
+        "0": 4,
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": 3,
+        "5": 3,
+        "6": 3,
+        "7": 27,
+        "8": 27,
+        "9": 17,
+        "10": 10,
+        "11": 14,
+        "12": 3,
+        "13": 4,
+        "14": 4
+      },
+      "f": { "0": 1, "1": 3, "2": 27, "3": 14, "4": 3 },
+      "b": {
+        "0": [0, 1],
+        "1": [1, 1],
+        "2": [1, 0],
+        "3": [27, 26],
+        "4": [17, 10],
+        "5": [8, 2],
+        "6": [0, 3],
+        "7": [0, 3]
+      },
+      "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
+      "hash": "5d0587b2b881105d8b32f17acb26196b8a7c9686"
+    },
+    "/Users/risagraw/Documents/code/universal-react/app/components/atoms/HeadTag/HeadTag.config.js": {
+      "path": "/Users/risagraw/Documents/code/universal-react/app/components/atoms/HeadTag/HeadTag.config.js",
+      "statementMap": {},
+      "fnMap": {},
+      "branchMap": {},
+      "s": {},
+      "f": {},
+      "b": {},
+      "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
+      "hash": "de9f9065dfbc7e5632d681b0c19245d1e8bfbacd"
+    },
+    "/Users/risagraw/Documents/code/universal-react/app/components/organisms/Header/index.js": {
+      "path": "/Users/risagraw/Documents/code/universal-react/app/components/organisms/Header/index.js",
+      "statementMap": {},
+      "fnMap": {},
+      "branchMap": {},
+      "s": {},
+      "f": {},
+      "b": {},
+      "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
+      "hash": "2db92706a051748033bede83582a1b72296be798"
+    },
+    "/Users/risagraw/Documents/code/universal-react/app/components/organisms/Header/Header.js": {
+      "path": "/Users/risagraw/Documents/code/universal-react/app/components/organisms/Header/Header.js",
+      "statementMap": {
+        "0": { "start": { "line": 11, "column": 15 }, "end": { "line": 22, "column": 1 } },
+        "1": { "start": { "line": 12, "column": 2 }, "end": { "line": 21, "column": 8 } },
+        "2": { "start": { "line": 24, "column": 0 }, "end": { "line": 24, "column": 25 } }
+      },
+      "fnMap": {
+        "0": {
+          "name": "(anonymous_0)",
+          "decl": { "start": { "line": 11, "column": 15 }, "end": { "line": 11, "column": 16 } },
+          "loc": { "start": { "line": 12, "column": 2 }, "end": { "line": 21, "column": 8 } },
+          "line": 12
+        }
+      },
+      "branchMap": {
+        "0": {
+          "loc": { "start": { "line": 19, "column": 7 }, "end": { "line": 19, "column": 36 } },
+          "type": "binary-expr",
+          "locations": [
+            { "start": { "line": 19, "column": 7 }, "end": { "line": 19, "column": 10 } },
+            { "start": { "line": 19, "column": 14 }, "end": { "line": 19, "column": 36 } }
+          ],
+          "line": 19
+        }
+      },
+      "s": { "0": 5, "1": 0, "2": 5 },
+      "f": { "0": 0 },
+      "b": { "0": [0, 0] },
+      "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
+      "hash": "9a20ec0c3e0b071071bce613b8f31aca7165a216"
+    },
+    "/Users/risagraw/Documents/code/universal-react/app/components/molecules/TopBanner/TopBanner.js": {
+      "path": "/Users/risagraw/Documents/code/universal-react/app/components/molecules/TopBanner/TopBanner.js",
+      "statementMap": {
+        "0": { "start": { "line": 14, "column": 16 }, "end": { "line": 14, "column": 18 } },
+        "1": { "start": { "line": 16, "column": 18 }, "end": { "line": 16, "column": 20 } },
+        "2": { "start": { "line": 18, "column": 16 }, "end": { "line": 18, "column": 20 } },
+        "3": { "start": { "line": 20, "column": 15 }, "end": { "line": 20, "column": 16 } },
+        "4": { "start": { "line": 22, "column": 9 }, "end": { "line": 22, "column": 10 } },
+        "5": { "start": { "line": 24, "column": 17 }, "end": { "line": 24, "column": 26 } },
+        "6": { "start": { "line": 28, "column": 26 }, "end": { "line": 28, "column": 28 } },
+        "7": { "start": { "line": 31, "column": 29 }, "end": { "line": 31, "column": 39 } },
+        "8": { "start": { "line": 32, "column": 4 }, "end": { "line": 32, "column": 31 } },
+        "9": { "start": { "line": 33, "column": 4 }, "end": { "line": 33, "column": 18 } },
+        "10": { "start": { "line": 34, "column": 4 }, "end": { "line": 34, "column": 24 } },
+        "11": { "start": { "line": 35, "column": 4 }, "end": { "line": 40, "column": 5 } },
+        "12": { "start": { "line": 36, "column": 6 }, "end": { "line": 36, "column": 55 } },
+        "13": { "start": { "line": 37, "column": 6 }, "end": { "line": 39, "column": 27 } },
+        "14": { "start": { "line": 38, "column": 8 }, "end": { "line": 38, "column": 20 } },
+        "15": { "start": { "line": 43, "column": 9 }, "end": { "line": 58, "column": 3 } },
+        "16": { "start": { "line": 45, "column": 17 }, "end": { "line": 45, "column": 73 } },
+        "17": { "start": { "line": 46, "column": 4 }, "end": { "line": 46, "column": 34 } },
+        "18": { "start": { "line": 47, "column": 4 }, "end": { "line": 47, "column": 42 } },
+        "19": { "start": { "line": 50, "column": 4 }, "end": { "line": 57, "column": 5 } },
+        "20": { "start": { "line": 51, "column": 6 }, "end": { "line": 51, "column": 39 } },
+        "21": { "start": { "line": 52, "column": 6 }, "end": { "line": 56, "column": 27 } },
+        "22": { "start": { "line": 53, "column": 8 }, "end": { "line": 55, "column": 31 } },
+        "23": { "start": { "line": 54, "column": 10 }, "end": { "line": 54, "column": 24 } },
+        "24": { "start": { "line": 60, "column": 11 }, "end": { "line": 81, "column": 3 } },
+        "25": { "start": { "line": 62, "column": 17 }, "end": { "line": 62, "column": 73 } },
+        "26": { "start": { "line": 63, "column": 4 }, "end": { "line": 63, "column": 34 } },
+        "27": { "start": { "line": 64, "column": 4 }, "end": { "line": 64, "column": 42 } },
+        "28": { "start": { "line": 65, "column": 4 }, "end": { "line": 80, "column": 5 } },
+        "29": { "start": { "line": 66, "column": 6 }, "end": { "line": 66, "column": 39 } },
+        "30": { "start": { "line": 67, "column": 26 }, "end": { "line": 67, "column": 48 } },
+        "31": { "start": { "line": 68, "column": 6 }, "end": { "line": 72, "column": 7 } },
+        "32": { "start": { "line": 69, "column": 8 }, "end": { "line": 69, "column": 22 } },
+        "33": { "start": { "line": 71, "column": 8 }, "end": { "line": 71, "column": 34 } },
+        "34": { "start": { "line": 74, "column": 6 }, "end": { "line": 74, "column": 26 } },
+        "35": { "start": { "line": 75, "column": 6 }, "end": { "line": 79, "column": 14 } },
+        "36": { "start": { "line": 76, "column": 8 }, "end": { "line": 78, "column": 29 } },
+        "37": { "start": { "line": 77, "column": 10 }, "end": { "line": 77, "column": 22 } },
+        "38": { "start": { "line": 84, "column": 69 }, "end": { "line": 84, "column": 79 } },
+        "39": { "start": { "line": 85, "column": 4 }, "end": { "line": 94, "column": 6 } },
+        "40": { "start": { "line": 98, "column": 0 }, "end": { "line": 98, "column": 28 } }
+      },
+      "fnMap": {
+        "0": {
+          "name": "(anonymous_0)",
+          "decl": { "start": { "line": 30, "column": 2 }, "end": { "line": 30, "column": 3 } },
+          "loc": { "start": { "line": 30, "column": 22 }, "end": { "line": 41, "column": 3 } },
+          "line": 30
+        },
+        "1": {
+          "name": "(anonymous_1)",
+          "decl": { "start": { "line": 37, "column": 38 }, "end": { "line": 37, "column": 39 } },
+          "loc": { "start": { "line": 37, "column": 44 }, "end": { "line": 39, "column": 7 } },
+          "line": 37
+        },
+        "2": {
+          "name": "(anonymous_2)",
+          "decl": { "start": { "line": 43, "column": 9 }, "end": { "line": 43, "column": 10 } },
+          "loc": { "start": { "line": 43, "column": 15 }, "end": { "line": 58, "column": 3 } },
+          "line": 43
+        },
+        "3": {
+          "name": "(anonymous_3)",
+          "decl": { "start": { "line": 52, "column": 17 }, "end": { "line": 52, "column": 18 } },
+          "loc": { "start": { "line": 52, "column": 23 }, "end": { "line": 56, "column": 7 } },
+          "line": 52
+        },
+        "4": {
+          "name": "(anonymous_4)",
+          "decl": { "start": { "line": 53, "column": 40 }, "end": { "line": 53, "column": 41 } },
+          "loc": { "start": { "line": 53, "column": 46 }, "end": { "line": 55, "column": 9 } },
+          "line": 53
+        },
+        "5": {
+          "name": "(anonymous_5)",
+          "decl": { "start": { "line": 60, "column": 11 }, "end": { "line": 60, "column": 12 } },
+          "loc": { "start": { "line": 60, "column": 17 }, "end": { "line": 81, "column": 3 } },
+          "line": 60
+        },
+        "6": {
+          "name": "(anonymous_6)",
+          "decl": { "start": { "line": 75, "column": 17 }, "end": { "line": 75, "column": 18 } },
+          "loc": { "start": { "line": 75, "column": 23 }, "end": { "line": 79, "column": 7 } },
+          "line": 75
+        },
+        "7": {
+          "name": "(anonymous_7)",
+          "decl": { "start": { "line": 76, "column": 40 }, "end": { "line": 76, "column": 41 } },
+          "loc": { "start": { "line": 76, "column": 46 }, "end": { "line": 78, "column": 9 } },
+          "line": 76
+        },
+        "8": {
+          "name": "(anonymous_8)",
+          "decl": { "start": { "line": 83, "column": 2 }, "end": { "line": 83, "column": 3 } },
+          "loc": { "start": { "line": 83, "column": 11 }, "end": { "line": 95, "column": 3 } },
+          "line": 83
+        }
+      },
+      "branchMap": {
+        "0": {
+          "loc": { "start": { "line": 35, "column": 4 }, "end": { "line": 40, "column": 5 } },
+          "type": "if",
+          "locations": [
+            { "start": { "line": 35, "column": 4 }, "end": { "line": 40, "column": 5 } },
+            { "start": { "line": 35, "column": 4 }, "end": { "line": 40, "column": 5 } }
+          ],
+          "line": 35
+        },
+        "1": {
+          "loc": { "start": { "line": 50, "column": 4 }, "end": { "line": 57, "column": 5 } },
+          "type": "if",
+          "locations": [
+            { "start": { "line": 50, "column": 4 }, "end": { "line": 57, "column": 5 } },
+            { "start": { "line": 50, "column": 4 }, "end": { "line": 57, "column": 5 } }
+          ],
+          "line": 50
+        },
+        "2": {
+          "loc": { "start": { "line": 65, "column": 4 }, "end": { "line": 80, "column": 5 } },
+          "type": "if",
+          "locations": [
+            { "start": { "line": 65, "column": 4 }, "end": { "line": 80, "column": 5 } },
+            { "start": { "line": 65, "column": 4 }, "end": { "line": 80, "column": 5 } }
+          ],
+          "line": 65
+        },
+        "3": {
+          "loc": { "start": { "line": 68, "column": 6 }, "end": { "line": 72, "column": 7 } },
+          "type": "if",
+          "locations": [
+            { "start": { "line": 68, "column": 6 }, "end": { "line": 72, "column": 7 } },
+            { "start": { "line": 68, "column": 6 }, "end": { "line": 72, "column": 7 } }
+          ],
+          "line": 68
+        },
+        "4": {
+          "loc": { "start": { "line": 89, "column": 11 }, "end": { "line": 89, "column": 72 } },
+          "type": "binary-expr",
+          "locations": [
+            { "start": { "line": 89, "column": 11 }, "end": { "line": 89, "column": 21 } },
+            { "start": { "line": 89, "column": 25 }, "end": { "line": 89, "column": 72 } }
+          ],
+          "line": 89
+        },
+        "5": {
+          "loc": { "start": { "line": 90, "column": 11 }, "end": { "line": 90, "column": 40 } },
+          "type": "binary-expr",
+          "locations": [
+            { "start": { "line": 90, "column": 11 }, "end": { "line": 90, "column": 19 } },
+            { "start": { "line": 90, "column": 23 }, "end": { "line": 90, "column": 40 } }
+          ],
+          "line": 90
+        },
+        "6": {
+          "loc": { "start": { "line": 91, "column": 11 }, "end": { "line": 91, "column": 51 } },
+          "type": "binary-expr",
+          "locations": [
+            { "start": { "line": 91, "column": 11 }, "end": { "line": 91, "column": 23 } },
+            { "start": { "line": 91, "column": 27 }, "end": { "line": 91, "column": 51 } }
+          ],
+          "line": 91
+        }
+      },
+      "s": {
+        "0": 2,
+        "1": 2,
+        "2": 2,
+        "3": 2,
+        "4": 2,
+        "5": 2,
+        "6": 2,
+        "7": 2,
+        "8": 2,
+        "9": 2,
+        "10": 2,
+        "11": 2,
+        "12": 0,
+        "13": 0,
+        "14": 0,
+        "15": 2,
+        "16": 0,
+        "17": 0,
+        "18": 0,
+        "19": 0,
+        "20": 0,
+        "21": 0,
+        "22": 0,
+        "23": 0,
+        "24": 2,
+        "25": 0,
+        "26": 0,
+        "27": 0,
+        "28": 0,
+        "29": 0,
+        "30": 0,
+        "31": 0,
+        "32": 0,
+        "33": 0,
+        "34": 0,
+        "35": 0,
+        "36": 0,
+        "37": 0,
+        "38": 3,
+        "39": 3,
+        "40": 3
+      },
+      "f": { "0": 2, "1": 0, "2": 0, "3": 0, "4": 0, "5": 0, "6": 0, "7": 0, "8": 3 },
+      "b": {
+        "0": [0, 2],
+        "1": [0, 0],
+        "2": [0, 0],
+        "3": [0, 0],
+        "4": [3, 0],
+        "5": [3, 2],
+        "6": [3, 0]
+      },
+      "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
+      "hash": "e3bcc61c4c6c47af59d888628b43c1661b9561a5"
+    },
+    "/Users/risagraw/Documents/code/universal-react/app/components/molecules/TopBanner/TopBanner.style.js": {
+      "path": "/Users/risagraw/Documents/code/universal-react/app/components/molecules/TopBanner/TopBanner.style.js",
+      "statementMap": {},
+      "fnMap": {},
+      "branchMap": {},
+      "s": {},
+      "f": {},
+      "b": {},
+      "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
+      "hash": "a977a17f964c735355486176e92280e7668074be"
+    },
+    "/Users/risagraw/Documents/code/universal-react/app/components/templates/ErrorPage/ErrorPage.js": {
+      "path": "/Users/risagraw/Documents/code/universal-react/app/components/templates/ErrorPage/ErrorPage.js",
+      "statementMap": {
+        "0": { "start": { "line": 14, "column": 4 }, "end": { "line": 16, "column": 5 } },
+        "1": { "start": { "line": 15, "column": 6 }, "end": { "line": 15, "column": 22 } },
+        "2": { "start": { "line": 17, "column": 4 }, "end": { "line": 17, "column": 14 } },
+        "3": { "start": { "line": 21, "column": 26 }, "end": { "line": 21, "column": 36 } },
+        "4": { "start": { "line": 22, "column": 25 }, "end": { "line": 22, "column": 50 } },
+        "5": { "start": { "line": 23, "column": 4 }, "end": { "line": 30, "column": 6 } }
+      },
+      "fnMap": {
+        "0": {
+          "name": "(anonymous_0)",
+          "decl": { "start": { "line": 13, "column": 2 }, "end": { "line": 13, "column": 3 } },
+          "loc": { "start": { "line": 13, "column": 39 }, "end": { "line": 18, "column": 3 } },
+          "line": 13
+        },
+        "1": {
+          "name": "(anonymous_1)",
+          "decl": { "start": { "line": 20, "column": 2 }, "end": { "line": 20, "column": 3 } },
+          "loc": { "start": { "line": 20, "column": 11 }, "end": { "line": 31, "column": 3 } },
+          "line": 20
+        }
+      },
+      "branchMap": {
+        "0": {
+          "loc": { "start": { "line": 14, "column": 4 }, "end": { "line": 16, "column": 5 } },
+          "type": "if",
+          "locations": [
+            { "start": { "line": 14, "column": 4 }, "end": { "line": 16, "column": 5 } },
+            { "start": { "line": 14, "column": 4 }, "end": { "line": 16, "column": 5 } }
+          ],
+          "line": 14
+        },
+        "1": {
+          "loc": { "start": { "line": 14, "column": 8 }, "end": { "line": 14, "column": 27 } },
+          "type": "binary-expr",
+          "locations": [
+            { "start": { "line": 14, "column": 8 }, "end": { "line": 14, "column": 11 } },
+            { "start": { "line": 14, "column": 15 }, "end": { "line": 14, "column": 27 } }
+          ],
+          "line": 14
+        }
+      },
+      "s": { "0": 0, "1": 0, "2": 0, "3": 1, "4": 1, "5": 1 },
+      "f": { "0": 0, "1": 1 },
+      "b": { "0": [0, 0], "1": [0, 0] },
+      "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
+      "hash": "814cc19f3c13d0b138887deaed32fd8bf60b900c"
+    },
+    "/Users/risagraw/Documents/code/universal-react/app/components/templates/Layout/index.js": {
+      "path": "/Users/risagraw/Documents/code/universal-react/app/components/templates/Layout/index.js",
+      "statementMap": {},
+      "fnMap": {},
+      "branchMap": {},
+      "s": {},
+      "f": {},
+      "b": {},
+      "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
+      "hash": "78c0b5d8904cb2fae63bae733d1f938bfbb0efaa"
+    },
+    "/Users/risagraw/Documents/code/universal-react/app/components/templates/Layout/Layout.js": {
+      "path": "/Users/risagraw/Documents/code/universal-react/app/components/templates/Layout/Layout.js",
+      "statementMap": {
+        "0": { "start": { "line": 21, "column": 15 }, "end": { "line": 47, "column": 1 } },
+        "1": { "start": { "line": 23, "column": 2 }, "end": { "line": 23, "column": 43 } },
+        "2": { "start": { "line": 28, "column": 2 }, "end": { "line": 28, "column": 40 } },
+        "3": { "start": { "line": 29, "column": 2 }, "end": { "line": 29, "column": 32 } },
+        "4": { "start": { "line": 31, "column": 2 }, "end": { "line": 46, "column": 4 } },
+        "5": { "start": { "line": 49, "column": 0 }, "end": { "line": 51, "column": 2 } },
+        "6": { "start": { "line": 56, "column": 51 }, "end": { "line": 62, "column": 2 } }
+      },
+      "fnMap": {
+        "0": {
+          "name": "(anonymous_0)",
+          "decl": { "start": { "line": 21, "column": 15 }, "end": { "line": 21, "column": 16 } },
+          "loc": { "start": { "line": 21, "column": 74 }, "end": { "line": 47, "column": 1 } },
+          "line": 21
+        }
+      },
+      "branchMap": {
+        "0": {
+          "loc": { "start": { "line": 23, "column": 21 }, "end": { "line": 23, "column": 42 } },
+          "type": "binary-expr",
+          "locations": [
+            { "start": { "line": 23, "column": 21 }, "end": { "line": 23, "column": 31 } },
+            { "start": { "line": 23, "column": 35 }, "end": { "line": 23, "column": 42 } }
+          ],
+          "line": 23
+        }
+      },
+      "s": { "0": 4, "1": 0, "2": 0, "3": 0, "4": 0, "5": 4, "6": 4 },
+      "f": { "0": 0 },
+      "b": { "0": [0, 0] },
+      "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
+      "hash": "558c4185c46d1fa1ba1743ee6152eea4a7bff9a2"
+    },
+    "/Users/risagraw/Documents/code/universal-react/app/components/organisms/Footer/index.js": {
+      "path": "/Users/risagraw/Documents/code/universal-react/app/components/organisms/Footer/index.js",
+      "statementMap": {},
+      "fnMap": {},
+      "branchMap": {},
+      "s": {},
+      "f": {},
+      "b": {},
+      "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
+      "hash": "9a1b32aab15505de8f5682d8fb76a75aa96da0db"
+    },
+    "/Users/risagraw/Documents/code/universal-react/app/components/organisms/Footer/Footer.js": {
+      "path": "/Users/risagraw/Documents/code/universal-react/app/components/organisms/Footer/Footer.js",
+      "statementMap": {
+        "0": { "start": { "line": 14, "column": 15 }, "end": { "line": 27, "column": 1 } },
+        "1": { "start": { "line": 15, "column": 2 }, "end": { "line": 26, "column": 11 } },
+        "2": { "start": { "line": 29, "column": 0 }, "end": { "line": 29, "column": 25 } }
+      },
+      "fnMap": {
+        "0": {
+          "name": "(anonymous_0)",
+          "decl": { "start": { "line": 14, "column": 15 }, "end": { "line": 14, "column": 16 } },
+          "loc": { "start": { "line": 15, "column": 2 }, "end": { "line": 26, "column": 11 } },
+          "line": 15
+        }
+      },
+      "branchMap": {
+        "0": {
+          "loc": { "start": { "line": 19, "column": 9 }, "end": { "line": 19, "column": 47 } },
+          "type": "binary-expr",
+          "locations": [
+            { "start": { "line": 19, "column": 9 }, "end": { "line": 19, "column": 12 } },
+            { "start": { "line": 19, "column": 16 }, "end": { "line": 19, "column": 47 } }
+          ],
+          "line": 19
+        }
+      },
+      "s": { "0": 5, "1": 0, "2": 5 },
+      "f": { "0": 0 },
+      "b": { "0": [0, 0] },
+      "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
+      "hash": "489da7a7152920a266e3dd6c15ae7367fd5fe723"
+    },
+    "/Users/risagraw/Documents/code/universal-react/app/components/organisms/Footer/Footer.style.js": {
+      "path": "/Users/risagraw/Documents/code/universal-react/app/components/organisms/Footer/Footer.style.js",
+      "statementMap": {
+        "0": { "start": { "line": 5, "column": 21 }, "end": { "line": 11, "column": 1 } }
+      },
+      "fnMap": {},
+      "branchMap": {},
+      "s": { "0": 5 },
+      "f": {},
+      "b": {},
+      "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
+      "hash": "7d5e181d5c247c704e71885f934a238e228e02b7"
+    },
+    "/Users/risagraw/Documents/code/universal-react/app/components/templates/ErrorPage/ErrorPage.actions.js": {
+      "path": "/Users/risagraw/Documents/code/universal-react/app/components/templates/ErrorPage/ErrorPage.actions.js",
+      "statementMap": {
+        "0": { "start": { "line": 13, "column": 29 }, "end": { "line": 16, "column": 2 } },
+        "1": { "start": { "line": 13, "column": 36 }, "end": { "line": 16, "column": 1 } },
+        "2": { "start": { "line": 18, "column": 36 }, "end": { "line": 21, "column": 2 } },
+        "3": { "start": { "line": 18, "column": 52 }, "end": { "line": 21, "column": 1 } },
+        "4": { "start": { "line": 23, "column": 36 }, "end": { "line": 25, "column": 2 } },
+        "5": { "start": { "line": 23, "column": 43 }, "end": { "line": 25, "column": 1 } }
+      },
+      "fnMap": {
+        "0": {
+          "name": "(anonymous_0)",
+          "decl": { "start": { "line": 13, "column": 29 }, "end": { "line": 13, "column": 30 } },
+          "loc": { "start": { "line": 13, "column": 36 }, "end": { "line": 16, "column": 1 } },
+          "line": 13
+        },
+        "1": {
+          "name": "(anonymous_1)",
+          "decl": { "start": { "line": 18, "column": 36 }, "end": { "line": 18, "column": 37 } },
+          "loc": { "start": { "line": 18, "column": 52 }, "end": { "line": 21, "column": 1 } },
+          "line": 18
+        },
+        "2": {
+          "name": "(anonymous_2)",
+          "decl": { "start": { "line": 23, "column": 36 }, "end": { "line": 23, "column": 37 } },
+          "loc": { "start": { "line": 23, "column": 43 }, "end": { "line": 25, "column": 1 } },
+          "line": 23
+        }
+      },
+      "branchMap": {},
+      "s": { "0": 2, "1": 1, "2": 2, "3": 1, "4": 2, "5": 1 },
+      "f": { "0": 1, "1": 1, "2": 1 },
+      "b": {},
+      "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
+      "hash": "b9be8e78a114619765616fc276b62a19116242cd"
+    },
+    "/Users/risagraw/Documents/code/universal-react/app/components/templates/ErrorPage/ErrorPage.saga.js": {
+      "path": "/Users/risagraw/Documents/code/universal-react/app/components/templates/ErrorPage/ErrorPage.saga.js",
+      "statementMap": {
+        "0": { "start": { "line": 7, "column": 2 }, "end": { "line": 13, "column": 3 } },
+        "1": { "start": { "line": 9, "column": 17 }, "end": { "line": 9, "column": 77 } },
+        "2": { "start": { "line": 10, "column": 4 }, "end": { "line": 10, "column": 42 } },
+        "3": { "start": { "line": 12, "column": 4 }, "end": { "line": 12, "column": 41 } },
+        "4": { "start": { "line": 17, "column": 2 }, "end": { "line": 21, "column": 3 } },
+        "5": { "start": { "line": 18, "column": 4 }, "end": { "line": 18, "column": 60 } },
+        "6": { "start": { "line": 20, "column": 4 }, "end": { "line": 20, "column": 41 } }
+      },
+      "fnMap": {
+        "0": {
+          "name": "loadErrorPageDataSaga",
+          "decl": { "start": { "line": 6, "column": 17 }, "end": { "line": 6, "column": 38 } },
+          "loc": { "start": { "line": 6, "column": 47 }, "end": { "line": 14, "column": 1 } },
+          "line": 6
+        },
+        "1": {
+          "name": "errorPageSaga",
+          "decl": { "start": { "line": 16, "column": 25 }, "end": { "line": 16, "column": 38 } },
+          "loc": { "start": { "line": 16, "column": 41 }, "end": { "line": 22, "column": 1 } },
+          "line": 16
+        }
+      },
+      "branchMap": {},
+      "s": { "0": 0, "1": 0, "2": 0, "3": 0, "4": 0, "5": 0, "6": 0 },
+      "f": { "0": 0, "1": 0 },
+      "b": {},
+      "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
+      "hash": "cd271a1a87441e9c8abd6f85ff149bd1ada46c42"
+    },
+    "/Users/risagraw/Documents/code/universal-react/app/components/templates/HomePage/index.js": {
+      "path": "/Users/risagraw/Documents/code/universal-react/app/components/templates/HomePage/index.js",
+      "statementMap": {},
+      "fnMap": {},
+      "branchMap": {},
+      "s": {},
+      "f": {},
+      "b": {},
+      "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
+      "hash": "a14eb409475bf99cd82499d6ca6f974927549145"
+    },
+    "/Users/risagraw/Documents/code/universal-react/app/components/templates/HomePage/HomePage.js": {
+      "path": "/Users/risagraw/Documents/code/universal-react/app/components/templates/HomePage/HomePage.js",
+      "statementMap": {
+        "0": { "start": { "line": 21, "column": 17 }, "end": { "line": 212, "column": 1 } },
+        "1": { "start": { "line": 22, "column": 30 }, "end": { "line": 22, "column": 43 } },
+        "2": { "start": { "line": 23, "column": 23 }, "end": { "line": 36, "column": 3 } },
+        "3": { "start": { "line": 38, "column": 24 }, "end": { "line": 83, "column": 3 } },
+        "4": { "start": { "line": 85, "column": 30 }, "end": { "line": 140, "column": 3 } },
+        "5": { "start": { "line": 142, "column": 2 }, "end": { "line": 211, "column": 4 } },
+        "6": { "start": { "line": 164, "column": 14 }, "end": { "line": 169, "column": 16 } },
+        "7": { "start": { "line": 176, "column": 14 }, "end": { "line": 184, "column": 16 } },
+        "8": { "start": { "line": 214, "column": 0 }, "end": { "line": 220, "column": 2 } }
+      },
+      "fnMap": {
+        "0": {
+          "name": "(anonymous_0)",
+          "decl": { "start": { "line": 21, "column": 17 }, "end": { "line": 21, "column": 18 } },
+          "loc": { "start": { "line": 21, "column": 53 }, "end": { "line": 212, "column": 1 } },
+          "line": 21
+        },
+        "1": {
+          "name": "(anonymous_1)",
+          "decl": { "start": { "line": 163, "column": 31 }, "end": { "line": 163, "column": 32 } },
+          "loc": { "start": { "line": 163, "column": 45 }, "end": { "line": 170, "column": 13 } },
+          "line": 163
+        },
+        "2": {
+          "name": "(anonymous_2)",
+          "decl": { "start": { "line": 175, "column": 37 }, "end": { "line": 175, "column": 38 } },
+          "loc": { "start": { "line": 175, "column": 51 }, "end": { "line": 185, "column": 13 } },
+          "line": 175
+        }
+      },
+      "branchMap": {},
+      "s": { "0": 2, "1": 0, "2": 0, "3": 0, "4": 0, "5": 0, "6": 0, "7": 0, "8": 2 },
+      "f": { "0": 0, "1": 0, "2": 0 },
+      "b": {},
+      "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
+      "hash": "0cdbf2a0148d03183537314ee0f1186111dab5bc"
+    },
+    "/Users/risagraw/Documents/code/universal-react/app/components/molecules/TopBanner/index.js": {
+      "path": "/Users/risagraw/Documents/code/universal-react/app/components/molecules/TopBanner/index.js",
+      "statementMap": {},
+      "fnMap": {},
+      "branchMap": {},
+      "s": {},
+      "f": {},
+      "b": {},
+      "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
+      "hash": "ca231ef9cf26fc0f28273719b441388d213a0def"
+    },
+    "/Users/risagraw/Documents/code/universal-react/app/components/templates/HomePage/HomePage.style.js": {
+      "path": "/Users/risagraw/Documents/code/universal-react/app/components/templates/HomePage/HomePage.style.js",
+      "statementMap": {},
+      "fnMap": {},
+      "branchMap": {},
+      "s": {},
+      "f": {},
+      "b": {},
+      "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
+      "hash": "595ea477ccc2c28eb3f3fe6aeea2b4492c2098f3"
+    },
+    "/Users/risagraw/Documents/code/universal-react/app/components/molecules/ArticleWrap/index.js": {
+      "path": "/Users/risagraw/Documents/code/universal-react/app/components/molecules/ArticleWrap/index.js",
+      "statementMap": {},
+      "fnMap": {},
+      "branchMap": {},
+      "s": {},
+      "f": {},
+      "b": {},
+      "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
+      "hash": "fc0e3c86b9a2bdeb84676c8d39bfb0cf21cf72ec"
+    },
+    "/Users/risagraw/Documents/code/universal-react/app/components/molecules/ArticleWrap/ArticleWrap.js": {
+      "path": "/Users/risagraw/Documents/code/universal-react/app/components/molecules/ArticleWrap/ArticleWrap.js",
+      "statementMap": {
+        "0": { "start": { "line": 15, "column": 50 }, "end": { "line": 15, "column": 60 } },
+        "1": { "start": { "line": 16, "column": 24 }, "end": { "line": 16, "column": 34 } },
+        "2": { "start": { "line": 17, "column": 25 }, "end": { "line": 17, "column": 41 } },
+        "3": { "start": { "line": 18, "column": 4 }, "end": { "line": 21, "column": 5 } },
+        "4": { "start": { "line": 19, "column": 6 }, "end": { "line": 19, "column": 80 } },
+        "5": { "start": { "line": 20, "column": 6 }, "end": { "line": 20, "column": 78 } },
+        "6": { "start": { "line": 23, "column": 4 }, "end": { "line": 31, "column": 6 } }
+      },
+      "fnMap": {
+        "0": {
+          "name": "(anonymous_0)",
+          "decl": { "start": { "line": 14, "column": 2 }, "end": { "line": 14, "column": 3 } },
+          "loc": { "start": { "line": 14, "column": 11 }, "end": { "line": 32, "column": 3 } },
+          "line": 14
+        }
+      },
+      "branchMap": {
+        "0": {
+          "loc": { "start": { "line": 18, "column": 4 }, "end": { "line": 21, "column": 5 } },
+          "type": "if",
+          "locations": [
+            { "start": { "line": 18, "column": 4 }, "end": { "line": 21, "column": 5 } },
+            { "start": { "line": 18, "column": 4 }, "end": { "line": 21, "column": 5 } }
+          ],
+          "line": 18
+        },
+        "1": {
+          "loc": { "start": { "line": 19, "column": 18 }, "end": { "line": 19, "column": 79 } },
+          "type": "cond-expr",
+          "locations": [
+            { "start": { "line": 19, "column": 30 }, "end": { "line": 19, "column": 65 } },
+            { "start": { "line": 19, "column": 68 }, "end": { "line": 19, "column": 79 } }
+          ],
+          "line": 19
+        },
+        "2": {
+          "loc": { "start": { "line": 20, "column": 23 }, "end": { "line": 20, "column": 77 } },
+          "type": "cond-expr",
+          "locations": [
+            { "start": { "line": 20, "column": 40 }, "end": { "line": 20, "column": 66 } },
+            { "start": { "line": 20, "column": 69 }, "end": { "line": 20, "column": 77 } }
+          ],
+          "line": 20
+        },
+        "3": {
+          "loc": { "start": { "line": 27, "column": 11 }, "end": { "line": 27, "column": 68 } },
+          "type": "binary-expr",
+          "locations": [
+            { "start": { "line": 27, "column": 11 }, "end": { "line": 27, "column": 19 } },
+            { "start": { "line": 27, "column": 23 }, "end": { "line": 27, "column": 68 } }
+          ],
+          "line": 27
+        }
+      },
+      "s": { "0": 0, "1": 0, "2": 0, "3": 0, "4": 0, "5": 0, "6": 0 },
+      "f": { "0": 0 },
+      "b": { "0": [0, 0], "1": [0, 0], "2": [0, 0], "3": [0, 0] },
+      "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
+      "hash": "146d30c25dcba4090e581ba342a789f9d9a583dd"
+    },
+    "/Users/risagraw/Documents/code/universal-react/app/components/molecules/ArticleWrap/ArticleWrap.style.js": {
+      "path": "/Users/risagraw/Documents/code/universal-react/app/components/molecules/ArticleWrap/ArticleWrap.style.js",
+      "statementMap": {},
+      "fnMap": {},
+      "branchMap": {},
+      "s": {},
+      "f": {},
+      "b": {},
+      "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
+      "hash": "4146db03fac4a999f34ec366233e8f45f88d7d80"
+    },
+    "/Users/risagraw/Documents/code/universal-react/app/components/atoms/ProgressCircle/ProgressCircle.js": {
+      "path": "/Users/risagraw/Documents/code/universal-react/app/components/atoms/ProgressCircle/ProgressCircle.js",
+      "statementMap": {
+        "0": { "start": { "line": 17, "column": 21 }, "end": { "line": 71, "column": 1 } },
+        "1": { "start": { "line": 29, "column": 27 }, "end": { "line": 29, "column": 57 } },
+        "2": { "start": { "line": 30, "column": 24 }, "end": { "line": 30, "column": 54 } },
+        "3": { "start": { "line": 31, "column": 27 }, "end": { "line": 31, "column": 75 } },
+        "4": { "start": { "line": 33, "column": 2 }, "end": { "line": 70, "column": 4 } }
+      },
+      "fnMap": {
+        "0": {
+          "name": "(anonymous_0)",
+          "decl": { "start": { "line": 17, "column": 21 }, "end": { "line": 17, "column": 22 } },
+          "loc": { "start": { "line": 27, "column": 13 }, "end": { "line": 71, "column": 1 } },
+          "line": 27
+        }
+      },
+      "branchMap": {
+        "0": {
+          "loc": { "start": { "line": 67, "column": 9 }, "end": { "line": 67, "column": 30 } },
+          "type": "binary-expr",
+          "locations": [
+            { "start": { "line": 67, "column": 9 }, "end": { "line": 67, "column": 18 } },
+            { "start": { "line": 67, "column": 22 }, "end": { "line": 67, "column": 30 } }
+          ],
+          "line": 67
+        }
+      },
+      "s": { "0": 2, "1": 1, "2": 1, "3": 1, "4": 1 },
+      "f": { "0": 1 },
+      "b": { "0": [1, 1] },
+      "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
+      "hash": "fd6871ee33a9c9f84b09f05ad5b56af369d0ce07"
+    },
+    "/Users/risagraw/Documents/code/universal-react/app/components/atoms/ProgressCircle/ProgressCircle.style.js": {
+      "path": "/Users/risagraw/Documents/code/universal-react/app/components/atoms/ProgressCircle/ProgressCircle.style.js",
+      "statementMap": {},
+      "fnMap": {},
+      "branchMap": {},
+      "s": {},
+      "f": {},
+      "b": {},
+      "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
+      "hash": "913fec42cb59d0a8b89139347931aec4b1e78e64"
+    },
+    "/Users/risagraw/Documents/code/universal-react/app/components/atoms/Title/Title.js": {
+      "path": "/Users/risagraw/Documents/code/universal-react/app/components/atoms/Title/Title.js",
+      "statementMap": {
+        "0": { "start": { "line": 13, "column": 14 }, "end": { "line": 17, "column": 1 } },
+        "1": { "start": { "line": 14, "column": 2 }, "end": { "line": 16, "column": 7 } },
+        "2": { "start": { "line": 19, "column": 0 }, "end": { "line": 21, "column": 2 } }
+      },
+      "fnMap": {
+        "0": {
+          "name": "(anonymous_0)",
+          "decl": { "start": { "line": 13, "column": 14 }, "end": { "line": 13, "column": 15 } },
+          "loc": { "start": { "line": 14, "column": 2 }, "end": { "line": 16, "column": 7 } },
+          "line": 14
+        }
+      },
+      "branchMap": {},
+      "s": { "0": 1, "1": 2, "2": 1 },
+      "f": { "0": 2 },
+      "b": {},
+      "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
+      "hash": "49834169b612ae1e549edd0e8ae9c9e455cade2a"
+    },
+    "/Users/risagraw/Documents/code/universal-react/app/components/atoms/Title/Title.style.js": {
+      "path": "/Users/risagraw/Documents/code/universal-react/app/components/atoms/Title/Title.style.js",
+      "statementMap": {},
+      "fnMap": {},
+      "branchMap": {},
+      "s": {},
+      "f": {},
+      "b": {},
+      "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
+      "hash": "00ebc2624eef39af14fb75553ebea28b7a8ac21d"
+    },
+    "/Users/risagraw/Documents/code/universal-react/app/components/atoms/Iframe/Iframe.js": {
+      "path": "/Users/risagraw/Documents/code/universal-react/app/components/atoms/Iframe/Iframe.js",
+      "statementMap": {
+        "0": { "start": { "line": 24, "column": 4 }, "end": { "line": 24, "column": 17 } },
+        "1": { "start": { "line": 25, "column": 4 }, "end": { "line": 27, "column": 6 } },
+        "2": { "start": { "line": 29, "column": 4 }, "end": { "line": 29, "column": 47 } },
+        "3": { "start": { "line": 44, "column": 15 }, "end": { "line": 44, "column": 25 } },
+        "4": { "start": { "line": 46, "column": 28 }, "end": { "line": 46, "column": 38 } },
+        "5": { "start": { "line": 48, "column": 4 }, "end": { "line": 73, "column": 6 } },
+        "6": { "start": { "line": 51, "column": 10 }, "end": { "line": 51, "column": 31 } },
+        "7": { "start": { "line": 60, "column": 10 }, "end": { "line": 66, "column": 11 } },
+        "8": { "start": { "line": 62, "column": 33 }, "end": { "line": 62, "column": 58 } },
+        "9": { "start": { "line": 63, "column": 12 }, "end": { "line": 65, "column": 15 } },
+        "10": { "start": { "line": 67, "column": 10 }, "end": { "line": 69, "column": 11 } },
+        "11": { "start": { "line": 68, "column": 12 }, "end": { "line": 68, "column": 26 } },
+        "12": { "start": { "line": 77, "column": 0 }, "end": { "line": 84, "column": 2 } }
+      },
+      "fnMap": {
+        "0": {
+          "name": "(anonymous_0)",
+          "decl": { "start": { "line": 23, "column": 2 }, "end": { "line": 23, "column": 3 } },
+          "loc": { "start": { "line": 23, "column": 28 }, "end": { "line": 30, "column": 3 } },
+          "line": 23
+        },
+        "1": {
+          "name": "(anonymous_1)",
+          "decl": { "start": { "line": 32, "column": 2 }, "end": { "line": 32, "column": 3 } },
+          "loc": { "start": { "line": 32, "column": 11 }, "end": { "line": 74, "column": 3 } },
+          "line": 32
+        },
+        "2": {
+          "name": "(anonymous_2)",
+          "decl": { "start": { "line": 50, "column": 13 }, "end": { "line": 50, "column": 14 } },
+          "loc": { "start": { "line": 50, "column": 23 }, "end": { "line": 52, "column": 9 } },
+          "line": 50
+        },
+        "3": {
+          "name": "(anonymous_3)",
+          "decl": { "start": { "line": 59, "column": 16 }, "end": { "line": 59, "column": 17 } },
+          "loc": { "start": { "line": 59, "column": 25 }, "end": { "line": 70, "column": 9 } },
+          "line": 59
+        },
+        "4": {
+          "name": "(anonymous_4)",
+          "decl": { "start": { "line": 83, "column": 10 }, "end": { "line": 83, "column": 11 } },
+          "loc": { "start": { "line": 83, "column": 16 }, "end": { "line": 83, "column": 18 } },
+          "line": 83
+        }
+      },
+      "branchMap": {
+        "0": {
+          "loc": { "start": { "line": 57, "column": 16 }, "end": { "line": 57, "column": 56 } },
+          "type": "cond-expr",
+          "locations": [
+            { "start": { "line": 57, "column": 36 }, "end": { "line": 57, "column": 47 } },
+            { "start": { "line": 57, "column": 50 }, "end": { "line": 57, "column": 56 } }
+          ],
+          "line": 57
+        },
+        "1": {
+          "loc": { "start": { "line": 60, "column": 10 }, "end": { "line": 66, "column": 11 } },
+          "type": "if",
+          "locations": [
+            { "start": { "line": 60, "column": 10 }, "end": { "line": 66, "column": 11 } },
+            { "start": { "line": 60, "column": 10 }, "end": { "line": 66, "column": 11 } }
+          ],
+          "line": 60
+        },
+        "2": {
+          "loc": { "start": { "line": 64, "column": 30 }, "end": { "line": 64, "column": 71 } },
+          "type": "cond-expr",
+          "locations": [
+            { "start": { "line": 64, "column": 41 }, "end": { "line": 64, "column": 67 } },
+            { "start": { "line": 64, "column": 70 }, "end": { "line": 64, "column": 71 } }
+          ],
+          "line": 64
+        },
+        "3": {
+          "loc": { "start": { "line": 67, "column": 10 }, "end": { "line": 69, "column": 11 } },
+          "type": "if",
+          "locations": [
+            { "start": { "line": 67, "column": 10 }, "end": { "line": 69, "column": 11 } },
+            { "start": { "line": 67, "column": 10 }, "end": { "line": 69, "column": 11 } }
+          ],
+          "line": 67
+        }
+      },
+      "s": {
+        "0": 3,
+        "1": 3,
+        "2": 3,
+        "3": 4,
+        "4": 4,
+        "5": 4,
+        "6": 0,
+        "7": 1,
+        "8": 1,
+        "9": 1,
+        "10": 1,
+        "11": 1,
+        "12": 1
+      },
+      "f": { "0": 3, "1": 4, "2": 0, "3": 1, "4": 0 },
+      "b": { "0": [3, 1], "1": [1, 0], "2": [1, 0], "3": [1, 0] },
+      "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
+      "hash": "db62f8e46c2eed7e61d8c23ef5c15108afa80abb"
+    },
+    "/Users/risagraw/Documents/code/universal-react/app/components/atoms/Iframe/Iframe.style.js": {
+      "path": "/Users/risagraw/Documents/code/universal-react/app/components/atoms/Iframe/Iframe.style.js",
+      "statementMap": {},
+      "fnMap": {},
+      "branchMap": {},
+      "s": {},
+      "f": {},
+      "b": {},
+      "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
+      "hash": "31bb9e64a2ecf17713c5d1b1092297be510dba89"
+    },
+    "/Users/risagraw/Documents/code/universal-react/app/components/atoms/Spinner/index.js": {
+      "path": "/Users/risagraw/Documents/code/universal-react/app/components/atoms/Spinner/index.js",
+      "statementMap": {},
+      "fnMap": {},
+      "branchMap": {},
+      "s": {},
+      "f": {},
+      "b": {},
+      "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
+      "hash": "ded7267f1d2c72dbb80805fbd685b7b305070013"
+    },
+    "/Users/risagraw/Documents/code/universal-react/app/components/atoms/Spinner/Spinner.js": {
+      "path": "/Users/risagraw/Documents/code/universal-react/app/components/atoms/Spinner/Spinner.js",
+      "statementMap": {
+        "0": { "start": { "line": 20, "column": 16 }, "end": { "line": 50, "column": 1 } },
+        "1": { "start": { "line": 21, "column": 31 }, "end": { "line": 23, "column": 3 } },
+        "2": { "start": { "line": 22, "column": 4 }, "end": { "line": 22, "column": 53 } },
+        "3": { "start": { "line": 25, "column": 30 }, "end": { "line": 31, "column": 3 } },
+        "4": { "start": { "line": 26, "column": 4 }, "end": { "line": 30, "column": 10 } },
+        "5": { "start": { "line": 33, "column": 24 }, "end": { "line": 34, "column": 57 } },
+        "6": { "start": { "line": 34, "column": 4 }, "end": { "line": 34, "column": 57 } },
+        "7": { "start": { "line": 36, "column": 27 }, "end": { "line": 37, "column": 56 } },
+        "8": { "start": { "line": 37, "column": 4 }, "end": { "line": 37, "column": 56 } },
+        "9": { "start": { "line": 39, "column": 78 }, "end": { "line": 39, "column": 83 } },
+        "10": { "start": { "line": 40, "column": 2 }, "end": { "line": 48, "column": 3 } },
+        "11": { "start": { "line": 41, "column": 4 }, "end": { "line": 47, "column": 6 } },
+        "12": { "start": { "line": 49, "column": 2 }, "end": { "line": 49, "column": 12 } },
+        "13": { "start": { "line": 52, "column": 0 }, "end": { "line": 57, "column": 2 } }
+      },
+      "fnMap": {
+        "0": {
+          "name": "(anonymous_0)",
+          "decl": { "start": { "line": 20, "column": 16 }, "end": { "line": 20, "column": 17 } },
+          "loc": { "start": { "line": 20, "column": 40 }, "end": { "line": 50, "column": 1 } },
+          "line": 20
+        },
+        "1": {
+          "name": "(anonymous_1)",
+          "decl": { "start": { "line": 21, "column": 31 }, "end": { "line": 21, "column": 32 } },
+          "loc": { "start": { "line": 22, "column": 4 }, "end": { "line": 22, "column": 53 } },
+          "line": 22
+        },
+        "2": {
+          "name": "(anonymous_2)",
+          "decl": { "start": { "line": 25, "column": 30 }, "end": { "line": 25, "column": 31 } },
+          "loc": { "start": { "line": 26, "column": 4 }, "end": { "line": 30, "column": 10 } },
+          "line": 26
+        },
+        "3": {
+          "name": "(anonymous_3)",
+          "decl": { "start": { "line": 33, "column": 24 }, "end": { "line": 33, "column": 25 } },
+          "loc": { "start": { "line": 34, "column": 4 }, "end": { "line": 34, "column": 57 } },
+          "line": 34
+        },
+        "4": {
+          "name": "(anonymous_4)",
+          "decl": { "start": { "line": 36, "column": 27 }, "end": { "line": 36, "column": 28 } },
+          "loc": { "start": { "line": 37, "column": 4 }, "end": { "line": 37, "column": 56 } },
+          "line": 37
+        }
+      },
+      "branchMap": {
+        "0": {
+          "loc": { "start": { "line": 40, "column": 2 }, "end": { "line": 48, "column": 3 } },
+          "type": "if",
+          "locations": [
+            { "start": { "line": 40, "column": 2 }, "end": { "line": 48, "column": 3 } },
+            { "start": { "line": 40, "column": 2 }, "end": { "line": 48, "column": 3 } }
+          ],
+          "line": 40
+        },
+        "1": {
+          "loc": { "start": { "line": 43, "column": 9 }, "end": { "line": 45, "column": 61 } },
+          "type": "cond-expr",
+          "locations": [
+            { "start": { "line": 44, "column": 12 }, "end": { "line": 44, "column": 58 } },
+            { "start": { "line": 45, "column": 12 }, "end": { "line": 45, "column": 61 } }
+          ],
+          "line": 43
+        }
+      },
+      "s": {
+        "0": 2,
+        "1": 6,
+        "2": 1,
+        "3": 6,
+        "4": 1,
+        "5": 6,
+        "6": 1,
+        "7": 6,
+        "8": 1,
+        "9": 6,
+        "10": 6,
+        "11": 2,
+        "12": 4,
+        "13": 2
+      },
+      "f": { "0": 6, "1": 1, "2": 1, "3": 1, "4": 1 },
+      "b": { "0": [2, 4], "1": [1, 1] },
+      "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
+      "hash": "b044177f9aa49e9f39bf13a836c01e133aeb4ce5"
+    },
+    "/Users/risagraw/Documents/code/universal-react/app/components/atoms/Spinner/Spinner.style.js": {
+      "path": "/Users/risagraw/Documents/code/universal-react/app/components/atoms/Spinner/Spinner.style.js",
+      "statementMap": {
+        "0": { "start": { "line": 49, "column": 24 }, "end": { "line": 49, "column": 50 } },
+        "1": { "start": { "line": 78, "column": 33 }, "end": { "line": 78, "column": 57 } }
+      },
+      "fnMap": {
+        "0": {
+          "name": "(anonymous_0)",
+          "decl": { "start": { "line": 49, "column": 15 }, "end": { "line": 49, "column": 16 } },
+          "loc": { "start": { "line": 49, "column": 24 }, "end": { "line": 49, "column": 50 } },
+          "line": 49
+        },
+        "1": {
+          "name": "(anonymous_1)",
+          "decl": { "start": { "line": 78, "column": 24 }, "end": { "line": 78, "column": 25 } },
+          "loc": { "start": { "line": 78, "column": 33 }, "end": { "line": 78, "column": 57 } },
+          "line": 78
+        }
+      },
+      "branchMap": {},
+      "s": { "0": 1, "1": 1 },
+      "f": { "0": 1, "1": 1 },
+      "b": {},
+      "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
+      "hash": "e95d9cb992ba2a39f613d4f750c52faa285124ac"
+    },
+    "/Users/risagraw/Documents/code/universal-react/app/components/templates/Layout/Layout.style.js": {
+      "path": "/Users/risagraw/Documents/code/universal-react/app/components/templates/Layout/Layout.style.js",
+      "statementMap": {
+        "0": { "start": { "line": 5, "column": 21 }, "end": { "line": 5, "column": 67 } },
+        "1": { "start": { "line": 6, "column": 23 }, "end": { "line": 6, "column": 69 } },
+        "2": { "start": { "line": 8, "column": 22 }, "end": { "line": 8, "column": 69 } },
+        "3": { "start": { "line": 10, "column": 4 }, "end": { "line": 10, "column": 80 } },
+        "4": { "start": { "line": 12, "column": 4 }, "end": { "line": 12, "column": 86 } },
+        "5": { "start": { "line": 15, "column": 29 }, "end": { "line": 15, "column": 67 } },
+        "6": { "start": { "line": 19, "column": 16 }, "end": { "line": 19, "column": 90 } },
+        "7": { "start": { "line": 21, "column": 6 }, "end": { "line": 23, "column": 12 } },
+        "8": { "start": { "line": 27, "column": 4 }, "end": { "line": 27, "column": 87 } },
+        "9": { "start": { "line": 29, "column": 40 }, "end": { "line": 34, "column": 1 } }
+      },
+      "fnMap": {
+        "0": {
+          "name": "(anonymous_0)",
+          "decl": { "start": { "line": 5, "column": 11 }, "end": { "line": 5, "column": 12 } },
+          "loc": { "start": { "line": 5, "column": 21 }, "end": { "line": 5, "column": 67 } },
+          "line": 5
+        },
+        "1": {
+          "name": "(anonymous_1)",
+          "decl": { "start": { "line": 6, "column": 13 }, "end": { "line": 6, "column": 14 } },
+          "loc": { "start": { "line": 6, "column": 23 }, "end": { "line": 6, "column": 69 } },
+          "line": 6
+        },
+        "2": {
+          "name": "(anonymous_2)",
+          "decl": { "start": { "line": 8, "column": 12 }, "end": { "line": 8, "column": 13 } },
+          "loc": { "start": { "line": 8, "column": 22 }, "end": { "line": 8, "column": 69 } },
+          "line": 8
+        },
+        "3": {
+          "name": "(anonymous_3)",
+          "decl": { "start": { "line": 9, "column": 15 }, "end": { "line": 9, "column": 16 } },
+          "loc": { "start": { "line": 10, "column": 4 }, "end": { "line": 10, "column": 80 } },
+          "line": 10
+        },
+        "4": {
+          "name": "(anonymous_4)",
+          "decl": { "start": { "line": 11, "column": 14 }, "end": { "line": 11, "column": 15 } },
+          "loc": { "start": { "line": 12, "column": 4 }, "end": { "line": 12, "column": 86 } },
+          "line": 12
+        },
+        "5": {
+          "name": "(anonymous_5)",
+          "decl": { "start": { "line": 15, "column": 19 }, "end": { "line": 15, "column": 20 } },
+          "loc": { "start": { "line": 15, "column": 29 }, "end": { "line": 15, "column": 67 } },
+          "line": 15
+        },
+        "6": {
+          "name": "(anonymous_6)",
+          "decl": { "start": { "line": 19, "column": 6 }, "end": { "line": 19, "column": 7 } },
+          "loc": { "start": { "line": 19, "column": 16 }, "end": { "line": 19, "column": 90 } },
+          "line": 19
+        },
+        "7": {
+          "name": "(anonymous_7)",
+          "decl": { "start": { "line": 20, "column": 6 }, "end": { "line": 20, "column": 7 } },
+          "loc": { "start": { "line": 21, "column": 6 }, "end": { "line": 23, "column": 12 } },
+          "line": 21
+        },
+        "8": {
+          "name": "(anonymous_8)",
+          "decl": { "start": { "line": 26, "column": 16 }, "end": { "line": 26, "column": 17 } },
+          "loc": { "start": { "line": 27, "column": 4 }, "end": { "line": 27, "column": 87 } },
+          "line": 27
+        }
+      },
+      "branchMap": {
+        "0": {
+          "loc": { "start": { "line": 5, "column": 21 }, "end": { "line": 5, "column": 67 } },
+          "type": "cond-expr",
+          "locations": [
+            { "start": { "line": 5, "column": 51 }, "end": { "line": 5, "column": 57 } },
+            { "start": { "line": 5, "column": 60 }, "end": { "line": 5, "column": 67 } }
+          ],
+          "line": 5
+        },
+        "1": {
+          "loc": { "start": { "line": 6, "column": 23 }, "end": { "line": 6, "column": 69 } },
+          "type": "cond-expr",
+          "locations": [
+            { "start": { "line": 6, "column": 53 }, "end": { "line": 6, "column": 56 } },
+            { "start": { "line": 6, "column": 59 }, "end": { "line": 6, "column": 69 } }
+          ],
+          "line": 6
+        },
+        "2": {
+          "loc": { "start": { "line": 8, "column": 22 }, "end": { "line": 8, "column": 69 } },
+          "type": "cond-expr",
+          "locations": [
+            { "start": { "line": 8, "column": 53 }, "end": { "line": 8, "column": 60 } },
+            { "start": { "line": 8, "column": 63 }, "end": { "line": 8, "column": 69 } }
+          ],
+          "line": 8
+        },
+        "3": {
+          "loc": { "start": { "line": 10, "column": 4 }, "end": { "line": 10, "column": 80 } },
+          "type": "cond-expr",
+          "locations": [
+            { "start": { "line": 10, "column": 35 }, "end": { "line": 10, "column": 71 } },
+            { "start": { "line": 10, "column": 74 }, "end": { "line": 10, "column": 80 } }
+          ],
+          "line": 10
+        },
+        "4": {
+          "loc": { "start": { "line": 12, "column": 4 }, "end": { "line": 12, "column": 86 } },
+          "type": "cond-expr",
+          "locations": [
+            { "start": { "line": 12, "column": 66 }, "end": { "line": 12, "column": 73 } },
+            { "start": { "line": 12, "column": 76 }, "end": { "line": 12, "column": 86 } }
+          ],
+          "line": 12
+        },
+        "5": {
+          "loc": { "start": { "line": 12, "column": 4 }, "end": { "line": 12, "column": 63 } },
+          "type": "binary-expr",
+          "locations": [
+            { "start": { "line": 12, "column": 4 }, "end": { "line": 12, "column": 31 } },
+            { "start": { "line": 12, "column": 35 }, "end": { "line": 12, "column": 63 } }
+          ],
+          "line": 12
+        },
+        "6": {
+          "loc": { "start": { "line": 15, "column": 29 }, "end": { "line": 15, "column": 67 } },
+          "type": "cond-expr",
+          "locations": [
+            { "start": { "line": 15, "column": 52 }, "end": { "line": 15, "column": 58 } },
+            { "start": { "line": 15, "column": 61 }, "end": { "line": 15, "column": 67 } }
+          ],
+          "line": 15
+        },
+        "7": {
+          "loc": { "start": { "line": 19, "column": 16 }, "end": { "line": 19, "column": 90 } },
+          "type": "cond-expr",
+          "locations": [
+            { "start": { "line": 19, "column": 66 }, "end": { "line": 19, "column": 85 } },
+            { "start": { "line": 19, "column": 88 }, "end": { "line": 19, "column": 90 } }
+          ],
+          "line": 19
+        },
+        "8": {
+          "loc": { "start": { "line": 19, "column": 16 }, "end": { "line": 19, "column": 63 } },
+          "type": "binary-expr",
+          "locations": [
+            { "start": { "line": 19, "column": 16 }, "end": { "line": 19, "column": 44 } },
+            { "start": { "line": 19, "column": 48 }, "end": { "line": 19, "column": 63 } }
+          ],
+          "line": 19
+        },
+        "9": {
+          "loc": { "start": { "line": 21, "column": 6 }, "end": { "line": 23, "column": 12 } },
+          "type": "cond-expr",
+          "locations": [
+            { "start": { "line": 22, "column": 10 }, "end": { "line": 22, "column": 46 } },
+            { "start": { "line": 23, "column": 10 }, "end": { "line": 23, "column": 12 } }
+          ],
+          "line": 21
+        },
+        "10": {
+          "loc": { "start": { "line": 21, "column": 6 }, "end": { "line": 21, "column": 77 } },
+          "type": "binary-expr",
+          "locations": [
+            { "start": { "line": 21, "column": 6 }, "end": { "line": 21, "column": 26 } },
+            { "start": { "line": 21, "column": 30 }, "end": { "line": 21, "column": 58 } },
+            { "start": { "line": 21, "column": 62 }, "end": { "line": 21, "column": 77 } }
+          ],
+          "line": 21
+        },
+        "11": {
+          "loc": { "start": { "line": 27, "column": 4 }, "end": { "line": 27, "column": 87 } },
+          "type": "cond-expr",
+          "locations": [
+            { "start": { "line": 27, "column": 67 }, "end": { "line": 27, "column": 75 } },
+            { "start": { "line": 27, "column": 78 }, "end": { "line": 27, "column": 87 } }
+          ],
+          "line": 27
+        },
+        "12": {
+          "loc": { "start": { "line": 27, "column": 4 }, "end": { "line": 27, "column": 64 } },
+          "type": "binary-expr",
+          "locations": [
+            { "start": { "line": 27, "column": 4 }, "end": { "line": 27, "column": 31 } },
+            { "start": { "line": 27, "column": 35 }, "end": { "line": 27, "column": 64 } }
+          ],
+          "line": 27
+        }
+      },
+      "s": { "0": 0, "1": 0, "2": 0, "3": 0, "4": 0, "5": 0, "6": 0, "7": 0, "8": 0, "9": 1 },
+      "f": { "0": 0, "1": 0, "2": 0, "3": 0, "4": 0, "5": 0, "6": 0, "7": 0, "8": 0 },
+      "b": {
+        "0": [0, 0],
+        "1": [0, 0],
+        "2": [0, 0],
+        "3": [0, 0],
+        "4": [0, 0],
+        "5": [0, 0],
+        "6": [0, 0],
+        "7": [0, 0],
+        "8": [0, 0],
+        "9": [0, 0],
+        "10": [0, 0, 0],
+        "11": [0, 0],
+        "12": [0, 0]
+      },
+      "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
+      "hash": "0e606c85398e765f479d349deb7434bb107caf9e"
+    },
+    "/Users/risagraw/Documents/code/universal-react/app/components/molecules/FeatureBanner/FeatureBanner.style.js": {
+      "path": "/Users/risagraw/Documents/code/universal-react/app/components/molecules/FeatureBanner/FeatureBanner.style.js",
+      "statementMap": {},
+      "fnMap": {},
+      "branchMap": {},
+      "s": {},
+      "f": {},
+      "b": {},
+      "hash": "74fec54178c81833fbcb3df724c3099efcbf729a"
+    },
+    "/Users/risagraw/Documents/code/universal-react/app/components/atoms/Iframe/index.js": {
+      "path": "/Users/risagraw/Documents/code/universal-react/app/components/atoms/Iframe/index.js",
+      "statementMap": {},
+      "fnMap": {},
+      "branchMap": {},
+      "s": {},
+      "f": {},
+      "b": {},
+      "hash": "4700d4638c39c19484ba5f5b324e5df56d1ef78d"
+    },
+    "/Users/risagraw/Documents/code/universal-react/app/components/molecules/NavBar/types/index.js": {
+      "path": "/Users/risagraw/Documents/code/universal-react/app/components/molecules/NavBar/types/index.js",
+      "statementMap": {},
+      "fnMap": {},
+      "branchMap": {},
+      "s": {},
+      "f": {},
+      "b": {},
+      "hash": "3c9cfd98e8642724645bf8bca86b6b68e64dadb2"
+    },
+    "/Users/risagraw/Documents/code/universal-react/app/components/molecules/ArticleWrap/types/index.js": {
+      "path": "/Users/risagraw/Documents/code/universal-react/app/components/molecules/ArticleWrap/types/index.js",
+      "statementMap": {},
+      "fnMap": {},
+      "branchMap": {},
+      "s": {},
+      "f": {},
+      "b": {},
+      "hash": "5fd96fe9d6e388b15e8ed935a6f452339fe1674a"
+    },
+    "/Users/risagraw/Documents/code/universal-react/app/components/atoms/HeadTag/types/index.js": {
+      "path": "/Users/risagraw/Documents/code/universal-react/app/components/atoms/HeadTag/types/index.js",
+      "statementMap": {},
+      "fnMap": {},
+      "branchMap": {},
+      "s": {},
+      "f": {},
+      "b": {},
+      "hash": "cd7d8721011948df08054e231a4603dcf142ed37"
+    },
+    "/Users/risagraw/Documents/code/universal-react/app/components/molecules/TopBanner/types/index.js": {
+      "path": "/Users/risagraw/Documents/code/universal-react/app/components/molecules/TopBanner/types/index.js",
+      "statementMap": {},
+      "fnMap": {},
+      "branchMap": {},
+      "s": {},
+      "f": {},
+      "b": {},
+      "hash": "322071cfc767ebd8f9d768a9bdc5a1e7aa7e22c2"
+    },
+    "/Users/risagraw/Documents/code/universal-react/app/components/molecules/FeatureBanner/index.js": {
+      "path": "/Users/risagraw/Documents/code/universal-react/app/components/molecules/FeatureBanner/index.js",
+      "statementMap": {},
+      "fnMap": {},
+      "branchMap": {},
+      "s": {},
+      "f": {},
+      "b": {},
+      "hash": "14081f05eea43aefe8acd7ec8b885f87866258ee"
+    },
+    "/Users/risagraw/Documents/code/universal-react/app/components/molecules/FeatureBanner/types/index.js": {
+      "path": "/Users/risagraw/Documents/code/universal-react/app/components/molecules/FeatureBanner/types/index.js",
+      "statementMap": {},
+      "fnMap": {},
+      "branchMap": {},
+      "s": {},
+      "f": {},
+      "b": {},
+      "hash": "8aa82c5419c291c3c3584a2ed34a3375bdd586bc"
+    },
+    "/Users/risagraw/Documents/code/universal-react/app/components/atoms/Title/index.js": {
+      "path": "/Users/risagraw/Documents/code/universal-react/app/components/atoms/Title/index.js",
+      "statementMap": {},
+      "fnMap": {},
+      "branchMap": {},
+      "s": {},
+      "f": {},
+      "b": {},
+      "hash": "8ae7aa1e1ad0dd7ab4e795346b474985c253aee5"
+    },
+    "/Users/risagraw/Documents/code/universal-react/app/components/atoms/ProgressCircle/index.js": {
+      "path": "/Users/risagraw/Documents/code/universal-react/app/components/atoms/ProgressCircle/index.js",
+      "statementMap": {},
+      "fnMap": {},
+      "branchMap": {},
+      "s": {},
+      "f": {},
+      "b": {},
+      "hash": "d81fa74038408dabd1b47bff7d49854baddcc0f8"
+    },
+    "/Users/risagraw/Documents/code/universal-react/app/components/templates/Learn/Learn.constants.js": {
+      "path": "/Users/risagraw/Documents/code/universal-react/app/components/templates/Learn/Learn.constants.js",
+      "statementMap": {
+        "0": { "start": { "line": 5, "column": 31 }, "end": { "line": 5, "column": 48 } },
+        "1": { "start": { "line": 6, "column": 39 }, "end": { "line": 6, "column": 64 } },
+        "2": { "start": { "line": 7, "column": 39 }, "end": { "line": 7, "column": 64 } }
+      },
+      "fnMap": {},
+      "branchMap": {},
+      "s": { "0": 0, "1": 0, "2": 0 },
+      "f": {},
+      "b": {},
+      "hash": "881ae5103714fecf327051b6d19054449965e1ab"
+    },
+    "/Users/risagraw/Documents/code/universal-react/app/components/templates/Learn/Learn.saga.js": {
+      "path": "/Users/risagraw/Documents/code/universal-react/app/components/templates/Learn/Learn.saga.js",
+      "statementMap": {
+        "0": { "start": { "line": 7, "column": 2 }, "end": { "line": 13, "column": 3 } },
+        "1": { "start": { "line": 9, "column": 17 }, "end": { "line": 9, "column": 77 } },
+        "2": { "start": { "line": 10, "column": 4 }, "end": { "line": 10, "column": 42 } },
+        "3": { "start": { "line": 12, "column": 4 }, "end": { "line": 12, "column": 41 } },
+        "4": { "start": { "line": 17, "column": 2 }, "end": { "line": 21, "column": 3 } },
+        "5": { "start": { "line": 18, "column": 4 }, "end": { "line": 18, "column": 60 } },
+        "6": { "start": { "line": 20, "column": 4 }, "end": { "line": 20, "column": 41 } }
+      },
+      "fnMap": {
+        "0": {
+          "name": "loadLearnPageDataSaga",
+          "decl": { "start": { "line": 6, "column": 17 }, "end": { "line": 6, "column": 38 } },
+          "loc": { "start": { "line": 6, "column": 47 }, "end": { "line": 14, "column": 1 } },
+          "line": 6
+        },
+        "1": {
+          "name": "learnPageSaga",
+          "decl": { "start": { "line": 16, "column": 25 }, "end": { "line": 16, "column": 38 } },
+          "loc": { "start": { "line": 16, "column": 41 }, "end": { "line": 22, "column": 1 } },
+          "line": 16
+        }
+      },
+      "branchMap": {},
+      "s": { "0": 0, "1": 0, "2": 0, "3": 0, "4": 0, "5": 0, "6": 0 },
+      "f": { "0": 0, "1": 0 },
+      "b": {},
+      "hash": "89d616372df607ef36c2fe6d8ed3551f899166b7"
+    },
+    "/Users/risagraw/Documents/code/universal-react/app/components/templates/Learn/index.js": {
+      "path": "/Users/risagraw/Documents/code/universal-react/app/components/templates/Learn/index.js",
+      "statementMap": {},
+      "fnMap": {},
+      "branchMap": {},
+      "s": {},
+      "f": {},
+      "b": {},
+      "hash": "93f1f7c8e3cb2607b68264636784d018141a76dc"
+    },
+    "/Users/risagraw/Documents/code/universal-react/app/components/templates/HomePage/types/index.js": {
+      "path": "/Users/risagraw/Documents/code/universal-react/app/components/templates/HomePage/types/index.js",
+      "statementMap": {},
+      "fnMap": {},
+      "branchMap": {},
+      "s": {},
+      "f": {},
+      "b": {},
+      "hash": "44f13310ee38bd886dc3057f6c85b72c537dfb57"
+    },
+    "/Users/risagraw/Documents/code/universal-react/app/components/templates/Learn/Learn.actions.js": {
+      "path": "/Users/risagraw/Documents/code/universal-react/app/components/templates/Learn/Learn.actions.js",
+      "statementMap": {
+        "0": { "start": { "line": 13, "column": 29 }, "end": { "line": 16, "column": 2 } },
+        "1": { "start": { "line": 13, "column": 36 }, "end": { "line": 16, "column": 1 } },
+        "2": { "start": { "line": 18, "column": 36 }, "end": { "line": 21, "column": 2 } },
+        "3": { "start": { "line": 18, "column": 52 }, "end": { "line": 21, "column": 1 } },
+        "4": { "start": { "line": 23, "column": 36 }, "end": { "line": 25, "column": 2 } },
+        "5": { "start": { "line": 23, "column": 43 }, "end": { "line": 25, "column": 1 } }
+      },
+      "fnMap": {
+        "0": {
+          "name": "(anonymous_0)",
+          "decl": { "start": { "line": 13, "column": 29 }, "end": { "line": 13, "column": 30 } },
+          "loc": { "start": { "line": 13, "column": 36 }, "end": { "line": 16, "column": 1 } },
+          "line": 13
+        },
+        "1": {
+          "name": "(anonymous_1)",
+          "decl": { "start": { "line": 18, "column": 36 }, "end": { "line": 18, "column": 37 } },
+          "loc": { "start": { "line": 18, "column": 52 }, "end": { "line": 21, "column": 1 } },
+          "line": 18
+        },
+        "2": {
+          "name": "(anonymous_2)",
+          "decl": { "start": { "line": 23, "column": 36 }, "end": { "line": 23, "column": 37 } },
+          "loc": { "start": { "line": 23, "column": 43 }, "end": { "line": 25, "column": 1 } },
+          "line": 23
+        }
+      },
+      "branchMap": {},
+      "s": { "0": 0, "1": 0, "2": 0, "3": 0, "4": 0, "5": 0 },
+      "f": { "0": 0, "1": 0, "2": 0 },
+      "b": {},
+      "hash": "1ce96d6f74e43721724855c4c58e992f61e5c132"
+    },
+    "/Users/risagraw/Documents/code/universal-react/app/components/templates/Features/index.js": {
+      "path": "/Users/risagraw/Documents/code/universal-react/app/components/templates/Features/index.js",
+      "statementMap": {},
+      "fnMap": {},
+      "branchMap": {},
+      "s": {},
+      "f": {},
+      "b": {},
+      "hash": "4a6b35fb888fbb261901767f695b6d8999eecb8c"
+    },
+    "/Users/risagraw/Documents/code/universal-react/app/components/molecules/FeatureBanner/FeatureBanner.js": {
+      "path": "/Users/risagraw/Documents/code/universal-react/app/components/molecules/FeatureBanner/FeatureBanner.js",
+      "statementMap": {
+        "0": { "start": { "line": 15, "column": 47 }, "end": { "line": 15, "column": 57 } },
+        "1": { "start": { "line": 16, "column": 4 }, "end": { "line": 23, "column": 6 } }
+      },
+      "fnMap": {
+        "0": {
+          "name": "(anonymous_0)",
+          "decl": { "start": { "line": 14, "column": 2 }, "end": { "line": 14, "column": 3 } },
+          "loc": { "start": { "line": 14, "column": 11 }, "end": { "line": 24, "column": 3 } },
+          "line": 14
+        }
+      },
+      "branchMap": {
+        "0": {
+          "loc": { "start": { "line": 20, "column": 11 }, "end": { "line": 20, "column": 71 } },
+          "type": "binary-expr",
+          "locations": [
+            { "start": { "line": 20, "column": 11 }, "end": { "line": 20, "column": 21 } },
+            { "start": { "line": 20, "column": 25 }, "end": { "line": 20, "column": 71 } }
+          ],
+          "line": 20
+        }
+      },
+      "s": { "0": 0, "1": 0 },
+      "f": { "0": 0 },
+      "b": { "0": [0, 0] },
+      "hash": "5e3fecd81f9d0e31d2183380277128256bdfbfe0"
+    },
+    "/Users/risagraw/Documents/code/universal-react/app/components/templates/Learn/Learn.reducer.js": {
+      "path": "/Users/risagraw/Documents/code/universal-react/app/components/templates/Learn/Learn.reducer.js",
+      "statementMap": {
+        "0": { "start": { "line": 6, "column": 32 }, "end": { "line": 7, "column": 35 } },
+        "1": { "start": { "line": 7, "column": 2 }, "end": { "line": 7, "column": 35 } },
+        "2": { "start": { "line": 9, "column": 22 }, "end": { "line": 18, "column": 1 } },
+        "3": { "start": { "line": 10, "column": 2 }, "end": { "line": 17, "column": 3 } },
+        "4": { "start": { "line": 12, "column": 6 }, "end": { "line": 12, "column": 50 } },
+        "5": { "start": { "line": 14, "column": 6 }, "end": { "line": 14, "column": 46 } },
+        "6": { "start": { "line": 16, "column": 6 }, "end": { "line": 16, "column": 19 } }
+      },
+      "fnMap": {
+        "0": {
+          "name": "(anonymous_0)",
+          "decl": { "start": { "line": 6, "column": 32 }, "end": { "line": 6, "column": 33 } },
+          "loc": { "start": { "line": 7, "column": 2 }, "end": { "line": 7, "column": 35 } },
+          "line": 7
+        },
+        "1": {
+          "name": "(anonymous_1)",
+          "decl": { "start": { "line": 9, "column": 22 }, "end": { "line": 9, "column": 23 } },
+          "loc": { "start": { "line": 9, "column": 79 }, "end": { "line": 18, "column": 1 } },
+          "line": 9
+        }
+      },
+      "branchMap": {
+        "0": {
+          "loc": { "start": { "line": 9, "column": 23 }, "end": { "line": 9, "column": 41 } },
+          "type": "default-arg",
+          "locations": [
+            { "start": { "line": 9, "column": 39 }, "end": { "line": 9, "column": 41 } }
+          ],
+          "line": 9
+        },
+        "1": {
+          "loc": { "start": { "line": 9, "column": 43 }, "end": { "line": 9, "column": 66 } },
+          "type": "default-arg",
+          "locations": [
+            { "start": { "line": 9, "column": 57 }, "end": { "line": 9, "column": 66 } }
+          ],
+          "line": 9
+        },
+        "2": {
+          "loc": { "start": { "line": 10, "column": 2 }, "end": { "line": 17, "column": 3 } },
+          "type": "switch",
+          "locations": [
+            { "start": { "line": 11, "column": 4 }, "end": { "line": 12, "column": 50 } },
+            { "start": { "line": 13, "column": 4 }, "end": { "line": 14, "column": 46 } },
+            { "start": { "line": 15, "column": 4 }, "end": { "line": 16, "column": 19 } }
+          ],
+          "line": 10
+        }
+      },
+      "s": { "0": 0, "1": 0, "2": 0, "3": 0, "4": 0, "5": 0, "6": 0 },
+      "f": { "0": 0, "1": 0 },
+      "b": { "0": [0], "1": [0], "2": [0, 0, 0] },
+      "hash": "66adb71fad1a4869ad8cc96357db3a8723cb7d01"
+    },
+    "/Users/risagraw/Documents/code/universal-react/app/components/templates/Features/Features.actions.js": {
+      "path": "/Users/risagraw/Documents/code/universal-react/app/components/templates/Features/Features.actions.js",
+      "statementMap": {
+        "0": { "start": { "line": 13, "column": 32 }, "end": { "line": 16, "column": 2 } },
+        "1": { "start": { "line": 13, "column": 39 }, "end": { "line": 16, "column": 1 } },
+        "2": { "start": { "line": 18, "column": 39 }, "end": { "line": 21, "column": 2 } },
+        "3": { "start": { "line": 18, "column": 55 }, "end": { "line": 21, "column": 1 } },
+        "4": { "start": { "line": 23, "column": 39 }, "end": { "line": 25, "column": 2 } },
+        "5": { "start": { "line": 23, "column": 46 }, "end": { "line": 25, "column": 1 } }
+      },
+      "fnMap": {
+        "0": {
+          "name": "(anonymous_0)",
+          "decl": { "start": { "line": 13, "column": 32 }, "end": { "line": 13, "column": 33 } },
+          "loc": { "start": { "line": 13, "column": 39 }, "end": { "line": 16, "column": 1 } },
+          "line": 13
+        },
+        "1": {
+          "name": "(anonymous_1)",
+          "decl": { "start": { "line": 18, "column": 39 }, "end": { "line": 18, "column": 40 } },
+          "loc": { "start": { "line": 18, "column": 55 }, "end": { "line": 21, "column": 1 } },
+          "line": 18
+        },
+        "2": {
+          "name": "(anonymous_2)",
+          "decl": { "start": { "line": 23, "column": 39 }, "end": { "line": 23, "column": 40 } },
+          "loc": { "start": { "line": 23, "column": 46 }, "end": { "line": 25, "column": 1 } },
+          "line": 23
+        }
+      },
+      "branchMap": {},
+      "s": { "0": 0, "1": 0, "2": 0, "3": 0, "4": 0, "5": 0 },
+      "f": { "0": 0, "1": 0, "2": 0 },
+      "b": {},
+      "hash": "ca3f47ae842a898d8173fec46c230feec7ea30c2"
+    },
+    "/Users/risagraw/Documents/code/universal-react/app/components/templates/Features/Features.constants.js": {
+      "path": "/Users/risagraw/Documents/code/universal-react/app/components/templates/Features/Features.constants.js",
+      "statementMap": {
+        "0": { "start": { "line": 5, "column": 34 }, "end": { "line": 5, "column": 54 } },
+        "1": { "start": { "line": 6, "column": 42 }, "end": { "line": 6, "column": 70 } },
+        "2": { "start": { "line": 7, "column": 42 }, "end": { "line": 7, "column": 70 } }
+      },
+      "fnMap": {},
+      "branchMap": {},
+      "s": { "0": 0, "1": 0, "2": 0 },
+      "f": {},
+      "b": {},
+      "hash": "de7e2ad960226f3fce7923e31880c48671b7c29c"
+    },
+    "/Users/risagraw/Documents/code/universal-react/app/components/organisms/Footer/types/index.js": {
+      "path": "/Users/risagraw/Documents/code/universal-react/app/components/organisms/Footer/types/index.js",
+      "statementMap": {},
+      "fnMap": {},
+      "branchMap": {},
+      "s": {},
+      "f": {},
+      "b": {},
+      "hash": "3b094c7b04697612609a376b2d9b0c09aed58b97"
+    },
+    "/Users/risagraw/Documents/code/universal-react/app/components/organisms/Header/types/index.js": {
+      "path": "/Users/risagraw/Documents/code/universal-react/app/components/organisms/Header/types/index.js",
+      "statementMap": {},
+      "fnMap": {},
+      "branchMap": {},
+      "s": {},
+      "f": {},
+      "b": {},
+      "hash": "997096196cd530affc10da3898e0630827f1ee49"
+    },
+    "/Users/risagraw/Documents/code/universal-react/app/components/templates/ErrorPage/index.js": {
+      "path": "/Users/risagraw/Documents/code/universal-react/app/components/templates/ErrorPage/index.js",
+      "statementMap": {},
+      "fnMap": {},
+      "branchMap": {},
+      "s": {},
+      "f": {},
+      "b": {},
+      "hash": "3192c1d77ae070a424da11fc3c2d89e189b877ff"
+    },
+    "/Users/risagraw/Documents/code/universal-react/app/components/templates/Features/Features.saga.js": {
+      "path": "/Users/risagraw/Documents/code/universal-react/app/components/templates/Features/Features.saga.js",
+      "statementMap": {
+        "0": { "start": { "line": 7, "column": 2 }, "end": { "line": 13, "column": 3 } },
+        "1": { "start": { "line": 9, "column": 17 }, "end": { "line": 9, "column": 77 } },
+        "2": { "start": { "line": 10, "column": 4 }, "end": { "line": 10, "column": 45 } },
+        "3": { "start": { "line": 12, "column": 4 }, "end": { "line": 12, "column": 44 } },
+        "4": { "start": { "line": 17, "column": 2 }, "end": { "line": 21, "column": 3 } },
+        "5": { "start": { "line": 18, "column": 4 }, "end": { "line": 18, "column": 66 } },
+        "6": { "start": { "line": 20, "column": 4 }, "end": { "line": 20, "column": 44 } }
+      },
+      "fnMap": {
+        "0": {
+          "name": "loadFeaturesPageDataSaga",
+          "decl": { "start": { "line": 6, "column": 17 }, "end": { "line": 6, "column": 41 } },
+          "loc": { "start": { "line": 6, "column": 50 }, "end": { "line": 14, "column": 1 } },
+          "line": 6
+        },
+        "1": {
+          "name": "featuresPageSaga",
+          "decl": { "start": { "line": 16, "column": 25 }, "end": { "line": 16, "column": 41 } },
+          "loc": { "start": { "line": 16, "column": 44 }, "end": { "line": 22, "column": 1 } },
+          "line": 16
+        }
+      },
+      "branchMap": {},
+      "s": { "0": 0, "1": 0, "2": 0, "3": 0, "4": 0, "5": 0, "6": 0 },
+      "f": { "0": 0, "1": 0 },
+      "b": {},
+      "hash": "6c73d84ea08c50f34f66d5d72a799ff17b147e3e"
+    },
+    "/Users/risagraw/Documents/code/universal-react/app/components/organisms/Header/Header.style.js": {
+      "path": "/Users/risagraw/Documents/code/universal-react/app/components/organisms/Header/Header.style.js",
+      "statementMap": {
+        "0": { "start": { "line": 5, "column": 21 }, "end": { "line": 7, "column": 1 } }
+      },
+      "fnMap": {},
+      "branchMap": {},
+      "s": { "0": 0 },
+      "f": {},
+      "b": {},
+      "hash": "665cd9473e36fc2a2a9dfeafaadaf8063479cddd"
+    },
+    "/Users/risagraw/Documents/code/universal-react/app/components/templates/Features/Features.reducer.js": {
+      "path": "/Users/risagraw/Documents/code/universal-react/app/components/templates/Features/Features.reducer.js",
+      "statementMap": {
+        "0": { "start": { "line": 6, "column": 35 }, "end": { "line": 7, "column": 38 } },
+        "1": { "start": { "line": 7, "column": 2 }, "end": { "line": 7, "column": 38 } },
+        "2": { "start": { "line": 9, "column": 22 }, "end": { "line": 18, "column": 1 } },
+        "3": { "start": { "line": 10, "column": 2 }, "end": { "line": 17, "column": 3 } },
+        "4": { "start": { "line": 12, "column": 6 }, "end": { "line": 12, "column": 53 } },
+        "5": { "start": { "line": 14, "column": 6 }, "end": { "line": 14, "column": 49 } },
+        "6": { "start": { "line": 16, "column": 6 }, "end": { "line": 16, "column": 19 } }
+      },
+      "fnMap": {
+        "0": {
+          "name": "(anonymous_0)",
+          "decl": { "start": { "line": 6, "column": 35 }, "end": { "line": 6, "column": 36 } },
+          "loc": { "start": { "line": 7, "column": 2 }, "end": { "line": 7, "column": 38 } },
+          "line": 7
+        },
+        "1": {
+          "name": "(anonymous_1)",
+          "decl": { "start": { "line": 9, "column": 22 }, "end": { "line": 9, "column": 23 } },
+          "loc": { "start": { "line": 9, "column": 79 }, "end": { "line": 18, "column": 1 } },
+          "line": 9
+        }
+      },
+      "branchMap": {
+        "0": {
+          "loc": { "start": { "line": 9, "column": 23 }, "end": { "line": 9, "column": 41 } },
+          "type": "default-arg",
+          "locations": [
+            { "start": { "line": 9, "column": 39 }, "end": { "line": 9, "column": 41 } }
+          ],
+          "line": 9
+        },
+        "1": {
+          "loc": { "start": { "line": 9, "column": 43 }, "end": { "line": 9, "column": 66 } },
+          "type": "default-arg",
+          "locations": [
+            { "start": { "line": 9, "column": 57 }, "end": { "line": 9, "column": 66 } }
+          ],
+          "line": 9
+        },
+        "2": {
+          "loc": { "start": { "line": 10, "column": 2 }, "end": { "line": 17, "column": 3 } },
+          "type": "switch",
+          "locations": [
+            { "start": { "line": 11, "column": 4 }, "end": { "line": 12, "column": 53 } },
+            { "start": { "line": 13, "column": 4 }, "end": { "line": 14, "column": 49 } },
+            { "start": { "line": 15, "column": 4 }, "end": { "line": 16, "column": 19 } }
+          ],
+          "line": 10
+        }
+      },
+      "s": { "0": 0, "1": 0, "2": 0, "3": 0, "4": 0, "5": 0, "6": 0 },
+      "f": { "0": 0, "1": 0 },
+      "b": { "0": [0], "1": [0], "2": [0, 0, 0] },
+      "hash": "d6022340d87cd0fe4f95501202db8be32ee6e164"
+    },
+    "/Users/risagraw/Documents/code/universal-react/app/components/templates/Learn/Learn.js": {
+      "path": "/Users/risagraw/Documents/code/universal-react/app/components/templates/Learn/Learn.js",
+      "statementMap": {
+        "0": { "start": { "line": 15, "column": 20 }, "end": { "line": 17, "column": 2 } },
+        "1": { "start": { "line": 15, "column": 34 }, "end": { "line": 15, "column": 71 } },
+        "2": { "start": { "line": 16, "column": 17 }, "end": { "line": 16, "column": 27 } },
+        "3": { "start": { "line": 20, "column": 14 }, "end": { "line": 65, "column": 3 } },
+        "4": { "start": { "line": 68, "column": 4 }, "end": { "line": 70, "column": 5 } },
+        "5": { "start": { "line": 69, "column": 6 }, "end": { "line": 69, "column": 22 } },
+        "6": { "start": { "line": 71, "column": 4 }, "end": { "line": 71, "column": 14 } },
+        "7": { "start": { "line": 75, "column": 4 }, "end": { "line": 102, "column": 6 } },
+        "8": { "start": { "line": 91, "column": 14 }, "end": { "line": 97, "column": 16 } }
+      },
+      "fnMap": {
+        "0": {
+          "name": "(anonymous_0)",
+          "decl": { "start": { "line": 15, "column": 28 }, "end": { "line": 15, "column": 29 } },
+          "loc": { "start": { "line": 15, "column": 34 }, "end": { "line": 15, "column": 71 } },
+          "line": 15
+        },
+        "1": {
+          "name": "(anonymous_1)",
+          "decl": { "start": { "line": 16, "column": 11 }, "end": { "line": 16, "column": 12 } },
+          "loc": { "start": { "line": 16, "column": 17 }, "end": { "line": 16, "column": 27 } },
+          "line": 16
+        },
+        "2": {
+          "name": "(anonymous_2)",
+          "decl": { "start": { "line": 67, "column": 2 }, "end": { "line": 67, "column": 3 } },
+          "loc": { "start": { "line": 67, "column": 39 }, "end": { "line": 72, "column": 3 } },
+          "line": 67
+        },
+        "3": {
+          "name": "(anonymous_3)",
+          "decl": { "start": { "line": 74, "column": 2 }, "end": { "line": 74, "column": 3 } },
+          "loc": { "start": { "line": 74, "column": 11 }, "end": { "line": 103, "column": 3 } },
+          "line": 74
+        },
+        "4": {
+          "name": "(anonymous_4)",
+          "decl": { "start": { "line": 90, "column": 32 }, "end": { "line": 90, "column": 33 } },
+          "loc": { "start": { "line": 90, "column": 46 }, "end": { "line": 98, "column": 13 } },
+          "line": 90
+        }
+      },
+      "branchMap": {
+        "0": {
+          "loc": { "start": { "line": 68, "column": 4 }, "end": { "line": 70, "column": 5 } },
+          "type": "if",
+          "locations": [
+            { "start": { "line": 68, "column": 4 }, "end": { "line": 70, "column": 5 } },
+            { "start": { "line": 68, "column": 4 }, "end": { "line": 70, "column": 5 } }
+          ],
+          "line": 68
+        },
+        "1": {
+          "loc": { "start": { "line": 68, "column": 8 }, "end": { "line": 68, "column": 27 } },
+          "type": "binary-expr",
+          "locations": [
+            { "start": { "line": 68, "column": 8 }, "end": { "line": 68, "column": 11 } },
+            { "start": { "line": 68, "column": 15 }, "end": { "line": 68, "column": 27 } }
+          ],
+          "line": 68
+        },
+        "2": {
+          "loc": { "start": { "line": 93, "column": 61 }, "end": { "line": 93, "column": 93 } },
+          "type": "cond-expr",
+          "locations": [
+            { "start": { "line": 93, "column": 76 }, "end": { "line": 93, "column": 86 } },
+            { "start": { "line": 93, "column": 89 }, "end": { "line": 93, "column": 93 } }
+          ],
+          "line": 93
+        }
+      },
+      "s": { "0": 0, "1": 0, "2": 0, "3": 0, "4": 0, "5": 0, "6": 0, "7": 0, "8": 0 },
+      "f": { "0": 0, "1": 0, "2": 0, "3": 0, "4": 0 },
+      "b": { "0": [0, 0], "1": [0, 0], "2": [0, 0] },
+      "hash": "7cae8136f512b2c6ceab21e92b171363b5a53df3"
+    },
+    "/Users/risagraw/Documents/code/universal-react/app/components/templates/Features/Features.js": {
+      "path": "/Users/risagraw/Documents/code/universal-react/app/components/templates/Features/Features.js",
+      "statementMap": {
+        "0": { "start": { "line": 22, "column": 14 }, "end": { "line": 22, "column": 79 } },
+        "1": { "start": { "line": 22, "column": 28 }, "end": { "line": 22, "column": 62 } },
+        "2": { "start": { "line": 24, "column": 20 }, "end": { "line": 26, "column": 2 } },
+        "3": { "start": { "line": 24, "column": 34 }, "end": { "line": 24, "column": 71 } },
+        "4": { "start": { "line": 25, "column": 17 }, "end": { "line": 25, "column": 27 } },
+        "5": { "start": { "line": 30, "column": 4 }, "end": { "line": 32, "column": 5 } },
+        "6": { "start": { "line": 31, "column": 6 }, "end": { "line": 31, "column": 22 } },
+        "7": { "start": { "line": 33, "column": 4 }, "end": { "line": 33, "column": 14 } },
+        "8": { "start": { "line": 36, "column": 17 }, "end": { "line": 49, "column": 3 } },
+        "9": { "start": { "line": 52, "column": 4 }, "end": { "line": 313, "column": 6 } }
+      },
+      "fnMap": {
+        "0": {
+          "name": "(anonymous_0)",
+          "decl": { "start": { "line": 22, "column": 22 }, "end": { "line": 22, "column": 23 } },
+          "loc": { "start": { "line": 22, "column": 28 }, "end": { "line": 22, "column": 62 } },
+          "line": 22
+        },
+        "1": {
+          "name": "(anonymous_1)",
+          "decl": { "start": { "line": 24, "column": 28 }, "end": { "line": 24, "column": 29 } },
+          "loc": { "start": { "line": 24, "column": 34 }, "end": { "line": 24, "column": 71 } },
+          "line": 24
+        },
+        "2": {
+          "name": "(anonymous_2)",
+          "decl": { "start": { "line": 25, "column": 11 }, "end": { "line": 25, "column": 12 } },
+          "loc": { "start": { "line": 25, "column": 17 }, "end": { "line": 25, "column": 27 } },
+          "line": 25
+        },
+        "3": {
+          "name": "(anonymous_3)",
+          "decl": { "start": { "line": 29, "column": 2 }, "end": { "line": 29, "column": 3 } },
+          "loc": { "start": { "line": 29, "column": 39 }, "end": { "line": 34, "column": 3 } },
+          "line": 29
+        },
+        "4": {
+          "name": "(anonymous_4)",
+          "decl": { "start": { "line": 51, "column": 2 }, "end": { "line": 51, "column": 3 } },
+          "loc": { "start": { "line": 51, "column": 11 }, "end": { "line": 314, "column": 3 } },
+          "line": 51
+        }
+      },
+      "branchMap": {
+        "0": {
+          "loc": { "start": { "line": 30, "column": 4 }, "end": { "line": 32, "column": 5 } },
+          "type": "if",
+          "locations": [
+            { "start": { "line": 30, "column": 4 }, "end": { "line": 32, "column": 5 } },
+            { "start": { "line": 30, "column": 4 }, "end": { "line": 32, "column": 5 } }
+          ],
+          "line": 30
+        },
+        "1": {
+          "loc": { "start": { "line": 30, "column": 8 }, "end": { "line": 30, "column": 27 } },
+          "type": "binary-expr",
+          "locations": [
+            { "start": { "line": 30, "column": 8 }, "end": { "line": 30, "column": 11 } },
+            { "start": { "line": 30, "column": 15 }, "end": { "line": 30, "column": 27 } }
+          ],
+          "line": 30
+        }
+      },
+      "s": { "0": 0, "1": 0, "2": 0, "3": 0, "4": 0, "5": 0, "6": 0, "7": 0, "8": 0, "9": 0 },
+      "f": { "0": 0, "1": 0, "2": 0, "3": 0, "4": 0 },
+      "b": { "0": [0, 0], "1": [0, 0] },
+      "hash": "4f92e3eeff9c8d5a5723e1b38d82531367b7dcea"
+    }
+  }
+}

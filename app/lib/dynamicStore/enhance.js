@@ -54,7 +54,7 @@ const cleanupRequestHeaders = requestHeaders => {
   if (!requestHeaders) {
     return null;
   }
-  const requestHeadersCopy = Object.assign({}, requestHeaders);
+  const requestHeadersCopy = { ...requestHeaders };
   headerExclusionList.forEach(header => {
     delete requestHeadersCopy[header];
   });

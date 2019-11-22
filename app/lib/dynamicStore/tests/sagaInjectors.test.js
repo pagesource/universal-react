@@ -1,7 +1,7 @@
 /**
  * Test injectors
  */
-
+/* eslint-disable compat/compat */
 import { put } from 'redux-saga/effects';
 import configureMockStore from 'redux-mock-store';
 

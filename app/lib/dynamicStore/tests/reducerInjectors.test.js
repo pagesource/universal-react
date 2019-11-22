@@ -1,7 +1,7 @@
 /**
  * Test injectors
  */
-
+/* eslint-disable compat/compat */
 import identity from 'lodash/identity';
 import configureMockStore from 'redux-mock-store';
 

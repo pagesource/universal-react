@@ -94,5 +94,7 @@ class TopBanner extends PureComponent<Props> {
     );
   }
 }
+
+TopBanner.defaultProps = {};
 export default withStyles(TopBanner, styles);
 export { TopBanner };

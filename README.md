@@ -14,7 +14,6 @@ giving them more time to focus on business problems rather than web development 
 - **Flow typed:** All components are FlowTyped and Flow Type checked.
 - **Static Code Quality checks and formatting:** Javascript and CSS linting using Eslint, StyleLint and Prettier.
 - **Component scaffolding:** Consistently generate components using Plop.
-- **Documentation:** Generates code documentation with ESDocs.
 - **Git Hooks:** Pre-commit, Pre-push and pre-publish using Husky.
 - **Unit testing framework:** with Jest and Enzyme.
 - **Theme and Styling:** with Styled Components.
