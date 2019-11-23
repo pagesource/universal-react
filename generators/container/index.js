@@ -5,7 +5,7 @@
 const componentExists = require('../utils/componentExists');
 
 module.exports = {
-  description: 'Add a container component (moelcules, organisms, templates)',
+  description: 'Add a container component (Molecules, Organisms, Templates)',
   prompts: [
     {
       type: 'list',
@@ -52,7 +52,7 @@ module.exports = {
       type: 'confirm',
       name: 'wantPage',
       default: true,
-      message: 'Do you want anentry in pages folder?',
+      message: 'Do you want an entry in pages folder?',
     },
   ],
   actions: data => {
