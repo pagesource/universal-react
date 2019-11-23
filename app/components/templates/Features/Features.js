@@ -59,7 +59,7 @@ class FeaturesPage extends Component<any> {
           <TopBanner
             title="Universal React"
             className="features-banner"
-            subHeading="Features &amp; benefits"
+            subHeading="OOTB Features"
             tickerPoints={this.tickerPoints}
           />
           <ArticleWrap

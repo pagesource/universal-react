@@ -142,24 +142,21 @@ const HomePage = ({ editorialData }: Props): Node => {
   return (
     <Layout title="home" className="row" id="content-wrapper">
       <HeadTag
-        description="Universal React - boilerplate for server side rendered react applications"
-        title="Universal React - boilerplate"
+        description="Universal React - accelerator for server side rendered react applications"
+        title="Universal React"
       />
-      <TopBanner
-        title="Universal React - boilerplate"
-        subTitle={subTitle}
-        tickerPoints={tickerPoints}
-      />
+      <TopBanner title="Universal React" subTitle={subTitle} tickerPoints={tickerPoints} />
       <section className="main-wrapper">
         <ArticleWrap title="Why Universal React?" className="why-universal">
           <Para>
-            A community accepted and reliable XT Dev Ecosystem, that can be utilized as baseline for
-            development of all types of projects, to achieve dependable delivery standards. This
-            ecosystem doesn&apos;t intend to provide lot of out of the box code/components but a
-            well configured development environment and delivery pipeline, having balanced focus to
-            Static Code Quality, Performance, Processes, Security, Testability and Best Practices.
-            This boilerplate will help project teams in building applications with great quality, by
-            giving them more time to focus on business problems rather than web development chores.
+            An Accelerator for Optimal Dev Ecosystems and Scalable Architecture. This can be
+            utilized as baseline for development of all types of projects, to achieve dependable
+            delivery standards. This ecosystem doesn&apos;t intend to provide lot of out of the box
+            code/components but a well configured development environment and delivery pipeline,
+            having balanced focus to Static Code Quality, Performance, Processes, Security,
+            Testability and Best Practices. This boilerplate will help project teams in building
+            applications with great quality, by giving them more time to focus on business problems
+            rather than web development chores.
           </Para>
         </ArticleWrap>
         <ArticleWrap title="Entities of this Ecosystem" className="entity-ecosystem">

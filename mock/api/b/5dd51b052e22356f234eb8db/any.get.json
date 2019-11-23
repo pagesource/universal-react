@@ -1,6 +1,9 @@
 {
   "data": [
-    { "id": "TopBanner", "props": { "title": "Learn about Universal React", "subTitle": "" } },
+    {
+      "id": "TopBanner",
+      "props": { "title": "Documentation", "subTitle": "Learn about Universal React" }
+    },
     { "id": "Learn" }
   ]
 }

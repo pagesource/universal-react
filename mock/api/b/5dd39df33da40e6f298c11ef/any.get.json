@@ -2,9 +2,8 @@
   "header": {
     "nav": [
       { "href": "/", "label": "Home" },
-      { "href": "/experience", "label": "Learn" },
       { "href": "/features", "label": "Features" },
-      { "href": "/docs", "label": "Docs" },
+      { "href": "/experience", "label": "Docs" },
       {
         "href": "https://github.com/pagesource/atomic-react-components",
         "label": "Component Library"
