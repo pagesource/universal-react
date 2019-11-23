@@ -1,2 +1,3 @@
-https://www.hindustantimes.com/
-https://www.heathrow.com/
+http://localhost:3000/
+http://localhost:3000/experience
+http://localhost:3000/features
