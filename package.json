@@ -32,7 +32,8 @@
     "flow:coverage": "flow-coverage-report -i 'app/**/*.js' -x 'app/**/*.spec.js' -t html -t json -t text -o reports/flow/ --threshold 70",
     "pretty": "prettier --write **/*.{js,json,css}",
     "validate": "yarn run lint && yarn run test && yarn run build",
-    "perf": "docker run --shm-size=1g --rm -v \"$(pwd)\":/sitespeed.io sitespeedio/sitespeed.io:9.0.0-plus1 -b  --config ./config/performance/sitespeed.config.json --budget.configPath ./config/performance/sitespeed.budget.config.json"
+    "perf": "docker run --shm-size=1g --rm -v \"$(pwd)\":/sitespeed.io sitespeedio/sitespeed.io:9.0.0-plus1 -b  --config ./config/performance/sitespeed.config.json --budget.configPath ./config/performance/sitespeed.budget.config.json",
+    "perf:test": "docker-compose -f ./config/performance/sitespeed-compose.yml run sitespeed.io --graphite.host=graphite --budget.configPath ./config/performance/sitespeed.budget.config.json ./config/performance/perf-test-urls.txt"
   },
   "repository": {
     "type": "git",
