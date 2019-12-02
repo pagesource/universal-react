@@ -31,4 +31,4 @@ cache:
   directories:
     - node_modules
 after_success:
-  - lhci autorun --upload.target=temporary-public-storage
+  - lhci autorun --upload.target=temporary-public-storage || echo "LHCI failed!"
