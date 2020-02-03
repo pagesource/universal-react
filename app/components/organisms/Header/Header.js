@@ -13,7 +13,7 @@ const Header = ({ nav, className }: Props): Node => (
     <header id="header">
       <Link href="/">
         <a href="/" className="logo">
-          Sample Logo
+          Sample Logo for site
         </a>
       </Link>
       {nav && <NavBar items={nav} />}
