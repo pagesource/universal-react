@@ -53,7 +53,7 @@ exports[`HomePage component should render correctly 1`] = `
     }
   }
 >
-  <Connect(Connect(enhanced(HomePage)))
+  <Connect(Connect(enhanced(withStyles)))
     editorialData={
       Object {
         "banner": "Test Banner",

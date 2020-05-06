@@ -25,10 +25,10 @@ exports[`HomePage component should render correctly 1`] = `
         },
       },
       "injectedReducers": Object {
-        "homePage": [Function],
+        "experience": [Function],
       },
       "injectedSagas": Object {
-        "homePage": Object {
+        "experience": Object {
           "task": Object {
             "@@redux-saga/TASK": true,
             "cancel": [Function],
@@ -40,7 +40,7 @@ exports[`HomePage component should render correctly 1`] = `
             "isCancelled": [Function],
             "isRunning": [Function],
             "joiners": Array [],
-            "name": "homeLayoutSaga",
+            "name": "experienceSaga",
             "result": [Function],
             "setContext": [Function],
           },
@@ -53,7 +53,7 @@ exports[`HomePage component should render correctly 1`] = `
     }
   }
 >
-  <Connect(Connect(enhanced(HomePage)))
+  <Connect(Connect(enhanced(Experience)))
     editorialData={
       Object {
         "banner": "Test Banner",
