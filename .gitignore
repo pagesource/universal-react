@@ -7,6 +7,7 @@ out
 .history
 sitespeed-result
 .env
+env/
 
 # Reports
 reports
