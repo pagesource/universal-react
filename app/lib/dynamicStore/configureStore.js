@@ -1,26 +1,24 @@
-import { createStore, applyMiddleware, compose } from 'redux';
-import { composeWithDevTools } from 'redux-devtools-extension';
-import createSagaMiddleware from 'redux-saga';
-import nextReduxWrapper from 'next-redux-wrapper';
+import React from 'react';
+import hoistNonReactStatics from 'hoist-non-react-statics';
+// import globalSaga from '../../global/saga';
 
-import createReducer from './reducers';
-import globalSaga from '../../global/saga';
+// const tracker = getTracker();
 
-import { trackingMiddleware } from '../../utils/analytics/trackingMiddleware';
-import { getTracker } from '../../utils/analytics/helpers/initTracker';
+// const sagaMiddleware = createSagaMiddleware();
+// const middlewares = [sagaMiddleware, trackingMiddleware(tracker)];
+// const enhancers = [applyMiddleware(...middlewares)];
 
-const tracker = getTracker();
+// // Choose compose method depending upon environment and platform
+// const composeEnhancers =
+//   process.env.NODE_ENV !== 'production' && typeof window === 'object'
+//     ? composeWithDevTools
+//     : compose;
 
-const sagaMiddleware = createSagaMiddleware();
-const middlewares = [sagaMiddleware, trackingMiddleware(tracker)];
-const enhancers = [applyMiddleware(...middlewares)];
-
-// Choose compose method depending upon environment and platform
-const composeEnhancers =
-  process.env.NODE_ENV !== 'production' && typeof window === 'object'
-    ? composeWithDevTools
-    : compose;
-
+// const configureStore = (initialState = {}) => {
+//   const store = createStore(createReducer(), initialState, composeEnhancers(...enhancers));
+//   return store;
+// };
+// const store = configureStore();
 /**
  * Create redux store with the middlewares and enhancers
  *
@@ -29,32 +27,39 @@ const composeEnhancers =
  * @param {Object} options.reducer - Reducers associated with the page commponent
  * @param {Object} options.saga - Sagas associated with the page commponent
  */
-export default options => BaseComponent => {
-  const hasKey = !!options.key;
-  if (!hasKey) throw new Error(`${BaseComponent.displayName} needs to be passed with a key`);
-  const hasReducer = !!options.reducer;
-  const hasSaga = !!options.saga;
-  const reducer = hasKey && hasReducer ? { [options.key]: options.reducer } : {};
+export default options => WrappedComponent => {
+  class ReducerInjector extends React.Component {
+    static injectReducer = () => {
+      const hasKey = !!options.key;
+      // if (!hasKey) throw new Error(`${BaseComponent.displayName} needs to be passed with a key`); //FIXME: REvisit
+      const hasReducer = !!options.reducer;
+      const hasSaga = !!options.saga;
+      const reducer = hasKey && hasReducer ? { [options.key]: options.reducer } : {};
+      const store = options.store || {}; // FIXME: to be done properly
+      store.injectedReducers = store.injectedReducers ? store.injectedReducers : {};
+      store.injectedReducers = { ...store.injectedReducers, ...reducer };
+      // Keep record of saga injected in store associated with unique key
+      store.injectedSagas = {};
+      if (hasSaga) {
+        // Run saga and keep the task returned by running saga to access later while cancelling
+        // store.injectedSagas[options.key] = { ...options.saga, task: store.runSaga(options.saga) }; //FIXME: Restore me back
+      }
+      console.log('TCL: configureDynamic ->  store', store);
+      return store;
+    };
 
-  const configureStore = (initialState = {}) => {
-    const store = createStore(createReducer(reducer), initialState, composeEnhancers(...enhancers));
-
-    // Keep access to 'run' method of saga task in store so thats its available globally with store
-    store.runSaga = sagaMiddleware.run;
-    // Keep record of reducer injected in store associated with unique key
-    store.injectedReducers = reducer;
-    if (globalSaga) {
-      // Run global saga and keep the task returned by running saga to access later while cancelling
-      store.globalSaga = { globalSaga, task: store.runSaga(globalSaga) };
+    // eslint-disable-next-line camelcase
+    UNSAFE_componentWillMount() {
+      // FIXME: this needs to be removed
+      ReducerInjector.injectReducer();
     }
-    // Keep record of saga injected in store associated with unique key
-    store.injectedSagas = {};
-    if (hasSaga) {
-      // Run saga and keep the task returned by running saga to access later while cancelling
-      store.injectedSagas[options.key] = { ...options.saga, task: store.runSaga(options.saga) };
-    }
-    return store;
-  };
 
-  return nextReduxWrapper(configureStore)(BaseComponent);
+    // injectors = getAsyncInjectors(this.context.store); FIXME: Use the proper way of injection
+
+    render() {
+      return <WrappedComponent {...this.props} />;
+    }
+  }
+
+  return hoistNonReactStatics(ReducerInjector, WrappedComponent);
 };

@@ -23,51 +23,16 @@ import Router from 'next/router';
 import get from 'lodash/get';
 
 import initRedux from './configureStore';
-import monitorSagas from './monitorSagas';
 import loggerFactory from '../../utils/logger';
-import { DESKTOP, MOBILE, PHONE, API_ERROR_HANDLER_PAGE, TABLET } from '../../constants';
-import globalActions, { serverActions, pageActions } from '../../global/actions';
+import { API_ERROR_HANDLER_PAGE } from '../../constants';
 
 import { globalDataStructure } from '../../global/reducer';
 import injectSagaAndReducer from './injectSagaAndReducer';
-import { parseQueryParams } from '../../utils/utils';
+import storeRef from './store';
 
 const logger = loggerFactory.getLogger();
 
-// List of headers to be extracted before forwarding to the respective
-// endpoints from the application
-const headerExclusionList = [
-  'host',
-  'accept',
-  'content-length',
-  'content-type',
-  'connection',
-  'cookie',
-];
-
-/**
- * Method to remove the headers present in the "headerExclusionList"
- *
- * @param {Object} requestHeaders Headers object received from the request
- */
-const cleanupRequestHeaders = requestHeaders => {
-  if (!requestHeaders) {
-    return null;
-  }
-  const requestHeadersCopy = { ...requestHeaders };
-  headerExclusionList.forEach(header => {
-    delete requestHeadersCopy[header];
-  });
-
-  // Alternative header for user agent
-  requestHeadersCopy['x-ua-browser'] = requestHeaders['user-agent'];
-  return requestHeadersCopy;
-};
-
-export const getWrapperComponent = (
-  WrappedComponent,
-  { key, reducer, saga, initialActions, useQuery, criticalState, preExecuteGetInitialProps }
-) =>
+export const getWrapperComponent = (WrappedComponent, { key, reducer, saga, initialActions }) =>
   class WrapperComponent extends Component {
     /**
      * Method to add the request details to the action object
@@ -142,81 +107,34 @@ export const getWrapperComponent = (
       );
     }
 
-    static async getInitialProps(...params) {
-      const initialParams = params[0];
+    static async getInitialProps(ctx) {
+      console.log('TCL: getInitialProps -> ctx', ctx);
+      // const initialParams = params[0];
 
-      const { store, isServer, req = {}, query, res = {}, pathname, asPath } = initialParams;
+      const store = storeRef.getStore();
+      // eslint-disable-next-line extra-rules/no-commented-out-code
+      injectSagaAndReducer(key, store, saga, reducer); // this will be here
 
-      injectSagaAndReducer(key, store, saga, reducer);
-      store.dispatch(serverActions.setCurrentRoute(pathname));
-      let requestDetails;
-      let clientParams = {};
-      const { device = {} } = req;
-      const { headers = {} } = req;
-      const { host = '' } = headers;
-      const { cookies = {} } = req;
-      const { perfLogger = {} } = req;
-
-      if (isServer) {
-        const deviceType = device.type === PHONE ? MOBILE : DESKTOP;
-        const isTablet = device.type === TABLET;
-        store.dispatch(serverActions.addIsTablet(isTablet));
-        store.dispatch(serverActions.addDeviceType(deviceType));
-        store.dispatch(serverActions.setPageUrl(req.url));
-        store.dispatch(serverActions.setPageQuery({ ...req.query, ...query }));
-        store.dispatch(serverActions.setPageOrigin(`${req.protocol}://${host}`));
-
-        requestDetails = {
-          deviceType,
-          cookies: cookies.cookieList,
-          logger: perfLogger,
-          whitelistedHeaders: cleanupRequestHeaders(headers),
-        };
-      } else {
-        clientParams = parseQueryParams(asPath);
-        store.dispatch(serverActions.setPageQuery(clientParams));
-        requestDetails = {
-          deviceType: get(store.getState(), ['global', 'globalData', 'deviceType']),
-        };
-      }
-
-      if (preExecuteGetInitialProps && WrappedComponent.getInitialProps) {
-        await WrappedComponent.getInitialProps(...params);
-      }
-
-      if (isServer && globalActions instanceof Array) {
-        WrapperComponent.dispatchActions({
-          actions: globalActions,
-          store,
-          needQuery: useQuery,
-          query,
-          requestDetails,
-        });
-      }
-
-      const combinedPageActions =
-        initialActions instanceof Array ? [...pageActions, ...initialActions] : [...pageActions];
+      // if (preExecuteGetInitialProps && WrappedComponent.getInitialProps) {
+      //   await WrappedComponent.getInitialProps(...ctx);
+      // }
 
       WrapperComponent.dispatchActions({
-        actions: combinedPageActions,
+        actions: initialActions,
         store,
-        needQuery: useQuery,
-        query: { ...query, ...clientParams },
-        requestDetails,
+        // eslint-disable-next-line extra-rules/no-commented-out-code
+        needQuery: false, // FIXME: REvisit
+        query: {}, // { ...query, ...clientParams },
       });
 
-      // Wait till all sagas are done
-      await monitorSagas(store, isServer);
+      // eslint-disable-next-line extra-rules/no-commented-out-code
+      // WrapperComponent.validatePageData(criticalState, res, store, isServer); //FIXME: Revisit
 
-      WrapperComponent.validatePageData(criticalState, res, store, isServer);
+      // if (!preExecuteGetInitialProps && WrappedComponent.getInitialProps) {
+      //   await WrappedComponent.getInitialProps(...params);
+      // }
 
-      if (!preExecuteGetInitialProps && WrappedComponent.getInitialProps) {
-        await WrappedComponent.getInitialProps(...params);
-      }
-
-      return {
-        isServer,
-      };
+      return true;
     }
 
     render() {
@@ -224,19 +142,6 @@ export const getWrapperComponent = (
     }
   };
 
-/**
- * Create a high order component to initialize store with reducers and sagas
- * for the page level component
- *
- * @param {Object} WrappedComponent Page level component to be wrapped with HOC
- * @param {Object} config Configuration
- * @param {function} config.mapStateToProps Map properties from state to props
- * @param {function} config.mapDispatchToProps Map dispatch method for the component
- * @param {string} config.key Unique key identifying the page level component and
- * hence its saga and reducer
- * @param {Objext} config.reducer Root reducer for the given page level component
- * @param {Objext} config.saga Root saga for the given page level component
- */
 export default (
   WrappedComponent,
   {
@@ -250,6 +155,8 @@ export default (
     criticalState,
   }
 ) => {
+  // injection
+
   const WrapperComponent = getWrapperComponent(WrappedComponent, {
     key,
     reducer,
@@ -270,11 +177,12 @@ export default (
     'Component'})`;
 
   const withConnect = connect(mapStateToProps, mapDispatchToProps);
-  const withRedux = initRedux({
-    key,
-    reducer,
-    saga,
-  });
-
-  return compose(withRedux, withConnect)(WrapperComponent);
+  // const store = storeRef.getStore();
+  // const withRedux = initRedux({
+  //   key,
+  //   reducer,
+  //   saga,
+  //   store,
+  // });
+  return compose(withConnect)(WrapperComponent);
 };

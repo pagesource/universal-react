@@ -154,16 +154,6 @@ class ServiceUtils {
       logger.error(`[CACHE] Failed to cache: ${fetchUrl}`, err);
     }
 
-    if (perfLogger) {
-      perfLogger.log(
-        'error',
-        `[PERFLOG] [SERVICE] ${isCacheableService ? '[CACHE: MISS]' : ''} Status: ${
-          response.status
-        } Method: ${reqOptions.method || 'GET'} URL: ${fetchUrl} Elapsed Time: ${Date.now() -
-          start}ms`
-      );
-    }
-
     return responseData;
   };
   /* eslint-enable */

@@ -6,7 +6,7 @@ import globalReducer from '../../global/reducer';
  * @param {Object} injectedReducers
  * @returns {function}
  */
-export default function createReducer(injectedReducers) {
+export default function createReducer(injectedReducers = {}) {
   return combineReducers({
     global: globalReducer,
     ...injectedReducers,

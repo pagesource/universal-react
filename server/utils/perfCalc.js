@@ -7,7 +7,7 @@ profiles.on('route', ({ req, elapsedMS }) => {
   if (req.perfLoggerEnabled) {
     req.perfLogger.log(
       'error',
-      `[PERFLOG] [SERVICE] Method: ${req.method} URL: ${req.url} Elapsed Time: ${elapsedMS}ms`,
+      `[PERFLOG] [SERVICE] Method: ${req.method} URL: ${req.url} Elapsed Time: ${elapsedMS}ms`
     );
   }
 });
