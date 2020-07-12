@@ -139,7 +139,7 @@
     "http-proxy-middleware": "^0.20.0",
     "invariant": "^2.2.4",
     "lodash": "^4.17.15",
-    "next": "^9.1.4",
+    "next": "^9.3.2",
     "next-compose-plugins": "^2.2.0",
     "next-offline": "^4.0.6",
     "next-redux-wrapper": "^4.0.1",
